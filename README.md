@@ -17,6 +17,7 @@
     - [Top Down Puzzle RPG](#top-down-puzzle-rpg)
   - [Communication](#communication)
     - [What we learnt from Online Meeting:](#what-we-learnt-from-online-meeting)
+    - [Learning Journal](#learning-journal)
 
 ## Proposed Titles
 
@@ -208,5 +209,8 @@
 - CAPSTONE badges should be used for questions
 - Needs to have saving feature
 - Sprite of John needs to be in the game
+
+
+### [Learning Journal](https://docs.google.com/spreadsheets/d/1IZtANq7ruhhZvN3znZopCmB7hLXw76JRNAhnZD1jfeE/edit?usp=sharing)
 
 [Go back up](#table-of-contents)
