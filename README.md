@@ -2,18 +2,22 @@
 
 ## Table of Contents
 
-- [Proposed Titles](#proposed-titles-)
-- [Questions to ask client](#questions-to-ask-client)
-- [Minutes](#minutes)
-- [Problems](#problems)
-- [SOP - RAG sheet](#rag-sheet)
-- [Ideas](#ideas)
-  - [Inspiration](#inspiration)
-  - [Learning Game with Rewards](#learning-game-with-rewards)
-  - [Top Down Puzzle RPG](#top-down-puzzle-rpg)
-- [Communication](#communication)
-  - [What we learnt from Online Meeting](#what-we-learnt-from-online-meeting)
-- [IBM SkillsBuild](#ibm-skillsbuild)
+- [RPG Game](#rpg-game)
+  - [Table of Contents](#table-of-contents)
+  - [Proposed Titles](#proposed-titles)
+  - [Questions to ask client](#questions-to-ask-client)
+  - [Minutes](#minutes)
+    - [Week 1 Minutes](#week-1-minutes)
+    - [Week 2 Minutes](#week-2-minutes)
+  - [Problems](#problems)
+  - [SOP - RAG Sheet](#sop---rag-sheet)
+  - [Ideas](#ideas)
+    - [Inspiration - Undertale / Deltarune](#inspiration---undertale--deltarune)
+    - [Learning Game with Rewards](#learning-game-with-rewards)
+    - [Top Down Puzzle RPG](#top-down-puzzle-rpg)
+  - [Communication](#communication)
+    - [What we learnt from Online Meeting:](#what-we-learnt-from-online-meeting)
+    - [Learning Journal](#learning-journal)
 
 ## Proposed Titles
 
@@ -23,6 +27,7 @@
 - IBM's blessing on this wonderful digital world
 - How to pick up badges in a digital world
 
+[Go back up](#table-of-contents)
 ## Questions to ask client
 
 1. What platform should the game work on? (OS dependent? Windows/Linux/IOS/Android/Web-based?)
@@ -45,6 +50,7 @@
 15. Can we add John into the game? - Yes
 16. Where to find the documentation? - Find the downloads of pdfs and stuff on each course
 
+[Go back up](#table-of-contents)
 ## Minutes
 
 ### Week 1 Minutes
@@ -66,8 +72,9 @@
 - Finalisation of project idea
 - Meeting with IBM client
 - Goal for the week:
-- Get all IBM SkillBuild badges on green marked courses on our RAG sheet by Friday 18th
+  - Get all IBM SkillBuild badges on green marked courses on our RAG sheet by Friday 27th
 
+[Go back up](#table-of-contents)
 ## Problems 
 
 - Puzzles vs Combat - which one should be central
@@ -75,6 +82,7 @@
 - Who's doing art...
 - Music?
 
+[Go back up](#table-of-contents)
 ## SOP - RAG Sheet 
 
 1. Go through pathway to learning, review all the checkmarked skills and add the relevant ones to the RAG spreadsheet
@@ -87,6 +95,7 @@
    3. A link to the page
    4. A paragraph about what you learnt
 
+[Go back up](#table-of-contents)
 ## Ideas 
 
 ### Inspiration - Undertale / Deltarune
@@ -99,6 +108,8 @@
 - Players can find answers to questions through combat and puzzles
 - Combat will have the option to “scan enemies” for information to get clues on how to answer questions
 - Have puzzles where the layout is basically trying to mix and match items. Can also include Q&A
+
+![PuzzleIdea](image/README/puzzleIdea.png)
 
 ### Learning Game with Rewards
 
@@ -119,6 +130,20 @@
     - What is John going to wear? Suit, hoodie, shirt, tshirt, jeans, suit, trousers?
   - Ask who you are: Choose a character (similar to pokemon)
   - Then you end up in your room working on your computer
+
+![Jon1](image/README/jon1.png)
+
+![Jon2](image/README/jon2.png)
+
+![JonThink](image/README/jonThink.png)
+
+- Thinking face
+
+![ProfOak](image/README/profOak.png)
+- What is John going to wear? Suit, hoodie, shirt, tshirt, jeans, suit trousers?
+
+![Hub](image/README/hub.png)
+
 - Wrath of Cortex style hub world (see image above)
 - Magical Macguffin- Magical object that drives plot forward, for example, the holy grail, the triforce, pandora's box
   - Quint-force - inspired by tri-force, object made of 5 pieces, required to either defeat final boss or access final area
@@ -143,6 +168,9 @@
   - Square thing where you move blocks around to make an image
 - Skills Build Tree
   - Magical Macguffin from boss: can slot into skills build tree, player chooses what bonus they want
+
+![SkillBuild](image/README/skillBuildIdea.png)
+
   - AI
     - Health
     - Defense
@@ -155,7 +183,22 @@
     - Could do joint skill trees like AI/Threat Intelligence and Cloud/Data Science, allowing for 3 options in each, of which by the end you have chosen 2 of 3
   - Cloud
 
+![Browser](image/README/browser.png)
+
+![Niko](image/README/niko.png)
+
+![Town](image/README/town.png)
+
+[Go back up](#table-of-contents)
 ## Communication
+
+![Email1](image/README/email1.png)
+
+![Email2](image/README/email2.png)
+
+![Email3](image/README/email3.png)
+
+![Email4](image/README/email4.png)
 
 ### What we learnt from Online Meeting:
 
@@ -167,6 +210,7 @@
 - Needs to have saving feature
 - Sprite of John needs to be in the game
 
-## IBM SkillsBuild
 
-- Threat Intelligence
+### [Learning Journal](https://docs.google.com/spreadsheets/d/1IZtANq7ruhhZvN3znZopCmB7hLXw76JRNAhnZD1jfeE/edit?usp=sharing)
+
+[Go back up](#table-of-contents)
