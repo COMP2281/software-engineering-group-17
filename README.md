@@ -71,7 +71,7 @@
 - Finalisation of project idea
 - Meeting with IBM client
 - Goal for the week:
-- Get all IBM SkillBuild badges on green marked courses on our RAG sheet by Friday 18th
+  - Get all IBM SkillBuild badges on green marked courses on our RAG sheet by Friday 27th
 
 [Go back up](#table-of-contents)
 ## Problems 
@@ -108,6 +108,8 @@
 - Combat will have the option to “scan enemies” for information to get clues on how to answer questions
 - Have puzzles where the layout is basically trying to mix and match items. Can also include Q&A
 
+![PuzzleIdea](image/README/puzzleIdea.png)
+
 ### Learning Game with Rewards
 
 - The player answers various questions to gain points
@@ -127,6 +129,20 @@
     - What is John going to wear? Suit, hoodie, shirt, tshirt, jeans, suit, trousers?
   - Ask who you are: Choose a character (similar to pokemon)
   - Then you end up in your room working on your computer
+
+![Jon1](image/README/jon1.png)
+
+![Jon2](image/README/jon2.png)
+
+![JonThink](image/README/jonThink.png)
+
+- Thinking face
+
+![ProfOak](image/README/profOak.png)
+- What is John going to wear? Suit, hoodie, shirt, tshirt, jeans, suit trousers?
+
+![Hub](image/README/hub.png)
+
 - Wrath of Cortex style hub world (see image above)
 - Magical Macguffin- Magical object that drives plot forward, for example, the holy grail, the triforce, pandora's box
   - Quint-force - inspired by tri-force, object made of 5 pieces, required to either defeat final boss or access final area
@@ -151,6 +167,9 @@
   - Square thing where you move blocks around to make an image
 - Skills Build Tree
   - Magical Macguffin from boss: can slot into skills build tree, player chooses what bonus they want
+
+![SkillBuild](image/README/skillBuildIdea.png)
+
   - AI
     - Health
     - Defense
@@ -163,8 +182,22 @@
     - Could do joint skill trees like AI/Threat Intelligence and Cloud/Data Science, allowing for 3 options in each, of which by the end you have chosen 2 of 3
   - Cloud
 
+![Browser](image/README/browser.png)
+
+![Niko](image/README/niko.png)
+
+![Town](image/README/town.png)
+
 [Go back up](#table-of-contents)
 ## Communication
+
+![Email1](image/README/email1.png)
+
+![Email2](image/README/email2.png)
+
+![Email3](image/README/email3.png)
+
+![Email4](image/README/email4.png)
 
 ### What we learnt from Online Meeting:
 
