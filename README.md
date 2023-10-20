@@ -2,18 +2,22 @@
 
 ## Table of Contents
 
-- [Proposed Titles](#proposed-titles-)
-- [Questions to ask client](#questions-to-ask-client)
-- [Minutes](#minutes)
-- [Problems](#problems)
-- [SOP - RAG sheet](#rag-sheet)
-- [Ideas](#ideas)
-  - [Inspiration](#inspiration)
-  - [Learning Game with Rewards](#learning-game-with-rewards)
-  - [Top Down Puzzle RPG](#top-down-puzzle-rpg)
-- [Communication](#communication)
-  - [What we learnt from Online Meeting](#what-we-learnt-from-online-meeting)
-- [IBM SkillsBuild](#ibm-skillsbuild)
+- [RPG Game](#rpg-game)
+  - [Table of Contents](#table-of-contents)
+  - [Proposed Titles](#proposed-titles)
+  - [Questions to ask client](#questions-to-ask-client)
+  - [Minutes](#minutes)
+    - [Week 1 Minutes](#week-1-minutes)
+    - [Week 2 Minutes](#week-2-minutes)
+  - [Problems](#problems)
+  - [SOP - RAG Sheet](#sop---rag-sheet)
+  - [Ideas](#ideas)
+    - [Inspiration - Undertale / Deltarune](#inspiration---undertale--deltarune)
+    - [Learning Game with Rewards](#learning-game-with-rewards)
+    - [Top Down Puzzle RPG](#top-down-puzzle-rpg)
+  - [Communication](#communication)
+    - [What we learnt from Online Meeting:](#what-we-learnt-from-online-meeting)
+  - [IBM SkillsBuild](#ibm-skillsbuild)
 
 ## Proposed Titles
 
