@@ -17,7 +17,6 @@
     - [Top Down Puzzle RPG](#top-down-puzzle-rpg)
   - [Communication](#communication)
     - [What we learnt from Online Meeting:](#what-we-learnt-from-online-meeting)
-  - [IBM SkillsBuild](#ibm-skillsbuild)
 
 ## Proposed Titles
 
@@ -27,6 +26,7 @@
 - IBM's blessing on this wonderful digital world
 - How to pick up badges in a digital world
 
+[Go back up](#table-of-contents)
 ## Questions to ask client
 
 1. What platform should the game work on? (OS dependent? Windows/Linux/IOS/Android/Web-based?)
@@ -49,6 +49,7 @@
 15. Can we add John into the game? - Yes
 16. Where to find the documentation? - Find the downloads of pdfs and stuff on each course
 
+[Go back up](#table-of-contents)
 ## Minutes
 
 ### Week 1 Minutes
@@ -72,6 +73,7 @@
 - Goal for the week:
 - Get all IBM SkillBuild badges on green marked courses on our RAG sheet by Friday 18th
 
+[Go back up](#table-of-contents)
 ## Problems 
 
 - Puzzles vs Combat - which one should be central
@@ -79,6 +81,7 @@
 - Who's doing art...
 - Music?
 
+[Go back up](#table-of-contents)
 ## SOP - RAG Sheet 
 
 1. Go through pathway to learning, review all the checkmarked skills and add the relevant ones to the RAG spreadsheet
@@ -91,6 +94,7 @@
    3. A link to the page
    4. A paragraph about what you learnt
 
+[Go back up](#table-of-contents)
 ## Ideas 
 
 ### Inspiration - Undertale / Deltarune
@@ -159,6 +163,7 @@
     - Could do joint skill trees like AI/Threat Intelligence and Cloud/Data Science, allowing for 3 options in each, of which by the end you have chosen 2 of 3
   - Cloud
 
+[Go back up](#table-of-contents)
 ## Communication
 
 ### What we learnt from Online Meeting:
@@ -171,6 +176,4 @@
 - Needs to have saving feature
 - Sprite of John needs to be in the game
 
-## IBM SkillsBuild
-
-- Threat Intelligence
+[Go back up](#table-of-contents)
