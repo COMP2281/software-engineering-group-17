@@ -10,7 +10,6 @@
   - [Minutes](#minutes)
     - [Week 1 Minutes](#week-1-minutes)
     - [Week 2 Minutes](#week-2-minutes)
-  - [Problems](#problems)
   - [SOP - RAG Sheet](#sop---rag-sheet)
   - [Ideas](#ideas)
     - [Inspiration - Undertale / Deltarune](#inspiration---undertale--deltarune)
@@ -95,14 +94,6 @@
 - Meeting with IBM client
 - Goal for the week:
   - Get all IBM SkillBuild badges on green marked courses on our RAG sheet by Friday 27th
-
-[Go back up](#table-of-contents)
-## Problems 
-
-- Puzzles vs Combat - which one should be central
-- How to integrate learning into combat
-- Who's doing art...
-- Music?
 
 [Go back up](#table-of-contents)
 ## SOP - RAG Sheet 
@@ -204,7 +195,7 @@
   - Data Science
     - Could do joint skill trees like AI/Threat Intelligence and Cloud/Data Science, allowing for 3 options in each, of which by the end you have chosen 2 of 3
   - Cloud
-  - 
+
 ![Browser](image/README/browser.png)
 
 ![Niko](image/README/niko.png)
@@ -235,6 +226,7 @@
 10. Item collection / inventory
 11. Final Boss
 12. Final cutscene
+
 [Go back up](#table-of-contents)
 ## Communication
 
