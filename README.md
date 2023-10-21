@@ -5,7 +5,8 @@
 - [RPG Game](#rpg-game)
   - [Table of Contents](#table-of-contents)
   - [Proposed Titles](#proposed-titles)
-  - [Questions to ask client](#questions-to-ask-client)
+  - [Questions and Answers to client](#questions-and-answers-to-client)
+    - [Answers to questions](#answers-to-questions)
   - [Minutes](#minutes)
     - [Week 1 Minutes](#week-1-minutes)
     - [Week 2 Minutes](#week-2-minutes)
@@ -15,9 +16,10 @@
     - [Inspiration - Undertale / Deltarune](#inspiration---undertale--deltarune)
     - [Learning Game with Rewards](#learning-game-with-rewards)
     - [Top Down Puzzle RPG](#top-down-puzzle-rpg)
+  - [Overview of what needs to be done for the game:](#overview-of-what-needs-to-be-done-for-the-game)
   - [Communication](#communication)
-    - [What we learnt from Online Meeting:](#what-we-learnt-from-online-meeting)
-    - [Learning Journal](#learning-journal)
+    - [What we learnt from Online Meeting (18/10/2023):](#what-we-learnt-from-online-meeting-18102023)
+  - [Learning Journal](#learning-journal)
 
 ## Proposed Titles
 
@@ -28,27 +30,46 @@
 - How to pick up badges in a digital world
 
 [Go back up](#table-of-contents)
-## Questions to ask client
+## Questions and Answers to client
 
-1. What platform should the game work on? (OS dependent? Windows/Linux/IOS/Android/Web-based?)
-2. How in-depth should the resources linked in the game go into? (If an end user can get the badges in the IBM courses, should they be made to play the game fully, or can they answer the question and quickly get through it?) - Should the game’s sole focus be to help the player answer IBM’s SkillBuild courses, or should the game be enjoyable as well?
-   - We should totally make a resource system where things are limited, forcing the player to make choices
+1. ~~What platform should the game work on? (OS dependent? Windows/Linux/IOS/Android/Web-based?)~~
+2. ~~How in-depth should the resources linked in the game go into? (If an end user can get the badges in the IBM courses, should they be made to play the game fully, or can they answer the question and quickly get through it?) - Should the game’s sole focus be to help the player answer IBM’s SkillBuild courses, or should the game be enjoyable as well?~~
+   - ~~We should totally make a resource system where things are limited, forcing the player to make choices~~
 3. What controls should the game use? (Touch input? Controller support? Keyboard?)
-4. What is the age range of our target audience? - College student
+4. ~~What is the age range of our target audience?~~
 5. Should the game only be for people with no knowledge of IBM skills?
 6. Should the game be aimed at people with little or lots of knowledge of RPGs?
-7. What do you mean by 21st century games?
-8. Do you want us to use a specific game engine to make the game in?
-   1. Say we prefer Unity or RPGMaker
-9. Do you want us to use all original assets, or can we take online resources as well?
-   1. Royalty free?
-10. What system requirements are recommended for the game to run on? -
-11. Genre?
-12. Art style?
-13. Clarify what specific skills build sections we should be going over
-14. Should the game be an aid to the course or a course replacement?
-15. Can we add John into the game? - Yes
-16. Where to find the documentation? - Find the downloads of pdfs and stuff on each course
+7. ~~What do you mean by 21st century games?~~
+8. ~~Do you want us to use a specific game engine to make the game in?~~
+   - ~~Say we prefer Unity or RPGMaker~~
+9.  ~~Do you want us to use all original assets, or can we take online resources as well?~~
+   - ~~Royalty free?~~
+10. What system requirements are recommended for the game to run on?
+11. ~~Genre?~~
+12. ~~Art style?~~
+13. ~~Clarify what specific skills build sections we should be going over~~
+14. ~~Should the game be an aid to the course or a course replacement?~~
+15. ~~Can we add John into the game?~~
+16. Where to find the documentation?
+
+### Answers to questions
+1. Windows
+2. Resources can be accessed directly on SkillBuild, and thus will not need to be implemented in the game. Only the questions needs to be in. The game ideally should be fun and help learn.
+   - Idea scrapped   
+3. N/A
+4. Secondary school and University students
+5. N/A
+6. N/A
+7. Something fun and engaging
+8. Unity if we have a license for it
+9. Online resources are fine as long as they are free
+10. N/A
+11. RPG, any genre is fine
+12. Any art style is fine
+13. Capstone is recommended. Aside from that, any green coloured courses on RAG sheet
+14. Aid to course
+15. Yes
+16. N/A
 
 [Go back up](#table-of-contents)
 ## Minutes
@@ -67,7 +88,8 @@
 
 ### Week 2 Minutes
 
-- Last Week's Goals: Achieved
+- **Last Week's Goals**: Achieved
+- **Bottlenecks**: None
 - Introduction to project manager
 - Finalisation of project idea
 - Meeting with IBM client
@@ -182,36 +204,37 @@
   - Data Science
     - Could do joint skill trees like AI/Threat Intelligence and Cloud/Data Science, allowing for 3 options in each, of which by the end you have chosen 2 of 3
   - Cloud
-- Overivew of what needs to be done for the game:
-  1. Main menu
-      -  New game
-      - Continue
-      - Settings
-      - Controls
-      - Credits
-      - Exit
-  2. Pause Menu
-      - Continue
-      - Controls
-      - Exit
-  3. Intro cutscene with john
-      - Character selection
-  4. Cutscene where you get sucked into the computer
-  5. Hub World
-  6. Creation of other worlds with specific puzzles
-  7. Interactable objects for documentation
-  8. Combat system 
-  9. Skill tree
-  10. Item collection / inventory
-  11. Final Boss
-  12. Final cutscene
-
+  - 
 ![Browser](image/README/browser.png)
 
 ![Niko](image/README/niko.png)
 
 ![Town](image/README/town.png)
 
+[Go back up](#table-of-contents)
+## Overview of what needs to be done for the game:
+1. Main menu
+    -  New game
+    - Continue
+    - Settings
+    - Controls
+    - Credits
+    - Exit
+2. Pause Menu
+    - Continue
+    - Controls
+    - Exit
+3. Intro cutscene with john
+    - Character selection
+4. Cutscene where you get sucked into the computer
+5. Hub World
+6. Creation of other worlds with specific puzzles
+7. Interactable objects for documentation
+8. Combat system 
+9. Skill tree
+10. Item collection / inventory
+11. Final Boss
+12. Final cutscene
 [Go back up](#table-of-contents)
 ## Communication
 
@@ -223,7 +246,7 @@
 
 ![Email4](image/README/email4.png)
 
-### What we learnt from Online Meeting:
+### What we learnt from Online Meeting (18/10/2023):
 
 - Age group: Secondary, Uni
 - Not violent / inappropriate
@@ -233,7 +256,6 @@
 - Needs to have saving feature
 - Sprite of John needs to be in the game
 
-
-### [Learning Journal](https://docs.google.com/spreadsheets/d/1IZtANq7ruhhZvN3znZopCmB7hLXw76JRNAhnZD1jfeE/edit?usp=sharing)
+## [Learning Journal](https://docs.google.com/spreadsheets/d/1IZtANq7ruhhZvN3znZopCmB7hLXw76JRNAhnZD1jfeE/edit?usp=sharing)
 
 [Go back up](#table-of-contents)
