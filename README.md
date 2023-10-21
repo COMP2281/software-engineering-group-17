@@ -182,6 +182,29 @@
   - Data Science
     - Could do joint skill trees like AI/Threat Intelligence and Cloud/Data Science, allowing for 3 options in each, of which by the end you have chosen 2 of 3
   - Cloud
+- Overivew of what needs to be done for the game:
+  1. Main menu
+      -  New game
+      - Continue
+      - Settings
+      - Controls
+      - Credits
+      - Exit
+  2. Pause Menu
+      - Continue
+      - Controls
+      - Exit
+  3. Intro cutscene with john
+      - Character selection
+  4. Cutscene where you get sucked into the computer
+  5. Hub World
+  6. Creation of other worlds with specific puzzles
+  7. Interactable objects for documentation
+  8. Combat system 
+  9. Skill tree
+  10. Item collection / inventory
+  11. Final Boss
+  12. Final cutscene
 
 ![Browser](image/README/browser.png)
 
