@@ -15,6 +15,33 @@
     - [Inspiration - Undertale / Deltarune](#inspiration---undertale--deltarune)
     - [Learning Game with Rewards](#learning-game-with-rewards)
     - [Top Down Puzzle RPG](#top-down-puzzle-rpg)
+  - [Market Research](#market-research)
+    - [Battle Style](#battle-style)
+      - [Style 1 -  Undertale](#style-1----undertale)
+      - [Style 2 - Final Fantasy 6](#style-2---final-fantasy-6)
+      - [Style 3 - Pokemon](#style-3---pokemon)
+      - [Style 4 - Ace Attorney Investigations](#style-4---ace-attorney-investigations)
+      - [Style 5 - Fear and Hunger](#style-5---fear-and-hunger)
+    - [Menu Style](#menu-style)
+      - [Menu 1 - List](#menu-1---list)
+      - [Menu 2 - Square](#menu-2---square)
+    - [Main Character Design](#main-character-design)
+    - [Sprite Sheet](#sprite-sheet)
+      - [Sprite Sheet 1 - Final Fantasy 6](#sprite-sheet-1---final-fantasy-6)
+      - [Sprite Sheet 2 - Fear and Hunger](#sprite-sheet-2---fear-and-hunger)
+      - [Sprite Sheet 3 - Stardew Valley](#sprite-sheet-3---stardew-valley)
+      - [Sprite Sheet 4 - Pokemon](#sprite-sheet-4---pokemon)
+      - [Sprite Sheet 5 - RPGMaker](#sprite-sheet-5---rpgmaker)
+      - [Sprite Sheet 6 - Simple Style](#sprite-sheet-6---simple-style)
+    - [Health](#health)
+      - [Health Bars](#health-bars)
+        - [Heart Bars](#heart-bars)
+  - [Free Art Asset Collection](#free-art-asset-collection)
+    - [Music](#music)
+    - [Sound Effects](#sound-effects)
+    - [Backgrounds](#backgrounds)
+    - [Textures and Assets](#textures-and-assets)
+    - [Other Assets](#other-assets)
   - [Overview of what needs to be done for the game:](#overview-of-what-needs-to-be-done-for-the-game)
   - [Communication](#communication)
     - [What we learnt from Online Meeting (18/10/2023):](#what-we-learnt-from-online-meeting-18102023)
@@ -28,7 +55,7 @@
 - IBM's blessing on this wonderful digital world
 - How to pick up badges in a digital world
 
-[Go back up](#table-of-contents)
+[**Go back up**](#table-of-contents)
 ## Questions and Answers to client
 
 1. ~~What platform should the game work on? (OS dependent? Windows/Linux/IOS/Android/Web-based?)~~
@@ -70,7 +97,7 @@
 15. Yes
 16. N/A
 
-[Go back up](#table-of-contents)
+[**Go back up**](#table-of-contents)
 ## Minutes
 
 ### Week 1 Minutes
@@ -95,7 +122,7 @@
 - Goal for the week:
   - Get all IBM SkillBuild badges on green marked courses on our RAG sheet by Friday 27th
 
-[Go back up](#table-of-contents)
+[**Go back up**](#table-of-contents)
 ## SOP - RAG Sheet 
 
 1. Go through pathway to learning, review all the checkmarked skills and add the relevant ones to the RAG spreadsheet
@@ -108,7 +135,7 @@
    3. A link to the page
    4. A paragraph about what you learnt
 
-[Go back up](#table-of-contents)
+[**Go back up**](#table-of-contents)
 ## Ideas 
 
 ### Inspiration - Undertale / Deltarune
@@ -202,119 +229,46 @@
 
 ![Town](image/README/town.png)
 
-### Free Art Asset Collection
-This section mostly consistes of free assets found on itch.io that are free for game developers to use
-#### Music
-[Music Loop Bundle](https://tallbeard.itch.io/music-loop-bundle)
-
-[Short Loopable Music FIles](https://joshuuu.itch.io/short-loopable-background-music)
-
-#### Sound Effects
-[Sound Effect Collection 1](https://jdwasabi.itch.io/8-bit-16-bit-sound-effects-pack)
-
-[Dungeon Audio Pack](https://leohpaz.itch.io/minifantasy-dungeon-sfx-pack)
-
-[Massive Sound Effect Library](https://filmcow.itch.io/filmcow-sfx)
-
-[Dialouge Pack](https://dillonbecker.itch.io/sdap)
-
-#### Backgrounds
-[Cyberpunk City Environments](https://ansimuz.itch.io/cyberpunk-street-environment)
-
-[Sunset Mountain Parallax](https://ansimuz.itch.io/mountain-dusk-parallax-background)
-
-[Space Generator](https://deep-fold.itch.io/space-background-generator)
-
-[Seamless Space Backgrounds](https://screamingbrainstudios.itch.io/seamless-space-backgrounds)
-
-#### Textures and Assets
-[Ninja Adventure - Autumnal Asset Pack](https://pixel-boy.itch.io/ninja-adventure-asset-pack)
-
-[Dungeon Asset Pack](https://pixel-poem.itch.io/dungeon-assetpuck)
-
-[Temple Asset Pack](https://cainos.itch.io/pixel-art-top-down-basic)
-
-[Forest Tileset](https://pixivan.itch.io/top-down-forest-tileset)
-
-[House Assets](https://penzilla.itch.io/top-down-retro-house)
-
-[Realistic Low Res Texture Pack](https://screamingbrainstudios.itch.io/tiny-texture-pack-2)
-
-[Another Forest Asset Pack](https://seliel-the-shaper.itch.io/gentle-forest)
-
-[Cloud City Asset Pack](https://finalbossblues.itch.io/cloud-city-tileset)
-
-[Material Assets](https://beast-pixels.itch.io/crafting-materials)
-
-[Simple Texture Pack](https://piiixl.itch.io/textures)
-
-[Another Pixel Texture Pack](https://jestan.itch.io/pixel-texture-pack)
-
-[RPG Marketplace Pack](https://gif-superretroworld.itch.io/marketplace)
-
-[Cozy Pixel Asset Pack](https://limezu.itch.io/serenevillagerevamped)
-
-[Massive Modern Interiors Asset Pack](https://limezu.itch.io/moderninteriors)
-
-#### Other Assets
-[GUI Asset Pack](https://crusenho.itch.io/complete-gui-essential-pack)
-
-[More Pixel Art GUI Elements](https://mounirtohami.itch.io/pixel-art-gui-elements)
-
-[Food](https://ghostpixxells.itch.io/pixelfood)
-
-[Pixel Font](https://poppyworks.itch.io/silver)
-
-[Health and Scroll Bars](https://bdragon1727.itch.io/basic-pixel-health-bar-and-scroll-bar)
-
-[Skill Icons](https://pixerelia.itch.io/vas-basic-spells-and-buffs)
-
-[Another Pixel Font](https://tinyworlds.itch.io/free-pixel-font-thaleah)
-
-[Dynamic Font Tags](https://wattson.itch.io/kinetic-text-tags)
-
-[Glitch Effect](https://odditica.itch.io/bktglitch)
-
-### Market Research
+## Market Research
 
 Before we can begin with new asset creation, we need to finalise some of the more in depth points about world traversal and combat.
-#### Battle Style
+### Battle Style
 RPG combat has incredible variation, and there is far from one set presentation or style that must be followed for a game to be classed as an RPG, thus we need to decide on what format we want our Q&A combat to be in, firstly in how we want our player and our enemies to be represented in battle.
-##### Style 1 -  Undertale
+#### Style 1 -  Undertale
 One of the first RPGs that come to mind when we consider combat encounters that allow you to talk to your enemies is the 2015 game Undertale, which does not feature the player character, and has a front shot of the enemy you are fighting or talking to.
 
 ![Style1](image/README/battle1.png)
 
-##### Style 2 - Final Fantasy 6
+#### Style 2 - Final Fantasy 6
 Alongside the likes of Dragon Quest, the Final Fantasy series is one of the forefathers of the RPG genre; Final Fantasy 6 is the last purely 2D mainline Final Fantasy game, the game features combat where players and enemies face each other from opposite sides of the screen, with sprites that show their full bodies.
 
 ![Style2](image/README/battle2.png)
 
-##### Style 3 - Pokemon
+#### Style 3 - Pokemon
 As one of the biggest franchises on the planet, the original Pokemon games have captivated many people over the years, featuring two characters facing off on opposite corners, both with a 3/4 perspective sprite, with the player character facing away from the camera.
 
 ![Style3](image/README/battle3.png)
 
-##### Style 4 - Ace Attorney Investigations
+#### Style 4 - Ace Attorney Investigations
 While not an RPG series, the Ace Attorney games are puzzle games, where the main "combat" encounters take place with a courtroom, featuring the attorney and prosecutor in a battle of wits, in the mainline games these characters take up a full screen to themselves. However, the spinoff Ace Attorney Investigations features the two characters on one screen, duking with their words. Considering the dynamic experessions and how it requires you to "talk to fight", I thought this would be a good fit for the style of game we are making.
 
 ![Style4](image/README/battle4.png)
 
-##### Style 5 - Fear and Hunger
+#### Style 5 - Fear and Hunger
 As a relatively unknown RPGMaker Horror game, Fear and Hunger features gruelling and cruel combat encounters, many of which encounters you can talk to the enemy to try and distract them, find out information or damage their mind by answering their questions. This game features front on enemies, similar to Undertale, while the player characters you see from the back in 3/4 perspective, like with Pokemon.
 
 ![Style5](image/README/battle5.png)
 
-#### Menu Style
+### Menu Style
 Next up we need to consider how the player will respond to the enemy's questions.
-##### Menu 1 - List
+#### Menu 1 - List
 This is arguably the most popular style of menu in RPG games, having a scrollable list for players to search through for their answer, relativly simple to implement and does what it needs to.
 ![Menu1](image/README/menu1.png)
-##### Menu 2 - Square 
+#### Menu 2 - Square 
 Having a square menu style with 4 options is definitely less popular in the genre, but still features in the monolithic franchise Pokemon, and given our Q&A combat having 4 answers, this style may work quite well, being slightly more difficult to implement however.
 ![Menu2](image/README/menu2.png)
 
-#### Main Character Design
+### Main Character Design
 Next up we need to decide on a design for our main character, given we have already decided on our setting to be "IBM employee transported to another world" we already have restrictions in place, however there are still a number of decisions to make on main character design, such as:
 
 - Body Type
@@ -332,7 +286,7 @@ Next up we need to decide on a design for our main character, given we have alre
 
 Main characters in RPGs vary wildly depending on setting, thus I think the best way to come up with our main character is to brainstorm rather than look at existing examples of main characters.
 
-#### Sprite Sheet
+### Sprite Sheet
 Once the main character's design is decided upon, we can start making our custom sprite sheet, which will contain all of the animations for world traversal.
 
 ![SpriteSheet](image/README/spritesheet.png)
@@ -341,28 +295,28 @@ One of the biggest things to consider with sprite sheets is the amount of space 
 
 The sprites I am showing off in this section are all walking animation sprites, with a step-stand-step style of animation, which is simple to animate, but works brilliantly, and is still used in modern top down games today
 
-##### Sprite Sheet 1 - Final Fantasy 6
+#### Sprite Sheet 1 - Final Fantasy 6
 Final Fantasy 6 sprites differ from the rest as they only have 2 frames on their sideways walk, they are slightly taller than a single tile, but would work for a tile-based game, and are relatively simple. And considering the person doing the art for our group does not have a great deal of experience, simple sprites are probably better.
-##### Sprite Sheet 2 - Fear and Hunger
+#### Sprite Sheet 2 - Fear and Hunger
 Fear and Hunger sprites are 2 tiles tall, this means that while their hitbox is in their lower half, they also have an upper half, which lets them appear much more human and realistic. These sprites are much more complicated, but look amazing because of it.
 
-##### Sprite Sheet 3 - Stardew Valley
+#### Sprite Sheet 3 - Stardew Valley
 Stardew Valley's sprites do not conform to the tile system, but character designs are still simple, yet appear move humanlike by not conforming to tiles.
 
-##### Sprite Sheet 4 - Pokemon
+#### Sprite Sheet 4 - Pokemon
 Pokemon games are the classic representation of tile-based sprite sheets, and while simple and stylised, they also carry alot of detail.
 
-##### Sprite Sheet 5 - RPGMaker
+#### Sprite Sheet 5 - RPGMaker
 RPGMaker is a game engine inspired by classic RPG games, and thus operate off a tile system, with their example sprites all fitting into one tile.
 
-##### Sprite Sheet 6 - Simple Style
+#### Sprite Sheet 6 - Simple Style
 Finally, we have the super simple 16x16 sprites, which conform to tiles, but lack a lot of detail.
 
-#### Health
+### Health
 Our current idea for battles is to have it so that answering a certain number of questions correctly defeats the enemy, but answering incorrectly enough times will mean you lose the game. In this case we need a way to keep track of the number of questions, and the most traditional way to do this is through a health system.
 
 There are two main ways to display health in video games, and we need to decide which is best for our game.
-##### Health Bars
+#### Health Bars
 A health bar is quite simply a bar to display health, normally analogue in nature.
 Take this screenshot from Guilty Gear Xrd, a fighting game released in 2014. At the top of the screen there are two health bars to represent each character's health.
 
@@ -394,7 +348,81 @@ The positives of heart bars are they also allow you to represent health in uniqu
 
 ![HollowKnight](image/README/mask.jpg)
 
-[Go back up](#table-of-contents)
+[**Go back up**](#table-of-contents)
+## Free Art Asset Collection
+This section mostly consistes of free assets found on itch.io that are free for game developers to use
+### Music
+[Music Loop Bundle](https://tallbeard.itch.io/music-loop-bundle)
+
+[Short Loopable Music FIles](https://joshuuu.itch.io/short-loopable-background-music)
+
+### Sound Effects
+[Sound Effect Collection 1](https://jdwasabi.itch.io/8-bit-16-bit-sound-effects-pack)
+
+[Dungeon Audio Pack](https://leohpaz.itch.io/minifantasy-dungeon-sfx-pack)
+
+[Massive Sound Effect Library](https://filmcow.itch.io/filmcow-sfx)
+
+[Dialouge Pack](https://dillonbecker.itch.io/sdap)
+
+### Backgrounds
+[Cyberpunk City Environments](https://ansimuz.itch.io/cyberpunk-street-environment)
+
+[Sunset Mountain Parallax](https://ansimuz.itch.io/mountain-dusk-parallax-background)
+
+[Space Generator](https://deep-fold.itch.io/space-background-generator)
+
+[Seamless Space Backgrounds](https://screamingbrainstudios.itch.io/seamless-space-backgrounds)
+
+### Textures and Assets
+[Ninja Adventure - Autumnal Asset Pack](https://pixel-boy.itch.io/ninja-adventure-asset-pack)
+
+[Dungeon Asset Pack](https://pixel-poem.itch.io/dungeon-assetpuck)
+
+[Temple Asset Pack](https://cainos.itch.io/pixel-art-top-down-basic)
+
+[Forest Tileset](https://pixivan.itch.io/top-down-forest-tileset)
+
+[House Assets](https://penzilla.itch.io/top-down-retro-house)
+
+[Realistic Low Res Texture Pack](https://screamingbrainstudios.itch.io/tiny-texture-pack-2)
+
+[Another Forest Asset Pack](https://seliel-the-shaper.itch.io/gentle-forest)
+
+[Cloud City Asset Pack](https://finalbossblues.itch.io/cloud-city-tileset)
+
+[Material Assets](https://beast-pixels.itch.io/crafting-materials)
+
+[Simple Texture Pack](https://piiixl.itch.io/textures)
+
+[Another Pixel Texture Pack](https://jestan.itch.io/pixel-texture-pack)
+
+[RPG Marketplace Pack](https://gif-superretroworld.itch.io/marketplace)
+
+[Cozy Pixel Asset Pack](https://limezu.itch.io/serenevillagerevamped)
+
+[Massive Modern Interiors Asset Pack](https://limezu.itch.io/moderninteriors)
+
+### Other Assets
+[GUI Asset Pack](https://crusenho.itch.io/complete-gui-essential-pack)
+
+[More Pixel Art GUI Elements](https://mounirtohami.itch.io/pixel-art-gui-elements)
+
+[Food](https://ghostpixxells.itch.io/pixelfood)
+
+[Pixel Font](https://poppyworks.itch.io/silver)
+
+[Health and Scroll Bars](https://bdragon1727.itch.io/basic-pixel-health-bar-and-scroll-bar)
+
+[Skill Icons](https://pixerelia.itch.io/vas-basic-spells-and-buffs)
+
+[Another Pixel Font](https://tinyworlds.itch.io/free-pixel-font-thaleah)
+
+[Dynamic Font Tags](https://wattson.itch.io/kinetic-text-tags)
+
+[Glitch Effect](https://odditica.itch.io/bktglitch)
+
+[**Go back up**](#table-of-contents)
 ## Overview of what needs to be done for the game:
 1. Main menu
     -  New game
@@ -419,7 +447,7 @@ The positives of heart bars are they also allow you to represent health in uniqu
 11. Final Boss
 12. Final cutscene
 
-[Go back up](#table-of-contents)
+[**Go back up**](#table-of-contents)
 ## Communication
 
 ![Email1](image/README/email1.png)
@@ -442,4 +470,4 @@ The positives of heart bars are they also allow you to represent health in uniqu
 
 ## [Learning Journal](https://docs.google.com/spreadsheets/d/1IZtANq7ruhhZvN3znZopCmB7hLXw76JRNAhnZD1jfeE/edit?usp=sharing)
 
-[Go back up](#table-of-contents)
+[**Go back up**](#table-of-contents)
