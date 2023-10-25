@@ -10,6 +10,7 @@
   - [Minutes](#minutes)
     - [Week 1 Minutes](#week-1-minutes)
     - [Week 2 Minutes](#week-2-minutes)
+    - [Week 3 Minutes](#week-3-minutes)
   - [SOP - RAG Sheet](#sop---rag-sheet)
   - [Ideas](#ideas)
     - [Inspiration - Undertale / Deltarune](#inspiration---undertale--deltarune)
@@ -48,6 +49,11 @@
     - [Textures and Assets](#textures-and-assets)
     - [Other Assets](#other-assets)
   - [Overview of what needs to be done for the game:](#overview-of-what-needs-to-be-done-for-the-game)
+  - [Finalization of Ideas based on Market Research](#finalization-of-ideas-based-on-market-research)
+    - [Combat](#combat)
+    - [Menu](#menu)
+    - [Character Sprites](#character-sprites)
+    - [Health](#health-1)
   - [Communication](#communication)
     - [What we learnt from Online Meeting (18/10/2023):](#what-we-learnt-from-online-meeting-18102023)
     - [Learning Journal](#learning-journal)
@@ -112,7 +118,7 @@
 - Sent email to IBM asking for a meeting
 - Sent email to all members asking for a communication
 - Initial look through the IBM SkillsBuild website for information on topics we need to add to the game
-- Goal for the week
+- Goals for the week
   - Read through the documentation of IBM SkillsBuild
   - Make RAG Sheet
 
@@ -123,8 +129,18 @@
 - Introduction to project manager
 - Finalisation of project idea
 - Meeting with IBM client
-- Goal for the week:
+- Market Research
+- Goals for the week:
   - Get all IBM SkillBuild badges on green marked courses on our RAG sheet by Friday 27th
+
+### Week 3 Minutes
+- **Lest Week's Goals**: Partially achived; Some members did all the skills build badges whilst others decided to do them weekly instead. Everyone will however have them complete by the time game development starts.
+- Discussion of market research 
+- Finalisation of ideas based on market research
+- Discussion of Requirment Specification sheet
+- Goals for the week
+  - Complete the introduction section of thee Requirment Specification
+  - Write down functional and non-functional specifications 
 
 [**Go back up**](#table-of-contents)
 ## SOP - RAG Sheet 
@@ -502,6 +518,21 @@ This section mostly consistes of free assets found on itch.io that are free for 
 12. Final cutscene
 
 [**Go back up**](#table-of-contents)
+
+## Finalization of Ideas based on Market Research
+
+### Combat
+The combat will be modeled after Phoenix Wright Ace Attorney, with 2 big sprites of the characters on each side.
+
+### Menu
+The Menu will be a square with 4 possible answers (need to confirm with IBM that we can change the answers to only have 4 answers).
+
+### Character Sprites
+The character sprites will be modeled after the pokemon character sprites.
+
+### Health
+The health bar will a be heart based system modeled after the Hollow Knight health system.
+
 ## Communication
 
 ![Email1](image/README/email1.png)
