@@ -5,7 +5,7 @@
 - [RPG Game](#rpg-game)
   - [Table of Contents](#table-of-contents)
   - [Proposed Titles](#proposed-titles)
-  - [Questions and Answers to client](#questions-and-answers-to-client)
+  - [Questions to ask client](#questions-to-ask-client)
     - [Answers to questions](#answers-to-questions)
   - [Minutes](#minutes)
     - [Week 1 Minutes](#week-1-minutes)
@@ -22,6 +22,8 @@
       - [Style 3 - Pokemon](#style-3---pokemon)
       - [Style 4 - Ace Attorney Investigations](#style-4---ace-attorney-investigations)
       - [Style 5 - Fear and Hunger](#style-5---fear-and-hunger)
+      - [Style 6 - Mario and Luigi RPGs](#style-6---mario-and-luigi-rpgs)
+      - [Style 7 - Paper Mario The Thousand Year Door](#style-7---paper-mario-the-thousand-year-door)
     - [Menu Style](#menu-style)
       - [Menu 1 - List](#menu-1---list)
       - [Menu 2 - Square](#menu-2---square)
@@ -33,6 +35,9 @@
       - [Sprite Sheet 4 - Pokemon](#sprite-sheet-4---pokemon)
       - [Sprite Sheet 5 - RPGMaker](#sprite-sheet-5---rpgmaker)
       - [Sprite Sheet 6 - Simple Style](#sprite-sheet-6---simple-style)
+      - [Sprite Sheet 7 - Faith: Unholy Trinity](#sprite-sheet-7---faith-unholy-trinity)
+      - [Sprite Sheet 8 - Party Hard](#sprite-sheet-8---party-hard)
+      - [Sprite Sheet 9 - Mario and Luigi Superstar Saga](#sprite-sheet-9---mario-and-luigi-superstar-saga)
     - [Health](#health)
       - [Health Bars](#health-bars)
         - [Heart Bars](#heart-bars)
@@ -45,7 +50,7 @@
   - [Overview of what needs to be done for the game:](#overview-of-what-needs-to-be-done-for-the-game)
   - [Communication](#communication)
     - [What we learnt from Online Meeting (18/10/2023):](#what-we-learnt-from-online-meeting-18102023)
-  - [Learning Journal](#learning-journal)
+    - [Learning Journal](#learning-journal)
 
 ## Proposed Titles
 
@@ -55,8 +60,7 @@
 - IBM's blessing on this wonderful digital world
 - How to pick up badges in a digital world
 
-[**Go back up**](#table-of-contents)
-## Questions and Answers to client
+## Questions to ask client
 
 1. ~~What platform should the game work on? (OS dependent? Windows/Linux/IOS/Android/Web-based?)~~
 2. ~~How in-depth should the resources linked in the game go into? (If an end user can get the badges in the IBM courses, should they be made to play the game fully, or can they answer the question and quickly get through it?) - Should the game’s sole focus be to help the player answer IBM’s SkillBuild courses, or should the game be enjoyable as well?~~
@@ -222,6 +226,29 @@
   - Data Science
     - Could do joint skill trees like AI/Threat Intelligence and Cloud/Data Science, allowing for 3 options in each, of which by the end you have chosen 2 of 3
   - Cloud
+- Overivew of what needs to be done for the game:
+  1. Main menu
+      -  New game
+      - Continue
+      - Settings
+      - Controls
+      - Credits
+      - Exit
+  2. Pause Menu
+      - Continue
+      - Controls
+      - Exit
+  3. Intro cutscene with john
+      - Character selection
+  4. Cutscene where you get sucked into the computer
+  5. Hub World
+  6. Creation of other worlds with specific puzzles
+  7. Interactable objects for documentation
+  8. Combat system 
+  9. Skill tree
+  10. Item collection / inventory
+  11. Final Boss
+  12. Final cutscene
 
 ![Browser](image/README/browser.png)
 
@@ -229,6 +256,7 @@
 
 ![Town](image/README/town.png)
 
+[**Go back up**](#table-of-contents)
 ## Market Research
 
 Before we can begin with new asset creation, we need to finalise some of the more in depth points about world traversal and combat.
@@ -258,6 +286,17 @@ While not an RPG series, the Ace Attorney games are puzzle games, where the main
 As a relatively unknown RPGMaker Horror game, Fear and Hunger features gruelling and cruel combat encounters, many of which encounters you can talk to the enemy to try and distract them, find out information or damage their mind by answering their questions. This game features front on enemies, similar to Undertale, while the player characters you see from the back in 3/4 perspective, like with Pokemon.
 
 ![Style5](image/README/battle5.png)
+
+#### Style 6 - Mario and Luigi RPGs
+One of Nintendos greatest RPG series starting the Mario Brothers. The battle style in these games involves the player having an action command wheel, where the player can choose and action for combat. Combat involves timing button imputs to do damge, which special moves dealing more damage, but being harder to execute. The better your timing is, the more damage! Enemies attacks can also be dodged through timing button presses. This combat system is very engaging, as you not only have to strategies, but also be skilled enough to perform the action you choose.
+
+![Style6](image/README/battle6.jpg)
+
+
+#### Style 7 - Paper Mario The Thousand Year Door 
+Another Nintendo owned RPG, this one staring Paper Mario. The battle system is very similar to the Mario and Luigi RPGs, with an action command wheel and being able to deal extra damage to enemies through timed button presses. However, enemey attacks can not be dodged through button presses, but rather force the player to take damage. Damge can be reduced through "blocking", by pressing the action command (usually the A button). The astetic of the action wheel is different to the Mario and Luigi RPGs, in that it aims to look more 2D, keeping with its paper aesthetic.
+
+![Style7](image/README/battle7.png)
 
 ### Menu Style
 Next up we need to consider how the player will respond to the enemy's questions.
@@ -311,6 +350,21 @@ RPGMaker is a game engine inspired by classic RPG games, and thus operate off a 
 
 #### Sprite Sheet 6 - Simple Style
 Finally, we have the super simple 16x16 sprites, which conform to tiles, but lack a lot of detail.
+
+#### Sprite Sheet 7 - Faith: Unholy Trinity
+Faith: Unholy Trinity sprites were purposfully created to be as simple as possible to emulate old 90s game sprites, thus they use limited colours and no shading, but are visable enough to make out what the sprites are.
+
+![Faith Sprite](image/README/faith%20sprites.png)
+
+#### Sprite Sheet 8 - Party Hard
+Party Hard Sprites are similar to the Faith sprites, in that they are very minimalistic, but express enough detail to be identifiable.
+
+![Party Hard Sprite](image/README/party%20hard%20sprites.png)
+
+#### Sprite Sheet 9 - Mario and Luigi Superstar Saga
+The Mario and Luigi sprites are iconic for the Game Boy Advanced era. As the hardware was not very bright due to the screens limitations, the work around to make the characters seem more eye-catching and visible was to give them a thick black outline. This made the characters pop out more from the background scenery and became a staple for the series even after the hardware limitations were fixed. 
+
+![M&L Sprite](image/README/M&L%20Super%20Star%20Saga%20Sprites.png)
 
 ### Health
 Our current idea for battles is to have it so that answering a certain number of questions correctly defeats the enemy, but answering incorrectly enough times will mean you lose the game. In this case we need a way to keep track of the number of questions, and the most traditional way to do this is through a health system.
@@ -468,6 +522,6 @@ This section mostly consistes of free assets found on itch.io that are free for 
 - Needs to have saving feature
 - Sprite of John needs to be in the game
 
-## [Learning Journal](https://docs.google.com/spreadsheets/d/1IZtANq7ruhhZvN3znZopCmB7hLXw76JRNAhnZD1jfeE/edit?usp=sharing)
+### [Learning Journal](https://docs.google.com/spreadsheets/d/1IZtANq7ruhhZvN3znZopCmB7hLXw76JRNAhnZD1jfeE/edit?usp=sharing)
 
 [**Go back up**](#table-of-contents)
