@@ -64,7 +64,67 @@ Add UML Diagram here
 | ------------ | --------------------------------------------------------------------- |
 | Description  | Each world should have a section where the player is forced to answer questions based on what they learnt from badges |
 | Importance   | High importance                                                  |
-| Dependencies |                                                             |
+| Dependencies |    
+
+| Title        | Worlds                               |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | Game has at least 4 distinct worlds |
+| Importance   | High importance                                                  |
+| Dependencies |                                                           |
+
+| Title        | Puzzles                              |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | Game has at least 1 distinct puzzle concept per worlds |
+| Importance   | High importance                                                  |
+| Dependencies |                                                           |
+
+| Title        | Pause & Main Menu                               |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | Game should have a pause & main menu |
+| Importance   | High importance                                                  |
+| Dependencies |           
+
+| Title        | Options Menu                             |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | Game should contain an options menu where you can change volume, colour blind settings, resolution, full screen, and view the controls |
+| Importance   | Medium importance                                                  |
+| Dependencies |                                                  |
+
+| Title        | Executable                               |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | Game should run of an executable file  |
+| Importance   | High importance                                                  |
+| Dependencies | 
+
+| Title        | Sound Effects                               |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | Game should include sound effects between room transitions  |
+| Importance   | Low importance                                                  |
+| Dependencies | 
+
+| Title        | Boss Fight                             |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | Game should include a final boss  |
+| Importance   | High importance                                                  |
+| Dependencies | 
+
+| Title        | John                              |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | John must be in the game  |
+| Importance   | Medium importance                                                  |
+| Dependencies | 
+
+| Title        | Boss Questions                             |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | Final boss must include questions from all sections of the game  |
+| Importance   | Medium importance                                                  |
+| Dependencies | 
+
+| Title        | Health System                             |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | Game should include a health system / health bar  |
+| Importance   | High importance                                                  |
+| Dependencies |
 
 ### 2.2 - Non-Functional Requirements
 
@@ -90,6 +150,42 @@ Add UML Diagram here
 | ------------ | --------------------------------------------------------------------- |
 | Description  | Controls should be customizable |
 | Importance   | Low Importance                                                   |
+| Dependencies |                                                                       |
+
+| Title        | Windows                                |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | Game should run on windows |
+| Importance   | High Importance                                                   |
+| Dependencies |                                                                       |
+
+| Title        | Player movement                                |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | Player movement feels smooth |
+| Importance   | High Importance                                                   |
+| Dependencies |                                                                       |
+
+| Title        | Game World                               |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | Game world should feel alive |
+| Importance   | Low Importance                                                   |
+| Dependencies |                                                                       |
+
+| Title        | Room Transitions                               |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | Transition between scenes should be smooth |
+| Importance   | Low Importance                                                   |
+| Dependencies |                                                                       |
+
+| Title        | Boss Battles                               |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | Battle should engaging |
+| Importance   | Medium Importance                                                   |
+| Dependencies |                                                                       |
+
+| Title        | Music                               |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | Music should fit each area |
+| Importance   | Medium Importance                                                   |
 | Dependencies |                                                                       |
 
 ### 2.3 - Risks and Issues
