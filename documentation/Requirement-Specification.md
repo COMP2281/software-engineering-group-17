@@ -2,11 +2,13 @@
 
 ### 1.1 - Overview and Justification
 
-This document is the Requirement Specification for our RPG IBM skills build project. There are three parts to this document. The first part is the introduction, which gives a high-level description of the project, the boundaries . The second part, which is the main part of the requirement specification, is the Solution Requirements. This part specifies what the function and non-functional requirements for the project are, and assess the risks which may occur when making the project. The third part describes our approach to the development of the game, as well as our schedule to complete this project in time.
+Our client is IBM, and our contact to IBM is Mr John McNamara. We have been tasked to reimagine Skills Build as an RPG game. This RPG game must facilitate accessing IBM Skills Build courses by linking the courses and its subsequent knowledge check questions, as well as reward users with in-game items (powerups and progression) if they are able to answer them. The game should also be fun and engaging to the user; it would be both an amazing study tool integrated smoothly into an engaging RPG experience. IBM's Skills Build will be much easier to navigate through the in-game links, and users can more easily get the badges.
 
-Our client is IBM, and our contact to IBM is Mr John McNamara. We have been tasked by him to build an RPG game. Furthermore, this RPG game must facilitate the gaining of IBM Skills Build badges, and hence must encourage the player to obtain these badges and learn the skills needed to complete them. Ideally, the project should do this by being fun and engaging to the player. However, the game does not need to teach all these concepts, but can refer to the courses from which the IBM skills badges are obtained. This game is aimed to appeal to high school and university students, and hence should be accessible for people with little to no knowledge of Computer Science.
+This document is the Requirement Specification for our RPG IBM skills build project. There are three parts to this document. The first part is the introduction, which gives a (high-level) description of the project, its scope and domain area. The second part, which is the main part of the requirement specification, is the Solution Requirements. This part specifies what the functional and non-functional requirements for the project are, as well as assessing the risks/issues which may occur when making the project. The third part describes our approach to the development of the game, and introduces our intended schedule to finish the project in time.
 
 ### 1.2 - Prokect Scope
+
+
 
 ## 2 - Solution Requirements
 
