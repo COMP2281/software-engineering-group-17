@@ -138,6 +138,7 @@
 - Discussion of market research 
 - Finalisation of ideas based on market research
 - Discussion of Requirment Specification sheet
+- Created some functional and non-functional requirments
 - Goals for the week
   - Complete the introduction section of thee Requirment Specification
   - Write down functional and non-functional specifications 
