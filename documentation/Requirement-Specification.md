@@ -18,175 +18,269 @@ Add UML Diagram here
 
 ### 2.1 - Function Requirements
 
-| Title        | Player Movement                                    |
+| Title        | Player Character |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | Player must be abe to move conveniently in whatever platforms they are playing |
-| Importance   | Highly Important                                                      |
-| Dependencies |                                                                       |
+| Description  | Main playable character which the game centers around |
+| Priority | High |
+| MuShCo   | Must have |
+| Dependencies | Controls |
+| Expected results | Character should have distinct/unique sprite both in and out of battle |
+| Exception handling | N/A |
 
-| Title        | Camera and Player                                    |
+| Title        | Camera |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | The camera must track the player for the player to see what they are doing |
-| Importance   | Highly Important                                                      |
-| Dependencies |                                                                       |
+| Description  | The camera must both be able to track the player character, and move around a stage/scene |
+| Priority | High |
+| MuShCo   | Must have |
+| Dependencies | Player |
+| Expected results | This is the main tool to display the game. Most of the time, the camera will be centered on the player character, but it can be used to pan around a stage |
+| Exception handling | N/A |
+
+| Title        | Player Character Movement |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | Player character must be abe to move in any direction |
+| Priority | High |
+| MuShCo   | Must have |
+| Dependencies | Player |
+| Expected results | Player character should be able to move in the four cardinal directions and diagonally with either WASD or the arrow keys (holding a combination of two keys, say W and A, would make you move diagonally up and left)|
+| Exception handling | N/A |
 
 | Title        | Collisons                                    |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | The player must not be able to go through walls/doors |
-| Importance   | Highly Important                                                      |
-| Dependencies |                                                                       |
+| Description  | The player must not be able to go through walls/closed doors |
+| Priority | High |
+| MuShCo   | Must have                                                      |
+| Dependencies | Controls |
+| Expected results | Player character should not be able to move from a ground tile to a wall or closed door tile |
+| Exception handling | If character goes out of bound, they should be placed back at the room entrance |
 
-| Title        | Manual Saving                                 |
+| Title        | World Access |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | The player must be able to save at any point in the game |
-| Importance   | Highly Important                                                      |
-| Dependencies |                                                                       |
-
-| Title        | Auto-Saving                                 |
-| ------------ | --------------------------------------------------------------------- |
-| Description  | The game should save after going to the next room, in case the player forgets to save so no progress is lost |
-| Importance   | Medium importance                                                  |
-| Dependencies | Manual Saving                                                              |
-
-| Title        | World Access                               |
-| ------------ | --------------------------------------------------------------------- |
-| Description  | There should be a world where the player can easily jump into any world (except the final one), so they can complete the game in whatever order pleases them |
-| Importance   | Medium importance                                                  |
+| Priority |
+| Description | There should be a world where the player can easily jump into any world (except the final one), so they can complete the game in 
+whatever order pleases them |
+| Expected results | |
+| Exception handling | |
+| MuShCo   | Should have                                                  |
 | Dependencies |                                                            |
 
 | Title        | Doors                               |
 | ------------ | --------------------------------------------------------------------- |
 | Description  | Each world should have doors which the player must solve a problem / beat a boss in order to complete |
-| Importance   | High importance                                                  |
+| Priority |                                                                       |
+| MuShCo   | Must have                                                  |
 | Dependencies |                                                             |
+| Expected results | |
+| Exception handling | |
 
-| Title        | Multiple Choice                               |
+| Title        | Multiple Choice Question |
 | ------------ | --------------------------------------------------------------------- |
 | Description  | Each world should have a section where the player is forced to answer questions based on what they learnt from badges |
-| Importance   | High importance                                                  |
+| Priority |                                                                       |
+| MuShCo   | Must have                                                  |
 | Dependencies |    
+| Expected results | |
+| Exception handling | |
 
 | Title        | Worlds                               |
 | ------------ | --------------------------------------------------------------------- |
 | Description  | Game has at least 4 distinct worlds |
-| Importance   | High importance                                                  |
+| Priority |                                                                       |
+| MuShCo   | Must have                                                  |
 | Dependencies |                                                           |
+| Expected results | |
+| Exception handling | |
 
 | Title        | Puzzles                              |
 | ------------ | --------------------------------------------------------------------- |
 | Description  | Game has at least 1 distinct puzzle concept per worlds |
-| Importance   | High importance                                                  |
+| Priority |                                                                       |
+| MuShCo   | Must have                                                  |
 | Dependencies |                                                           |
+| Expected results | |
+| Exception handling | |
 
 | Title        | Pause & Main Menu                               |
 | ------------ | --------------------------------------------------------------------- |
 | Description  | Game should have a pause & main menu |
-| Importance   | High importance                                                  |
+| Priority |                                                                       |
+| MuShCo   | Must have                                                  |
 | Dependencies |           
+| Expected results | |
+| Exception handling | |
+
+| Title        | Manual Saving |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | The player must be able to save at any point in the game |
+| Priority | Medium |
+| MuShCo   | Must have |
+| Dependencies | Menu & Main Menu |
+| Expected results | In the  |
+| Exception handling | If save failed, player should be notified and asked if they want to save again |
+
+| Title        | Auto-Saving                                 |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | The game should save automatically |
+| Priority | Medium |
+| MuShCo   | Should have |
+| Dependencies | Manual Saving |
+| Expected results | Every room transition will save the game. This is in case the player forgets to save so no progress is lost |
+| Exception handling | |
 
 | Title        | Options Menu                             |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | Game should contain an options menu where you can change volume, colour blind settings, resolution, full screen, and view the controls |
-| Importance   | Medium importance                                                  |
+| Priority |                                                                       || Description  | Game should contain an options menu where you can change volume, colour blind settings, resolution, full screen, and view the 
+controls |
+| Expected results | |
+| Exception handling | |
+| MuShCo   | Should have                                                  |
 | Dependencies |                                                  |
 
 | Title        | Executable                               |
 | ------------ | --------------------------------------------------------------------- |
 | Description  | Game should run of an executable file  |
-| Importance   | High importance                                                  |
+| Priority |                                                                       |
+| MuShCo   | Must have                                                  |
 | Dependencies | 
+| Expected results | |
+| Exception handling | |
 
 | Title        | Sound Effects                               |
 | ------------ | --------------------------------------------------------------------- |
 | Description  | Game should include sound effects between room transitions  |
-| Importance   | Low importance                                                  |
+| Priority |                                                                       |
+| MuShCo   | Could have                                                  |
 | Dependencies | 
+| Expected results | |
+| Exception handling | |
 
 | Title        | Boss Fight                             |
 | ------------ | --------------------------------------------------------------------- |
 | Description  | Game should include a final boss  |
-| Importance   | High importance                                                  |
+| Priority |                                                                       |
+| MuShCo   | Must have                                                  |
 | Dependencies | 
+| Expected results | |
+| Exception handling | |
 
 | Title        | John                              |
 | ------------ | --------------------------------------------------------------------- |
 | Description  | John must be in the game  |
-| Importance   | Medium importance                                                  |
+| Priority |                                                                       |
+| MuShCo   | Should have                                                  |
 | Dependencies | 
+| Expected results | |
+| Exception handling | |
 
 | Title        | Boss Questions                             |
 | ------------ | --------------------------------------------------------------------- |
 | Description  | Final boss must include questions from all sections of the game  |
-| Importance   | Medium importance                                                  |
+| Priority |                                                                       |
+| MuShCo   | Should have                                                  |
 | Dependencies | 
+| Expected results | |
+| Exception handling | |
 
 | Title        | Health System                             |
 | ------------ | --------------------------------------------------------------------- |
 | Description  | Game should include a health system / health bar  |
-| Importance   | High importance                                                  |
+| Priority |                                                                       |
+| MuShCo   | Must have                                                  |
 | Dependencies |
+| Expected results | |
+| Exception handling | |
 
 ### 2.2 - Non-Functional Requirements
 
 | Title        | Graphics for Colour Blind people                                      |
 | ------------ | --------------------------------------------------------------------- |
 | Description  | Graphics must be enjoyable to look at for people with colourblindness |
-| Importance   | Highly Important                                                      |
+| Priority |                                                                       |
+| MuShCo   | Must have                                                      |
 | Dependencies |                                                                       |
+| Expected results | |
+| Exception handling | |
 
 | Title        | Progression                             |
 | ------------ | --------------------------------------------------------------------- |
 | Description  | The game must have an aspect of progression where items are gained which benefits them |
-| Importance   | Highly Important                                                      |
+| Priority |                                                                       |
+| MuShCo   | Must have                                                      |
 | Dependencies |                                                                       |
+| Expected results | |
+| Exception handling | |
 
 | Title        | Platforms                                      |
 | ------------ | --------------------------------------------------------------------- |
 | Description  | Game should be playable on mouse & keyboard as well as controller |
-| Importance   | Medium Importance                                                   |
+| Priority |                                                                       |
+| MuShCo   | Should have                                                   |
 | Dependencies |                                                                       |
+| Expected results | |
+| Exception handling | |
 
-| Title        | Controls                                |
+| Title        | Controls customization |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | Controls should be customizable |
-| Importance   | Low Importance                                                   |
+| Description  | Player should be able to rebind controls |
+| Priority |                                                                       |
+| MuShCo   | Could have                                                   |
 | Dependencies |                                                                       |
+| Expected results | |
+| Exception handling | |
 
 | Title        | Windows                                |
 | ------------ | --------------------------------------------------------------------- |
 | Description  | Game should run on windows |
-| Importance   | High Importance                                                   |
+| Priority |                                                                       |
+| MuShCo   | Must have                                                   |
 | Dependencies |                                                                       |
+| Expected results | |
+| Exception handling | |
 
 | Title        | Player movement                                |
 | ------------ | --------------------------------------------------------------------- |
 | Description  | Player movement feels smooth |
-| Importance   | High Importance                                                   |
+| Priority |                                                                       |
+| MuShCo   | Must have                                                   |
 | Dependencies |                                                                       |
+| Expected results | |
+| Exception handling | |
 
 | Title        | Game World                               |
 | ------------ | --------------------------------------------------------------------- |
 | Description  | Game world should feel alive |
-| Importance   | Low Importance                                                   |
+| Priority |                                                                       |
+| MuShCo   | Could have                                                   |
 | Dependencies |                                                                       |
+| Expected results | |
+| Exception handling | |
 
 | Title        | Room Transitions                               |
 | ------------ | --------------------------------------------------------------------- |
 | Description  | Transition between scenes should be smooth |
-| Importance   | Low Importance                                                   |
+| Priority |                                                                       |
+| MuShCo   | Could have                                                   |
 | Dependencies |                                                                       |
+| Expected results | |
+| Exception handling | |
 
 | Title        | Boss Battles                               |
 | ------------ | --------------------------------------------------------------------- |
 | Description  | Battle should engaging |
-| Importance   | Medium Importance                                                   |
+| Priority |                                                                       |
+| MuShCo   | Should have                                                   |
 | Dependencies |                                                                       |
+| Expected results | |
+| Exception handling | |
 
 | Title        | Music                               |
 | ------------ | --------------------------------------------------------------------- |
 | Description  | Music should fit each area |
-| Importance   | Medium Importance                                                   |
+| Priority |                                                                       |
+| MuShCo   | Should have                                                   |
 | Dependencies |                                                                       |
+| Expected results | |
+| Exception handling | |
 
 ### 2.3 - Risks and Issues
 
