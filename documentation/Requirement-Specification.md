@@ -25,170 +25,212 @@ Add UML Diagram here
 | MuShCo   | Must have |
 | Dependencies | Controls |
 | Expected results | Character should have distinct/unique sprite both in and out of battle |
-| Exception handling | N/A |
+
+| Title        | Control |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | Buttons which allows the player to interact with both the game entities (items/characters) and the menu |
+| Priority | High |
+| MuShCo   | Must have |
+| Dependencies | N/A |
+| Expected results | There should be at least two buttons like that of the old gameboy. [A] generally for accept, and [B] generally for cancel |
 
 | Title        | Camera |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | The camera must both be able to track the player character, and move around a stage/scene |
+| Description  | A camera that is able to track the player character, and move around a room |
 | Priority | High |
 | MuShCo   | Must have |
-| Dependencies | Player |
-| Expected results | This is the main tool to display the game. Most of the time, the camera will be centered on the player character, but it can be used to pan around a stage |
-| Exception handling | N/A |
+| Dependencies | Player Character |
+| Expected results | This is the main tool to display the game. Most of the time, the camera will be centered on the player character, but it can be used to pan around a room |
 
 | Title        | Player Character Movement |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | Player character must be abe to move in any direction |
+| Description  | Buttons which allows the player character to move in any direction |
 | Priority | High |
 | MuShCo   | Must have |
-| Dependencies | Player |
-| Expected results | Player character should be able to move in the four cardinal directions and diagonally with either WASD or the arrow keys (holding a combination of two keys, say W and A, would make you move diagonally up and left)|
-| Exception handling | N/A |
+| Dependencies | Player Character, Camera |
+| Expected results | Player character should be able to move in the four cardinal directions and diagonally with either WASD or the arrow keys (holding a combination of two keys, say W and A, would make the player move diagonally up and left)|
 
-| Title        | Collisons                                    |
+| Title        | Collisons |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | The player must not be able to go through walls/closed doors |
+| Description  | Checks that makes sure the player cannot go through walls/closed doors |
 | Priority | High |
-| MuShCo   | Must have                                                      |
+| MuShCo   | Must have |
 | Dependencies | Controls |
 | Expected results | Player character should not be able to move from a ground tile to a wall or closed door tile |
 | Exception handling | If character goes out of bound, they should be placed back at the room entrance |
 
-| Title        | World Access |
+| Title        | Health System |
 | ------------ | --------------------------------------------------------------------- |
-| Priority |
-| Description | There should be a world where the player can easily jump into any world (except the final one), so they can complete the game in 
-whatever order pleases them |
-| Expected results | |
-| Exception handling | |
-| MuShCo   | Should have                                                  |
-| Dependencies |                                                            |
+| Description  | A health bar that shows the player's and enemies' life points |
+| Priority | Low |
+| MuShCo   | Must have |
+| Dependencies | Damage System |
+| Expected results | A (decorated) bar which depicts the health of an entity. Once this reaches zero, the entity should die. It should show the current health, and the maximum health |
 
-| Title        | Doors                               |
+| Title        | Damage System |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | Each world should have doors which the player must solve a problem / beat a boss in order to complete |
-| Priority |                                                                       |
-| MuShCo   | Must have                                                  |
-| Dependencies |                                                             |
-| Expected results | |
-| Exception handling | |
+| Description  | A value which dictates how much health the player and enemies loses if attacked |
+| Priority | Low |
+| MuShCo   | Must have |
+| Dependencies | Health System |
+| Expected results | A numerical value which both the player character and enemies has. If an entity is hit by an attack of damage [n], they should lose [n] health points |
+
+| Title        | Skill Build System |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | A system which permanently upgrades the player character as the game progresses |
+| Priority | low |
+| MuShCo   | Must have |
+| Dependencies | Health System, Damage System, Worlds |
+| Expected results | A skill tree which has nodes that provides various benefits, like giving the player more health or attack. After finishing a world, the skill associated with that world unlocks |
+
+| Title        | Central Hub |
+| ------------ | --------------------------------------------------------------------- |
+| Description | A central hub world where the player can access other world |
+| Priority | Medium |
+| MuShCo   | Should have |
+| Dependencies | Doors |
+| Expected results | The player can, from the hub world, access all the main worlds in any order. This place will be more fleshed out compared to other place since the player will return here a lot |
+
+| Title        | Worlds |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | The different realms where the game takes place. Each world contains many rooms |
+| Priority | Medium |
+| MuShCo   | Must have |
+| Dependencies | Central Hub, Puzzles, Rooms |
+| Expected results | At least five main worlds, each with their own puzzle style accessible through the central hub. Each world represents a Skills Build course |
+
+| Title        | Doors |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | A tile which the player go through and move to another room |
+| Priority | Medium |
+| MuShCo   | Must have |
+| Dependencies | N/A |
+| Expected results | Each world should have doors which the player must solve a problem / beat a boss in order to open. Some doors are just open by default (like the ones in the hub world) |
+
+| Title        | Rooms |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | A room that contains a puzzle |
+| Priority | High |
+| MuShCo   | Must have |
+| Dependencies | Doors |
+| Expected results | A room has at least one entrance, and can have none or multiple exits. The room size can be from one screen to multiple screens. After entering through a door, the player character is placed right outside the door of another room |
+
+| Title        | Puzzles |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | Themed minigames |
+| Priority | Medium |
+| MuShCo   | Must have |
+| Dependencies | Multiple Choice Questions, Rooms |
+| Expected results | Puzzles have a theme in each world. Most puzzles will be a multiple choice question disguised as a minigame |
+| Exception handling | Some puzzles will require a reset button, which restores the state of the room its in to how it originaly was |
 
 | Title        | Multiple Choice Question |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | Each world should have a section where the player is forced to answer questions based on what they learnt from badges |
-| Priority |                                                                       |
-| MuShCo   | Must have                                                  |
-| Dependencies |    
-| Expected results | |
-| Exception handling | |
+| Description  | Questions from a Skills Build course which the player must answer |
+| Priority | Medium |
+| MuShCo   | Must have |
+| Dependencies | N/A | 
+| Expected results | Questions are taken from the Skills Build quizzes. Some are multiple choice, others are typed in answers |
 
-| Title        | Worlds                               |
+| Title        | Boss Fight |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | Game has at least 4 distinct worlds |
-| Priority |                                                                       |
-| MuShCo   | Must have                                                  |
-| Dependencies |                                                           |
-| Expected results | |
-| Exception handling | |
+| Description  | Fights where the player has to correctly answer an enemy's questions |
+| Priority | Low |
+| MuShCo   | Must have |
+| Dependencies | Health System, Damage System |
+| Expected results | Both the player and the boss has a health bar. If the player answers a question correctly, they get to attack the boss. If they dont answer correctly, they get hit by the boss |
+| Exception handling | If the fight lasts long enough, there will not be enough unique questions to ask the player. To prevent this happening, questions can be reused after all other questions gets exausted |
 
-| Title        | Puzzles                              |
+| Title        | Boss Questions |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | Game has at least 1 distinct puzzle concept per worlds |
-| Priority |                                                                       |
-| MuShCo   | Must have                                                  |
-| Dependencies |                                                           |
-| Expected results | |
-| Exception handling | |
+| Description  | Boss must include questions from its own world |
+| Priority | Low |
+| MuShCo   | Should have |
+| Dependencies | Multiple Choice Question |
+| Expected results | Bosses can ask any questions from the previous puzzles, and maybe more, in their respective world. The final boss should be able to ask questions from any of the other worlds |
 
-| Title        | Pause & Main Menu                               |
+| Title        | Main Menu |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | Game should have a pause & main menu |
-| Priority |                                                                       |
-| MuShCo   | Must have                                                  |
-| Dependencies |           
-| Expected results | |
-| Exception handling | |
+| Description  | A menu which is opened at after launching the game |
+| Priority | Low |
+| MuShCo   | Must have |
+| Dependencies | N/A |
+| Expected results | The menu should have the game title on top, a background, and buttons. Contains buttons to: Make a new game, continue an ongoing session, open the options, quit and close the game window |
+
+| Title        | Pause Menu |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | A menu which pauses the game when opened |
+| Priority | Low |
+| MuShCo   | Must have |
+| Dependencies | Controls, Inventory, Manual Saving, Options Menu, Quit |
+| Expected results | After pressing the [Esc] button, a menu should open up. When this menu is open, all entities and events should be paused. This menu contains buttons to: Access the inventory, save the game, open the options menu, or quit (to the main menu or to the desktop) |
+
+| Title        | Quit |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | A button which allows the player to either quit to the main menu or desktop |
+| Priority | Low |
+| MuShCo   | Must have |
+| Dependencies | Main Menu |
+| Expected results | This button only presents two choices when pressed in the pause menu. In the main screen, it automatically quits to the desktop. Maybe the button should also ask the player if they want to save their game by warning them that they will lose any unsaved progress |
+
+| Title        | Inventory |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | A menu where the player can see all their currently collected items |
+| Priority | Low |
+| MuShCo   | Must have |
+| Dependencies | Skill Build System |
+| Expected results | A menu that shows the player their current items and their descriptions. Perhaps this menu can also display the other items the player can get, but shade them out if the player has not gotten them yet. The player cannot read the descriptions of shaded items. This menu also shows the player their skill build |
 
 | Title        | Manual Saving |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | The player must be able to save at any point in the game |
-| Priority | Medium |
+| Description  | A button to save the player's progress at any point in the game |
+| Priority | Low |
 | MuShCo   | Must have |
-| Dependencies | Menu & Main Menu |
+| Dependencies | N/A |
 | Expected results | In the  |
-| Exception handling | If save failed, player should be notified and asked if they want to save again |
+| Exception handling | If the save failed, the player should be notified and asked if they want to save again |
 
-| Title        | Auto-Saving                                 |
+| Title        | Auto-Saving |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | The game should save automatically |
-| Priority | Medium |
+| Description  | Automatic saving feature |
+| Priority | Low |
 | MuShCo   | Should have |
 | Dependencies | Manual Saving |
 | Expected results | Every room transition will save the game. This is in case the player forgets to save so no progress is lost |
-| Exception handling | |
+| Exception handling | If the save failed, the player should be notified that their automatic save could not be done |
 
-| Title        | Options Menu                             |
+| Title        | Options Menu |
 | ------------ | --------------------------------------------------------------------- |
-| Priority |                                                                       || Description  | Game should contain an options menu where you can change volume, colour blind settings, resolution, full screen, and view the 
-controls |
-| Expected results | |
-| Exception handling | |
-| MuShCo   | Should have                                                  |
-| Dependencies |                                                  |
+| Description  | An options menu where the player can change their game settings |
+| Priority |  |
+| MuShCo   | Should have |
+| Dependencies | Controls, Sound Effects, Music |
+| Expected results | The player should be able to change the following aspects: Volume, colour blind settings, resolution, full screen, and controls |
 
-| Title        | Executable                               |
+| Title        | Executable file |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | Game should run of an executable file  |
-| Priority |                                                                       |
-| MuShCo   | Must have                                                  |
-| Dependencies | 
-| Expected results | |
-| Exception handling | |
+| Description  | An executable file that runs the full game |
+| Priority | Low |
+| MuShCo   | Must have |
+| Dependencies | N/A |
+| Expected results | After being run, the player should see a window popup, greeting them with the game's main menu |
+| Exception handling | If the game cannot be run, an error code should pop up |
 
-| Title        | Sound Effects                               |
+| Title        | SFX |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | Game should include sound effects between room transitions  |
-| Priority |                                                                       |
-| MuShCo   | Could have                                                  |
-| Dependencies | 
-| Expected results | |
-| Exception handling | |
+| Description  | Sound effects for some actions, such as room transitions |
+| Priority | Low |
+| MuShCo   | Could have |
+| Dependencies | N/A |
+| Expected results | Sounds should be made for most of the common actions, like opening menu, or attack an enemy, or walking through a room |
 
-| Title        | Boss Fight                             |
+| Title        | Music |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | Game should include a final boss  |
-| Priority |                                                                       |
-| MuShCo   | Must have                                                  |
-| Dependencies | 
-| Expected results | |
-| Exception handling | |
-
-| Title        | John                              |
-| ------------ | --------------------------------------------------------------------- |
-| Description  | John must be in the game  |
-| Priority |                                                                       |
-| MuShCo   | Should have                                                  |
-| Dependencies | 
-| Expected results | |
-| Exception handling | |
-
-| Title        | Boss Questions                             |
-| ------------ | --------------------------------------------------------------------- |
-| Description  | Final boss must include questions from all sections of the game  |
-| Priority |                                                                       |
-| MuShCo   | Should have                                                  |
-| Dependencies | 
-| Expected results | |
-| Exception handling | |
-
-| Title        | Health System                             |
-| ------------ | --------------------------------------------------------------------- |
-| Description  | Game should include a health system / health bar  |
-| Priority |                                                                       |
-| MuShCo   | Must have                                                  |
-| Dependencies |
-| Expected results | |
-| Exception handling | |
+| Description  | Background music for the game, and combat music for fights |
+| Priority | Low |
+| MuShCo   | Could have |
+| Dependencies | N/A |
+| Expected results | Music which loops indefinitely. If possible, this music should change depending on the world the player is in, and whether they are in combat or not |
 
 ### 2.2 - Non-Functional Requirements
 
