@@ -18,6 +18,8 @@ Add UML Diagram here
 
 ### 2.1 - Function Requirements
 
+#### **Player**
+
 | Title        | Player Character |
 | ------------ | --------------------------------------------------------------------- |
 | Description  | Main playable character which the game centers around |
@@ -25,6 +27,14 @@ Add UML Diagram here
 | MuShCo   | Must have |
 | Dependencies | Controls |
 | Expected results | Character should have distinct/unique sprite both in and out of battle |
+
+| Title        | Player Character Movement |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | Buttons which allows the player character to move in any direction |
+| Priority | High |
+| MuShCo   | Must have |
+| Dependencies | Player Character, Camera |
+| Expected results | Player character should be able to move in the four cardinal directions and diagonally with either WASD or the arrow keys (holding a combination of two keys, say W and A, would make the player move diagonally up and left)|
 
 | Title        | Control |
 | ------------ | --------------------------------------------------------------------- |
@@ -42,22 +52,76 @@ Add UML Diagram here
 | Dependencies | Player Character |
 | Expected results | This is the main tool to display the game. Most of the time, the camera will be centered on the player character, but it can be used to pan around a room |
 
-| Title        | Player Character Movement |
-| ------------ | --------------------------------------------------------------------- |
-| Description  | Buttons which allows the player character to move in any direction |
-| Priority | High |
-| MuShCo   | Must have |
-| Dependencies | Player Character, Camera |
-| Expected results | Player character should be able to move in the four cardinal directions and diagonally with either WASD or the arrow keys (holding a combination of two keys, say W and A, would make the player move diagonally up and left)|
-
 | Title        | Collisons |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | Checks that makes sure the player cannot go through walls/closed doors |
+| Description  | Checks that makes sure the player cannot go through walls/closed doors and makes sure the player does not get stuck on tiles |
 | Priority | High |
 | MuShCo   | Must have |
 | Dependencies | Controls |
 | Expected results | Player character should not be able to move from a ground tile to a wall or closed door tile |
 | Exception handling | If character goes out of bound, they should be placed back at the room entrance |
+
+#### **Menus & Menu Items**
+
+| Title        | Main Menu |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | A menu which is opened at after launching the game |
+| Priority | Low |
+| MuShCo   | Must have |
+| Dependencies | N/A |
+| Expected results | The menu should have the game title on top, a background, and buttons. Contains buttons to: Make a new game, continue an ongoing session, open the options, quit and close the game window |
+
+| Title        | Pause Menu |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | A menu which pauses the game when opened |
+| Priority | Low |
+| MuShCo   | Must have |
+| Dependencies | Controls, Inventory, Manual Saving, Options Menu, Quit |
+| Expected results | After pressing the [Esc] button, a menu should open up. When this menu is open, all entities and events should be paused. This menu contains buttons to: Access the inventory, save the game, open the options menu, or quit (to the main menu or to the desktop) |
+
+| Title        | Options Menu |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | An options menu where the player can change their game settings |
+| Priority |  |
+| MuShCo   | Should have |
+| Dependencies | Controls, Sound Effects, Music |
+| Expected results | The player should be able to change the following aspects: Volume, colour blind settings, resolution, full screen, and controls |
+
+| Title        | Quit |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | A button which allows the player to either quit to the main menu or desktop |
+| Priority | Low |
+| MuShCo   | Must have |
+| Dependencies | Main Menu |
+| Expected results | This button only presents two choices when pressed in the pause menu. In the main screen, it automatically quits to the desktop. Maybe the button should also ask the player if they want to save their game by warning them that they will lose any unsaved progress |
+
+| Title        | Manual Saving |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | A button to save the player's progress at any point in the game |
+| Priority | Low |
+| MuShCo   | Must have |
+| Dependencies | N/A |
+| Expected results | In the  |
+| Exception handling | If the save failed, the player should be notified and asked if they want to save again |
+
+| Title        | Auto-Saving |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | Automatic saving feature |
+| Priority | Low |
+| MuShCo   | Should have |
+| Dependencies | Manual Saving |
+| Expected results | Every room transition will save the game. This is in case the player forgets to save so no progress is lost |
+| Exception handling | If the save failed, the player should be notified that their automatic save could not be done |
+
+| Title        | Inventory |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | A menu where the player can see all their currently collected items |
+| Priority | Low |
+| MuShCo   | Must have |
+| Dependencies | Skill Build System |
+| Expected results | A menu that shows the player their current items and their descriptions. Perhaps this menu can also display the other items the player can get, but shade them out if the player has not gotten them yet. The player cannot read the descriptions of shaded items. This menu also shows the player their skill build |
+
+#### **Game Systems**
 
 | Title        | Health System |
 | ------------ | --------------------------------------------------------------------- |
@@ -82,6 +146,8 @@ Add UML Diagram here
 | MuShCo   | Must have |
 | Dependencies | Health System, Damage System, Worlds |
 | Expected results | A skill tree which has nodes that provides various benefits, like giving the player more health or attack. After finishing a world, the skill associated with that world unlocks |
+
+#### **Gameplay**
 
 | Title        | Central Hub |
 | ------------ | --------------------------------------------------------------------- |
@@ -149,72 +215,7 @@ Add UML Diagram here
 | Dependencies | Multiple Choice Question |
 | Expected results | Bosses can ask any questions from the previous puzzles, and maybe more, in their respective world. The final boss should be able to ask questions from any of the other worlds |
 
-| Title        | Main Menu |
-| ------------ | --------------------------------------------------------------------- |
-| Description  | A menu which is opened at after launching the game |
-| Priority | Low |
-| MuShCo   | Must have |
-| Dependencies | N/A |
-| Expected results | The menu should have the game title on top, a background, and buttons. Contains buttons to: Make a new game, continue an ongoing session, open the options, quit and close the game window |
-
-| Title        | Pause Menu |
-| ------------ | --------------------------------------------------------------------- |
-| Description  | A menu which pauses the game when opened |
-| Priority | Low |
-| MuShCo   | Must have |
-| Dependencies | Controls, Inventory, Manual Saving, Options Menu, Quit |
-| Expected results | After pressing the [Esc] button, a menu should open up. When this menu is open, all entities and events should be paused. This menu contains buttons to: Access the inventory, save the game, open the options menu, or quit (to the main menu or to the desktop) |
-
-| Title        | Quit |
-| ------------ | --------------------------------------------------------------------- |
-| Description  | A button which allows the player to either quit to the main menu or desktop |
-| Priority | Low |
-| MuShCo   | Must have |
-| Dependencies | Main Menu |
-| Expected results | This button only presents two choices when pressed in the pause menu. In the main screen, it automatically quits to the desktop. Maybe the button should also ask the player if they want to save their game by warning them that they will lose any unsaved progress |
-
-| Title        | Inventory |
-| ------------ | --------------------------------------------------------------------- |
-| Description  | A menu where the player can see all their currently collected items |
-| Priority | Low |
-| MuShCo   | Must have |
-| Dependencies | Skill Build System |
-| Expected results | A menu that shows the player their current items and their descriptions. Perhaps this menu can also display the other items the player can get, but shade them out if the player has not gotten them yet. The player cannot read the descriptions of shaded items. This menu also shows the player their skill build |
-
-| Title        | Manual Saving |
-| ------------ | --------------------------------------------------------------------- |
-| Description  | A button to save the player's progress at any point in the game |
-| Priority | Low |
-| MuShCo   | Must have |
-| Dependencies | N/A |
-| Expected results | In the  |
-| Exception handling | If the save failed, the player should be notified and asked if they want to save again |
-
-| Title        | Auto-Saving |
-| ------------ | --------------------------------------------------------------------- |
-| Description  | Automatic saving feature |
-| Priority | Low |
-| MuShCo   | Should have |
-| Dependencies | Manual Saving |
-| Expected results | Every room transition will save the game. This is in case the player forgets to save so no progress is lost |
-| Exception handling | If the save failed, the player should be notified that their automatic save could not be done |
-
-| Title        | Options Menu |
-| ------------ | --------------------------------------------------------------------- |
-| Description  | An options menu where the player can change their game settings |
-| Priority |  |
-| MuShCo   | Should have |
-| Dependencies | Controls, Sound Effects, Music |
-| Expected results | The player should be able to change the following aspects: Volume, colour blind settings, resolution, full screen, and controls |
-
-| Title        | Executable file |
-| ------------ | --------------------------------------------------------------------- |
-| Description  | An executable file that runs the full game |
-| Priority | Low |
-| MuShCo   | Must have |
-| Dependencies | N/A |
-| Expected results | After being run, the player should see a window popup, greeting them with the game's main menu |
-| Exception handling | If the game cannot be run, an error code should pop up |
+#### **Audio**
 
 | Title        | SFX |
 | ------------ | --------------------------------------------------------------------- |
@@ -232,31 +233,45 @@ Add UML Diagram here
 | Dependencies | N/A |
 | Expected results | Music which loops indefinitely. If possible, this music should change depending on the world the player is in, and whether they are in combat or not |
 
+
 ### 2.2 - Non-Functional Requirements
 
-| Title        | Graphics for Colour Blind people                                      |
+#### **Playability**
+
+| Title        | Windows                                |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | Graphics must be enjoyable to look at for people with colourblindness |
+| Description  | Game should run on windows |
 | Priority |                                                                       |
-| MuShCo   | Must have                                                      |
+| MuShCo   | Must have                                                   |
 | Dependencies |                                                                       |
 | Expected results | |
 | Exception handling | |
 
-| Title        | Progression                             |
+| Title        | Executable file |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | The game must have an aspect of progression where items are gained which benefits them |
-| Priority |                                                                       |
-| MuShCo   | Must have                                                      |
-| Dependencies |                                                                       |
-| Expected results | |
-| Exception handling | |
+| Description  | An executable file that runs the full game |
+| Priority | Low |
+| MuShCo   | Must have |
+| Dependencies | N/A |
+| Expected results | After being run, the player should see a window popup, greeting them with the game's main menu |
+| Exception handling | If the game cannot be run, an error code should pop up |
 
 | Title        | Platforms                                      |
 | ------------ | --------------------------------------------------------------------- |
 | Description  | Game should be playable on mouse & keyboard as well as controller |
 | Priority |                                                                       |
 | MuShCo   | Should have                                                   |
+| Dependencies |                                                                       |
+| Expected results | |
+| Exception handling | |
+
+#### **Customization**
+
+| Title        | Graphics for Colour Blind people                                      |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | Graphics must be enjoyable to look at for people with colourblindness |
+| Priority |                                                                       |
+| MuShCo   | Must have                                                      |
 | Dependencies |                                                                       |
 | Expected results | |
 | Exception handling | |
@@ -270,14 +285,7 @@ Add UML Diagram here
 | Expected results | |
 | Exception handling | |
 
-| Title        | Windows                                |
-| ------------ | --------------------------------------------------------------------- |
-| Description  | Game should run on windows |
-| Priority |                                                                       |
-| MuShCo   | Must have                                                   |
-| Dependencies |                                                                       |
-| Expected results | |
-| Exception handling | |
+#### **Gameplay**
 
 | Title        | Player movement                                |
 | ------------ | --------------------------------------------------------------------- |
@@ -301,7 +309,7 @@ Add UML Diagram here
 | ------------ | --------------------------------------------------------------------- |
 | Description  | Transition between scenes should be smooth |
 | Priority |                                                                       |
-| MuShCo   | Could have                                                   |
+| MuShCo   | Should have                                                   |
 | Dependencies |                                                                       |
 | Expected results | |
 | Exception handling | |
@@ -323,6 +331,24 @@ Add UML Diagram here
 | Dependencies |                                                                       |
 | Expected results | |
 | Exception handling | |
+
+| Title        | Progression                             |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | The game must have an aspect of progression where items are gained which benefits them |
+| Priority |                                                                       |
+| MuShCo   | Must have                                                      |
+| Dependencies |                                                                       |
+| Expected results | |
+| Exception handling | |
+
+
+
+
+
+
+
+
+
 
 ### 2.3 - Risks and Issues
 
