@@ -238,117 +238,67 @@ Add UML Diagram here
 
 #### **Playability**
 
-| Title        | Windows                                |
+| ID and Title | NFR1.1 - Windows                                |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | Game should run on windows |
-| Priority |                                                                       |
-| MuShCo   | Must have                                                   |
-| Dependencies |                                                                       |
-| Expected results | |
-| Exception handling | |
+| Type | Compatibality |
+| Metrics | Game should be able to run on windows 10 and 11 |
 
-| Title        | Executable file |
+| ID and Title | NFR1.2 - Executable file |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | An executable file that runs the full game |
-| Priority | Low |
-| MuShCo   | Must have |
-| Dependencies | N/A |
-| Expected results | After being run, the player should see a window popup, greeting them with the game's main menu |
-| Exception handling | If the game cannot be run, an error code should pop up |
+| Type  | Usability |
+| Metric | The game can be launched by running a single executable file |
 
-| Title        | Platforms                                      |
+| ID and Title | NFR1.3 - Platforms                                      |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | Game should be playable on mouse & keyboard as well as controller |
-| Priority |                                                                       |
-| MuShCo   | Should have                                                   |
-| Dependencies |                                                                       |
-| Expected results | |
-| Exception handling | |
+| Type | Usability |
+| Metric | Game should be playable on mouse & keyboard as well as controller |
+
 
 #### **Customization**
 
-| Title        | Graphics for Colour Blind people                                      |
+| ID and Title | NFR2.1 - Graphics                                                      |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | Graphics must be enjoyable to look at for people with colourblindness |
-| Priority |                                                                       |
-| MuShCo   | Must have                                                      |
-| Dependencies |                                                                       |
-| Expected results | |
-| Exception handling | |
+| Type  | Usability |
+| Metric | Graphics abide by the Game Accessibility Guidelines so the game is enjoyable for users suffering from colourblindness |
 
-| Title        | Controls customization |
-| ------------ | --------------------------------------------------------------------- |
-| Description  | Player should be able to rebind controls |
-| Priority |                                                                       |
-| MuShCo   | Could have                                                   |
-| Dependencies |                                                                       |
-| Expected results | |
-| Exception handling | |
 
 #### **Gameplay**
 
-| Title        | Player movement                                |
+| ID and Title  | NFR3.1 - Response Time                              |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | Player movement feels smooth |
-| Priority |                                                                       |
-| MuShCo   | Must have                                                   |
-| Dependencies |                                                                       |
-| Expected results | |
-| Exception handling | |
+| Type | Performance |
+| Metrics  | There should be less than 0.1 seconds of delay between pressing the movement/interacting keys and the player moving/interacting |
 
-| Title        | Game World                               |
+| ID and Title | NFR 3.2 - Smooth Movement |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | Game world should feel alive |
-| Priority |                                                                       |
-| MuShCo   | Could have                                                   |
-| Dependencies |                                                                       |
-| Expected results | |
-| Exception handling | |
+| Type | User Experience |
+| Metrics  | Movement speed and animation should be such that the movement feel natural |
 
-| Title        | Room Transitions                               |
+| ID and Title | NFR 3.3 - Beginner Friendly                               |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | Transition between scenes should be smooth |
-| Priority |                                                                       |
-| MuShCo   | Should have                                                   |
-| Dependencies |                                                                       |
-| Expected results | |
-| Exception handling | |
+| Type         | Usability |
+| Metric | Game and UI should be intuitive to use even for people who have not played games |
 
-| Title        | Boss Battles                               |
+| ID and Title        | NFR 3.4 - Room Transitions                               |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | Battle should engaging |
-| Priority |                                                                       |
-| MuShCo   | Should have                                                   |
-| Dependencies |                                                                       |
-| Expected results | |
-| Exception handling | |
+| Type         | Performance |
+| Metric | Transition between scenes should be smooth - there should be no more than an x second delay when moving to another room |
 
-| Title        | Music                               |
+| ID and Title        | NFR 3.5 - Boss Battles                               |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | Music should fit each area |
-| Priority |                                                                       |
-| MuShCo   | Should have                                                   |
-| Dependencies |                                                                       |
-| Expected results | |
-| Exception handling | |
+| Type | User Experience |
+| Metric | Battle should feel engaging to the user |
 
-| Title        | Progression                             |
+
+| ID and Title        | NFR 3.6 Music                               |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | The game must have an aspect of progression where items are gained which benefits them |
-| Priority |                                                                       |
-| MuShCo   | Must have                                                      |
-| Dependencies |                                                                       |
-| Expected results | |
-| Exception handling | |
+| Type | User Experience |
+| Metric | Music should fit each area |
 
-
-
-
-
-
-
-
-
+| ID and Title        | NFR 3.7 Progression                             |
+| ------------ | --------------------------------------------------------------------- |
+| Type | User Experience |
+| Metric  | The game must have an aspect of progression where items are gained which benefits them |
 
 ### 2.3 - Risks and Issues
 
