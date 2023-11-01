@@ -11,6 +11,7 @@
     - [Week 1 Minutes](#week-1-minutes)
     - [Week 2 Minutes](#week-2-minutes)
     - [Week 3 Minutes](#week-3-minutes)
+    - [Week 4 Minutes](#week-4-minutes)
   - [SOP - RAG Sheet](#sop---rag-sheet)
   - [Ideas](#ideas)
     - [Inspiration - Undertale / Deltarune](#inspiration---undertale--deltarune)
@@ -140,8 +141,18 @@
 - Discussion of Requirment Specification sheet
 - Created some functional and non-functional requirments
 - Goals for the week
-  - Complete the introduction section of thee Requirment Specification
-  - Write down functional and non-functional specifications 
+  - Complete the introduction section of the Requirment Specification
+  - Write down functional and non-functional Specifications 
+
+
+### Week 4 Minutes
+- **Lest Week's Goals**: Partially achived; We completed section 1.1 and did a lot of work on section 2.1 and 2.2. However, we did not work on sections 1.2 and 1.3, so we did not achieve completing the introduction section of the Requirment Specifications. 
+- Discussion Requirment Specification sections 2.1 and 2.2
+- Discussed broadness of puzzle element in gameplay
+- Divided up the Requirment Specification sheet into parts which we all shoud complete by next week
+- Training session on how to use the Unity game engine
+- Goals for the week
+  - Complete sections 1.2, 1.3, 2.1 and 2.2 of the Requirment Specification sheet
 
 [**Go back up**](#table-of-contents)
 ## SOP - RAG Sheet 
