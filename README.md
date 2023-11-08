@@ -12,6 +12,7 @@
     - [Week 2 Minutes](#week-2-minutes)
     - [Week 3 Minutes](#week-3-minutes)
     - [Week 4 Minutes](#week-4-minutes)
+    - [Week 5 Minutes](#week-5-minutes)
   - [SOP - RAG Sheet](#sop---rag-sheet)
   - [Ideas](#ideas)
     - [Inspiration - Undertale / Deltarune](#inspiration---undertale--deltarune)
@@ -153,6 +154,15 @@
 - Training session on how to use the Unity game engine
 - Goals for the week
   - Complete sections 1.2, 1.3, 2.1 and 2.2 of the Requirment Specification sheet
+
+### Week 5 Minutes
+- **Lest Week's Goals**: Partially achived; completed sections 2.1 and 2.2, but did not complete 1.2 and 1.3. 1.2 and 1.3 are works in pogress.
+- Discussed cutting down sections 2.1 and 2.2, as they are too long
+- Discussed existing system requirments for section 1.3
+- Discussed who will be doing sections 3.1 and 3.2
+- Discussed who will be doing which part of the video presentation; script writing and video editing
+- Goals for the week
+  - Complete sections 1.2, 1.3, 2.3, 3.1 and 3.2. Tweak sections 2.1 and 2.2 to be less than 10 pages
 
 [**Go back up**](#table-of-contents)
 ## SOP - RAG Sheet 
