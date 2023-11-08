@@ -2,7 +2,9 @@
 
 ### 1.1 - Overview and Justification
 
-Our client is IBM, and our contact at IBM is Mr John McNamara. We have been tasked to reimagine Skills Build as an RPG game. This RPG game must facilitate accessing IBM Skills Build courses by linking the courses and its subsequent knowledge check questions, as well as reward users with in-game items (powerups and progression) if they are able to answer them. The game should also be fun and engaging to the user; it would be an amazing study tool integrated smoothly into an engaging RPG experience. However, the game does not need to teach the course content, but can refer to the courses from which the IBM Skills Build badges are obtained. This game is aimed to appeal to high school and university students, and hence should be accessible to people with little or no knowledge of Computer Science.
+Our client is IBM, and our contact at IBM is Mr John McNamara. We have been tasked to reimagine Skills Build as an RPG game. This RPG game must facilitate accessing IBM Skills Build courses by linking the courses and its subsequent knowledge check questions, as well as reward users with in-game items (powerups and progression) if they are able to answer them. 
+
+The game should also be fun and engaging to the user; it would be an amazing study tool integrated smoothly into an engaging RPG experience. However, the game does not need to teach the course content, but can refer to the courses from which the IBM Skills Build badges are obtained. This game is aimed to appeal to high school and university students, and hence should be accessible to people with little or no knowledge of Computer Science.
 
 This document is the Requirement Specification for our RPG IBM Skills Build project. There are three parts to this document. The first part is the introduction, which gives a high-level description of the project, its scope, and domain area. The second part, the Solution Requirments, is the main part of the requirement specification. This part specifies the projects functional and non-functional requirements, and assess the risks/issues which may occur when undertaking the project. The third part describes our approach to the development of the game, as well as our time schedule in order to complete the project within the agreed deadline.
 
@@ -26,221 +28,231 @@ Add UML Diagram here
 
 ### 2.1 - Function Requirements
 
-#### **Player**
+#### **Player-Based system**
 
-| Title        | Player Character |
+| ID, Type, Title | FR1.1 - Player-Based system - Player Character |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | Main playable character which the game centers around |
+| Description  | Main playable character which the game centers around, which should be a student (user) stand-in |
 | Priority | High |
 | MuShCo   | Must have |
-| Dependencies | Controls |
-| Expected results | Character should have distinct/unique sprite both in and out of battle |
+| Dependencies | N/A |
+| Expected results | Character should have distinct/unique sprite both in and out of battle (small zoomed out model out of battle, portrait outside) |
+| Exception handling | If a sprite cannot be loaded, character sprite will be a placeholder |
 
-| Title        | Player Character Movement |
+| ID, Type, Title | FR1.2 - Player-Based system - Player Character Movement |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | Buttons which allows the player character to move in any direction |
+| Description  | Buttons which allows the player character to move in any direction (even though the stages are built within a grid) |
 | Priority | High |
 | MuShCo   | Must have |
-| Dependencies | Player Character, Camera |
-| Expected results | Player character should be able to move in the four cardinal directions and diagonally with either WASD or the arrow keys (holding a combination of two keys, say W and A, would make the player move diagonally up and left)|
+| Dependencies | FR1.1, FR2.8 |
+| Expected results | Player character should be able to move in the four cardinal directions and diagonally with either WASD, the arrow keys (holding a combination of two keys, say W and A, would make the player move diagonally up and left) or via controller |
+| Exception handling | If the player gets stuck on a tile, they should be able to wiggle out and free themselves either by mashing all directions or holding one direction |
 
-| Title        | Control |
+| ID, Type, Title | FR1.3 - Player-Based system - Controls |
 | ------------ | --------------------------------------------------------------------- |
 | Description  | Buttons which allows the player to interact with both the game entities (items/characters) and the menu |
 | Priority | High |
 | MuShCo   | Must have |
 | Dependencies | N/A |
-| Expected results | There should be at least two buttons like that of the old gameboy. [A] generally for accept, and [B] generally for cancel |
+| Expected results | There should be at least two buttons like that of the old gameboy. [A] generally for accept, and [B] generally for cancel. If a player character is between two game objects, the one they are closer two should be the one being interacted with |
+| Exception handling | N/A |
 
-| Title        | Camera |
+| ID, Type, Title | FR1.4 - Player-Based system - Collisons |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | A camera that is able to track the player character, and move around a room |
+| Description  | Checks that makes sure the player cannot go through walls, closed door, or occupied tiles |
 | Priority | High |
 | MuShCo   | Must have |
-| Dependencies | Player Character |
-| Expected results | This is the main tool to display the game. Most of the time, the camera will be centered on the player character, but it can be used to pan around a room |
-
-| Title        | Collisons |
-| ------------ | --------------------------------------------------------------------- |
-| Description  | Checks that makes sure the player cannot go through walls/closed doors and makes sure the player does not get stuck on tiles |
-| Priority | High |
-| MuShCo   | Must have |
-| Dependencies | Controls |
+| Dependencies | FR1.2 |
 | Expected results | Player character should not be able to move from a ground tile to a wall or closed door tile |
 | Exception handling | If character goes out of bound, they should be placed back at the room entrance |
 
-#### **Menus & Menu Items**
+#### **Game System**
 
-| Title        | Main Menu |
+| ID, Type, Title | FR2.1 - Game System - Main Menu |
 | ------------ | --------------------------------------------------------------------- |
 | Description  | A menu which is opened at after launching the game |
 | Priority | Low |
 | MuShCo   | Must have |
 | Dependencies | N/A |
-| Expected results | The menu should have the game title on top, a background, and buttons. Contains buttons to: Make a new game, continue an ongoing session, open the options, quit and close the game window |
+| Expected results | The menu should have the game ID, Type, title, a background, and buttons. Contains buttons to: Make a new game, continue an ongoing session, open the options, quit and close the game window |
+| Exception handling | N/A |
 
-| Title        | Pause Menu |
+| ID, Type, Title | FR2.2 - Game System - Pause Menu |
 | ------------ | --------------------------------------------------------------------- |
 | Description  | A menu which pauses the game when opened |
 | Priority | Low |
 | MuShCo   | Must have |
-| Dependencies | Controls, Inventory, Manual Saving, Options Menu, Quit |
+| Dependencies | FR1.3, FR2.7, FR2.5, FR2.3, FR2.4 |
 | Expected results | After pressing the [Esc] button, a menu should open up. When this menu is open, all entities and events should be paused. This menu contains buttons to: Access the inventory, save the game, open the options menu, or quit (to the main menu or to the desktop) |
+| Exception handling | If opened during a timed event, the menu should not open |
 
-| Title        | Options Menu |
+| ID, Type, Title | FR2.3 - Game System - Options Menu |
 | ------------ | --------------------------------------------------------------------- |
 | Description  | An options menu where the player can change their game settings |
 | Priority |  |
 | MuShCo   | Should have |
-| Dependencies | Controls, Sound Effects, Music |
-| Expected results | The player should be able to change the following aspects: Volume, colour blind settings, resolution, full screen, and controls |
+| Dependencies | N/A |
+| Expected results | The user should be able to change the following aspects: Volume, colour blind settings, resolution and full screen |
+| Exception handling | After changing resolution, a user might not be able to press the revert button. A solution could be to make sure the user presses confirm within 15s, otherwise the setting is reverted |
 
-| Title        | Quit |
+| ID, Type, Title | FR2.4 - Game System - Quit |
 | ------------ | --------------------------------------------------------------------- |
 | Description  | A button which allows the player to either quit to the main menu or desktop |
 | Priority | Low |
 | MuShCo   | Must have |
-| Dependencies | Main Menu |
-| Expected results | This button only presents two choices when pressed in the pause menu. In the main screen, it automatically quits to the desktop. Maybe the button should also ask the player if they want to save their game by warning them that they will lose any unsaved progress |
+| Dependencies | FR2.1, FR2.2, FR2.5 |
+| Expected results | This button only presents two choices when pressed in the pause menu. In the main screen, it automatically quits to the desktop. Maybe the button should also ask the user if they want to save their game by warning them that they will lose any unsaved progress |
+| Exception handling | N/A |
 
-| Title        | Manual Saving |
+| ID, Type, Title | FR2.5 - Game System - Manual Saving |
 | ------------ | --------------------------------------------------------------------- |
 | Description  | A button to save the player's progress at any point in the game |
 | Priority | Low |
 | MuShCo   | Must have |
 | Dependencies | N/A |
-| Expected results | In the  |
-| Exception handling | If the save failed, the player should be notified and asked if they want to save again |
+| Expected results | In the case that the user wants to take a break, or wants to go on Skills Build to learn about the topic, they should be able to save their progress in case they did something wrong, or in case the game crashes and be able to load back their save file |
+| Exception handling | If the save failed, the user should be notified and asked if they want to save again |
 
-| Title        | Auto-Saving |
+| ID, Type, Title | FR2.6 - Game System - Auto-Saving |
 | ------------ | --------------------------------------------------------------------- |
 | Description  | Automatic saving feature |
 | Priority | Low |
 | MuShCo   | Should have |
-| Dependencies | Manual Saving |
+| Dependencies | FR2.5 |
 | Expected results | Every room transition will save the game. This is in case the player forgets to save so no progress is lost |
-| Exception handling | If the save failed, the player should be notified that their automatic save could not be done |
+| Exception handling | If the save failed, the user should be notified that their automatic save could not be done |
 
-| Title        | Inventory |
+| ID, Type, Title | FR2.7 - Game System - Inventory |
 | ------------ | --------------------------------------------------------------------- |
 | Description  | A menu where the player can see all their currently collected items |
 | Priority | Low |
 | MuShCo   | Must have |
-| Dependencies | Skill Build System |
-| Expected results | A menu that shows the player their current items and their descriptions. Perhaps this menu can also display the other items the player can get, but shade them out if the player has not gotten them yet. The player cannot read the descriptions of shaded items. This menu also shows the player their skill build |
+| Dependencies | FR3.3 |
+| Expected results | A menu that shows the user their current items and their descriptions. Perhaps this menu can also display the other items the user can get, but shade them out if the user has not gotten them yet. The user cannot read the descriptions of shaded items. This menu also shows the user their Skills Build |
+| Exception handling | N/A |
 
-#### **Game Systems**
-
-| Title        | Health System |
+| ID, Type, Title | FR2.8 - Game System - Camera |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | A health bar that shows the player's and enemies' life points |
+| Description  | A camera that is able to track the player character, and move around a room |
+| Priority | High |
+| MuShCo   | Must have |
+| Dependencies | FR1.1 |
+| Expected results | This is the main tool to display the game. Most of the time, the camera will be centered on the player character, but it can be used to pan around a room |
+| Exception handling | In the rare case that the camera is not centered around the player character, there should be a button (in the pause menu) to center the camera. Only implement if the camera gets stuck frequently |
+
+#### **Gameplay Systems**
+
+| ID, Type, Title | FR3.1 - Gameplay Systems - Health System |
+| ------------ | --------------------------------------------------------------------- |
+| Description  | A health bar that shows the player character's and enemies' life points |
 | Priority | Low |
 | MuShCo   | Must have |
-| Dependencies | Damage System |
+| Dependencies | FR3.2 (Co-dependencies) |
 | Expected results | A (decorated) bar which depicts the health of an entity. Once this reaches zero, the entity should die. It should show the current health, and the maximum health |
+| Exception handling | If the player character somehow stays alive with negative health, they should lose at the start of their next action |
 
-| Title        | Damage System |
+| ID, Type, Title | FR3.2 - Gameplay Systems - Damage System |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | A value which dictates how much health the player and enemies loses if attacked |
+| Description  | A value which dictates how much health the player character and enemies loses if attacked |
 | Priority | Low |
 | MuShCo   | Must have |
-| Dependencies | Health System |
+| Dependencies | FR3.1 (Co-dependencies) |
 | Expected results | A numerical value which both the player character and enemies has. If an entity is hit by an attack of damage [n], they should lose [n] health points |
+| Exception handling | The minimum damage dealt should be 1, so even if the player character deals less than 1 damage, they still have a way to win the fight |
 
-| Title        | Skill Build System |
+| ID, Type, Title | FR3.3 - Gameplay Systems - Skills Build System |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | A system which permanently upgrades the player character as the game progresses |
+| Description  | A system which permanently upgrades the player character as the game progresses. Can be accessed through a menu |
 | Priority | low |
 | MuShCo   | Must have |
-| Dependencies | Health System, Damage System, Worlds |
-| Expected results | A skill tree which has nodes that provides various benefits, like giving the player more health or attack. After finishing a world, the skill associated with that world unlocks |
+| Dependencies | FR3.1, FR3.2 |
+| Expected results | A skill tree which has nodes that provides various benefits, like giving the player character more health or attack. After finishing a world, the skill associated with that world unlocks. Nodes can be activated by spending skill points/ or acquiring unique items |
+| Exception handling | If the player somehow has negative skill points, they should not be able to quit the Skills Build menu |
 
 #### **Gameplay**
 
-| Title        | Central Hub |
+| ID, Type, Title | FR4.1 - Gameplay - Central Hub |
 | ------------ | --------------------------------------------------------------------- |
-| Description | A central hub world where the player can access other world |
+| Description | A central hub world where the user can access other world |
 | Priority | Medium |
 | MuShCo   | Should have |
-| Dependencies | Doors |
-| Expected results | The player can, from the hub world, access all the main worlds in any order. This place will be more fleshed out compared to other place since the player will return here a lot |
+| Dependencies | FR4.3 |
+| Expected results | The user can, from the hub world, access all the main worlds in any order. This place will be more fleshed out compared to other place since the user will return here a lot |
+| Exception handling | N/A |
 
-| Title        | Worlds |
+| ID, Type, Title | FR4.2 - Gameplay - Worlds |
 | ------------ | --------------------------------------------------------------------- |
 | Description  | The different realms where the game takes place. Each world contains many rooms |
 | Priority | Medium |
 | MuShCo   | Must have |
-| Dependencies | Central Hub, Puzzles, Rooms |
+| Dependencies | FR4.5, FR4.4 |
 | Expected results | At least five main worlds, each with their own puzzle style accessible through the central hub. Each world represents a Skills Build course |
+| Exception handling | N/A |
 
-| Title        | Doors |
+| ID, Type, Title | FR4.3 - Gameplay - Doors |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | A tile which the player go through and move to another room |
+| Description  | A tile which the player character go through and move to another room |
 | Priority | Medium |
 | MuShCo   | Must have |
 | Dependencies | N/A |
-| Expected results | Each world should have doors which the player must solve a problem / beat a boss in order to open. Some doors are just open by default (like the ones in the hub world) |
+| Expected results | Each world should have doors which the user must solve a problem / beat a boss in order to open. Some doors are just open by default (like the ones in the hub world) |
+| Exception handling | N/A |
 
-| Title        | Rooms |
+| ID, Type, Title | FR4.4 - Gameplay - Rooms |
 | ------------ | --------------------------------------------------------------------- |
 | Description  | A room that contains a puzzle |
 | Priority | High |
 | MuShCo   | Must have |
-| Dependencies | Doors |
+| Dependencies | FR4.3 |
 | Expected results | A room has at least one entrance, and can have none or multiple exits. The room size can be from one screen to multiple screens. After entering through a door, the player character is placed right outside the door of another room |
+| Exception handling | N/A |
 
-| Title        | Puzzles |
+| ID, Type, Title | FR4.5 - Gameplay - Puzzles |
 | ------------ | --------------------------------------------------------------------- |
 | Description  | Themed minigames |
 | Priority | Medium |
 | MuShCo   | Must have |
-| Dependencies | Multiple Choice Questions, Rooms |
+| Dependencies | FR4.4, FR4.6 |
 | Expected results | Puzzles have a theme in each world. Most puzzles will be a multiple choice question disguised as a minigame |
 | Exception handling | Some puzzles will require a reset button, which restores the state of the room its in to how it originaly was |
 
-| Title        | Multiple Choice Question |
+| ID, Type, Title | FR4.6 - Gameplay - Multiple Choice Question |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | Questions from a Skills Build course which the player must answer |
+| Description  | Questions from a Skills Build course which the user must answer |
 | Priority | Medium |
 | MuShCo   | Must have |
 | Dependencies | N/A | 
 | Expected results | Questions are taken from the Skills Build quizzes. Some are multiple choice, others are typed in answers |
+| Exception handling | N/A |
 
-| Title        | Boss Fight |
+| ID, Type, Title | FR4.7 - Gameplay - Boss Fight |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | Fights where the player has to correctly answer an enemy's questions |
+| Description  | Fights where the user has to correctly answer questions from the world its in |
 | Priority | Low |
 | MuShCo   | Must have |
-| Dependencies | Health System, Damage System |
-| Expected results | Both the player and the boss has a health bar. If the player answers a question correctly, they get to attack the boss. If they dont answer correctly, they get hit by the boss |
-| Exception handling | If the fight lasts long enough, there will not be enough unique questions to ask the player. To prevent this happening, questions can be reused after all other questions gets exausted |
-
-| Title        | Boss Questions |
-| ------------ | --------------------------------------------------------------------- |
-| Description  | Boss must include questions from its own world |
-| Priority | Low |
-| MuShCo   | Should have |
-| Dependencies | Multiple Choice Question |
-| Expected results | Bosses can ask any questions from the previous puzzles, and maybe more, in their respective world. The final boss should be able to ask questions from any of the other worlds |
+| Dependencies | FR3.1, FR3.2, FR4.6 |
+| Expected results | Both the player character and the boss has a health bar. If the user answers a question correctly, they get to attack the boss. If they dont answer correctly, they get hit by the boss. Bosses can ask any questions from the previous puzzles, and maybe more, in their respective world. The final boss should be able to ask questions from any of the other worlds |
+| Exception handling | If the fight lasts long enough, there will not be enough unique questions to ask the user. To prevent this happening, questions can be reused after all other questions gets exausted |
 
 #### **Audio**
 
-| Title        | SFX |
+| ID, Type, Title | FR5.1 - Audio - SFX |
 | ------------ | --------------------------------------------------------------------- |
 | Description  | Sound effects for some actions, such as room transitions |
 | Priority | Low |
 | MuShCo   | Could have |
 | Dependencies | N/A |
 | Expected results | Sounds should be made for most of the common actions, like opening menu, or attack an enemy, or walking through a room |
+| Exception handling | N/A |
 
-| Title        | Music |
+| ID, Type, Title | FR5.2 - Audio - Music |
 | ------------ | --------------------------------------------------------------------- |
 | Description  | Background music for the game, and combat music for fights |
 | Priority | Low |
 | MuShCo   | Could have |
 | Dependencies | N/A |
-| Expected results | Music which loops indefinitely. If possible, this music should change depending on the world the player is in, and whether they are in combat or not |
-
+| Expected results | Music which loops indefinitely. If possible, this music should change depending on the world the user is in, and whether they are in combat or not |
+| Exception handling | N/A |
 
 ### 2.2 - Non-Functional Requirements
 
