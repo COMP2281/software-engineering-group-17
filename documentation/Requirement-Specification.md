@@ -18,28 +18,56 @@ Expansion of the amount of courses provided, right now only introductory lessons
 Altering game content to include teaching material instead of just knowledge checks.
 Changing sprites to original characters.
 
+<div style="page-break-after: always;"></div>
+
 ### 1.3 - System Description
 
 #### Our proposed System
 
-The system the team came up with to solves IBM's SkillBuild website problem is the creation of an educational 2D RPG game featuring questions from IBM's SkillsBuild website. These questions will be at the forefront of the game and required to be solved by the player in order to progress. Each course on the SkillBuild website will be represented by an area in the game and each area of the game will feature puzzles and an area boss, which tests the player on questions. Combat will also include an extra element of risk, involving a health system, where the player has hearts which are removed when answering a question wrong. Run out of heart and you restart the entire fight. The player will also have access to a skill tree, where they can alter combat to fit their play-style by choosing power-ups after each defeated boss. All areas of the game will be linked with a hub world, where the player can choose which area to enter in any order they please.
+Our proposed solution to IBM's Skill Build Website issue is the creation of an educational 2D RPG game, featuring questions from the copanies Skill Build website. These questions will be at the forefront of the game and will allow the player to progress through play, when answered correctly. Each Skill Build website course will be represented by an area in the game and each area will feature puzzles and an area boss, which will pose questions to the player. Combat will introduce a further element of risk, in the form of a health system which deducts a heart from a player on answering a question incorrectly. Loss of all hearts results in the player restarting the entire fight. A skill tree will enable the player to alter combat to suit their playstyle, by choosing powerups after defeeting each boss. All areas will be linked by a hub world, allowing the player to select an area in which to enter, in any order they please.
 
 | Key aspect of the Game | Research | Justification |
 | - | - | - | 
-|Character Sprites | Based on sprites from the Pokemon games | Moderate complexity and 2.5D view models which allows our rookie artist enough freedom to create sprites of moderate complexity and not have the worry about creating masterpieces |
-|Combat|Inspired by the Phoenix Wright games| The debates in Phoenix Wright are a fitting template for combat based on questions|
+|Character Sprites | Inspired by sprites from Pokemon games | Moderate complexity and 2.5D view models allow our rookie artist enough freedom to create sprites of moderate complexity |
+|Combat|Inspired by Phoenix Wright games| Debates in Phoenix Wright provide a fitting template for combat based on questions|
 |Questions|To be introduced through combat and puzzles| These forms of gameplay enable us to build questions into them easily|
 |Combat Menu|Dynamic list|Easy incorporation with the chosen combat style|
-|Health system|Based on Minecraft and Hollow Knight| Answering a question wrong will always deal the same amount of damage and visually representing this is easier in heart format|
+|Health system|Based on Minecraft and Hollow Knight| An incorrect answer to a question will always generate the same amount of damage. This is easily represnted in a heart format|
 
 #### Existing Solutions
 
-| Game | Description | Advantage | Disadvantage | Use for our system |
-| - | - | - | - | -|
-| Mario is Missing | Mario is missing is an educational game where the players goal is to save landmarks Bowser has stolen from around our world. The player must do this by exploring the world, finding the landmarks and returning them. In order to return the landmarks and travers the world the player must learn about geography through talking to various NPC's throughout the world. |The games entire educational premise at is the forefront of the game, by making the player learn about geography through exploration of those locations. | The game is targeted at children and is therefore exceedingly easy. Furthermore, answering question in the game are not mandatory, so learning through answering such questions is optional. | The game is considered to be unfun and has negative reviews, most mentioning the gameplay cycle of finding landmarks and backtracking to be tedious and the questions being unnecessary. Our game should contain mandatory questions balanced with other gameplay elements in order to keep the player engaged. |
-| Minecraft Education | Minecraft education enables the learning of school topics, from math to geography through Minecraft. It allows teachers to create lessons to engage students in various topics. | The game is a medium to facilitate learning through interactive classes, engaging players with lessons through a playful experience. Learning is at the forefront of the game and knowledge gained can be directly applied to non gaming environments. | Players who already know Minecraft will feel limited played Minecraft Education, as a lot of the core gameplay features are limited in order to facilitate learning. | Players who play our game but already know the answers to all the questions should be able to complete the game more quickly, but the game should still have interactive puzzles to engage the player. |
-| Mario and Sonic at the Olympic Winter Games 2010| Bowser and Dr. Eggman have melted all the snow by imprisoning the Snow Spirits, ruining the Olympic Winter Games. Mario and Sonic have to save these Snow Spirits in order for the Winter Olympics to not get cancelled. The educational part of the game is through little bits of trivia spread around the game world, informing the player about various topics to do with the Winter Olympics, such as how they were created or about specific Athletes breaking records. |The trivia notes are well implemented into the game, as they are hidden around the world and reward the player for finding the information through gaining completionist badges. The trivia notes are also location specific. For example, the world containing a skiing minigame also contains trivia on how skiing was added to winter Olympics.  | The game is not focused on these trivia notes, rather they are an additional feature, which although do give the player a badge, does not facilitate progression: They are a side quest. | Our game should reward the player for answering questions correctly and enable progression. Without correctly answering the questions, the player should not be able to progress. The questions asked should fit the environment of the game. |
+> **Mario is Missing (by Nintendo)**
+>
+> **Description:** The educationl game, Mario is Missing, challenges the player to save global landmarks stolen by Bowser. By learning about geography from non playable characters (NPC's) the player is able to identify and return the landmarks to their correct geographical location | The game acts as an  educational tool by improving the players geographical knowledge through exploration of locations.
+>
+> **Advantage:** The game acts as an educational tool by improving the players geographical knowledge through exploration of locations.
+>
+> **Disadvantage:** As the games target audience is children, it is extremely easy. Furthermore, the answering of questions during play is not mandatory and so the educational aspect of the game can be avoided.
+>
+> **Use for our System:** Negative reviews suggest the gameplay cycle of finding landmarks to be tedious and the questions unnecessary. Our game should contain essential questions with other gameplay elements to engage players.
 
+
+
+> **Minecraft Education (by Microsoft)**
+>
+> **Description:** Minecraft Education enables students to engage with lessons created by teachers in Minecraft which focused on academic subjects.
+>
+> **Advantage:** The game facilitates learning through fun interactive classees. Learning is at the forefront of the game and knowledge gained can be directly applied to non gaming environments.
+>
+> **Disadvantage:** Players familiar with Minecraft will feel frustrated, as many core gameplay features are limited to facilitate learning.
+>
+> **Use for our System:** Players of our game who know the answers to all questions should be able to complete the game more quickly, but the game should still have interactive puzzles to engage players.
+
+
+> **Mario and Sonic at the Olympic Winter Games 2010 DS (by Nintendo and Sega)**
+>
+> **Description:** Bowser and Dr. Eggman have imprisoned the Snow Spirits to sabotage the Olympic Winter Games and Mario and Sonic must save them. The educational aspect of the game is delivered through Winter Olympic themed trivia scatterdd around the game world.
+>
+> **Advantage:** The trivia notes, which are location specific, are hidden around the world and so well integrated into the game. The player is rewarded for finding the information, with completionist badges.
+>
+> **Disadvantage:** The game is not focused on these trivia notes, rather they are an additional feature, which although do give the player a badge, does not facilitate progression: They are a side quest.
+>
+> **Use for our System:** Our game should reward the player for answering questions correctly and enable progression. Without correctly answering the questions, the player should not be able to progress. The questions asked should fit the environment of the game.
 
 (add links to markdown reasearch file)
 ## 2 - Solution Requirements
