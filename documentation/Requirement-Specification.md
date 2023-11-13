@@ -24,15 +24,7 @@ Changing sprites to original characters.
 
 #### Our proposed System
 
-Our proposed solution to IBM's Skill Build Website issue is the creation of an educational 2D RPG game, featuring questions from the copanies Skill Build website. These questions will be at the forefront of the game and will allow the player to progress through play, when answered correctly. Each Skill Build website course will be represented by an area in the game and each area will feature puzzles and an area boss, which will pose questions to the player. Combat will introduce a further element of risk, in the form of a health system which deducts a heart from a player on answering a question incorrectly. Loss of all hearts results in the player restarting the entire fight. A skill tree will enable the player to alter combat to suit their playstyle, by choosing powerups after defeeting each boss. All areas will be linked by a hub world, allowing the player to select an area in which to enter, in any order they please.
-
-| Key aspect of the Game | Research | Justification |
-| - | - | - | 
-|Character Sprites | Inspired by sprites from Pokemon games | Moderate complexity and 2.5D view models allow our rookie artist enough freedom to create sprites of moderate complexity |
-|Combat|Inspired by Phoenix Wright games| Debates in Phoenix Wright provide a fitting template for combat based on questions|
-|Questions|To be introduced through combat and puzzles| These forms of gameplay enable us to build questions into them easily|
-|Combat Menu|Dynamic list|Easy incorporation with the chosen combat style|
-|Health system|Based on Minecraft and Hollow Knight| An incorrect answer to a question will always generate the same amount of damage. This is easily represnted in a heart format|
+Our proposed solution to IBM's Skill Build Website issue is the creation of an educational 2D RPG game, featuring questions from the copanies Skill Build website. These questions will be at the forefront of the game and will allow the player to progress through play, when answered correctly. Each Skill Build website course will be represented by an area in the game and each area will feature puzzles and an area boss, which will pose questions to the player. Combat will introduce a further element of risk, in the form of a health system which deducts a heart from a player on answering a question incorrectly. Loss of all hearts results in the player restarting the entire fight. A skill tree will enable the player to alter combat to suit their playstyle, by choosing powerups after defeeting each boss. All areas will be linked by a hub world, allowing the player to select an area in which to enter, in any order they please. All of our choices for the game were based on market research and can be found [here](https://github.com/COMP2281/software-engineering-group-17/blob/main/readme/market-research.md), including an overview at the top of the document. 
 
 #### Existing Solutions
 
@@ -69,7 +61,6 @@ Our proposed solution to IBM's Skill Build Website issue is the creation of an e
 >
 > **Use for our System:** Our game should reward the player for answering questions correctly and enable progression. Without correctly answering the questions, the player should not be able to progress. The questions asked should fit the environment of the game.
 
-(add links to markdown reasearch file)
 ## 2 - Solution Requirements
 
 This part of the document has three sections - functional requirements, non-functional requirements and risks/issues.
@@ -325,4 +316,27 @@ This section outlines our potential risks, how they could harm out project, and 
 
 ### 3.2 - Project Schedule
 
-Add gantt chart
+The Gantt Chart shown below outlines the development time for our project and highlights the academic deadlines too.
+![Gantt_Chart](images/../../image/Documentation/Gantt_Chart.png)
+
+The chart takes into account the number of members and the weekly workload we have; we are 5 members and on average, work on Software Engineering for 4h per week plus any extra time voluntarily invested. The aim by the end of the holiday is to have all content, that can be used in ever world, in place, so that each team member can create a world individually, with no depdencies halting progression. We expect that productivity after the holiday will subside, due to lectures resuming and other coursework deadlines being set throughout the term. To combat this, we have given a large extended time to the creation of each world, which gives members enough time to flesh out their ideas and invest enough time into compelling gameplay. Art assets are imported when finished, with placeholders being created whilst waiting for the assets. Music and cutscene are non vital componants of our game and will thus be added at the end if time allows. The team also thought about agile vs waterfall model and after drafting up a waterfall model of the project found [here](), decided against it as, due to our lack of game development knowledge it is safer to go with a model that allows for a lot of deadline flexibility. Beyond restating the sumative deadlines, the team also added tasks that describe the game creation process and thought about subsection for each task where necessary:
+
+Initial Game Setup: Creating a template player character complete with movement and collision, tilemap, interactable objects, Hub World
+
+Combat System: Creating a template boss and the player health/damage systems.
+
+Main Menu: Creation of 5 buttons: New game, continue game, controls, credits and exit. 
+
+Pause Menu: Creation of 4 buttons: controls, save and exit, inventory, Skills Build tree.
+
+Art: 2 sections; art creation and art sourcing. Art sourcing includes tile sets, text fonts, NPC sprites, interactable objects and inventory items. Art creation includes player character, boss fights and all puzzle elements.
+
+
+
+
+
+
+
+
+
+
