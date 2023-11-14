@@ -314,6 +314,35 @@ This section outlines our potential risks, how they could harm out project, and 
 
 ### 3.1 - Development Approach
 
+#### Agile Versus Plan Driven
+Due to the nature of video games, it can be very difficult to approach this project from a plan driven perspective, as video games are very subjective, and while there are many tasks that have a clear point where you have or haven't achieved it, video games are more oriented around how enjoyable the experience is to the player, which is a difficult metric to define. As such it would be very difficult to plan the entire game out in the beginning and build it as designed. As such we will be taking an agile scrum approach to development, as it helps us in a number of ways:
+
+1. Adaptability to Change:
+
+As mentioned, features and priorities will greatly change as development progresses, thus by taking a scrum approach, we can take a step back and approach something from a different angle whenever we face an obstacle in our path, while the rigid nature of a plan driven approach will not allow for this natural change to happen.
+
+2. Client Involvement
+
+As we are making this RPG game for a client, the subjective nature of video games means that as we make regular updates to our client, there may be things to change or we may have to tackle a problem differently in order to suit our client's needs, having an agile methodology suits this nicely. A plan driven approach would mean that we run the risk of the client not being happy, once the game is basically finished.
+
+3. Cross Functional Teams
+
+Everybody in our team has a different level of knowledge when it comes to game development, where some know a lot and some not at all, by taking an agile approach, team members can share knowledge and collaborate easier, rather than everybody having a set, strict, set of tasks. A plan driven approach would make our team much less flexible, and may cause major issues if a member ends up falling ill or dropping out.
+
+4. Improved Risk Management
+
+In the event that something doesn't go to our general plan, a scrum style approach will let us, identify and mitigate any risks that arise within our sprints quickly. In a plan driven approach, if any issues were discovered late, it could be costly to address.
+
+5. Incremental Development
+
+An agile development means that the game will be built up feature by feature in small manageable increments. This allows us to prioritize features like gameplay mechanics and character art, while leaving other features such as cutscenes and sound effects until the end.
+
+#### Team Roles
+
+While the majority of our team do not have set roles, other than James, who is our artist, and Josh, our lead developer. We mostly plan on working on the game in small increments, with each of our five members handling their own piece of game development, as we are assigning every member their own world to design, once base asset creation is completed, as this will allow us to simultaneously build the game up, and deal with any problems as they arise. In addition, we will be assigning individual members tasks based on the level of complexity and prior knowledge.
+
+In the end this approach is best for our team due to our existing skillset, and also allows individual member's talents to shine.
+
 ### 3.2 - Project Schedule
 
 The Gantt Chart shown below outlines the development time for our project and highlights the academic deadlines too.
