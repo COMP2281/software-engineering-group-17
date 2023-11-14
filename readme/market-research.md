@@ -2,8 +2,20 @@
 
 Before we can begin with new asset creation, we need to finalise some of the more in depth points about world traversal and combat.
 
+## Game choises based on Research
+
+| Key aspect of the Game | Research | Justification |
+| - | - | - | 
+|Character Sprites | Inspired by sprites from Pokemon games | Moderate complexity and 2.5D view models allow our rookie artist enough freedom to create sprites of moderate complexity |
+|Combat|Inspired by Phoenix Wright games| Debates in Phoenix Wright provide a fitting template for combat based on questions|
+|Questions|To be introduced through combat and puzzles| These forms of gameplay enable us to build questions into them easily|
+|Combat Menu|Dynamic list|Easy incorporation with the chosen combat style|
+|Health system|Based on Minecraft and Hollow Knight| An incorrect answer to a question will always generate the same amount of damage. This is easily represnted in a heart format|
+
+
 ## Table of Content
 - [Market Research](#market-research)
+  - [Game choises based on Research](#game-choises-based-on-research)
   - [Table of Content](#table-of-content)
   - [Battle Style](#battle-style)
     - [Style 1 -  Undertale](#style-1----undertale)
