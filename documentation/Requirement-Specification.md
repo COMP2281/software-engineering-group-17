@@ -325,7 +325,7 @@ Initial Game Setup: Creating a template player character complete with movement 
 
 Combat System: Creating a template boss and the player health/damage systems.
 
-Main Menu: Creation of 5 buttons: New game, continue game, controls, credits and exit. 
+Main Menu: Creation of 5 buttons: new game, continue game, controls, credits and exit. 
 
 Pause Menu: Creation of 4 buttons: controls, save and exit, inventory, Skills Build tree.
 
