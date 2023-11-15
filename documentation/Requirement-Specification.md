@@ -24,13 +24,13 @@ Changing sprites to original characters.
 
 #### Our proposed System
 
-Our proposed solution to IBM's Skill Build Website issue is the creation of an educational 2D RPG game, featuring questions from the companies Skill Build website. These questions will be at the forefront of the game and will allow the player to progress through playing, when answered correctly. Each Skill Build website course will be represented by an area in the game and each area will feature puzzles and an area boss, which will pose questions to the player. Combat will introduce a further element of risk, in the form of a health system which deducts a heart from a player on answering a question incorrectly. Loss of all hearts results in the player restarting the entire fight. A skill tree will enable the player to alter combat to suit their playstyle, by choosing powerups after defeating each boss. All areas will be linked by a hub world, allowing the player to select an area in which to enter, in any order they please. All of our choices for the game were based on market research and can be found [here](https://github.com/COMP2281/software-engineering-group-17/blob/main/readme/market-research.md), including an overview at the top of the document. 
+Our proposed solution to IBM's Skills Build Website issue is the creation of an educational 2D RPG game, featuring questions from the Skills Build website. These questions will be at the forefront of the game and will allow the player to progress, when answered correctly. Each Skills Build course will be represented by an area in the game and each area will feature puzzles and a boss, which will pose questions to the player. Combat will introduce a further element of risk, in the form of a health system which deducts a heart from a player on answering a question incorrectly. Loss of all hearts results in the player restarting the entire fight. A skill tree will enable the player to alter combat to suit their playstyle, by choosing powerups after defeating each boss. All areas will be linked by a hub world, allowing the player to select an area in which to enter, in any order they please. All of our choices for the game were based on market research found [here](https://github.com/COMP2281/software-engineering-group-17/blob/main/readme/market-research.md)
 
 #### Existing Solutions
 
 > **Mario is Missing (by Nintendo)**
 >
-> **Description:** The educationl game, Mario is Missing, challenges the player to save global landmarks stolen by Bowser. By learning about geography from non playable characters (NPC's) the player is able to identify and return the landmarks to their correct geographical location | The game acts as an  educational tool by improving the players geographical knowledge through exploration of locations.
+> **Description:** Mario is Missing challenges the player to save global landmarks stolen by Bowser. By learning about geography from non playable characters (NPC's) the player is able to identify and return the landmarks to their correct geographical location. The game acts as an educational tool by improving the players' geographical knowledge through exploration of locations.
 >
 > **Advantage:** The game acts as an educational tool by improving the players geographical knowledge through exploration of locations.
 >
@@ -39,12 +39,11 @@ Our proposed solution to IBM's Skill Build Website issue is the creation of an e
 > **Use for our System:** Negative reviews suggest the gameplay cycle of finding landmarks to be tedious and the questions unnecessary. Our game should contain essential questions with other gameplay elements to engage players.
 
 
-
 > **Minecraft Education (by Microsoft)**
 >
 > **Description:** Minecraft Education enables students to engage with lessons created by teachers in Minecraft which focused on academic subjects.
 >
-> **Advantage:** The game facilitates learning through fun interactive classees. Learning is at the forefront of the game and knowledge gained can be directly applied to non gaming environments.
+> **Advantage:** The game facilitates learning through fun interactive classes. Learning is at the forefront of the game and knowledge gained can be directly applied to non gaming environments.
 >
 > **Disadvantage:** Players familiar with Minecraft will feel frustrated, as many core gameplay features are limited to facilitate learning.
 >
@@ -53,7 +52,7 @@ Our proposed solution to IBM's Skill Build Website issue is the creation of an e
 
 > **Mario and Sonic at the Olympic Winter Games 2010 DS (by Nintendo and Sega)**
 >
-> **Description:** Bowser and Dr. Eggman have imprisoned the Snow Spirits to sabotage the Olympic Winter Games and Mario and Sonic must save them. The educational aspect of the game is delivered through Winter Olympic themed trivia scatterdd around the game world.
+> **Description:** Bowser and Dr. Eggman have imprisoned the Snow Spirits to sabotage the Olympic Winter Games and Mario and Sonic must save them. The educational aspect of the game is delivered through Winter Olympic themed trivia scattered around the game world.
 >
 > **Advantage:** The trivia notes, which are location specific, are hidden around the world and so well integrated into the game. The player is rewarded for finding the information, with completionist badges.
 >
