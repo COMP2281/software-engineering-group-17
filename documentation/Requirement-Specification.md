@@ -294,20 +294,19 @@ This section outlines our potential risks, how they could harm out project, and 
 | - | - | - | - | - |
 | Insignificant (1) | 1 | 2 | 3 | 4 |
 | Minor (2) | 2 | 4 | 6 (R4) | 8 |
-| Moderate (3) | 3 | 6(R7) | 9 (R2) | 12 (R5) |
-| Major (4) | 4 | 8 (R8) | 12 (R4,R1) | 16 (R3,R6) |
+| Moderate (3) | 3 | 6(R7) | 9 (R2,R6) | 12 (R5) |
+| Major (4) | 4 | 8 (R8) | 12 (R1) | 16 (R3) |
 
 | Hazard | What is at Risk? | How could they be harmful? | Uncontrolled Risk Level | How to minimize the risks | Controlled Risk Level |
 | - | - | - | - | - | - |
-| R1 - Not being completed on time | Project timeline & client satisfaction | Delays result in missing milestones, which will disappoint the client | 12 | Implement a well-defined project schedule and closely monitor progress to deal with any issues that arise. | 6 |
-| R2 - Group Dynamic | Team cohesion & project quality | Group not getting along could cause arguments, lower quality product, and delays | 9 | Establish clear roles and responsibilities, address issues promptly | 4 |
-| R3 - Lack of Group’s Technical Knowledge | Project Quality and Timeline | Insufficient knowledge can lead to inability to meet project requirements | 16 | Identify where knowledge is lacking, and spend time training members in skill gaps | 9 |
-| R4 - Scope Creep (uncontrolled expansion of project) | Project timeline | Project not completed on time due to base features not being completed, leading to an unhappy client | 6 | Define project scope clearly, use agile methodology to mean that we only start expanding once the base is complete | 4 |
-| R5 - Team Member Drops out or is Unavailable | Group Members & project timeline | Group members have more work, if said group member is a key member who knows how to use a technology then we will have delays or compromise on quality | 12 | Cross Train team members, or have backup plans | 6 |
-| R5 - Poor User Feedback | User Acceptance & Client Happiness | Failing to create a positive user experience is essentially a huge problem, as our game should be fun to play | 9 | Conduct occasional user testing and gather feedback | 4 |
-| R6 - Requirements Change | Project scope & timeline | Will have to go back and change content, potentially from a fundamental level | 16 | Document and manage project requirements, make the game flexibly so that we can change things if needed | 8 |
-| R7 - Hardware Compatibility | Game performance or accessibility | Poor performance or being unable to play on systems it is supposed to be compatible with is a major issue | 6 | Test on a number of platforms and hardware configurations | 2 |
-| R8 - Legal and Copyright Issues | IBM & our artist | New sprites will have to made in the event that our current ideas for sprites causes issues | 8 | Instead of making sprite edits of other games, make new sprites based of sprites or 3d models | 3 |
+| R1 - Not Being Completed on Time | Project timeline & client satisfaction | Delays result in missing milestones, which will disappoint the client | 12 | Implement a well-defined schedule and monitor progress to deal with isssues | 6 |
+| R2 - Group Dynamic | Team cohesion & project quality | Arguments lead to lower quality product, and delays | 9 | Establish clear roles and responsibilities, address issues promptly | 4 |
+| R3 - Lack of Group’s Technical Knowledge | Project quality and timeline | Inability to meet project requirements | 16 | Identify skill gaps and train to fill gaps | 9 |
+| R4 - Scope Creep (uncontrolled expansion of project) | Project timeline | Project not completed on time due to base features not being completed| 6 | Define project scope clearly, use agile methodolody to add new features after base completed | 4 |
+| R5 - Team Member Drops Out or is Unavailable | Group members & project timeline | Other group members have more work, delays if key member | 12 | Cross train team members, or have backup plans | 6 |
+| R6 - Poor User Feedback | User acceptance & client happiness | Fail to create a positive user experience | 9 | Conduct occasional user testing and gather feedback | 4 |
+| R7 - Requirements Change | Project scope & timeline | Will have to go back and change content, potentially from a fundamental level | 16 | Document and manage project requirements, make the game flexibly to adapt to change | 8 |
+| R8 - Hardware Compatibility | Game performance or accessibility | Poor performance or being unable to play on systems should | 6 | Test on a number of platforms and hardware configurations | 2 |
 
 ## 3 - Project Development
 
