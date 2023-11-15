@@ -30,7 +30,7 @@ Our proposed solution to IBM's Skill Build Website issue is the creation of an e
 
 > **Mario is Missing (by Nintendo)**
 >
-> **Description:** The educationl game, Mario is Missing, challenges the player to save global landmarks stolen by Bowser. By learning about geography from non playable characters (NPC's) the player is able to identify and return the landmarks to their correct geographical location | The game acts as an  educational tool by improving the players geographical knowledge through exploration of locations.
+> **Description:** The educational game, Mario is Missing, challenges the player to save global landmarks stolen by Bowser. By learning about geography from non playable characters (NPC's) the player is able to identify and return the landmarks to their correct geographical location | The game acts as an  educational tool by improving the players geographical knowledge through exploration of locations.
 >
 > **Advantage:** The game acts as an educational tool by improving the players geographical knowledge through exploration of locations.
 >
@@ -350,22 +350,12 @@ The Gantt Chart shown below outlines the development time for our project and hi
 
 The chart takes into account the number of members and the weekly workload we have; we hare 5 members, and on average work on Software Engineering for 4h per week plus any extra time voluntarily invested. The aim by the end of the holiday is to have in place all of the base content that will be used as the building blocks of every world, so that each team member can create a world individually, with no depdencies halting progression. We expect that productivity after the holiday will subside, due to lectures resuming and other coursework deadlines being set throughout the term. To combat this, we have given a large extended time to the creation of each world, which gives members enough time to flesh out their ideas and invest enough time into compelling gameplay. Art assets are imported when finished, with placeholders being created whilst waiting for the assets. Music and cutscene are non vital componants of our game and will thus be added at the end if time allows. The team also thought about agile vs waterfall model and after drafting up a waterfall model of the project found [here](https://github.com/COMP2281/software-engineering-group-17/blob/main/image/Documentation/Gantt_chart_waterfall.png), decided against it as, due to our lack of game development knowledge it is safer to go with a model that allows for a lot of deadline flexibility. Beyond restating the sumative deadlines, the team also added tasks that describe the game creation process and thought about subsection for each task where necessary:
 
-Initial Game Setup: Creating a template player character complete with movement and collision, tilemap, interactable objects, Hub World
+**Initial Game Setup:** Creating a template player character complete with movement and collision, tilemap, interactable objects, Hub World
 
-Combat System: Creating a template boss and the player health/damage systems.
+**Combat System:** Creating a template boss and the player health/damage systems.
 
-Main Menu: Creation of 5 buttons: new game, continue game, controls, credits and exit. 
+**Main Menu:** Creation of 5 buttons: new game, continue game, controls, credits and exit. 
 
-Pause Menu: Creation of 4 buttons: controls, save and exit, inventory, Skills Build tree.
+**Pause Menu:** Creation of 4 buttons: controls, save and exit, inventory, Skills Build tree.
 
-Art: 2 sections; art creation and art sourcing. Art sourcing includes tile sets, text fonts, NPC sprites, interactable objects and inventory items. Art creation includes player character, boss fights and all puzzle elements.
-
-
-
-
-
-
-
-
-
-
+**Art:** 2 sections; art creation and art sourcing. Art sourcing includes tile sets, text fonts, NPC sprites, interactable objects and inventory items. Art creation includes player character, boss fights and all puzzle elements.
