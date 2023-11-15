@@ -6,12 +6,12 @@ Our client is IBM, and our contact at IBM is Mr John McNamara. We have been task
 
 The game should also be fun and engaging to the user; it would be an amazing study tool integrated smoothly into an engaging RPG experience. However, the game does not need to teach the course content, but can refer to the courses from which the IBM Skills Build badges are obtained. This game is aimed to appeal to high school and university students, and hence should be accessible to people with little or no knowledge of Computer Science.
 
-This document is the Requirement Specification for our RPG IBM Skills Build project. There are three parts to this document. The first part is the introduction, which gives a high-level description of the project, its scope, and domain area. The second part, the Solution Requirments, is the main part of the requirement specification. This part specifies the projects functional and non-functional requirements, and assess the risks/issues which may occur when undertaking the project. The third part describes our approach to the development of the game, as well as our time schedule in order to complete the project within the agreed deadline.
+This document is the Requirement Specification for our RPG IBM Skills Build project. There are three parts to this document. The first part is the introduction, which gives a high-level description of the project, its scope, and domain area. The second part, the Solution Requirements, is the main part of the requirement specification. This part specifies the projects functional and non-functional requirements, and assess the risks/issues which may occur when undertaking the project. The third part describes our approach to the development of the game, as well as our time schedule in order to complete the project within the agreed deadline.
 
 ### 1.2 - Project Scope
-The goal of our project is to create an RPG game to reimagine Skills Build, IBM's platform to provide people with job skills, courses and credentials. The purpose of this project is to make Skills Build easier to navigate and make it more interactive so that it increases receptiveness for students. The base of our game is a hub world with areas corresponding to different courses, each area would have a boss that would be the center of combat gameplay. Upon choosing an area the player will have to complete puzzles and combat that havecourse questions as the core. This will allow them to progress further. A health system also comes into play with combat themed games, whereby running out of hearts would result in restarting the fight, this would be somewhat similar to quiz questions in courses where achieving a score less than 80% would require you to take it again.
+The goal of our project is to create an RPG game to reimagine Skills Build, IBM's platform to provide people with job skills, courses and credentials. The purpose of this project is to make Skills Build easier to navigate and make it more interactive so that it increases receptiveness for students. The base of our game is a hub world with areas corresponding to different courses, each area would have a boss that would be the center of combat gameplay. Upon choosing an area the player will have to complete puzzles and combat that have course questions as the core. This will allow them to progress further. A health system also comes into play with combat themed games, whereby running out of hearts would result in restarting the fight, this would be somewhat similar to quiz questions in courses where achieving a score less than 80% would require you to take it again.
 
-This game aims to address the problem of accessibility for people with little to no knowledge of Computer Science. It resolves this problem by creating puzzles and combat themed areas to answer challenging questions, earn skillbuild badges and complete courses. Rewarding users with power-ups and level progressions incentivises them, particularly high school and university students, it also makes learning more engaging.
+This game aims to address the problem of accessibility for people with little to no knowledge of Computer Science. It resolves this problem by creating puzzles and combat themed areas to answer challenging questions, earn Skills build badges and complete courses. Rewarding users with power-ups and level progressions incentivizes them, particularly high school and university students, it also makes learning more engaging.
 
 Future Versions of the game could include:
 Expansion of the amount of courses provided, right now only introductory lessons would be connected to the game, further development could increase the amount of courses the game would provide.
@@ -24,13 +24,13 @@ Changing sprites to original characters.
 
 #### Our proposed System
 
-Our proposed solution to IBM's Skills Build Website issue is the creation of an educational 2D RPG game, featuring questions from the Skills Build website. These questions will be at the forefront of the game and will allow the player to progress, when answered correctly. Each Skills Build course will be represented by an area in the game and each area will feature puzzles and a boss, which will pose questions to the player. Combat will introduce a further element of risk, in the form of a health system which deducts a heart from a player on answering a question incorrectly. Loss of all hearts results in the player restarting the entire fight. A skill tree will enable the player to alter combat to suit their playstyle, by choosing powerups after defeating each boss. All areas will be linked by a hub world, allowing the player to select an area in which to enter, in any order they please. All of our choices for the game were based on market research found [here](https://github.com/COMP2281/software-engineering-group-17/blob/main/readme/market-research.md)
+Our proposed solution to IBM's Skills Build Website issue is the creation of an educational 2D RPG game, featuring questions from the Skills Build website. These questions will be at the forefront of the game and will allow the player to progress, when answered correctly. Each Skills Build course will be represented by an area in the game and each area will feature puzzles and a boss, which will pose questions to the player. Combat will introduce a further element of risk, in the form of a health system which deducts a heart from a player on answering a question incorrectly. Loss of all hearts results in the player restarting the entire fight. A skill tree will enable the player to alter combat to suit their play style, by choosing powerups after defeating each boss. All areas will be linked by a hub world, allowing the player to select an area in which to enter, in any order they please. All of our choices for the game were based on market research found [here](https://github.com/COMP2281/software-engineering-group-17/blob/main/readme/market-research.md)
 
 #### Existing Solutions
 
 > **Mario is Missing (by Nintendo)**
 >
-> **Description:** Mario is Missing challenges the player to save global landmarks stolen by Bowser. By learning about geography from non playable characters (NPC's) the player is able to identify and return the landmarks to their correct geographical location. The game acts as an educational tool by improving the players' geographical knowledge through exploration of locations.
+> **Description:** Mario is Missing challenges the player to save global landmarks stolen by Bowser. By learning about geography from non-playable characters (NPC's) the player is able to identify and return the landmarks to their correct geographical location. The game acts as an educational tool by improving the players' geographical knowledge through exploration of locations.
 >
 > **Advantage:** The game acts as an educational tool by improving the players geographical knowledge through exploration of locations.
 >
@@ -56,7 +56,7 @@ Our proposed solution to IBM's Skills Build Website issue is the creation of an 
 >
 > **Advantage:** The trivia notes, which are location specific, are hidden around the world and so well integrated into the game. The player is rewarded for finding the information, with completionist badges.
 >
-> **Disadvantage:** The game is not focused on these trivia notes, rather they are an additional feature, which although do give the player a badge, does not facilitate progression: They are a side quest.
+> **Disadvantage:** The game is not focused on these trivia notes, rather they are an additional feature, which despite it giving the player a badge, does not facilitate progression: They are a side quest.
 >
 > **Use for our System:** Our game should reward the player for answering questions correctly and enable progression. Without correctly answering the questions, the player should not be able to progress. The questions asked should fit the environment of the game.
 
@@ -66,9 +66,11 @@ Our proposed solution to IBM's Skills Build Website issue is the creation of an 
 
 This part of the document has three sections - functional requirements, non-functional requirements and risks/issues.
 
-Add UML Diagram here
 
 ### 2.1 - Function Requirements
+
+Below is a dependency graph for our functional requirements:
+![Functional Requirement Dependency Graph](images/../../image/Documentation/Requirements-Dependency-Graph.png)
 
 #### **Player-Based system**
 
@@ -77,7 +79,7 @@ Add UML Diagram here
 | Description  | Main playable character which the game centers around, which should be a student (user) stand-in. |
 | Priority / MuShCo | High / Must have |
 | Dependencies | N/A |
-| Expected results | Character should have distinct/unique sprite both in and out of battle (small zoomed out model out of battle, portrait outside) |
+| Expected results | Character should have distinct/unique sprite both in and out of battle (small zoomed out model outside of battle, portrait outside) |
 | Exception handling | If a sprite cannot be loaded, character sprite will be a placeholder |
 
 | ID, Type, Title | FR1.2 - Player-Based system - Player Character Movement |
@@ -109,7 +111,7 @@ Add UML Diagram here
 
 | ID, Type, Title | FR2.2 - Game System - Pause Menu |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | A menu which pauses the game when opened, with an options menu, with optinons available such as quitting. |
+| Description  | A menu which pauses the game when opened, with an options menu, with options available such as quitting. |
 | Priority / MuShCo | High / Must have |
 | Dependencies | FR1.3 |
 | Expected results | After pressing the [Esc] button, a menu should open up. When this menu is open, all entities and events should be paused. This menu contains buttons to: Access the inventory, save the game, open the options menu, or quit (to the main menu or to the desktop) |
@@ -181,7 +183,7 @@ Add UML Diagram here
 | Description  | A room that contains a puzzle or a boss with a door to the next room, with a puzzle |
 | Priority / MuShCo | High / Must have |
 | Dependencies | FR4.3 |
-| Expected results | A room has at least one entrance, and can have none or multiple exits. The room size can be from one screen to multiple screens. After entering through a door, the player character is placed right outside the door of another room, and the door to the next room should only be opnened once the problem or boss is defeated |
+| Expected results | A room has at least one entrance, and can have none or multiple exits. The room size can be from one screen to multiple screens. After entering through a door, the player character is placed right outside the door of another room, and the door to the next room should only be opened once the problem or boss is defeated |
 | Exception handling | N/A |
 
 | ID, Type, Title | FR4.4 - Gameplay - Puzzles |
@@ -190,7 +192,7 @@ Add UML Diagram here
 | Priority / MuShCo | Medium / Should have |
 | Dependencies | FR4.3, FR4.5 |
 | Expected results | Puzzles have a theme in each world. Most puzzles will be a multiple choice question disguised as a minigame |
-| Exception handling | Some puzzles will require a reset button, which restores the state of the room its in to how it originaly was |
+| Exception handling | Some puzzles will require a reset button, which restores the state of the room its in to how it originally was |
 
 | ID, Type, Title | FR4.5 - Gameplay - Multiple Choice Question |
 | ------------ | --------------------------------------------------------------------- |
@@ -202,11 +204,11 @@ Add UML Diagram here
 
 | ID, Type, Title | FR4.6 - Gameplay - Boss Fight |
 | ------------ | --------------------------------------------------------------------- |
-| Description  | Fights where the user has to correctly answer questions from the world its in |
+| Description  | Fights where the user has to correctly answer questions from the world it is in |
 | Priority / MuShCo | Medium / Should have |
 | Dependencies | FR3.1, FR3.2, FR4.6 |
-| Expected results | Both the player character and the boss has a health bar. If the user answers a question correctly, they get to attack the boss. If they dont answer correctly, they get hit by the boss. Bosses can ask any questions from the previous puzzles, and maybe more, in their respective world. The final boss should be able to ask questions from any of the other worlds |
-| Exception handling | If the fight lasts long enough, there will not be enough unique questions to ask the user. To prevent this happening, questions can be reused after all other questions gets exausted |
+| Expected results | Both the player character and the boss has a health bar. If the user answers a question correctly, they get to attack the boss. If they don't answer correctly, they get hit by the boss. Bosses can ask any questions from the previous puzzles, and maybe more, in their respective world. The final boss should be able to ask questions from any of the other worlds |
+| Exception handling | If the fight lasts long enough, there will not be enough unique questions to ask the user. To prevent this happening, questions can be reused after all other questions gets exhausted |
 
 #### **Audio**
 
@@ -237,7 +239,7 @@ Add UML Diagram here
 | ------------ | --------------------------------------------------------------------- |
 | Type | Usability |
 | Metric | Game should be playable on mouse & keyboard as well as controller |
-| Constraints | Not all controllers need to be supported, just common ones e.g. xbox and playstation controllers |
+| Constraints | Not all controllers need to be supported, just common ones e.g. Xbox and Playstation controllers |
 
 
 #### **Customization**
@@ -245,7 +247,7 @@ Add UML Diagram here
 | ID and Title | NFR2.1 - Graphics                                                      |
 | ------------ | --------------------------------------------------------------------- |
 | Type  | Usability |
-| Metric | Graphics abide by the Game Accessibility Guidelines so the game is enjoyable for users suffering from colourblindness |
+| Metric | Graphics abide by the Game Accessibility Guidelines, so the game is enjoyable for users suffering from colour blindness |
 
 
 #### **Gameplay**
@@ -301,10 +303,10 @@ This section outlines our potential risks, how they could harm out project, and 
 
 | Hazard | What is at Risk? | How could they be harmful? | Uncontrolled Risk Level | How to minimize the risks | Controlled Risk Level |
 | - | - | - | - | - | - |
-| R1 - Not Being Completed on Time | Project timeline & client satisfaction | Delays result in missing milestones, which will disappoint the client | 12 | Implement a well-defined schedule and monitor progress to deal with isssues | 6 |
+| R1 - Not Being Completed on Time | Project timeline & client satisfaction | Delays result in missing milestones, which will disappoint the client | 12 | Implement a well-defined schedule and monitor progress to deal with issues | 6 |
 | R2 - Group Dynamic | Team cohesion & project quality | Arguments lead to lower quality product, and delays | 9 | Establish clear roles and responsibilities, address issues promptly | 4 |
 | R3 - Lack of Group’s Technical Knowledge | Project quality and timeline | Inability to meet project requirements | 16 | Identify skill gaps and train to fill gaps | 9 |
-| R4 - Scope Creep (uncontrolled expansion of project) | Project timeline | Project not completed on time due to base features not being completed| 6 | Define project scope clearly, use agile methodolody to add new features after base completed | 4 |
+| R4 - Scope Creep (uncontrolled expansion of project) | Project timeline | Project not completed on time due to base features not being completed| 6 | Define project scope clearly, use agile methodology to add new features after base completed | 4 |
 | R5 - Team Member Drops Out or is Unavailable | Group members & project timeline | Other group members have more work, delays if key member | 12 | Cross train team members, or have backup plans | 6 |
 | R6 - Poor User Feedback | User acceptance & client happiness | Fail to create a positive user experience | 9 | Conduct occasional user testing and gather feedback | 4 |
 | R7 - Requirements Change | Project scope & timeline | Will have to go back and change content, potentially from a fundamental level | 16 | Document and manage project requirements, make the game flexibly to adapt to change | 8 |
@@ -325,9 +327,9 @@ As mentioned, features and priorities will greatly change as development progres
 
 2. Client Involvement
 
-As we are making this RPG game for a client, the subjective nature of video games means that as we make regular updates to our client, there may be things to change or we may have to tackle a problem differently in order to suit our client's needs, having an agile methodology suits this nicely. A plan driven approach would mean that we run the risk of the client not being happy, once the game is basically finished.
+As we are making this RPG game for a client, the subjective nature of video games means that as we make regular updates to our client, there may be things to change, or we may have to tackle a problem differently in order to suit our client's needs, having an agile methodology suits this nicely. A plan driven approach would mean that we run the risk of the client not being happy, once the game is basically finished.
 
-3. Cross Functional Teams
+3. Cross-Functional Teams
 
 Everybody in our team has a different level of knowledge when it comes to game development, where some know a lot and some not at all, by taking an agile approach, team members can share knowledge and collaborate easier, rather than everybody having a set, strict, set of tasks. A plan driven approach would make our team much less flexible, and may cause major issues if a member ends up falling ill or dropping out.
 
@@ -344,24 +346,23 @@ An agile development means that the game will be built up feature by feature in 
 While the majority of our team do not have set roles, other than James, who is our artist, and Josh, our lead developer. We mostly plan on working on the game in small increments, with each of our five members handling their own piece of game development, as we are assigning every member their own world to design, once base asset creation is completed, as this will allow us to simultaneously build the game up, and deal with any problems as they arise. In addition, we will be assigning individual members tasks based on the level of complexity and prior knowledge.
 
 In the end this approach is best for our team due to our existing skill set, and also allows individual member's talents to shine.
-In the end this approach is best for our team due to our existing skill set, and also allows individual member's talents to shine.
 
 ### 3.2 - Project Schedule
 
 The Gantt Chart shown below outlines the development time for our project and highlights the academic deadlines too.
 ![Gantt_Chart](images/../../image/Documentation/Gantt_Chart.png)
 
-The chart takes into account the number of members and the weekly workload we have; we hare 5 members, and on average work on Software Engineering for 4h per week plus any extra time voluntarily invested. The aim by the end of the holiday is to have in place all of the base content that will be used as the building blocks of every world, so that each team member can create a world individually, with no depdencies halting progression. We expect that productivity after the holiday will subside, due to lectures resuming and other coursework deadlines being set throughout the term. To combat this, we have given a large extended time to the creation of each world, which gives members enough time to flesh out their ideas and invest enough time into compelling gameplay. Art assets are imported when finished, with placeholders being created whilst waiting for the assets. Music and cutscene are non vital componants of our game and will thus be added at the end if time allows. The team also thought about agile vs waterfall model and after drafting up a waterfall model of the project found [here](https://github.com/COMP2281/software-engineering-group-17/blob/main/image/Documentation/Gantt_chart_waterfall.png), decided against it as, due to our lack of game development knowledge it is safer to go with a model that allows for a lot of deadline flexibility. Beyond restating the sumative deadlines, the team also added tasks that describe the game creation process and thought about subsection for each task where necessary:
+The chart takes into account the number of members and the weekly workload we have; we hare 5 members, and on average work on Software Engineering for 4h per week plus any extra time voluntarily invested. The aim by the end of the holiday is to have in place all the base content that will be used as the building blocks of every world, so that each team member can create a world individually, with no dependencies halting progression. We expect that productivity after the holiday will subside, due to lectures resuming and other coursework deadlines being set throughout the term. To combat this, we have given a large extended time to the creation of each world, which gives members enough time to flesh out their ideas and invest enough time into compelling gameplay. Art assets are imported when finished, with placeholders being created whilst waiting for the assets. Music and cutscene are non-vital components of our game and will thus be added at the end if time allows. The team also thought about agile vs waterfall model and after drafting up a waterfall model of the project found [here](https://github.com/COMP2281/software-engineering-group-17/blob/main/image/Documentation/Gantt_chart_waterfall.png), decided against it as, due to our lack of game development knowledge it is safer to go with a model that allows for a lot of deadline flexibility. Beyond restating the summative deadlines, the team also added tasks that describe the game creation process and thought about subsection for each task where necessary:
 
-Initial Game Setup: Creating a template player character complete with movement and collision, tilemap, interactable objects, Hub World
+**Initial Game Setup:** Creating a template player character complete with movement and collision, tilemap, interactable objects, Hub World
 
-Combat System: Creating a template boss and the player health/damage systems.
+**Combat System:** Creating a template boss and the player health/damage systems.
 
-Main Menu: Creation of 5 buttons: new game, continue game, controls, credits and exit. 
+**Main Menu:** Creation of 5 buttons: new game, continue game, controls, credits and exit. 
 
-Pause Menu: Creation of 4 buttons: controls, save and exit, inventory, Skills Build tree.
+**Pause Menu:** Creation of 4 buttons: controls, save and exit, inventory, Skills Build tree.
 
-Art: 2 sections; art creation and art sourcing. Art sourcing includes tile sets, text fonts, NPC sprites, interactable objects and inventory items. Art creation includes player character, boss fights and all puzzle elements.
+**Art:** 2 sections; art creation and art sourcing. Art sourcing includes tile sets, text fonts, NPC sprites, interactable objects and inventory items. Art creation includes player character, boss fights and all puzzle elements.
 
 
 
