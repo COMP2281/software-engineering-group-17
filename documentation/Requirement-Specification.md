@@ -65,9 +65,11 @@ Our proposed solution to IBM's Skill Build Website issue is the creation of an e
 
 This part of the document has three sections - functional requirements, non-functional requirements and risks/issues.
 
-Add UML Diagram here
 
 ### 2.1 - Function Requirements
+
+Below is an dependency graph for our functional requirements:
+![Gantt_Chart](images/../../image/Documentation/Requirement-Dependency-Graph.png)
 
 #### **Player-Based system**
 
