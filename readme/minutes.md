@@ -51,3 +51,18 @@
 - Discussed who will be doing which part of the video presentation; script writing and video editing
 - Goals for the week
   - Complete sections 1.2, 1.3, 2.3, 3.1 and 3.2. Tweak sections 2.1 and 2.2 to be less than 10 pages
+
+
+## Week 6 Minutes
+- **Lest Week's Goals**: Partially achived; completed sections 1.3, 2.3, 3.1 and 3.2. Need to finish 1.2
+- Worked on Requirment specification sheet
+  - Made a near complete version
+  - Fixed spelling mistakes
+  - Added graphs
+  - Cut content where the section was too large
+- Drafted video presentation script
+- Goals for the week
+  - Finish Requirement Specification document
+    - Complete section 1.2
+    - Make title sheet
+    - Fix formating issues 
