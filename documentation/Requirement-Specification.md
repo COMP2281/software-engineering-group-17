@@ -9,16 +9,14 @@ The game should also be fun and engaging to the user; it would be an amazing stu
 This document is the Requirement Specification for our RPG IBM Skills Build project. There are three parts to this document. The first part is the introduction, which gives a high-level description of the project, its scope, and domain area. The second part, the Solution Requirments, is the main part of the requirement specification. This part specifies the projects functional and non-functional requirements, and assess the risks/issues which may occur when undertaking the project. The third part describes our approach to the development of the game, as well as our time schedule in order to complete the project within the agreed deadline.
 
 ### 1.2 - Project Scope
-The goal of our project is to create an RPG game to reimagine Skills Build, IBM's platform to provide people with job skills, courses and credentials. The purpose of this project is to make Skills Build easier to navigate and make it more interactive so that it increases receptiveness for students. The base of our game is a hub world with areas corresponding to different courses, each area would have a boss that would be the center of combat gameplay. Upon choosing an area the player will have to complete puzzles and combat that havecourse questions as the core. This will allow them to progress further. A health system also comes into play with combat themed games, whereby running out of hearts would result in restarting the fight, this would be somewhat similar to quiz questions in courses where achieving a score less than 80% would require you to take it again.
+The goal of our project is to create an RPG game to reimagine Skills Build, IBM's platform to provide people with job skills, courses and credentials. The purpose of this project is to make Skills Build easier to navigate and make it more interactive so that it increases receptiveness for high school and university students. The game is based on a hub world where each coure is represented by a different area having differently themed puzzles, solving which, players can progress. This game aims to address the problem of accessibility for people with little to no knowledge of Computer Science. 
 
-This game aims to address the problem of accessibility for people with little to no knowledge of Computer Science. It resolves this problem by creating puzzles and combat themed areas to answer challenging questions, earn skillbuild badges and complete courses. Rewarding users with power-ups and level progressions incentivises them, particularly high school and university students, it also makes learning more engaging.
+Our main objectives are to increase user engagement by transforming learning into a gamified experience, simplifying the navigation of Skills Build resources through an intuitive game interface and reinforcing learning by tying in-game puzzles to Skills Build topics and badges making it more appealing to students. Rewarding players with in-game items for successfully completing challenges would also motivate them.
 
 Future Versions of the game could include:
-Expansion of the amount of courses provided, right now only introductory lessons would be connected to the game, further development could increase the amount of courses the game would provide.
+Expansion of the amount of courses provided, currently only introductory lessons would be connected to the game, further development could increase the amount of courses the game would provide.
 Altering game content to include teaching material instead of just knowledge checks.
 Changing sprites to original characters.
-
-<div style="page-break-after: always;"></div>
 
 ### 1.3 - System Description
 
