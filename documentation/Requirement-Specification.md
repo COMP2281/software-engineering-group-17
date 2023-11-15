@@ -69,7 +69,7 @@ This part of the document has three sections - functional requirements, non-func
 ### 2.1 - Function Requirements
 
 Below is an dependency graph for our functional requirements:
-![Functional Requirement Dependency Graph](images/../../image/Documentation/Requirement-Dependency-Graph.png)
+![Functional Requirement Dependency Graph](images/../../image/Documentation/Requirements-Dependency-Graph.png)
 
 #### **Player-Based system**
 
