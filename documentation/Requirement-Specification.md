@@ -60,6 +60,8 @@ Our proposed solution to IBM's Skills Build Website issue is the creation of an 
 >
 > **Use for our System:** Our game should reward the player for answering questions correctly and enable progression. Without correctly answering the questions, the player should not be able to progress. The questions asked should fit the environment of the game.
 
+<div style="page-break-after: always"></div>
+
 ## 2 - Solution Requirements
 
 This part of the document has three sections - functional requirements, non-functional requirements and risks/issues.
@@ -310,6 +312,8 @@ This section outlines our potential risks, how they could harm out project, and 
 | R7 - Requirements Change | Project scope & timeline | Will have to go back and change content, potentially from a fundamental level | 16 | Document and manage project requirements, make the game flexibly to adapt to change | 8 |
 | R8 - Hardware Compatibility | Game performance or accessibility | Poor performance or being unable to play on systems should | 6 | Test on a number of platforms and hardware configurations | 2 |
 
+<div style="page-break-after: always"></div>
+
 ## 3 - Project Development
 
 ### 3.1 - Development Approach
@@ -341,7 +345,7 @@ An agile development means that the game will be built up feature by feature in 
 
 While the majority of our team do not have set roles, other than James, who is our artist, and Josh, our lead developer. We mostly plan on working on the game in small increments, with each of our five members handling their own piece of game development, as we are assigning every member their own world to design, once base asset creation is completed, as this will allow us to simultaneously build the game up, and deal with any problems as they arise. In addition, we will be assigning individual members tasks based on the level of complexity and prior knowledge.
 
-In the end this approach is best for our team due to our existing skillet, and also allows individual member's talents to shine.
+In the end this approach is best for our team due to our existing skill set, and also allows individual member's talents to shine.
 
 ### 3.2 - Project Schedule
 
