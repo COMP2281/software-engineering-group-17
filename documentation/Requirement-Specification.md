@@ -319,6 +319,7 @@ This section outlines our potential risks, how they could harm out project, and 
 ### 3.1 - Development Approach
 
 #### Agile Versus Plan Driven
+
 Due to the nature of video games, it can be very difficult to approach this project from a plan driven perspective, as video games are very subjective, and while there are many tasks that have a clear point where you have or haven't achieved it, video games are more oriented around how enjoyable the experience is to the player, which is a difficult metric to define. As such it would be very difficult to plan the entire game out in the beginning and build it as designed. As such we will be taking an agile scrum approach to development, as it helps us in a number of ways:
 
 1. Adaptability to Change:
@@ -343,7 +344,17 @@ An agile development means that the game will be built up feature by feature in 
 
 #### Team Roles
 
-While the majority of our team do not have set roles, other than James, who is our artist, and Josh, our lead developer. We mostly plan on working on the game in small increments, with each of our five members handling their own piece of game development, as we are assigning every member their own world to design, once base asset creation is completed, as this will allow us to simultaneously build the game up, and deal with any problems as they arise. In addition, we will be assigning individual members tasks based on the level of complexity and prior knowledge.
+Before tackling the project, we all decided to do a Belbin-like test, called the Plum Test <sup>[1]</sup>, and assign roles for our team based on this. We have two members whose top talent is innovation, hence we assigned them more creative roles.
+
+- Innovation, Execution: **Lead Game Designer**
+
+- Innovation, Adaptation: **Creativity Director**
+
+Besides those two, each of us had quite a varied top talent. 
+
+- Communication, Teamwork: **Communication and Management Specialist**
+
+- Execution, Decision-Making: **Technical Lead**
 
 In the end this approach is best for our team due to our existing skill set, and also allows individual member's talents to shine.
 
@@ -364,8 +375,9 @@ The chart takes into account the number of members and the weekly workload we ha
 
 **Art:** 2 sections; art creation and art sourcing. Art sourcing includes tile sets, text fonts, NPC sprites, interactable objects and inventory items. Art creation includes player character, boss fights and all puzzle elements.
 
+## References
 
-
+[1] Plum Talents: https://help.plum.io/hc/en-us/articles/360002388234-What-are-the-10-Plum-Talents-
 
 
 
