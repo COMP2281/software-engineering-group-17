@@ -1,3 +1,11 @@
+# Requirement Specification 
+## Reimagine Skills Build as an RPG game
+### Created By Group 17
+#### Joshua Pulham, Nam Le, James Watson, Charles Dubois-Veltman, Akanksha Sirohia
+##### 20th November 2023
+
+<div style="page-break-after: always;"></div>
+
 ## 1 - Introduction
 
 ### 1.1 - Overview and Justification
@@ -379,9 +387,8 @@ The chart takes into account the number of members and the weekly workload we ha
 
 [1] Plum Talents: https://help.plum.io/hc/en-us/articles/360002388234-What-are-the-10-Plum-Talents-
 
+[2] Mario is Missing: https://www.deadpark.com/30-minute-reviews/mario-is-missing-snes/
 
+[3] Sonic Olympic Winter Game: https://www.mariowiki.com/Mario_%26_Sonic_at_the_Olympic_Winter_Games_(Nintendo_DS)
 
-
-
-
-
+[4] Minecraft Education: https://education.minecraft.net/en-us
