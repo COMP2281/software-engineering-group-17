@@ -1,3 +1,11 @@
+# Requirement Specification 
+## Reimagine Skills Build as an RPG game
+### Created By Group 17
+#### Joshua Pulham, Nam Le, James Watson, Charles Dubois-Veltman, Akanksha Sirohia
+##### 20th November 2023
+
+<div style="page-break-after: always;"></div>
+
 ## 1 - Introduction
 
 ### 1.1 - Overview and Justification
