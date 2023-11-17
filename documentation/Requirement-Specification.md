@@ -365,11 +365,6 @@ The chart takes into account the number of members and the weekly workload we ha
 **Art:** 2 sections; art creation and art sourcing. Art sourcing includes tile sets, text fonts, NPC sprites, interactable objects and inventory items. Art creation includes player character, boss fights and all puzzle elements.
 
 
-
-
-
-
-
-
-
-
+https://www.deadpark.com/30-minute-reviews/mario-is-missing-snes/
+https://www.mariowiki.com/Mario_%26_Sonic_at_the_Olympic_Winter_Games_(Nintendo_DS)
+https://education.minecraft.net/en-us
