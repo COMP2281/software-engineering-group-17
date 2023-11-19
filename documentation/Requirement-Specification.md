@@ -6,6 +6,37 @@
 
 <div style="page-break-after: always;"></div>
 
+- [Requirement Specification](#requirement-specification)
+  - [Reimagine Skills Build as an RPG game](#reimagine-skills-build-as-an-rpg-game)
+    - [Created By Group 17](#created-by-group-17)
+      - [Joshua Pulham, Nam Le, James Watson, Charles Dubois-Veltman, Akanksha Sirohia](#joshua-pulham-nam-le-james-watson-charles-dubois-veltman-akanksha-sirohia)
+        - [20th November 2023](#20th-november-2023)
+  - [1 - Introduction](#1---introduction)
+    - [1.1 - Overview and Justification](#11---overview-and-justification)
+    - [1.2 - Project Scope](#12---project-scope)
+    - [1.3 - System Description](#13---system-description)
+      - [Our proposed System](#our-proposed-system)
+      - [Existing Solutions](#existing-solutions)
+  - [2 - Solution Requirements](#2---solution-requirements)
+    - [2.1 - Function Requirements](#21---function-requirements)
+      - [**Player-Based system**](#player-based-system)
+      - [**Game System**](#game-system)
+      - [**Gameplay Systems**](#gameplay-systems)
+      - [**Gameplay**](#gameplay)
+      - [**Audio**](#audio)
+    - [2.2 - Non-Functional Requirements](#22---non-functional-requirements)
+      - [**Playability**](#playability)
+      - [**Customization**](#customization)
+      - [**Gameplay**](#gameplay-1)
+    - [2.3 - Risks and Issues](#23---risks-and-issues)
+  - [3 - Project Development](#3---project-development)
+    - [3.1 - Development Approach](#31---development-approach)
+      - [Agile Versus Plan Driven](#agile-versus-plan-driven)
+      - [Team Roles](#team-roles)
+    - [3.2 - Project Schedule](#32---project-schedule)
+  - [References](#references)
+
+
 ## 1 - Introduction
 
 ### 1.1 - Overview and Justification
@@ -232,12 +263,7 @@ Below is a dependency graph for our functional requirements:
 
 #### **Playability**
 
-<!-- | ID and Title | NFR1.1 - Windows                                |
-| ------------ | --------------------------------------------------------------------- |
-| Type | Compatibality |
-| Metrics | Game should be able to run on windows 10 and 11 | -->
-
-| ID and Title | NFR1.1 - Executable file |
+| ID and Title | NFR1.1 - Executable file                                              |
 | ------------ | --------------------------------------------------------------------- |
 | Type  | Usability |
 | Metric | The game can be launched by running a single executable file |
@@ -259,6 +285,8 @@ Below is a dependency graph for our functional requirements:
 
 
 #### **Gameplay**
+
+In this section, any NFR metrics which is subjective in nature (NFR3.2 – 3.7) will be judged a through user feedback questionnaire in the testing phase
 
 | ID and Title  | NFR3.1 - Response Time                              |
 | ------------ | --------------------------------------------------------------------- |
@@ -302,6 +330,7 @@ Below is a dependency graph for our functional requirements:
 
 ### 2.3 - Risks and Issues
 This section outlines our potential risks, how they could harm out project, and how we plan to mitigate these risks.
+
 | Probability of Happening / Potential Consequences | Almost Impossible (1)| Not Likely (2) | Could Happen (3) | Known to Happen (4) |
 | - | - | - | - | - |
 | Insignificant (1) | 1 | 2 | 3 | 4 |
@@ -352,7 +381,7 @@ An agile development means that the game will be built up feature by feature in 
 
 #### Team Roles
 
-Before tackling the project, we all decided to do a Belbin-like test, called the Plum Test <sup>[1]</sup>, and assign roles for our team based on this. We have two members whose top talent is innovation, hence we assigned them more creative roles.
+Before tackling the project, we all decided to do a Belbin-like test, called the Plum Test [1], and assign roles for our team based on this. We have two members whose top talent is innovation, hence we assigned them more creative roles.
 
 - Innovation, Execution: **Lead Game Designer**
 
