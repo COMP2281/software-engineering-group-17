@@ -364,28 +364,24 @@ This section outlines our potential risks, how they could harm out project, and 
 
 #### Agile Versus Plan Driven
 
-We will be taking an agile scrum approach to development, as it helps us in several ways:
+We will be taking an agile Scrum approach to development, as it helps us in several ways:
 
 1. Adaptability to Change
 
-Features and priorities will greatly change as development progresses, thus by taking a scrum approach, we can approach development from a different angle whenever we face adversity. A waterfall approach to development would not allow this kind of adaptability, thus we chose an agile approach. 
+Features and priorities will greatly change as development progresses, so with Scrum we can rapidly change aspects of the project without losing progress. A waterfall approach to development would not allow this kind of adaptability.
 
 2. Client Involvement
 
-As we are developing this RPG game for a client, and they require regular updates from us, there may be necessary changes or we may have to tackle a problem differently, to suit our client's needs. Having an agile methodology suits this nicely, as a plan driven approach would mean that we run the risk of the client dissatisfaction, once the game is near completion. The lean innovation model could not be applied to our project as we want to have a good relationship with our client and focus on their needs [5].
+Clients require regular updates from us, so we need a method that involves them in the development process. The agile methodology allows for this as the client can serve the product owner role. The lean innovation model is not ideal as it solely focuses on completion of the project, whereas we want to have a good relationship with our client and focus on their needs [5].
 
 
 3. Cross-Functional Teams
 
-Everybody in our team has a different level of knowledge when it comes to game development. By taking an agile approach, team members can share knowledge and collaborate easier, rather than having a strict set of tasks each member must complete individually. A plan driven approach would make our team much less flexible and may cause major issues if a member ends up falling behind on their tasks.
+Everybody in our team has a different level of knowledge when it comes to game development. By using Scrum, team members can share, receive knowledge, and collaborate easier through the Scrum master and daily meetings. A plan driven approach will cause major issues if a member ends up falling behind on their tasks unbeknownst to the team.
 
 4. Improved Risk Management
 
-In the event that something doesn't go as planned, a scrum style approach will let us, identify and mitigate any risks that arise within our sprints quickly. In a plan driven approach, if any issues were discovered late, it could cause problems to stack up and thus cause progress stagnation.
-
-5. Incremental Development
-
-An agile development means that the game will be built up incrementally, feature by feature. This allows us to prioritize features based on current needs, whilst leaving low priority features until the end.
+If something doesn’t go as planned, a Scrum style approach will let us identify, and mitigate any risks that arise within our sprint reviews. In a plan driven approach, if any issues were discovered late, it could cause problems to stack up and thus cause progress stagnation.
 
 #### Team Roles
 
@@ -401,7 +397,7 @@ Besides those two, each of us had quite a varied top talent.
 
 - Execution, Decision-Making: **Technical Lead**
 
-To conclude: The agile scrum approach is best for our team due to our existing skill set, and also allows individual member's talents to shine.
+To conclude: The agile Scrum approach is best for our team due to our existing skill set, and also allows individual member's talents to shine.
 
 #### Workflow (Scrum)
 
