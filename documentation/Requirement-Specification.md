@@ -406,9 +406,9 @@ In the end this approach is best for our team due to our existing skill set, and
 
 Before starting sprint cycles, we will need to write up our product backlog, as well as assign points for each task. The way points are decided will be based around a modified version of the point-to-effort estimation, where we also take into consideration priority of task (tasks which takes less effort but are more important will weigh more points). The tasks can further be broken down in the actual cycles.
 
-As we do not have easy and frequent contact with our actual product owner (John Mcnamara), our Communication and Management Specialist will act as a stand-in for this role. 
+As we do not have easy and frequent contact with our product owner (John Mcnamara), our Communication and Management Specialist will act as a stand-in representative for this role. 
 
-For each sprint cycles, we will have a new Scrum master, so that everyone can have a grasp of how the roles operates. Each cycle lasts two weeks, and we aim to have daily meetings for at least weekdays to discuss progress and problems, ending in an end-of-cycle review.
+For each sprint cycle, we will have a new Scrum master, so that everyone can have a grasp of how the roles operates. Each cycle lasts two weeks, and we aim to have daily meetings for at least weekdays to discuss progress and problems, ending in an end-of-cycle review. We start our sprints on Mondays, and end on Fridays to allow for a weekend of rest.
 
 ### 3.2 - Project Schedule
 
