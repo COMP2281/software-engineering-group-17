@@ -414,10 +414,15 @@ The chart takes into account the number of members and the weekly workload we ha
 
 ## References
 
-[1] Plum Talents: https://help.plum.io/hc/en-us/articles/360002388234-What-are-the-10-Plum-Talents-
+[1] (n.d.). What are the 10 Plum Talents? [Review of What are the 10 Plum Talents?]. Plum; Plum. Retrieved November 20, 2023, from https://help.plum.io/hc/en-us/articles/360002388234-What-are-the-10-Plum-Talents-
 
-[2] Mario is Missing: https://www.deadpark.com/30-minute-reviews/mario-is-missing-snes/
 
-[3] Sonic Olympic Winter Game: https://www.mariowiki.com/Mario_%26_Sonic_at_the_Olympic_Winter_Games_(Nintendo_DS)
+[2] Mario is Missing! (SNES). (2016, April 3). DeadPark. https://www.deadpark.com/30-minute-reviews/mario-is-missing-snes/
 
-[4] Minecraft Education: https://education.minecraft.net/en-us
+
+[3] Super Mario Wiki. (2023, October 17). Mario & Sonic at the Olympic Winter Games (Nintendo DS) - Super Mario Wiki, the Mario encyclopedia. Super Mario Wiki; Super Mario Wiki. https://www.mariowiki.com/Mario_%26_Sonic_at_the_Olympic_Winter_Games_(Nintendo_DS)
+
+
+[4] Microsoft. (2023). Minecraft Official Site | Minecraft Education Edition. Education.minecraft.net. https://education.minecraft.net/en-us
+
+
