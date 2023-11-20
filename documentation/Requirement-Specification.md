@@ -357,7 +357,7 @@ This section outlines our potential risks, how they could harm out project, and 
 
 #### Agile Versus Plan Driven
 
-Due to the nature of video games being an experience measured by players enjoyability rather than a quantitative measure, it can be very difficult to approach this project from a plan driven perspective. As such it would be very challenging to plan the entire game development out from start to finish. As such we will be taking an agile scrum approach to development, as it helps us in several ways:
+We will be taking an agile scrum approach to development, as it helps us in several ways:
 
 1. Adaptability to Change
 
@@ -367,9 +367,8 @@ Features and priorities will greatly change as development progresses, thus by t
 
 As we are developing this RPG game for a client, and they require regular updates from us, there may be necessary changes or we may have to tackle a problem differently, to suit our client's needs. Having an agile methodology suits this nicely, as a plan driven approach would mean that we run the risk of the client dissatisfaction, once the game is near completion. The lean innovation model could not be applied to our project as we want to have a good relationship with our client and focus on their needs [5].
 
-https://www.middlemarketcenter.org/expert-perspectives/lean-business-model-pros-and-cons-can-you-afford-frugality
 
-3. Cross-Functional Teams
+1. Cross-Functional Teams
 
 Everybody in our team has a different level of knowledge when it comes to game development. By taking an agile approach, team members can share knowledge and collaborate easier, rather than having a strict set of tasks each member must complete individually. A plan driven approach would make our team much less flexible and may cause major issues if a member ends up falling behind on their tasks.
 
@@ -395,7 +394,7 @@ Besides those two, each of us had quite a varied top talent.
 
 - Execution, Decision-Making: **Technical Lead**
 
-To conclude: the agile scrum approach is best for our team due to our existing skill set, and also allows individual member's talents to shine.
+To conclude: The agile scrum approach is best for our team due to our existing skill set, and also allows individual member's talents to shine.
 
 ### 3.2 - Project Schedule
 
