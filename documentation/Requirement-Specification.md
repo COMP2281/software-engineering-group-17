@@ -404,7 +404,7 @@ In the end this approach is best for our team due to our existing skill set, and
 
 #### Workflow (Scrum)
 
-Before starting sprint cycles, we will need to write up our product backlog, as well as assign points for each task. The way points are decided will be based around a modified version of the point-to-effort estimation, where we also take into consideration the priority of the task (tasks which takes less effort but are more important will weigh more points). The tasks can further be broken down in the sprint cycles.
+Before starting sprint cycles, we will need to write up our product backlog, as well as assign points for each task. The way points are decided will be based around a modified version of the point-to-effort estimation, where we also take into consideration the priority of each task (tasks which takes less effort but are more important will weigh more points). The tasks can then further be broken down in the sprint cycles.
 
 As we do not have easy and frequent contact with our product owner (John Mcnamara), our Communication and Management Specialist will act as a stand-in representative for this role. 
 
