@@ -37,6 +37,7 @@
     - [3.1 - Development Approach](#31---development-approach)
       - [Agile Versus Plan Driven](#agile-versus-plan-driven)
       - [Team Roles](#team-roles)
+      - [Workflow (Scrum)](#workflow-scrum)
     - [3.2 - Project Schedule](#32---project-schedule)
   - [References](#references)
 
@@ -52,14 +53,19 @@ This document is the Requirement Specification for our RPG IBM Skills Build proj
 
 ### 1.2 - Project Scope
 
-The goal of our project is to create an RPG game to reimagine Skills Build, IBM's platform to provide people with job skills, courses and credentials. The purpose of this project is to make Skills Build easier to navigate and make it more interactive so that it increases receptiveness for students. The base of our game is a hub world with areas corresponding to different courses, each area would have a boss that would be the center of combat gameplay. Upon choosing an area the player will have to complete puzzles and combat that have course questions as the core. This will allow them to progress further. A health system also comes into play with combat themed games, whereby running out of hearts would result in restarting the fight, this would be somewhat similar to quiz questions in courses where achieving a score less than 80% would require you to take it again.
+The IBM Skills Build website is designed to be an educational website with courses on various subjects related to Computer Science. However, the current IBM Skills Build website is sometimes confusing and complex, and can be a barrier to entry for students or people who are interested in computer science. This is the problem we are aiming to solve with our project.
 
-This game aims to address the problem of accessibility for people with little to no knowledge of Computer Science. It resolves this problem by creating puzzles and combat themed areas to answer challenging questions, earn Skills build badges and complete courses. Rewarding users with power-ups and level progressions incentivizes them, particularly high school and university students, it also makes learning more engaging.
+The purpose of the software is to provide a fun way to navigate the website and discover IBM Skills Build courses. This will be done by making a top down 2D RPG game where the aforementioned courses are linked throughout the game, and where you need to learn about the topics covered to progress throughout the game. This would help solve the problem by making the courses more accessible and encourage the player to do the courses.
 
-Future Versions of the game could include:
-Expansion of the amount of courses provided, right now only introductory lessons would be connected to the game, further development could increase the amount of courses the game would provide.
-Altering game content to include teaching material instead of just knowledge checks.
-Changing sprites to original characters.
+This aligns with the interest of our client and main stakeholder IBM alongside our users as currently, while the resources on IBM Skills Build are very helpful, finding them, and going through the website can be complex and confusing. This can add an unnecessary barrier to entry, which IBM wants to remove. By having a game which links to the resources, this barrier of entry can be lowered.
+
+The stakeholders for our project are our users and IBM (John McNamara). Our users will mainly consist of university students and secondary school students who are interested in Computer Science. This may include people who have never played video games before, hence our game should be as accessible as possible.
+
+Features that could be added in future versions are:
+
+- A leaderboard ranked by completion time
+- Cooperative multiplayer
+- VS Mode multiplayer
 
 <div style="page-break-after: always;"></div>
 
@@ -355,27 +361,24 @@ This section outlines our potential risks, how they could harm out project, and 
 
 #### Agile Versus Plan Driven
 
-Due to the nature of video games, it can be very difficult to approach this project from a plan driven perspective, as video games are very subjective, and while there are many tasks that have a clear point where you have or haven't achieved it, video games are more oriented around how enjoyable the experience is to the player, which is a difficult metric to define. As such it would be very difficult to plan the entire game out in the beginning and build it as designed. As such we will be taking an agile scrum approach to development, as it helps us in a number of ways:
+We will be taking an agile Scrum approach to development, as it helps us in several ways:
 
-1. Adaptability to Change:
+1. Adaptability to Change
 
-As mentioned, features and priorities will greatly change as development progresses, thus by taking a scrum approach, we can take a step back and approach something from a different angle whenever we face an obstacle in our path, while the rigid nature of a plan driven approach will not allow for this natural change to happen.
+Features and priorities will greatly change as development progresses, so with Scrum we can rapidly change aspects of the project without losing progress. A waterfall approach to development would not allow this kind of adaptability.
 
 2. Client Involvement
 
-As we are making this RPG game for a client, the subjective nature of video games means that as we make regular updates to our client, there may be things to change, or we may have to tackle a problem differently in order to suit our client's needs, having an agile methodology suits this nicely. A plan driven approach would mean that we run the risk of the client not being happy, once the game is basically finished.
+Clients require regular updates from us, so we need a method that involves them in the development process. The agile methodology allows for this as the client can serve the product owner role. The lean innovation model is not ideal as it solely focuses on completion of the project, whereas we want to have a good relationship with our client and focus on their needs [5].
+
 
 3. Cross-Functional Teams
 
-Everybody in our team has a different level of knowledge when it comes to game development, where some know a lot and some not at all, by taking an agile approach, team members can share knowledge and collaborate easier, rather than everybody having a set, strict, set of tasks. A plan driven approach would make our team much less flexible, and may cause major issues if a member ends up falling ill or dropping out.
+Everybody in our team has a different level of knowledge when it comes to game development. By using Scrum, team members can share, receive knowledge, and collaborate easier through the Scrum master and daily meetings. A plan driven approach will cause major issues if a member ends up falling behind on their tasks unbeknownst to the team.
 
 4. Improved Risk Management
 
-In the event that something doesn't go to our general plan, a scrum style approach will let us, identify and mitigate any risks that arise within our sprints quickly. In a plan driven approach, if any issues were discovered late, it could be costly to address.
-
-5. Incremental Development
-
-An agile development means that the game will be built up feature by feature in small manageable increments. This allows us to prioritize features like gameplay mechanics and character art, while leaving other features such as cutscenes and sound effects until the end.
+If something doesn’t go as planned, a Scrum style approach will let us identify, and mitigate any risks that arise within our sprint reviews. In a plan driven approach, if any issues were discovered late, it could cause problems to stack up and thus cause progress stagnation.
 
 #### Team Roles
 
@@ -389,7 +392,15 @@ Besides those two, each of us had quite a varied top talent.
 - Communication, Teamwork: **Communication and Management Specialist**
 - Execution, Decision-Making: **Technical Lead**
 
-In the end this approach is best for our team due to our existing skill set, and also allows individual member's talents to shine.
+To conclude: The agile Scrum approach is best for our team due to our existing skill set, and also allows individual member's talents to shine.
+
+#### Workflow (Scrum)
+
+Before starting sprint cycles, we will need to write up our product backlog, as well as assign points for each task. The way points are decided will be based around a modified version of the point-to-effort estimation, where we also take into consideration the priority of each task (tasks which takes less effort but are more important will weigh more points). The tasks can then be further broken down in the sprint cycles.
+
+As we do not have easy and frequent contact with our product owner (John Mcnamara), our Communication and Management Specialist will act as a stand-in representative for this role. 
+
+For each sprint cycle, we will have a new Scrum master, so that everyone can have a grasp of how the roles operates. Each cycle lasts two weeks, and we aim to have daily meetings for at least weekdays to discuss progress and problems, ending in an end-of-cycle review. We start our sprints on Mondays, and end on Fridays to allow for a weekend of rest.
 
 ### 3.2 - Project Schedule
 
@@ -413,3 +424,5 @@ The chart takes into account the number of members and the weekly workload we ha
 [3] Super Mario Wiki. (2023, October 17). Mario & Sonic at the Olympic Winter Games (Nintendo DS) - Super Mario Wiki, the Mario encyclopedia. https://www.mariowiki.com/Mario_%26_Sonic_at_the_Olympic_Winter_Games_(Nintendo_DS)
 
 [4] Microsoft. (2023). Minecraft Official Site | Minecraft Education Edition. Education.minecraft.net. https://education.minecraft.net/en-us
+
+[5] Lean Business Model Pros and Cons: Can You Afford Frugality? (n.d.). National Center for the Middle MArket. https://www.middlemarketcenter.org/expert-perspectives/lean-business-model-pros-and-cons-can-you-afford-frugality
