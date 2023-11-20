@@ -48,14 +48,20 @@ The game should also be fun and engaging to the user; it would be an amazing stu
 This document is the Requirement Specification for our RPG IBM Skills Build project. There are three parts to this document. The first part is the introduction, which gives a high-level description of the project, its scope, and domain area. The second part, the Solution Requirements, is the main part of the requirement specification. This part specifies the projects functional and non-functional requirements, and assess the risks/issues which may occur when undertaking the project. The third part describes our approach to the development of the game, as well as our time schedule in order to complete the project within the agreed deadline.
 
 ### 1.2 - Project Scope
-The goal of our project is to create an RPG game to reimagine Skills Build, IBM's platform to provide people with job skills, courses and credentials. The purpose of this project is to make Skills Build easier to navigate and make it more interactive so that it increases receptiveness for students. The base of our game is a hub world with areas corresponding to different courses, each area would have a boss that would be the center of combat gameplay. Upon choosing an area the player will have to complete puzzles and combat that have course questions as the core. This will allow them to progress further. A health system also comes into play with combat themed games, whereby running out of hearts would result in restarting the fight, this would be somewhat similar to quiz questions in courses where achieving a score less than 80% would require you to take it again.
 
-This game aims to address the problem of accessibility for people with little to no knowledge of Computer Science. It resolves this problem by creating puzzles and combat themed areas to answer challenging questions, earn Skills build badges and complete courses. Rewarding users with power-ups and level progressions incentivizes them, particularly high school and university students, it also makes learning more engaging.
+The IBM Skills Build website is designed to be an educational website with courses on various subjects related to Computer Science. However, the current IBM Skills Build website is sometimes confusing and complex, and can be a barrier to entry for students or people who are interested in computer science. This is the problem we are aiming to solve with our project.
 
-Future Versions of the game could include:
-Expansion of the amount of courses provided, right now only introductory lessons would be connected to the game, further development could increase the amount of courses the game would provide.
-Altering game content to include teaching material instead of just knowledge checks.
-Changing sprites to original characters.
+The purpose of the software is to provide a fun way to navigate the website and discover IBM Skills Build courses. This will be done by making a top down 2D RPG game where the aforementioned courses are linked throughout the game, and where you need to learn about the topics covered to progress throughout the game. This would help solve the problem by making the courses more accessible and encourage the player to do the courses.
+
+This aligns with the interest of our client and main stakeholder IBM alongside our users as currently, while the resources on IBM Skills Build are very helpful, finding them, and going through the website can be complex and confusing. This can add an unnecessary barrier to entry, which IBM wants to remove. By having a game which links to the resources, this barrier of entry can be lowered.
+
+The stakeholders for our project are our users and IBM (John McNamara). Our users will mainly consist of unversity students and secondary school students who are interested in Computer Science. This may include people who have never played video games before, hence our game should be as accessible as possible.
+
+Features that could be added in future versions are:
+
+- A leaderboard ranked by completion time
+- Cooperative multiplayer
+- VS Mode multiplayer
 
 <div style="page-break-after: always;"></div>
 
