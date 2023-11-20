@@ -364,11 +364,11 @@ This section outlines our potential risks, how they could harm out project, and 
 
 #### Agile Versus Plan Driven
 
-We will be taking an agile scrum approach to development, as it helps us in several ways:
+We will be taking an agile Scrum approach to development, as it helps us in several ways:
 
 1. Adaptability to Change
 
-Features and priorities will greatly change as development progresses, so with scrum we can rapidly change aspects of the project without losing progress. A waterfall approach to development would not allow this kind of adaptability.
+Features and priorities will greatly change as development progresses, so with Scrum we can rapidly change aspects of the project without losing progress. A waterfall approach to development would not allow this kind of adaptability.
 
 2. Client Involvement
 
@@ -381,7 +381,7 @@ Everybody in our team has a different level of knowledge when it comes to game d
 
 4. Improved Risk Management
 
-If something doesn’t go as planned, a scrum style approach will let us identify, and mitigate any risks that arise within our sprint reviews. In a plan driven approach, if any issues were discovered late, it could cause problems to stack up and thus cause progress stagnation.
+If something doesn’t go as planned, a Scrum style approach will let us identify, and mitigate any risks that arise within our sprint reviews. In a plan driven approach, if any issues were discovered late, it could cause problems to stack up and thus cause progress stagnation.
 
 #### Team Roles
 
@@ -397,7 +397,7 @@ Besides those two, each of us had quite a varied top talent.
 
 - Execution, Decision-Making: **Technical Lead**
 
-To conclude: The agile scrum approach is best for our team due to our existing skill set, and also allows individual member's talents to shine.
+To conclude: The agile Scrum approach is best for our team due to our existing skill set, and also allows individual member's talents to shine.
 
 #### Workflow (Scrum)
 
