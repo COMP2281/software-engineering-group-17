@@ -33,6 +33,7 @@
     - [3.1 - Development Approach](#31---development-approach)
       - [Agile Versus Plan Driven](#agile-versus-plan-driven)
       - [Team Roles](#team-roles)
+      - [Workflow (Scrum)](#workflow-scrum)
     - [3.2 - Project Schedule](#32---project-schedule)
   - [References](#references)
 
@@ -55,7 +56,7 @@ The purpose of the software is to provide a fun way to navigate the website and 
 
 This aligns with the interest of our client and main stakeholder IBM alongside our users as currently, while the resources on IBM Skills Build are very helpful, finding them, and going through the website can be complex and confusing. This can add an unnecessary barrier to entry, which IBM wants to remove. By having a game which links to the resources, this barrier of entry can be lowered.
 
-The stakeholders for our project are our users and IBM (John McNamara). Our users will mainly consist of unversity students and secondary school students who are interested in Computer Science. This may include people who have never played video games before, hence our game should be as accessible as possible.
+The stakeholders for our project are our users and IBM (John McNamara). Our users will mainly consist of university students and secondary school students who are interested in Computer Science. This may include people who have never played video games before, hence our game should be as accessible as possible.
 
 Features that could be added in future versions are:
 
@@ -401,6 +402,14 @@ Besides those two, each of us had quite a varied top talent.
 - Execution, Decision-Making: **Technical Lead**
 
 To conclude: The agile scrum approach is best for our team due to our existing skill set, and also allows individual member's talents to shine.
+
+#### Workflow (Scrum)
+
+Before starting sprint cycles, we will need to write up our product backlog, as well as assign points for each task. The way points are decided will be based around a modified version of the point-to-effort estimation, where we also take into consideration the priority of each task (tasks which takes less effort but are more important will weigh more points). The tasks can then be further broken down in the sprint cycles.
+
+As we do not have easy and frequent contact with our product owner (John Mcnamara), our Communication and Management Specialist will act as a stand-in representative for this role. 
+
+For each sprint cycle, we will have a new Scrum master, so that everyone can have a grasp of how the roles operates. Each cycle lasts two weeks, and we aim to have daily meetings for at least weekdays to discuss progress and problems, ending in an end-of-cycle review. We start our sprints on Mondays, and end on Fridays to allow for a weekend of rest.
 
 ### 3.2 - Project Schedule
 
