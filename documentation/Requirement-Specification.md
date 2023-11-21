@@ -116,7 +116,7 @@ This part of the document has three sections - functional requirements, non-func
 ### 2.1 - Function Requirements
 
 Below is a dependency graph for our functional requirements:
-![Functional Requirement Dependency Graph](images/../../image/Documentation/Requirements-Dependency-Graph.png)
+![Functional Requirement Dependency Graph](../image/Documentation/Requirements-Dependency-Graph.png)
 
 #### **Player-Based system**
 
@@ -410,19 +410,15 @@ For each sprint cycle, we will have a new Scrum master, so that everyone can hav
 ### 3.2 - Project Schedule
 
 The Gantt Chart shown below outlines the development time for our project and highlights the academic deadlines too.
-![Gantt_Chart](images/../../image/Documentation/Gantt_Chart.png)
+![Gantt_Chart](../image/Documentation/Gantt_Chart.png)
 
-The chart takes into account the number of members and the weekly workload we have; we hare 5 members, and on average work on Software Engineering for 4h per week plus any extra time voluntarily invested. The aim by the end of the holiday is to have in place all the base content that will be used as the building blocks of every world, so that each team member can create a world individually, with no dependencies halting progression. We expect that productivity after the holiday will subside, due to lectures resuming and other coursework deadlines being set throughout the term. To combat this, we have given a large extended time to the creation of each world, which gives members enough time to flesh out their ideas and invest enough time into compelling gameplay. Art assets are imported when finished, with placeholders being created whilst waiting for the assets. Music and cutscene are non-vital components of our game and will thus be added at the end if time allows. The team also thought about agile vs waterfall model and after drafting up a waterfall model of the project found [here](https://github.com/COMP2281/software-engineering-group-17/blob/main/image/Documentation/Gantt_chart_waterfall.png), decided against it as, due to our lack of game development knowledge it is safer to go with a model that allows for a lot of deadline flexibility. Beyond restating the summative deadlines, the team also added tasks that describe the game creation process and thought about subsection for each task where necessary:
+The chart takes into account the number of members and the weekly workload we have; we hare 5 members, and on average work on Software Engineering for 4h per week plus any extra time voluntarily invested. Also, we have made sure to keep holidays free of any work on this project. Since our chosen software development cycle methodology is Scrum, we do not have specific planning for when each part of the project should be done. However, we still have outlined some self-imposed deadlines along with the academic deadlines which will guide our Scrum sprints. We have chosen to have each sprint be 2 weeks long.
 
-**Initial Game Setup:** Creating a template player character complete with movement and collision, tilemap, interactable objects, Hub World
+Self-imposed deadlines:
 
-**Combat System:** Creating a template boss and the player health/damage systems.
-
-**Main Menu:** Creation of 5 buttons: new game, continue game, controls, credits and exit. 
-
-**Pause Menu:** Creation of 4 buttons: controls, save and exit, inventory, Skills Build tree.
-
-**Art:** 2 sections; art creation and art sourcing. Art sourcing includes tile sets, text fonts, NPC sprites, interactable objects and inventory items. Art creation includes player character, boss fights and all puzzle elements.
+* Finish initial game setup - 8th December 2023
+* Finish Art - 28th February 2024
+* Game ready for testing - 10th March 2024
 
 ## References
 
