@@ -36,7 +36,7 @@
 
 >     Slide with Project Brief and emails from Jon
 
-#### Introduce our project goals and aims [1mincfdff] [Josh]
+#### Introduce our project goals and aims [1min] [Josh]
 
 - Make a top-down 2D puzzle RPG. 
 - The game features a multitude of areas, whose themes and puzzles are adapted from specific Skills Build courses and their respective test questions. To solve these puzzles, students are expected to go through the Skills Build course of that area
@@ -70,8 +70,6 @@
 >     Slides with original sections from market research next to our choice
 
 #### Development approach [1min] [Nam] 
-
-- No idea lmao James help
 
 >     Slides with the development approach (agile, scrum)
 
