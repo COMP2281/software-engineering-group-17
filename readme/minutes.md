@@ -69,7 +69,7 @@
     - Fix formatting issues 
 
 # Week 7 Minutes
-- **Lest Week's Goals**: All achieved 
+- **Last Week's Goals**: All achieved 
 - Finished the Requirement Specification Doucment
 - Did our Peer Evaluations
 - Goals for the week
