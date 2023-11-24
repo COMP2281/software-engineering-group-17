@@ -70,7 +70,7 @@
 
 # Week 7 Minutes
 - **Last Week's Goals**: All achieved 
-- Finished the Requirement Specification Doucment
+- Finished the Requirement Specification Document
 - Did our Peer Evaluations
 - Goals for the week
-  - Finish planing the design video so that next week we can start recording
+  - Finish planning the design video so that next week we can start recording
