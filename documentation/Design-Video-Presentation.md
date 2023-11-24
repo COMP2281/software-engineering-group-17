@@ -21,13 +21,13 @@
 
 ### Introduction (25%) [2 minutes]
 
-#### Introduction of client [20s]
+#### Introduction of client [20s] [Akanksha]
 
 - Our client is IBM, and the company contact is John McNamara
 
 >     Slide with IBM Logo and Jon's picture
 
-#### Summary of agreed deliverables from req spec [40s]
+#### Summary of agreed deliverables from req spec [40s] [Akanksha]
 
 
 - Make an RPG game that 're-imagine IBM Skills Build' with resources linked in-game, helping students navigate Skills Build and get badges from topics successfully
@@ -36,7 +36,7 @@
 
 >     Slide with Project Brief and emails from Jon
 
-#### Introduce our project goals and aims [60s]
+#### Introduce our project goals and aims [1mincfdff] [Josh]
 
 - Make a top-down 2D puzzle RPG. 
 - The game features a multitude of areas, whose themes and puzzles are adapted from specific Skills Build courses and their respective test questions. To solve these puzzles, students are expected to go through the Skills Build course of that area
@@ -47,11 +47,18 @@
 
 ### Technical Outline (45%) [6 minutes]
 
-#### Description of technical design
+#### Description of technical design [2min] [Nam & Sam]
 
-- Not sure
+- Saving
+- Entity relationship diagram
+  - Main character
+    - sprite
+  - World
+    - rooms
+      - state of room
+- Combat aspects
 
-#### Walkthrough of features and ideas
+#### Walkthrough of features and ideas [1min] [James]
 
 - For each of the following, also talk about the alternative options briefly:
   - Character sprites inspired by Pokemon games for their 2.5D models
@@ -62,20 +69,20 @@
 
 >     Slides with original sections from market research next to our choice
 
-#### Development approach
+#### Development approach [1min] [Nam] 
 
 - No idea lmao James help
 
 >     Slides with the development approach (agile, scrum)
 
-#### Flow diagrams of user experience
+#### Flow diagrams of user experience [1min] [James]
 
 - Quick walkthrough of the game states
 - Showing what the sprites might look like for the user
 
 >     Slide with game flow diagram and some sprites from market research
 
-#### Limitiations/problems
+#### Limitiations/problems [1min] [Josh]
 
 - A student who knows all the content can quickly blitz through the game without accessing Skills Build
 - Students can brute force an answer for the puzzles. This is less of a problem with boss fights as you need to get lots of answers right in a row
@@ -85,14 +92,14 @@
 
 ### Future Plan (15%) [2 minutes]
 
-#### Project plan and timeline
+#### Project plan and timeline [1min] [Charles]
 
 - Say in which order the game will be done in
 - Show gant chart and describe it
 
 >     Slides showing gant chart
 
-#### Expectation by Week 14
+#### Expectation by Week 14 [1min] [Charles]
 
 - From gant chart, say what we expect to be done
 - Ideally, all the must FR should be done
