@@ -38,10 +38,12 @@
 
 #### Introduce our project goals and aims [1min] [Josh]
 
-- Make a top-down 2D puzzle RPG. 
-- The game features a multitude of areas, whose themes and puzzles are adapted from specific Skills Build courses and their respective test questions. To solve these puzzles, students are expected to go through the Skills Build course of that area
-- The game features knowledge battles with bosses found at the end of each area. Students who can beat the bosses are armed with the knowledge to get a Skills Build badge. Beating a boss unlocks powerups
--  The game's sprites for important aspects like bosses and player character will be handmade, and the rest will be from sprite packs online
+Our goal is to solve IBM's Skills Build Website problem. IBM discribed this website as "complex to navigate and students can lose their way". We aim to solve this by providing a fun way to naviagte the website and discover IBM Skills Build courses, through the medium of video games. We will create a top down 2D RPG game with questions from the courses linked throughout the game. 
+
+The game will contain worlds with puzzle rooms that need to be solved in order to answer the questions. The worlds will each have a theme that corresponds to a Skills Build course. 
+
+Similar to Skills Build, our game will also have final knowledge checks in the format of bosses, in which you need to answer enough questions correctly in order to win.
+
 
 >     Slide with tidbits from ideas.md
 
@@ -82,9 +84,11 @@
 
 #### Limitiations/problems [1min] [Josh]
 
-- A student who knows all the content can quickly blitz through the game without accessing Skills Build
-- Students can brute force an answer for the puzzles. This is less of a problem with boss fights as you need to get lots of answers right in a row
-- The game cannot detect if a student struggles, and does not offer anyway to help them besides directing them to the Skills Build course page or give vague advice
+One problem our game faces is that the user is able to brute force answering questions, by instead of thinking what the right answer might be and answering, just guessing until they get it right. We aim to mittiage this behaviour by resetting the puzzle if the question is answered wrong, thus incurringing the player to think hard before answering. The boss fights will also combat this behaviour as if you answer too many questions wrong you need to restart the entire boss fight.
+
+The opposite is also a limitation of the game, where a player could be struggling to answer questions and the game does not offer them any help besides directing them to the Skills Build Website. We aim to mitigate this by have a link to the website in the pause menu so that the player can access the website at anytime they feel they need to.
+
+The player is also able to do what is known as "save scumming", in which the player saves before answering a question to a puzzle and then resets to an old save file if they answer wrongly. One way of solving this problem is only allow saving a specific points in room, such as at the start or end.
 
 >     Slide showing the flash, hammering a lock, and a student confused
 
