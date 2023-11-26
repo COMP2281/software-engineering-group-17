@@ -44,6 +44,22 @@ The game will contain worlds with puzzle rooms that need to be solved in order t
 
 Similar to Skills Build, our game will also have final knowledge checks in the format of bosses, in which you need to answer enough questions correctly in order to win.
 
+Slides:
+
+Slide 1:
+Title: Introduction to our project goals and aims
+- Goal: Solve IBM's Skills Build website problem
+
+Slide 2:
+"complex to navigate and students can lose their way."
+
+Slide 3: 
+Title: Video Game
+- Top down 2D RPG game
+- questions from Skills Build linked
+- Puzzles
+- Boss fights!
+
 
 >     Slide with tidbits from ideas.md
 
@@ -89,6 +105,14 @@ One problem our game faces is that the user is able to brute force answering que
 The opposite is also a limitation of the game, where a player could be struggling to answer questions and the game does not offer them any help besides directing them to the Skills Build Website. We aim to mitigate this by have a link to the website in the pause menu so that the player can access the website at anytime they feel they need to.
 
 The player is also able to do what is known as "save scumming", in which the player saves before answering a question to a puzzle and then resets to an old save file if they answer wrongly. One way of solving this problem is only allow saving a specific points in room, such as at the start or end.
+
+Slides:
+
+Slide 1
+- Title: Limitations/Problems
+  - Brute Force: Answering questions without learning
+  - Struggling Player: Unable to help a struggling player
+  - Save scumming: Not playing the game as intended 
 
 >     Slide showing the flash, hammering a lock, and a student confused
 
