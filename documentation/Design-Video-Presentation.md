@@ -62,8 +62,22 @@ Slide with tidbits from ideas.md
 ### Technical Outline (45%) [6 minutes]
 
 #### Description of technical design [2min] [Nam & Sam]
+##### Saving Mechanism \[Sam\]
+For storing preferences and information about the game state, we can build two separate classes. The first of which will be PreferencesManager for explicitly storing user preferences.
+The second of which will be a StateManager class for storing the Game state.
 
-- Saving
+The game state is composed of the player's location, the items that they currently have and any world-specific information that should be replicated once they rejoin.
+And, the game preferences will be composed of settings such as audio levels so the users don't need to re-configure the game environment each time that they re-join the world.
+
+The PreferencesManager and the StateManager will serialise game states to JSON files and be responsible for loading preferences from the disk.
+An instance of the PreferencesManager will be shared among the world classes using Dependency Injection.
+
+We will regularly save game state and preferences at intervals however we will also expose a method to force a write to disk if a world needs to ensure that data is saved immediately or the user would like to ensure that their current progress is saved.
+
+Through our state classes, we will also offer an API for storing structured data. This will make it easier for the other developers on our team to manage and define their own data for their own use cases.
+
+##### \[Nam\]
+
 - Entity relationship diagram
   - Main character
     - sprite
