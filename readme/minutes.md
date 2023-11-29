@@ -74,3 +74,12 @@
 - Did our Peer Evaluations
 - Goals for the week
   - Finish planning the design video so that next week we can start recording
+
+
+# Week 8 Minutes
+- **Last Week's Goals**: Achieved
+- Finalized script for design video
+- Made slides for design video
+- Discussed recording process and started recording
+- Goals for the week
+  - Finish the design video including recording and editing
