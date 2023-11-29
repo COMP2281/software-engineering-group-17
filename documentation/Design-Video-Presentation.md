@@ -29,7 +29,6 @@
 
 #### Summary of agreed deliverables from req spec [40s] [Akanksha]
 
-
 - Make an RPG game that 're-imagine IBM Skills Build' with resources linked in-game, helping students navigate Skills Build and get badges from topics successfully
 - After acquiring a badge, students are rewarded with in-game items reflecting their growth 
 - The game must be made using Unity and for Windows machines.
@@ -56,12 +55,10 @@ Slides:
 >     - Puzzles
 >     - Boss fights!
 
-
-Slide with tidbits from ideas.md
-
 ### Technical Outline (45%) [6 minutes]
 
 #### Description of technical design [2min] [Nam & Sam]
+
 ##### Saving Mechanism \[Sam\]
 For storing preferences and information about the game state, we can build two separate classes. The first of which will be PreferencesManager for explicitly storing user preferences.
 The second of which will be a StateManager class for storing the Game state.
@@ -76,15 +73,13 @@ We will regularly save game state and preferences at intervals however we will a
 
 Through our state classes, we will also offer an API for storing structured data. This will make it easier for the other developers on our team to manage and define their own data for their own use cases.
 
-##### \[Nam\]
+##### EER diagram \[Nam\]
 
-- Entity relationship diagram
-  - Main character
-    - sprite
-  - World
-    - rooms
-      - state of room
-- Combat aspects
+- Show EER Diagram
+
+##### Combat \[Nam\]
+- Entities with the ability to fight will have two main combat attributes, one being health (a health point represents one heart) and the other being damage. The amount of damage dealt is subtracted directly from entity health
+- We have a Skills build system which can modify these attributes directly, like enhancing player character health or damage. It can also probably give special effects like restore life on hit
 
 #### Walkthrough of features and ideas [1min] [James]
 
@@ -98,6 +93,14 @@ Through our state classes, we will also offer an API for storing structured data
 >     Slides with original sections from market research next to our choice
 
 #### Development approach [1min] [Nam] 
+
+- Agile method using Scrum
+- Use a modified point-to-effort estimation, taking into consideration priority, for tasks 
+- Sprint cycles of 2 weeks
+- Starts on Mondays, ends of Fridays and weekend rest
+- Rotating Scrum master role for each sprint
+- Stand-in representative for John (Product owner role)
+- Help us be flexible, more engaged with client, and make team more cohesive
 
 >     Slides with the development approach (agile, scrum)
 
@@ -126,13 +129,13 @@ The player is also able to do what is known as "save scumming", in which the pla
 #### Project plan and timeline [1min] [Charles]
 
 - Say in which order the game will be done in
-- Show gant chart and describe it
+- Show gantt chart and describe it
 
 >     Slides showing gant chart
 
 #### Expectation by Week 14 [1min] [Charles]
 
-- From gant chart, say what we expect to be done
+- From gantt chart, say what we expect to be done
 - Ideally, all the must FR should be done
 
 >     Slides showing gant chart
