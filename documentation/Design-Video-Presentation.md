@@ -62,6 +62,7 @@ Slide with tidbits from ideas.md
 ### Technical Outline (45%) [6 minutes]
 
 #### Description of technical design [2min] [Nam & Sam]
+
 ##### Saving Mechanism \[Sam\]
 For storing preferences and information about the game state, we can build two separate classes. The first of which will be PreferencesManager for explicitly storing user preferences.
 The second of which will be a StateManager class for storing the Game state.
