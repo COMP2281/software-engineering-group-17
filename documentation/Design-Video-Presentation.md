@@ -57,7 +57,66 @@ Slides:
 
 ### Technical Outline (45%) [6 minutes]
 
+#### Walkthrough of features and ideas [1min] [James]
+
+- For each of the following, also talk about the alternative options briefly:
+  - Character sprites inspired by Pokemon games for their 2.5D models
+  - Combat inspired by Phoenix Wright since it fits with the idea of knowledge battles
+  - Questions through combat (multiple choice) and puzzles (more discreet multiple choice)
+  - Combat menu inspired by Final Fantasy for its ease of use and dynamic display
+  - Health system based on Minecraft for simplified combat, and designed like Hollow Knight because its pretty
+
+>     Slides with original sections from market research next to our choice
+
+##### Introduction
+
+Before we started on the Requirement Specification, we did market research on existing 2D RPGs, in order to decide what type of RPG we wanted to make.
+
+##### Overwold Sprites
+
+Traditional RPG worlds in this style are typically split into square tiles, and players, enemies and puzzles must fit into this square grid, as such we have decided to make square Pokemon style sprites, due to having both simplicity and detail.
+
+##### Combat Style & Sprites
+
+RPG games normally feature physical combat between a number of characters, as our game uses questions and answers from IBM’s Skills Build, this felt out of place. So, we decided to base our combat on the Ace Attorney games, puzzle games in which you have to prove a character’s innocence through talking.
+With this style chosen, we thought it was logical for sprites to also be based on Ace Attorney’s sprites.
+
+##### Combat Menu
+
+RPGs often use two different combat menus, square style allows for up to 4 options, and list style can have a variable number of options.
+As the Skills Build typically has 3-5 options, we will be using a Final Fantasy inspired list style menu.
+
+##### Health
+
+Representing health comes in many forms, with the two most popular being: health bars, which use larger numbers to create visually continuous health representation.
+or Heart Bars, which use more discrete values to represent a smaller amount of health.
+As question and answer games typically give you a limited number of tries to get an answer correct, while also wanting to keep the spirit of RPG games, we decided to use heart bars in our game.
+
+
+#### Flow diagrams of user experience [1min] [James]
+
+- Quick walkthrough of the game states
+- Showing what the sprites might look like for the user
+
+>     Slide with game flow diagram and some sprites from market research
+
+##### Script
+
+To illustrate how the user will experience our game, I have storyboarded the core gameplay loop.
+The player will start in the main menu, after selecting start, they will either enter an introduction cutscene, or load a save file, after which placing them in the hub world. The hub world will let the player choose one of the worlds to explore, where the player encounters themed puzzles, followed by an area boss.
+During boss battles the player will answer questions relating to that world’s theme. If the player answers correctly the boss will take damage, if the boss reaches 0 health, the player wins a badge. If answered incorrectly, the player loses health, if this reaches 0 then they have lost the battle, and will be sent back to the hub world.
+Once the player has collected badges from all 4 worlds, a 5th will open, where they will go through the same loop, but this time face a final boss who asks questions from all areas, and if defeated will mean the players beats the game.
+Additionally, at any point within the worlds, the player can open a menu, which will let them access the skills build skill tree, letting them upgrade abilities using skills build badges, save the game, access game settings, or exit the game.
+
 #### Description of technical design [2min] [Nam & Sam]
+
+##### EER diagram \[Nam\]
+
+- Show EER Diagram
+
+##### Combat \[Nam\]
+- Entities with the ability to fight will have two main combat attributes, one being health (a health point represents one heart) and the other being damage. The amount of damage dealt is subtracted directly from entity health
+- We have a Skills build system which can modify these attributes directly, like enhancing player character health or damage. It can also probably give special effects like restore life on hit
 
 ##### Saving Mechanism \[Sam\]
 For storing preferences and information about the game state, we can build two separate classes. The first of which will be PreferencesManager for explicitly storing user preferences.
@@ -73,25 +132,6 @@ We will regularly save game state and preferences at intervals however we will a
 
 Through our state classes, we will also offer an API for storing structured data. This will make it easier for the other developers on our team to manage and define their own data for their own use cases.
 
-##### EER diagram \[Nam\]
-
-- Show EER Diagram
-
-##### Combat \[Nam\]
-- Entities with the ability to fight will have two main combat attributes, one being health (a health point represents one heart) and the other being damage. The amount of damage dealt is subtracted directly from entity health
-- We have a Skills build system which can modify these attributes directly, like enhancing player character health or damage. It can also probably give special effects like restore life on hit
-
-#### Walkthrough of features and ideas [1min] [James]
-
-- For each of the following, also talk about the alternative options briefly:
-  - Character sprites inspired by Pokemon games for their 2.5D models
-  - Combat inspired by Phoenix Wright since it fits with the idea of knowledge battles
-  - Questions through combat (multiple choice) and puzzles (more discreet multiple choice)
-  - Combat menu inspired by Final Fantasy for its ease of use and dynamic display
-  - Health system based on Minecraft for simplified combat, and designed like Hollow Knight because its pretty
-
->     Slides with original sections from market research next to our choice
-
 #### Development approach [1min] [Nam] 
 
 - Agile method using Scrum
@@ -103,13 +143,6 @@ Through our state classes, we will also offer an API for storing structured data
 - Help us be flexible, more engaged with client, and make team more cohesive
 
 >     Slides with the development approach (agile, scrum)
-
-#### Flow diagrams of user experience [1min] [James]
-
-- Quick walkthrough of the game states
-- Showing what the sprites might look like for the user
-
->     Slide with game flow diagram and some sprites from market research
 
 #### Limitations/problems [1min] [Josh]
 
