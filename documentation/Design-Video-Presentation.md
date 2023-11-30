@@ -130,12 +130,23 @@ The player is also able to do what is known as "save scumming", in which the pla
 
 - Say in which order the game will be done in
 - Show gantt chart and describe it
-
+- Since we are using Scrum, we do not have a precise timeline.
+- Instead we chose to set ourselves self imposed deadlines
+- These have changed from the req spec to allow more time to for testing and fixing any issues shown through testing
+- Our general plan is to develop the essential aspects of the game first
+- These essential aspects are the core mechanics like combat mechanics, the main character and the hub world
+- This is done because once this is done each person can work on a world (and one person works on art)
+- Art is not considered so essential as we can use placeholder assets so that it does not become a bottleneck.
+- Our self imposed deadlines which I discussed previously are, finish initial game setup (essential aspects) between 1st and 2nd sprint
+- Game ready for testing midway through 4th sprint
+- Art finished by 5th sprint
 >     Slides showing gant chart
 
 #### Expectation by Week 14 [1min] [Charles]
 
 - From gantt chart, say what we expect to be done
 - Ideally, all the must FR should be done
-
+- In order for the game to be testable, all the essential aspetcs need to be done so that mechanics can be tested, and the main character is needed to know how the game feels. Also some puzzles need to be done for user experience as well, and some boss fights needed to test combat mechanics
+- Not all team members know Unity, may depend on how fast we are able to learn it
+- May use temporary placeholder assets if art is not finished, so art is not a bottleneck as mentioned before
 >     Slides showing gant chart
