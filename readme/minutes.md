@@ -83,3 +83,11 @@
 - Discussed recording process and started recording
 - Goals for the week
   - Finish the design video including recording and editing
+
+#  Week 9 Minutes
+- **Last Week's Goals**: Achieved
+- Recording finished
+- Editing finished
+- Everyone is satisfied with the quality of the video
+- Goals for the week
+    - Learn Unity, start setting up the game.
