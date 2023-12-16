@@ -41,3 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Tilemap_no_collision
+    uniqueID: 921398611
+    locked: 0
+  - name: Tilemap_collision
+    uniqueID: 756646087
+    locked: 0
+  - name: Player
+    uniqueID: 1965626849
+    locked: 0
