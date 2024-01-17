@@ -91,3 +91,14 @@
 - Everyone is satisfied with the quality of the video
 - Goals for the week
     - Learn Unity, start setting up the game.
+
+# Week 10 Minutes
+**Last Week's Goals**: Achieved
+- Did not do any work on Software Engineering as an AI report was due the next week
+
+# Week 11 Minutes
+- Discussed Test Plan Report
+- Completed Section 3 of Test Plan Report
+- Discussed game development plan and implementation for project presentation
+- Goals for the week:
+  - write as many test plan cases as possible for next week
