@@ -17,7 +17,7 @@
 - **Last Week's Goals**: Achieved
 - **Bottlenecks**: None
 - Introduction to project manager
-- Finalisation of project idea
+- Finalization of project idea
 - Meeting with IBM client
 - Market Research
 - Goals for the week:
@@ -26,7 +26,7 @@
 ## Week 3 Minutes
 - **Lest Week's Goals**: Partially achieved; Some members did all the skills build badges whilst others decided to do them weekly instead. Everyone will however have them complete by the time game development starts.
 - Discussion of market research 
-- Finalisation of ideas based on market research
+- Finalization of ideas based on market research
 - Discussion of Requirement Specification sheet
 - Created some functional and non-functional requirements
 - Goals for the week
@@ -101,4 +101,4 @@
 - Completed Section 3 of Test Plan Report
 - Discussed game development plan and implementation for project presentation
 - Goals for the week:
-  - write as many test plan cases as possible for next week
+  - Write as many test plan cases as possible for next week
