@@ -5,25 +5,38 @@ using UnityEngine;
 
 
 
-public class s_player_movement : MonoBehaviour
+public class S_player_movement : MonoBehaviour
 {
+    public static S_player_movement s_player_movement;
 
     public float moveSpeed = 5f;
 
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
 
     Vector2 movement;
+
+    public bool canmove = true;
     // Start is called before the first frame update
     void Start()
     {
-      rb = GetComponent<Rigidbody2D>();
+        //rb = GetComponent<Rigidbody2D>();
+        //anim = GetComponent<Animator>();
+       
     }
 
     // Update is called once per frame (framrate dependent)
     void Update()
     {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        if (canmove) { 
+            movement.x = Input.GetAxisRaw("Horizontal");
+            movement.y = Input.GetAxisRaw("Vertical");
+        }
+        else
+        {
+            movement.x = 0;
+            movement.y = 0;
+        }
+        
     }
 
     void FixedUpdate()
