@@ -16,6 +16,8 @@ public class S_player_movement : MonoBehaviour
     Vector2 movement;
 
     public bool canmove = true;
+
+    public Animator anim;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +32,26 @@ public class S_player_movement : MonoBehaviour
         if (canmove) { 
             movement.x = Input.GetAxisRaw("Horizontal");
             movement.y = Input.GetAxisRaw("Vertical");
+
+            if(movement.x > 0 )
+            {
+                anim.SetTrigger("right");
+            }
+            else if(movement.x < 0){
+                anim.SetTrigger("left");
+            }
+            else if(movement.y < 0)
+            {
+                anim.SetTrigger("forward");
+            }
+            else if (movement.y > 0)
+            {
+                anim.SetTrigger("backward");
+            }
+            else
+            {
+                anim.SetTrigger("idle");
+            }
         }
         else
         {

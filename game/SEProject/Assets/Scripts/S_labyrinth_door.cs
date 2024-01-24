@@ -23,12 +23,11 @@ public class S_labyrinth_door : MonoBehaviour
 
     public bool finished = false;
 
-    public Camera camera1;
-    public Camera camera2;
+    
     // Start is called before the first frame update
     void Start()
     {
-        camera2.enabled = false;
+        
       
     }
 
@@ -54,17 +53,13 @@ public class S_labyrinth_door : MonoBehaviour
                 Debug.Log(counter);
             }
 
-            if (counter == number_of_doors-1)
+            if (counter >= number_of_doors)
             {
                 finished = true;
                 Debug.Log("done");
+
             }
-            else if (counter == number_of_doors)
-            {
-                camera1.enabled = false;
-                camera2.enabled = true;
-                
-            }
+
 
                 was_hit = "none";
 

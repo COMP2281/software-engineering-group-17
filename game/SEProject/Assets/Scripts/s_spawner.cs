@@ -13,11 +13,12 @@ public class s_spawner : MonoBehaviour
 
     public S_labyrinth_door s_Labyrinth_Door;
 
-    
+    public Camera camera1;
+    public Camera camera2;
     // Start is called before the first frame update
     void Start()
     {
-
+        camera2.enabled = false;
     }
 
     private void Update()
@@ -46,6 +47,9 @@ public class s_spawner : MonoBehaviour
                 player.canmove = false;
                 player.transform.position = respawner2.transform.position;
                 is_moving = true;
+                player.anim.SetTrigger("backward");
+                camera1.enabled = false;
+                camera2.enabled = true;
                 StartCoroutine(move_player());
             }
             else
@@ -53,6 +57,7 @@ public class s_spawner : MonoBehaviour
                 player.canmove = false;
                 player.transform.position = respawner.transform.position;
                 is_moving = true;
+                player.anim.SetTrigger("backward");
                 StartCoroutine(move_player());
             }
                 
