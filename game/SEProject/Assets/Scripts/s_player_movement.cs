@@ -18,6 +18,8 @@ public class S_player_movement : MonoBehaviour
     public bool canmove = true;
 
     public Animator anim;
+
+    private bool facingRight = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,40 +31,65 @@ public class S_player_movement : MonoBehaviour
     // Update is called once per frame (framrate dependent)
     void Update()
     {
-        if (canmove) { 
+        if (canmove) {
+
             movement.x = Input.GetAxisRaw("Horizontal");
             movement.y = Input.GetAxisRaw("Vertical");
 
-            if(movement.x > 0 )
-            {
-                anim.SetTrigger("right");
-            }
-            else if(movement.x < 0){
-                anim.SetTrigger("left");
-            }
-            else if(movement.y < 0)
-            {
-                anim.SetTrigger("forward");
-            }
-            else if (movement.y > 0)
-            {
-                anim.SetTrigger("backward");
-            }
-            else
-            {
-                anim.SetTrigger("idle");
-            }
+            
+
+            
         }
         else
         {
+            
             movement.x = 0;
             movement.y = 0;
         }
-        
+
+
+        if (movement.x == 0 && movement.y == 0)
+        {
+            anim.SetTrigger("idle");
+        }
+        anim.SetFloat("y movement", movement.y);
+
+
+        anim.SetFloat("x movement", Mathf.Abs(movement.x));
+
+        if (Mathf.Abs(movement.x) > 0)
+        {
+            anim.SetBool("x move", true);
+        }
+        else
+        {
+            anim.SetBool("x move", false);
+        }
+
     }
 
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+
+        if (facingRight == false && movement.x > 0)
+        {   
+            Flip();
+        }
+        else if (facingRight == true && movement.x < 0)
+        {   
+            Flip();
+        }
+
+        
+        
+        
+        
+    }
+
+    void Flip()
+    {
+        facingRight = !facingRight;
+        transform.Rotate(0f, 180f, 0f);
     }
 }

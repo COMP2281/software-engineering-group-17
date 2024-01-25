@@ -47,7 +47,9 @@ public class s_spawner : MonoBehaviour
                 player.canmove = false;
                 player.transform.position = respawner2.transform.position;
                 is_moving = true;
-                player.anim.SetTrigger("backward");
+                player.anim.SetTrigger("auto move");
+                player.anim.SetBool("can move", false);
+                
                 camera1.enabled = false;
                 camera2.enabled = true;
                 StartCoroutine(move_player());
@@ -57,7 +59,9 @@ public class s_spawner : MonoBehaviour
                 player.canmove = false;
                 player.transform.position = respawner.transform.position;
                 is_moving = true;
-                player.anim.SetTrigger("backward");
+                player.anim.SetTrigger("auto move");
+                player.anim.SetBool("can move", false);
+                
                 StartCoroutine(move_player());
             }
                 
@@ -72,10 +76,11 @@ public class s_spawner : MonoBehaviour
         //player.anim.applyRootMotion = true;
         //player.anim.SetBool("spawn", true);
         
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.7f);
         //player.anim.applyRootMotion = false;
         //player.anim.SetBool("spawn", false);
         is_moving = false;
         player.canmove = true;
+        player.anim.SetBool("can move", true);
     }
 }
