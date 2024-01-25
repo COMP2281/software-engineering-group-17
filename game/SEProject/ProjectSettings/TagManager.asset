@@ -50,3 +50,6 @@ TagManager:
   - name: Player
     uniqueID: 1965626849
     locked: 0
+  - name: Tilemap_overlay
+    uniqueID: 3912830381
+    locked: 0
