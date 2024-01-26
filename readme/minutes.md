@@ -102,3 +102,10 @@
 - Discussed game development plan and implementation for project presentation
 - Goals for the week:
   - Write as many test plan cases as possible for next week
+ 
+# Week 12 minutes
+- Work on the Test Plan Report
+  - Continued polishing the report document and making final report more uniform and consistent.
+  - Added more test cases to the report
+- Goals for the week:
+  - Finish writing the tests for the test plan report 
