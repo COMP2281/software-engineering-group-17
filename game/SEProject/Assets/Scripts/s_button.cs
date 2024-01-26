@@ -65,7 +65,7 @@ public class s_button : MonoBehaviour
 
     IEnumerator Restart()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 

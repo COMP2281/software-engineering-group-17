@@ -22,12 +22,14 @@ public class S_labyrinth_door : MonoBehaviour
 
     public bool finished = false;
 
-    
+    public AudioSource correct_answer;
+    public AudioSource wrong_answer;
     // Start is called before the first frame update
     void Start()
     {
         
-      
+
+
     }
 
     // Update is called once per frame
@@ -44,18 +46,28 @@ public class S_labyrinth_door : MonoBehaviour
             if (doors[counter] == was_hit)
             {
                 counter++;
-                Debug.Log(counter);
+                if(!finished)
+                {
+                    correct_answer.Play();
+                }
+                
+                //Debug.Log(counter);
             }
             else
             {
                 counter = 0;
-                Debug.Log(counter);
+                if (!finished)
+                {
+                    wrong_answer.Play();
+                }
+                
+                //Debug.Log(counter);
             }
 
             if (counter >= number_of_doors)
             {
                 finished = true;
-                Debug.Log("done");
+                //Debug.Log("done");
 
             }
 
@@ -64,26 +76,5 @@ public class S_labyrinth_door : MonoBehaviour
 
         }
     }
-    /*
-    IEnumerator Checkhit()
-    {
-
-        /*
-        if (was_hit == "left") {
-            Debug.Log("left one");
-        }
-        else if (was_hit == "right") 
-        {
-            Debug.Log("right one");
-        }
-        else if (was_hit == "top")
-        {
-            Debug.Log("top one");
-        }
-        
-
-        
-
-    }
-    */
+   
 }
