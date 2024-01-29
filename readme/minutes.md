@@ -100,5 +100,14 @@
 - Discussed Test Plan Report
 - Completed Section 3 of Test Plan Report
 - Discussed game development plan and implementation for project presentation
-- Goals for the week:
+- Goals for the week
   - Write as many test plan cases as possible for next week
+
+# Week 12 Minutes
+**Last Week's Goals**: Achieved
+- Wrote test plan overview and context
+- Finished writing all tests for Test Plan Report
+- Started game programming
+- Finished main character overworld sprites
+- Goals for the week
+  - Polish and submit Test Plan Report
