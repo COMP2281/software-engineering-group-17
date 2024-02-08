@@ -91,7 +91,7 @@ public class S_Timer : MonoBehaviour
 
     void timerEnded()
     {
-       
+        player.canmove = false;
         _audioSource.Play();
         player.canmove = false;
         StartCoroutine(Restart());

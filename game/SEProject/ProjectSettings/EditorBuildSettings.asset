@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cloud World Level 3.unity
     guid: ec1102c9ac2dbfc4fad2abb0eba76abb
+  - enabled: 1
+    path: Assets/Scenes/Cloud World Level 4.unity
+    guid: 6a6707564fe3b3840894c9907b833d61
   m_configObjects: {}
