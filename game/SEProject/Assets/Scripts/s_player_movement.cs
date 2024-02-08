@@ -29,9 +29,12 @@ public class S_player_movement : MonoBehaviour
     private bool right = false;
     private bool up = false;
     private bool down = false;
+
+    
     // Start is called before the first frame update
     void Start()
     {
+        
         //rb = GetComponent<Rigidbody2D>();
         //anim = GetComponent<Animator>();
 
@@ -40,6 +43,7 @@ public class S_player_movement : MonoBehaviour
     // Update is called once per frame (framrate dependent)
     void Update()
     {
+        
         if (canmove)
         {
             

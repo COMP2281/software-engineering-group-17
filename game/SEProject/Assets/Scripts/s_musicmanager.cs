@@ -2,15 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class s_musicmanager : MonoBehaviour
-{
+public class S_musicmanager : MonoBehaviour
+{   
+    public static S_musicmanager instance;
+
     private AudioSource _audioSource;
     private void Awake()
     {
-        DontDestroyOnLoad(transform.gameObject);
-        _audioSource = GetComponent<AudioSource>();
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+            _audioSource = GetComponent<AudioSource>();
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
-
+    private void Start()
+    {
+        //PlayMusic();
+    }
     public void PlayMusic()
     {
         if (_audioSource.isPlaying) return;
@@ -21,4 +34,6 @@ public class s_musicmanager : MonoBehaviour
     {
         _audioSource.Stop();
     }
+
+    
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class s_level_changer : MonoBehaviour
+public class S_level_changer : MonoBehaviour
 {
    
     // Start is called before the first frame update

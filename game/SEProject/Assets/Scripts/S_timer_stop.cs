@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class s_test : MonoBehaviour
+public class S_timer_stop : MonoBehaviour
 {
+    public S_Timer timer;
+    public BoxCollider2D box;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,8 +23,8 @@ public class s_test : MonoBehaviour
     {
         if (collision.tag.Equals("Player"))
         {
-            Debug.Log("touch");
-
+            timer.stoptimer = true;
+            box.enabled = false;
         }
     }
 }
