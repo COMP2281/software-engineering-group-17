@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class S_timer_stop : MonoBehaviour
 {
+    
     public S_Timer timer;
     public BoxCollider2D box;
     // Start is called before the first frame update

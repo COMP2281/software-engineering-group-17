@@ -14,10 +14,12 @@ public class S_button : MonoBehaviour
     public GameObject wrong_answerbox;
 
     public GameObject wall;
+
+    private AudioSource clip;
     // Start is called before the first frame update
     void Start()
     {
-        
+        clip = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -25,6 +27,7 @@ public class S_button : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && in_range)
         {
+            clip.Play();
             if(correct_answer)
             {
                 if (correct_answerbox.activeInHierarchy)

@@ -28,7 +28,7 @@ public class S_Timer : MonoBehaviour
 
     private bool overflowstopper2 = true;
 
-    
+    public S_musicmanager musicManager2;
     private void Start()
     {
         //_audioSource = GetComponent<AudioSource>();
@@ -118,7 +118,7 @@ public class S_Timer : MonoBehaviour
     {
 
         yield return new WaitForSeconds(3);
-        S_musicmanager.instance.PlayMusic();
+        musicManager2.PlayMusic();
     }
 }
 

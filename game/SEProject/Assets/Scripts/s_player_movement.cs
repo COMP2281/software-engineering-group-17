@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 
@@ -30,7 +31,17 @@ public class S_player_movement : MonoBehaviour
     private bool up = false;
     private bool down = false;
 
-    
+    public float unfreezetime = 5f;
+
+    private bool freezingcold = false;
+
+    private float freeztimer = 10f;
+
+    public AudioSource freezing;
+
+    private bool overloadstopper;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -127,7 +138,27 @@ public class S_player_movement : MonoBehaviour
             anim.SetBool("x move", false);
         }
         
-        
+        if(freezingcold)
+        {
+            freeztimer -= Time.deltaTime;
+            if (freeztimer <= 0)
+            {
+ 
+                //freezing.Play();
+                if (overloadstopper)
+                {
+                    overloadstopper = false;
+                    freezing.Play();
+                    
+                }
+                StartCoroutine(Frozen());
+                
+            }
+        }
+        else
+        {
+            freeztimer = 10f;
+        }
     }
 
     void FixedUpdate()
@@ -156,6 +187,7 @@ public class S_player_movement : MonoBehaviour
     {
         if (other.tag.Equals("ice"))
         {
+            freezingcold = true;
             isfrozen = true;
             canmove = false;
             StartCoroutine(Unfreeze());
@@ -167,6 +199,7 @@ public class S_player_movement : MonoBehaviour
     {
         if (collision.tag.Equals("ice"))
         {
+            freezingcold = false;
             isfrozen = false;
             canmove = true;
             //StartCoroutine(Unfreeze());
@@ -175,9 +208,21 @@ public class S_player_movement : MonoBehaviour
 
     IEnumerator Unfreeze()
     {
+        if (isfrozen)
+        {
+            yield return new WaitForSeconds(unfreezetime);
+            canmove = true;
+            isfrozen = false;
+        }
+    }
+
+    IEnumerator Frozen()
+    {
+        
+        canmove = false;
         yield return new WaitForSeconds(5);
-        canmove = true;
-        isfrozen = false;
+        
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
 
