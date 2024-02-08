@@ -1,3 +1,15 @@
+white-box:
+  type: web
+  title: What is White Box Testing
+  author: ["imperva"]
+  url: https://www.imperva.com/learn/application-security/white-box-testing/
+
+Requirement-Specification:
+    type: original
+    title: Group 17 Requirement Specification
+    author: ["J. Pulham", "J. Watson", "C. Dubois-Veltman", "S. Ezeh", "N. Le", "A. Sirohia"]
+    date: 2023-11-23
+    
 Unity-testing:
     type: web
     title: Testing and quality assurance tips for Unity projects
@@ -24,17 +36,26 @@ Windows-old-support-data:
 
 Jon-email-requirements:
     type: original
-    title: IBM Durham Software Project - Reimagine Skills Build as an RPG game - Briefing clarification
+    title: Reimagine Skills Build as an RPG game - Briefing clarification
     author: ["J. McNamara"]
     date: 2023-10-13
     
-
 Fault-rationale:
     type: post
     title: Criteria 1 – Understanding types of defects (bugs) within a game build
     author: ["G. M. Pollock"]
     url: https://georgepollboa.wordpress.com/year-12/term-3-cmpnmo3-2d-animation-and-testing/games-development/unit-77-designing-tests-for-computer-games-2/unit-77-designing-tests-for-computer-games/
-
+Automated-Unit:
+    type: web
+    title: Unit Test Automation
+    author: ["CodiumAI"]
+    url: https://codium.ai/glossary/unit-test-automation/
+Automated-Integration:
+    type: web
+    title: Efficiency at its Best, Automated Integration Testing
+    date: 2023-04-19
+    author: ["Aakanksha Dixit"]
+    url: https://opkey.com/blog/efficiency-at-its-best-automated-integration-testing
 Integration-rationale:
     type: web
     title: Bottom-Up Integration Testing- An Overview
@@ -45,20 +66,18 @@ Integration-rationale:
 Unity-test-environment:
     type: web
     title: About Unity Test Framework
-    author: 'Unity'
-    url: https://docs.unity3d.com/Packages/com.unity.test-framework@1.4/manual/index.html
+    url: https://docs.unity3d.com/Packages/com.unity.test-framework@1.4/manual/index
 
 Unity-test-unit:
     type: web
     title: Unit Testing
-    author: 'Unity'
-    url: https://docs.unity3d.com/Manual/testing-editortestsrunner.html
+    url: https://docs.unity3d.com/Manual/testing-editortestsrunner
 
 Windows-10-vs-11-performance:
     type: web
     title: Is Windows 11 Good For Gaming?
     author: 'J. Lauken'
-    url: https://www.lifewire.com/is-windows-11-good-for-gaming-7153341#:~:text=Windows%2011%20scores%20slightly%20higher,slightly%20better%20on%20Windows%2011.
+    url: https://lifewire.com/is-windows-11-good-for-gaming-7153341
 
 Github-continuous-integration:
     type: web
@@ -77,3 +96,27 @@ Integration-testing-methods:
     title: The Complete Guide to Integration Testing 
     author: 'M. Ellis'
     url: https://blog.hubspot.com/website/integration-testing
+
+Playerbase-controller-keyboard:
+    type: web
+    title: Only around 10% of Steam gaming sessions are played with a controller
+    author: 'J. Jimenez'
+    url: https://pcgamer.com/only-around-10-of-steam-gaming-sessions-are-played-with-a-controller/
+
+Console-sales-percentage:
+    type: web
+    title: Online gaming statistics 2023
+    author: 'N. Baker'
+    url: https://uswitch.com/broadband/studies/online-gaming-statistics/
+
+Softlock-definition:
+    type: web
+    title: What Does Softlock and Hardlock Mean in Video Games?
+    url: https://makeuseof.com/softlock-hardlock-in-video-games-explained/
+
+Unity-event-trigger:
+    type: web
+    title: EventTrigger
+    author: 'Unity'
+    url: https://docs.unity3d.com/2018.2/Documentation/ScriptReference/EventSystems.EventTrigger.html
+    
