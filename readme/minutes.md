@@ -111,3 +111,21 @@
 - Finished main character overworld sprites
 - Goals for the week
   - Polish and submit Test Plan Report
+
+# Week 13 Minutes
+**Last Week's Goals**: Achieved
+- Added placeholder sound effects and music
+- Added question puzzle
+- Added "Lost Woods" puzzle
+- Goals for the week
+  - Work on Unity project
+
+# Week 14 Minutes
+**Last Week's Goals**: Achieved
+- Started implementing game
+- Made more game sprites
+- Added particle system
+- Added ice physics
+- Added race puzzle and timer
+- Goals for the week
+  - Continue working on unity project
