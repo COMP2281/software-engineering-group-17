@@ -161,6 +161,8 @@ MonoBehaviour:
   rb: {fileID: 102290013}
   canmove: 1
   anim: {fileID: 102290012}
+  unfreezetime: 5
+  freezing: {fileID: 0}
 --- !u!95 &102290012
 Animator:
   serializedVersion: 5
@@ -324,7 +326,7 @@ Transform:
   m_GameObject: {fileID: 102290010}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.61, y: -29.09, z: 0}
+  m_LocalPosition: {x: 12.97, y: -32.85, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -55294,7 +55296,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
+  m_ScaleFactor: 1.5
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0

@@ -562,7 +562,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 345.1, y: 142.4}
+  m_AnchoredPosition: {x: 462, y: 176}
   m_SizeDelta: {x: 168.2819, y: 181.0797}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &82435095
@@ -587,7 +587,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 60
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -28908,7 +28908,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
+  m_ScaleFactor: 1.5
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
@@ -30688,6 +30688,8 @@ MonoBehaviour:
   rb: {fileID: 1199184658}
   canmove: 1
   anim: {fileID: 1199184656}
+  unfreezetime: 5
+  freezing: {fileID: 0}
 --- !u!50 &1199184658
 Rigidbody2D:
   serializedVersion: 4

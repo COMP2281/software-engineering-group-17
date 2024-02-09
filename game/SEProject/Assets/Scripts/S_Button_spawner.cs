@@ -17,6 +17,10 @@ public class S_Button_spawner : MonoBehaviour
     public GameObject player;
     public GameObject spawn;
     public GameObject arrow;
+
+    public S_player_movement player_script;
+
+    private bool overloadstopper = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,15 +34,25 @@ public class S_Button_spawner : MonoBehaviour
         if (canpress && Input.GetKeyDown(KeyCode.Space))
         {
             hitcounter--;
-            randomNumber = Random.Range(0, 10);
-            Spawn(randomNumber);
+            if (hitcounter != 0)
+            {
+                randomNumber = Random.Range(0, 10);
+                Spawn(randomNumber);
+            }
         }
         if(hitcounter == 0)
         {
-            player.transform.position = spawn.transform.position;
-            arrow.SetActive(false);
+            if (overloadstopper)
+            {
+                overloadstopper = false;
+                player.transform.position = spawn.transform.position;
+                arrow.SetActive(false);
+
+            }
         }
+
         
+
     }
 
     void Spawn(int numb)
@@ -61,4 +75,6 @@ public class S_Button_spawner : MonoBehaviour
             canpress = false;
         }
     }
+
+   
 }
