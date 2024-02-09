@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 0
+    path: Assets/Scenes/Josh Test Scene.unity
+    guid: 7120563bbaf7c7842837101230ed43b2
   - enabled: 1
     path: Assets/Scenes/Josh Test Scene.unity
     guid: 7120563bbaf7c7842837101230ed43b2
@@ -20,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cloud World Level 2.unity
     guid: a3b9ad924f2e94d42a3462545121a3b3
+  - enabled: 1
+    path: Assets/Scenes/Cloud World Level 3.unity
+    guid: ec1102c9ac2dbfc4fad2abb0eba76abb
+  - enabled: 1
+    path: Assets/Scenes/Cloud World Level 4.unity
+    guid: 6a6707564fe3b3840894c9907b833d61
   m_configObjects: {}

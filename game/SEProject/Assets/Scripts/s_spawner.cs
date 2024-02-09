@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class s_spawner : MonoBehaviour
+public class S_spawner : MonoBehaviour
 {
     public S_player_movement player;
 

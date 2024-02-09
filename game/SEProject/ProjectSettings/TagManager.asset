@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - ice
   layers:
   - Default
   - TransparentFX
@@ -46,6 +47,9 @@ TagManager:
     locked: 0
   - name: Tilemap_collision
     uniqueID: 756646087
+    locked: 0
+  - name: Tilemap_overlay
+    uniqueID: 3912830381
     locked: 0
   - name: Player
     uniqueID: 1965626849

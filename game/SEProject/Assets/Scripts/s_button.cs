@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class s_button : MonoBehaviour
+public class S_button : MonoBehaviour
 {
     public S_player_movement player;
     private bool in_range;
@@ -14,10 +14,12 @@ public class s_button : MonoBehaviour
     public GameObject wrong_answerbox;
 
     public GameObject wall;
+
+    private AudioSource clip;
     // Start is called before the first frame update
     void Start()
     {
-        
+        clip = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -25,6 +27,7 @@ public class s_button : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && in_range)
         {
+            clip.Play();
             if(correct_answer)
             {
                 if (correct_answerbox.activeInHierarchy)
@@ -60,6 +63,13 @@ public class s_button : MonoBehaviour
         if (other.tag.Equals("Player"))
         {
             in_range = true;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.tag.Equals("Player"))
+        {
+            in_range = false;
         }
     }
 

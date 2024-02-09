@@ -35,7 +35,7 @@ public class S_labyrinth_door : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //Debug.Log(counter);
     }
 
     private void OnTriggerExit2D(Collider2D collider)
@@ -66,9 +66,10 @@ public class S_labyrinth_door : MonoBehaviour
 
             if (counter >= number_of_doors)
             {
+                
                 finished = true;
                 //Debug.Log("done");
-
+                counter = 0;
             }
 
 

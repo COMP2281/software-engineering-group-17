@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class s_sign : MonoBehaviour
+public class S_sign : MonoBehaviour
 {
     public GameObject question_box;
     private bool in_range;

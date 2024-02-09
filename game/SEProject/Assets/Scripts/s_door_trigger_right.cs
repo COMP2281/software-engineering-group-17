@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class s_door_trigger_right : MonoBehaviour
+public class S_door_trigger_right : MonoBehaviour
 {
     public S_labyrinth_door s_Labyrinth_Door;
     // Start is called before the first frame update

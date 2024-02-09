@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class s_camera_trigger : MonoBehaviour
+public class S_camera_trigger : MonoBehaviour
 {
     public Camera camera;
     public string move_direction;
