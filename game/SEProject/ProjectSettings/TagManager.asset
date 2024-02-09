@@ -60,3 +60,6 @@ TagManager:
   - name: Tilemap_underlay
     uniqueID: 2556650535
     locked: 0
+  - name: camera layer
+    uniqueID: 2126484991
+    locked: 0
