@@ -33,15 +33,15 @@ public class S_player_movement_ice_level : MonoBehaviour
 
     public float unfreezetime = 5f;
 
-    private bool freezingcold = false;
+    
 
-    private float freeztimer = 10f;
+    
 
     public AudioSource freezing;
 
     private bool overloadstopper;
 
-    private int counter = 0;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -137,30 +137,7 @@ public class S_player_movement_ice_level : MonoBehaviour
         {
             anim.SetBool("x move", false);
         }
-        /*
-        if (freezingcold)
-        {
-            freeztimer -= Time.deltaTime;
-            if (freeztimer <= 0)
-            {
-
-                //freezing.Play();
-                if (overloadstopper)
-                {
-                    overloadstopper = false;
-                    freezing.Play();
-
-                }
-                StartCoroutine(Frozen());
-
-            }
-        }
-        else
-        {
-            freeztimer = 10f;
-        }
-        Debug.Log(freeztimer);
-        */
+        
     }
 
     void FixedUpdate()
@@ -189,7 +166,7 @@ public class S_player_movement_ice_level : MonoBehaviour
     {
         if (other.tag.Equals("ice"))
         {
-            freezingcold = true;
+            
             isfrozen = true;
             canmove = false;
             //StartCoroutine(Unfreeze());
@@ -201,7 +178,7 @@ public class S_player_movement_ice_level : MonoBehaviour
     {
         if (collision.tag.Equals("ice"))
         {
-            freezingcold = false;
+            
             isfrozen = false;
             canmove = true;
             //StartCoroutine(Unfreeze());

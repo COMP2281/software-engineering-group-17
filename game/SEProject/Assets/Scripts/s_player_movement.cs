@@ -41,7 +41,7 @@ public class S_player_movement : MonoBehaviour
 
     private bool overloadstopper;
 
-    private int counter = 0;
+    
     // Start is called before the first frame update
     void Start()
     {
