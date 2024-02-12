@@ -104,7 +104,7 @@ SpriteRenderer:
   m_SortingLayerID: 1965626849
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9ae20dc6125ea0f42a6ac7c425624ac8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b05e52f242885ed4f95c05d3aea97d7c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -125,9 +125,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2507273219507037887}
   - component: {fileID: 6844020238583114139}
-  - component: {fileID: 921130652708307865}
+  - component: {fileID: 7531129690870086979}
   m_Layer: 0
-  m_Name: Turret3
+  m_Name: Turret4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -195,7 +195,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.38562506, y: 0.3730442}
   m_EdgeRadius: 0
---- !u!114 &921130652708307865
+--- !u!114 &7531129690870086979
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -204,16 +204,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 5282852173510691878}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 002f6818e7fef654f987227969c339ca, type: 3}
+  m_Script: {fileID: 11500000, guid: 52eefcf869d564f429a782d1b8ce568c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet_prefab: {fileID: 2287314837687903509, guid: 0a59113dcacfff948bacb984d89499df, type: 3}
+  bullet_prefab: {fileID: 2287314837687903509, guid: 821d1e2f3817a764aab8385f1dd4f712, type: 3}
   spawnPoint: {fileID: 3043933552638932167}
   bulletClass: {fileID: 0}
-  fireRate: 0.5
+  fireRate: 2
   isFiring: 1
   x: 0
-  y: -1
+  y: 0
   init_wait: 0
-  speed: 10
-  rotation_speed: 0.15
+  speed: 0
+  rotation_speed: 0
+  shots_fired: 0
+  reloading_time: 0
