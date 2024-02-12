@@ -34,10 +34,10 @@ public class Battle_system : MonoBehaviour
     IEnumerator Setup_Battle()
     {
         GameObject player_go = Instantiate(player_prehab, player_battlestation);
-        player_unit = player_go.GetComponent<Combat_unit>();
+        player_unit = player_go.GetComponent<Combat_Unit>();
 
         GameObject enemy_go = Instantiate(enemy_prehab, enemy_battlestation);
-        enemy_unit = enemy_go.GetComponent<Combat_unit>();
+        enemy_unit = enemy_go.GetComponent<Combat_Unit>();
 
         dialogue.text = "Question Question Question Question";
 
@@ -57,7 +57,7 @@ public class Battle_system : MonoBehaviour
 
     IEnumerator Player_Attack()
     {
-        bool is_dead = enemy_unit.Take_damage(player_unit.damage);
+        bool is_dead = enemy_unit.Take_Damage(player_unit.damage);
         enemy_hud.Set_hp(enemy_unit.current_hp);
         dialogue.text = "The enemy took damage";
 

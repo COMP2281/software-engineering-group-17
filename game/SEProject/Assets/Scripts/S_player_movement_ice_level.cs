@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 
 
-public class S_player_movement : MonoBehaviour
+public class S_player_movement_ice_level : MonoBehaviour
 {
     public static S_player_movement s_player_movement;
 
@@ -16,7 +16,7 @@ public class S_player_movement : MonoBehaviour
     public Rigidbody2D rb;
 
     Vector2 movement;
- 
+
 
     public bool canmove = true;
 
@@ -45,7 +45,7 @@ public class S_player_movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
         //rb = GetComponent<Rigidbody2D>();
         //anim = GetComponent<Animator>();
 
@@ -54,10 +54,10 @@ public class S_player_movement : MonoBehaviour
     // Update is called once per frame (framrate dependent)
     void Update()
     {
-        
+
         if (canmove)
         {
-            
+
             movement.x = Input.GetAxisRaw("Horizontal");
             movement.y = Input.GetAxisRaw("Vertical");
 
@@ -137,33 +137,35 @@ public class S_player_movement : MonoBehaviour
         {
             anim.SetBool("x move", false);
         }
-        
-        if(freezingcold)
+        /*
+        if (freezingcold)
         {
             freeztimer -= Time.deltaTime;
             if (freeztimer <= 0)
             {
- 
+
                 //freezing.Play();
                 if (overloadstopper)
                 {
                     overloadstopper = false;
                     freezing.Play();
-                    
+
                 }
                 StartCoroutine(Frozen());
-                
+
             }
         }
         else
         {
             freeztimer = 10f;
         }
+        Debug.Log(freeztimer);
+        */
     }
 
     void FixedUpdate()
     {
-        
+
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
 
         if (facingRight == false && movement.x > 0)
@@ -190,9 +192,9 @@ public class S_player_movement : MonoBehaviour
             freezingcold = true;
             isfrozen = true;
             canmove = false;
-            StartCoroutine(Unfreeze());
+            //StartCoroutine(Unfreeze());
         }
-       
+
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -218,10 +220,10 @@ public class S_player_movement : MonoBehaviour
 
     IEnumerator Frozen()
     {
-        
+
         canmove = false;
         yield return new WaitForSeconds(5);
-        
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
