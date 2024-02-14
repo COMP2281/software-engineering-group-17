@@ -6,33 +6,33 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Josh/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 0
-    path: Assets/Scenes/Josh Test Scene.unity
+    path: Assets/Josh/Scenes/Josh Test Scene.unity
     guid: 7120563bbaf7c7842837101230ed43b2
   - enabled: 1
-    path: Assets/Scenes/Josh Test Scene.unity
+    path: Assets/Josh/Scenes/Josh Test Scene.unity
     guid: 7120563bbaf7c7842837101230ed43b2
   - enabled: 1
-    path: Assets/Scenes/Main Menu.unity
+    path: Assets/Josh/Scenes/Main Menu.unity
     guid: 280ee7214b399484e88f37fdb2ed288f
   - enabled: 1
-    path: Assets/Scenes/Cloud World Level 1.unity
+    path: Assets/Josh/Scenes/Cloud World Level 1.unity
     guid: 2164cf6b8f6eaad469ef2d87ec35b277
   - enabled: 1
-    path: Assets/Scenes/Cloud World Level 2.unity
+    path: Assets/Josh/Scenes/Cloud World Level 2.unity
     guid: a3b9ad924f2e94d42a3462545121a3b3
   - enabled: 1
-    path: Assets/Scenes/Cloud World Level 3.unity
+    path: Assets/Josh/Scenes/Cloud World Level 3.unity
     guid: ec1102c9ac2dbfc4fad2abb0eba76abb
   - enabled: 1
-    path: Assets/Scenes/Cloud World Level 4.unity
+    path: Assets/Josh/Scenes/Cloud World Level 4.unity
     guid: 6a6707564fe3b3840894c9907b833d61
   - enabled: 1
-    path: Assets/Scenes/Cloud World Level 5.unity
+    path: Assets/Josh/Scenes/Cloud World Level 5.unity
     guid: a93970b923b9e804bb91c0eec5185af0
   - enabled: 1
-    path: Assets/Scenes/Cloud World Level 6.unity
+    path: Assets/Josh/Scenes/Cloud World Level 6.unity
     guid: 2569cae5cdab4d947b5e8472aea2c00f
   m_configObjects: {}
