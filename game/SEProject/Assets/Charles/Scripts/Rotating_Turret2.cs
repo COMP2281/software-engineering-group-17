@@ -18,12 +18,15 @@ public class Rotating_Turret2 : MonoBehaviour
     public float reloading_time;
     public float rotation_range;
     private float init_rotation;
-    public bool rotate_left = true;
+    private bool rotate_left;
+    private float to_check;
 
 
     private void Start()
     {
         init_rotation = gameObject.transform.eulerAngles.z;
+        rotate_left = rotation_range > 0;
+        Debug.Log(init_rotation);
         StartCoroutine(FireBullets());
     }
  
@@ -44,13 +47,39 @@ public class Rotating_Turret2 : MonoBehaviour
     void Update()
     {
         gameObject.transform.Rotate(0, 0, rotation_speed, Space.Self);
-        Debug.Log(gameObject.transform.eulerAngles.z-init_rotation);
-        if (rotate_left && gameObject.transform.eulerAngles.z-init_rotation > rotation_range) {
+
+        if (!rotate_left && gameObject.transform.eulerAngles.z > init_rotation+rotation_range+1) {
+            to_check = gameObject.transform.eulerAngles.z - 360;
+        }
+        else if (rotate_left && gameObject.transform.eulerAngles.z < init_rotation-rotation_range-1) {
+            to_check = gameObject.transform.eulerAngles.z + 360;
+        }
+        else {
+            to_check = gameObject.transform.eulerAngles.z;
+        }
+
+
+        if (rotate_left && to_check > init_rotation+rotation_range) {
             rotation_speed*=-1;
             rotate_left = false;
+
+            if (to_check < 0) {
+                to_check+=360;
+            }
+            else if (to_check > 360) {
+                to_check+=360;
+            }
         }
-        else if (!rotate_left && gameObject.transform.eulerAngles.z-init_rotation > 360-1*rotation_range) {
+        else if (!rotate_left && to_check < init_rotation-rotation_range) {
             rotation_speed*=-1;
+
+            if (to_check < 0) {
+                to_check+=360;
+            }
+            else if (to_check > 360) {
+                to_check-=360;
+            }
+
             rotate_left = true;
         }
     }

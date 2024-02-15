@@ -28,9 +28,10 @@ public class Bullet : MonoBehaviour
 
         if (other.gameObject == player)
         {
-           player.GetComponent<Lives>().heart_num--; 
-           Debug.Log(player.GetComponent<Lives>().heart_num);
-           Destroy(gameObject);
+            if (!player.GetComponent<Dash>().isDashing){
+                player.GetComponent<Lives>().heart_num--; 
+            } 
+            Destroy(gameObject);
         }
 
         if (other.gameObject.tag == "Collide")
