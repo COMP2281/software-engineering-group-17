@@ -4,6 +4,7 @@ using Unity.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Tilemaps;
 
 public class Bullet : MonoBehaviour
 {
@@ -27,15 +28,15 @@ public class Bullet : MonoBehaviour
 
         if (other.gameObject == player)
         {
-           player.GetComponent<Lives>().heart_num--; 
-           Debug.Log(player.GetComponent<Lives>().heart_num);
-           Destroy(gameObject);
+            if (!player.GetComponent<Dash>().isDashing){
+                player.GetComponent<Lives>().heart_num--; 
+            } 
+            Destroy(gameObject);
         }
 
-        GameObject collide = GameObject.FindGameObjectWithTag("Collide");
-
-        if (other.gameObject == collide)
+        if (other.gameObject.tag == "Collide")
         {
+            // Debug.Log(other)
             Destroy(gameObject);
         }
     }

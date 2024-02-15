@@ -216,4 +216,5 @@ MonoBehaviour:
   y: -1
   init_wait: 0
   speed: 10
-  rotation_speed: 0.15
+  rotation_speed: 0.4
+  rotation_range: 30
