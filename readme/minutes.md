@@ -129,3 +129,14 @@
 - Added race puzzle and timer
 - Goals for the week
   - Continue working on unity project
+
+# Week 15 Minutes
+**Last Week's Goals**: Achieved
+- Implemented multiple worlds fully
+- Added shields and hearts mechanic for "bullet hell" puzzle
+- Implemented hub world
+- Made progress on combat system
+- Started work on save system
+- Goals for the week
+  - Continue working on project
+  - Get started on User Manual
