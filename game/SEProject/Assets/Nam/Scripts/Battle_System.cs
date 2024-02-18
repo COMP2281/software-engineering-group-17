@@ -15,8 +15,8 @@ public class Battle_System : State_Machine
 
     public TextMeshProUGUI dialogue;
 
-    protected internal Battle_Hud player_hud;
-    protected internal Battle_Hud enemy_hud;
+    public Battle_Hud player_hud;
+    public Battle_Hud enemy_hud;
 
     void Start()
     {
@@ -26,5 +26,6 @@ public class Battle_System : State_Machine
     public void On_Attack_Button()
     {
         StartCoroutine(State.Attack());
+
     }
 }

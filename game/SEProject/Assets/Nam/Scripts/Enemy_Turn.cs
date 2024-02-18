@@ -15,7 +15,7 @@ public class Enemy_Turn : State
         Battle_System.player_hud.Set_Hp(Battle_System.player_unit.current_hp);
         Battle_System.dialogue.text = "You took damage";
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
 
         if (is_dead)
         {
