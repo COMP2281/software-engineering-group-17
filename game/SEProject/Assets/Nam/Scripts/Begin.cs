@@ -10,10 +10,10 @@ public class Begin : State
     }
     public override IEnumerator Start()
     {
-        GameObject player_go = Battle_System.Instantiate(Battle_System.player_prehab, Battle_System.player_battlestation);
+        GameObject player_go = Object.Instantiate(Battle_System.player_prehab);
         Battle_System.player_unit = player_go.GetComponent<Combat_Unit>();
 
-        GameObject enemy_go = Battle_System.Instantiate(Battle_System.enemy_prehab, Battle_System.enemy_battlestation);
+        GameObject enemy_go = Object.Instantiate(Battle_System.enemy_prehab);
         Battle_System.enemy_unit = enemy_go.GetComponent<Combat_Unit>();
 
         Battle_System.dialogue.text = "Question Question Question Question";
