@@ -5,24 +5,24 @@ using UnityEngine.UI;
 
 public class Begin : State
 {
-    public Begin(Battle_System battle_System) : base(battle_System)
+    public Begin(BattleSystem battleSystem) : base(battleSystem)
     {
     }
     public override IEnumerator Start()
     {
-        GameObject player_go = Object.Instantiate(Battle_System.player_prehab);
-        Battle_System.player_unit = player_go.GetComponent<Combat_Unit>();
+        GameObject playerGo = Object.Instantiate(BattleSystem.playerPrehab);
+        BattleSystem.playerUnit = playerGo.GetComponent<CombatUnit>();
 
-        GameObject enemy_go = Object.Instantiate(Battle_System.enemy_prehab);
-        Battle_System.enemy_unit = enemy_go.GetComponent<Combat_Unit>();
+        GameObject enemy_go = Object.Instantiate(BattleSystem.enemyPrehab);
+        BattleSystem.enemyUnit = enemy_go.GetComponent<CombatUnit>();
 
-        Battle_System.dialogue.text = "You are about to fight " + Battle_System.enemy_unit.name + " !!!";
+        BattleSystem.dialogue.text = "You are about to fight " + BattleSystem.enemyUnit.unitName + " !!!";
 
-        Battle_System.player_hud.Set_Hud(Battle_System.player_unit);
-        Battle_System.enemy_hud.Set_Hud(Battle_System.enemy_unit);
+        BattleSystem.playerHud.SetHud(BattleSystem.playerUnit);
+        BattleSystem.enemyHud.SetHud(BattleSystem.enemyUnit);
 
         yield return new WaitForSeconds(2f);
 
-        Battle_System.Set_State(new Player_Turn(Battle_System));
+        BattleSystem.SetState(new PlayerTurn(BattleSystem));
     }
 }

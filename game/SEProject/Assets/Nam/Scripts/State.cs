@@ -4,11 +4,11 @@ using UnityEngine;
 
 public abstract class State
 {
-    protected Battle_System Battle_System;
+    protected BattleSystem BattleSystem;
 
-    public State(Battle_System battle_system)
+    public State(BattleSystem battleSystem)
     {
-        Battle_System = battle_system;
+        BattleSystem = battleSystem;
     }
 
     public virtual IEnumerator Start()

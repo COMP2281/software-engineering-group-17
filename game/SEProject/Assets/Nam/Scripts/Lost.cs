@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Lost : State
 {
-    public Lost(Battle_System battle_system) : base(battle_system)
+    public Lost(BattleSystem battleSystem) : base(battleSystem)
     {
     }
 
     public override IEnumerator Start()
     {
-        Battle_System.dialogue.text = "You have lost!";
+        BattleSystem.dialogue.text = "You have lost!";
         yield break;
     }
 }

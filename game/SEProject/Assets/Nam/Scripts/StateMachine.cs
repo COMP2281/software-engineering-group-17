@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class State_Machine : MonoBehaviour
+public abstract class StateMachine : MonoBehaviour
 {
     protected State State;
 
-    public void Set_State(State state)
+    public void SetState(State state)
     {
         State = state;
         StartCoroutine(State.Start());

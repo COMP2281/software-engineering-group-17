@@ -35,8 +35,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -190, y: 89.247986}
-  m_SizeDelta: {x: 300, y: 180}
+  m_AnchoredPosition: {x: -179, y: 116}
+  m_SizeDelta: {x: 300, y: 166.06}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3843548774796211270
 CanvasRenderer:
@@ -88,7 +88,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef70cb290994f1d4fb9eb9742650c698, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unit_name: Neiman
-  damage: 1
-  max_hp: 10
-  current_hp: 10
+  unitName: Neiman
+  damage: 3
+  maxHp: 10
+  currentHp: 10
