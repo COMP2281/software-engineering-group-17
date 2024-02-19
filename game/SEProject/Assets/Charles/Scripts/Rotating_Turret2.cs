@@ -6,6 +6,8 @@ public class Rotating_Turret2 : MonoBehaviour
 {
     public GameObject bullet_prefab;
     public GameObject spawnPoint;
+    public GameObject spawnPoint2;
+    public bool shootTwice = false;
     public Bullet bulletClass;
     public float fireRate = 2f;
     public bool isFiring = true;
@@ -26,8 +28,13 @@ public class Rotating_Turret2 : MonoBehaviour
     {
         init_rotation = gameObject.transform.eulerAngles.z;
         rotate_left = rotation_range > 0;
-        Debug.Log(init_rotation);
-        StartCoroutine(FireBullets());
+        if (shootTwice) {
+            StartCoroutine(FireBullets2());
+        }
+
+        else {
+            StartCoroutine(FireBullets());
+        }
     }
  
 
@@ -44,6 +51,21 @@ public class Rotating_Turret2 : MonoBehaviour
             yield return new WaitForSeconds(reloading_time);
         } 
     }
+
+    private IEnumerator FireBullets2()
+    {
+        yield return new WaitForSeconds(init_wait);
+        while (isFiring)
+        {
+            for (int i = 0; i < shots_fired; i++){
+                FireBullet2();
+                yield return new WaitForSeconds(fireRate);
+            }
+
+            yield return new WaitForSeconds(reloading_time);
+        } 
+    }
+
     void Update()
     {
         gameObject.transform.Rotate(0, 0, rotation_speed, Space.Self);
@@ -90,6 +112,26 @@ public class Rotating_Turret2 : MonoBehaviour
         bullet.GetComponent<Bullet>().x = x;
         bullet.GetComponent<Bullet>().y = y;
         bullet.GetComponent<Bullet>().speed = speed;
+
+        if (shootTwice) {
+            GameObject bullet2 = Instantiate(bullet_prefab, spawnPoint2.transform.position, spawnPoint2.transform.rotation);
+            bullet2.GetComponent<Bullet>().x = x;
+            bullet2.GetComponent<Bullet>().y = y;
+            bullet2.GetComponent<Bullet>().speed = speed;
+        }
+        // isSpawned = true;
+    }
+    private void FireBullet2()
+    {
+        // Instantiate and set up the bullet here
+        GameObject bullet = Instantiate(bullet_prefab, spawnPoint.transform.position, spawnPoint.transform.rotation);
+        bullet.GetComponent<Bullet>().x = x;
+        bullet.GetComponent<Bullet>().y = y;
+        bullet.GetComponent<Bullet>().speed = speed;
+        GameObject bullet2 = Instantiate(bullet_prefab, spawnPoint2.transform.position, spawnPoint2.transform.rotation);
+        bullet2.GetComponent<Bullet>().x = x;
+        bullet2.GetComponent<Bullet>().y = y;
+        bullet2.GetComponent<Bullet>().speed = speed;
         // isSpawned = true;
     }
 }
