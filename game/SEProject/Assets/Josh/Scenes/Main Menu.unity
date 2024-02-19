@@ -2810,7 +2810,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b856f87304d3d214da480da4b5175edc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mix: {fileID: 0}
+  mix: {fileID: 24100000, guid: 93959bfcf3daa1048b50e9b20c468c2a, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
