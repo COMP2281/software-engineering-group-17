@@ -11100,9 +11100,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   rb: {fileID: 1173132924}
-  canmove: 1
+  canMove: 1
   anim: {fileID: 1173132922}
-  unfreezetime: 5
+  unfreezeTime: 5
   freezing: {fileID: 0}
 --- !u!50 &1173132924
 Rigidbody2D:

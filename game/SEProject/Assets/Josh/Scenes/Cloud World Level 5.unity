@@ -2402,7 +2402,7 @@ SpriteRenderer:
   m_Size: {x: 0.4375, y: 0.46875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &604413202
@@ -3521,12 +3521,12 @@ MonoBehaviour:
   - {fileID: 272336583}
   - {fileID: 886574718}
   - {fileID: 1745534445}
-  hitcounter: 20
+  hitCounter: 20
   button: {fileID: 928191027}
   player: {fileID: 1038646166}
   spawn: {fileID: 295275765}
   arrow: {fileID: 604413199}
-  player_script: {fileID: 0}
+  playerScript: {fileID: 1038646175}
   counterText: {fileID: 1986590003}
 --- !u!1 &973546802
 GameObject:
@@ -4212,9 +4212,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   rb: {fileID: 1038646169}
-  canmove: 1
+  canMove: 1
   anim: {fileID: 1038646168}
-  unfreezetime: 5
+  unfreezeTime: 5
   freezing: {fileID: 0}
 --- !u!1 &1041693296
 GameObject:

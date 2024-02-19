@@ -159,9 +159,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   rb: {fileID: 102290013}
-  canmove: 1
+  canMove: 1
   anim: {fileID: 102290012}
-  unfreezetime: 5
+  unfreezeTime: 5
   freezing: {fileID: 0}
 --- !u!95 &102290012
 Animator:
@@ -16808,7 +16808,7 @@ MonoBehaviour:
   player: {fileID: 102290011}
   respawner: {fileID: 876823109}
   respawner2: {fileID: 1381796612}
-  s_Labyrinth_Door: {fileID: 385128817}
+  labyrinthDoor: {fileID: 385128817}
   camera1: {fileID: 1007170725}
   camera2: {fileID: 2032709809}
 --- !u!50 &530580736
@@ -17071,7 +17071,7 @@ MonoBehaviour:
   player: {fileID: 102290011}
   respawner: {fileID: 681459141}
   respawner2: {fileID: 2081416943}
-  s_Labyrinth_Door: {fileID: 1491171650}
+  labyrinthDoor: {fileID: 1491171650}
   camera1: {fileID: 1007170725}
   camera2: {fileID: 2032709809}
 --- !u!50 &601719914
