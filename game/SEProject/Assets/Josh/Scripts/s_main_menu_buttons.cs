@@ -3,10 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
+using Unity.VisualScripting;
+using UnityEngine.UI;
 
 public class S_main_menu_buttons : MonoBehaviour
 {
     public AudioMixer mix;
+
+    
     public void NewGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -27,4 +31,6 @@ public class S_main_menu_buttons : MonoBehaviour
     {
 
     }
+
+    
 }

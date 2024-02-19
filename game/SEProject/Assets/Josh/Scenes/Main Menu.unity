@@ -2275,6 +2275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mix: {fileID: 24100000, guid: 93959bfcf3daa1048b50e9b20c468c2a, type: 2}
+  test: {fileID: 0}
 --- !u!224 &1752727835
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2811,6 +2812,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mix: {fileID: 0}
+  test: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
