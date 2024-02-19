@@ -18,8 +18,8 @@ EditorBuildSettings:
     path: Assets/Josh/Scenes/Main Menu.unity
     guid: 280ee7214b399484e88f37fdb2ed288f
   - enabled: 1
-    path: Assets/Josh/Scenes/Hub World New.unity
-    guid: c90f3de804ca7dc47800ca70eb375ea8
+    path: Assets/Josh/Scenes/Hub World.unity
+    guid: f7649067751971b43a872247973ec862
   - enabled: 1
     path: Assets/Josh/Scenes/Cloud World Level 1.unity
     guid: 2164cf6b8f6eaad469ef2d87ec35b277
