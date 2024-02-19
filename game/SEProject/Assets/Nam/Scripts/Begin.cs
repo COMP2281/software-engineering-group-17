@@ -16,7 +16,7 @@ public class Begin : State
         GameObject enemy_go = Object.Instantiate(Battle_System.enemy_prehab);
         Battle_System.enemy_unit = enemy_go.GetComponent<Combat_Unit>();
 
-        Battle_System.dialogue.text = "Question Question Question Question";
+        Battle_System.dialogue.text = "You are about to fight " + Battle_System.enemy_unit.name + " !!!";
 
         Battle_System.player_hud.Set_Hud(Battle_System.player_unit);
         Battle_System.enemy_hud.Set_Hud(Battle_System.enemy_unit);

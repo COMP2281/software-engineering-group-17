@@ -13,6 +13,8 @@ public class Battle_System : State_Machine
     protected internal Combat_Unit player_unit;
     protected internal Combat_Unit enemy_unit;
 
+    protected internal Question asked_question;
+
     public TextMeshProUGUI dialogue;
 
     public Battle_Hud player_hud;
