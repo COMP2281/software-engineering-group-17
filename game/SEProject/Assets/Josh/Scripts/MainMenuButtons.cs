@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class MainMenuButtons : MonoBehaviour
 {
@@ -14,6 +15,12 @@ public class MainMenuButtons : MonoBehaviour
 
     public GameObject optionsMenu;
     public GameObject mainMenu;
+
+    public Toggle particles;
+    private void Start()
+    {
+        Particles(particles);
+    }
     public void NewGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -26,8 +33,7 @@ public class MainMenuButtons : MonoBehaviour
 
     public void Volume(float volume)
     {
-        mix.SetFloat("volume", volume);
-        Debug.Log(volume);
+        GM.gmInstance.SetVolume(volume);
     }
 
     public void Particles(bool disable_particles)
