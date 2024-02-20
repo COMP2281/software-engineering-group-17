@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
 public class GM : MonoBehaviour
@@ -13,8 +14,11 @@ public class GM : MonoBehaviour
 
     public static int itemCount = 4;
 
-    private bool enableParticles = true;
+    private bool enableParticles;
 
+    private float volume;
+
+    public AudioMixer mastervol;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +26,10 @@ public class GM : MonoBehaviour
         {
             Destroy(MusicManager.instance.gameObject);
         }
+    }
+    private void Update()
+    {
+        Debug.Log(enableParticles);
     }
 
     private void Awake()
@@ -35,7 +43,7 @@ public class GM : MonoBehaviour
         }
     }
 
-        public bool GetParticle()
+    public bool GetParticle()
     {
         return enableParticles;
     }
@@ -43,6 +51,17 @@ public class GM : MonoBehaviour
     public void SetParticle(bool ep)
     {
         enableParticles = ep;
+    }
+
+    public float GetVolume()
+    {
+        return volume;
+    }
+
+    public void SetVolume(float v)
+    {
+        volume = v;
+        mastervol.SetFloat("volume", volume);
     }
 
 }

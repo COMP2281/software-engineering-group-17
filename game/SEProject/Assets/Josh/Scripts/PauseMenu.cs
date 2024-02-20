@@ -18,8 +18,6 @@ public class PauseMenu : MonoBehaviour
     public GameObject optionsFirst;
     public GameObject pauseFirst;
 
-    public AudioMixer mix;
-
     public Toggle particle;
     public Slider volumeSlider;
 

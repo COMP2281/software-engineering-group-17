@@ -962,7 +962,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1752727834}
         m_TargetAssemblyTypeName: MainMenuButtons, Assembly-CSharp
         m_MethodName: Particles
-        m_Mode: 6
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2282,6 +2282,7 @@ MonoBehaviour:
   hasItem2: 0
   hasItem3: 0
   hasItem4: 0
+  mastervol: {fileID: 24100000, guid: 93959bfcf3daa1048b50e9b20c468c2a, type: 2}
 --- !u!4 &1253532689
 Transform:
   m_ObjectHideFlags: 0
@@ -2745,7 +2746,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 151416614}
   m_HandleRect: {fileID: 1267636878}
   m_Direction: 0
-  m_MinValue: -80
+  m_MinValue: -40
   m_MaxValue: 20
   m_WholeNumbers: 0
   m_Value: 0
@@ -3045,6 +3046,7 @@ MonoBehaviour:
   optionsInButton: {fileID: 1206194524}
   optionsMenu: {fileID: 1819624581}
   mainMenu: {fileID: 1772857673}
+  particles: {fileID: 280101589}
 --- !u!224 &1752727835
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3663,6 +3665,7 @@ MonoBehaviour:
   optionsInButton: {fileID: 0}
   optionsMenu: {fileID: 0}
   mainMenu: {fileID: 0}
+  particles: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
