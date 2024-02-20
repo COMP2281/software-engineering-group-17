@@ -421,7 +421,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 417, y: 150}
+  m_AnchoredPosition: {x: 354, y: 116}
   m_SizeDelta: {x: 168.2819, y: 181.0797}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &82435095
@@ -30544,9 +30544,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   rb: {fileID: 1199184658}
-  canmove: 1
+  canMove: 1
   anim: {fileID: 1199184656}
-  unfreezetime: 5
+  unfreezeTime: 5
   freezing: {fileID: 0}
 --- !u!50 &1199184658
 Rigidbody2D:
