@@ -25,7 +25,7 @@ public class Button : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && inRange)
+        if (Input.GetButtonDown("Fire1") && inRange)
         {
             clip.Play();
             if(correct_answer)

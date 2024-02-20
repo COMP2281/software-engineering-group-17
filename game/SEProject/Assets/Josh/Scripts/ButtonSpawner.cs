@@ -36,7 +36,7 @@ public class ButtonSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (canPress && Input.GetKeyDown(KeyCode.Space))
+        if (canPress && Input.GetButtonDown("Fire1"))
         {
             hitCounter--;
          
