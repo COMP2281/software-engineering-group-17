@@ -341,8 +341,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1094971336}
-        m_TargetAssemblyTypeName: Battle_System, Assembly-CSharp
-        m_MethodName: On_Attack_Button
+        m_TargetAssemblyTypeName: BattleSystem, Assembly-CSharp
+        m_MethodName: OnAnswer1Button
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -474,8 +474,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1094971336}
-        m_TargetAssemblyTypeName: Battle_System, Assembly-CSharp
-        m_MethodName: On_Attack_Button
+        m_TargetAssemblyTypeName: BattleSystem, Assembly-CSharp
+        m_MethodName: OnAnswer5Button
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1031,8 +1031,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1094971336}
-        m_TargetAssemblyTypeName: Battle_System, Assembly-CSharp
-        m_MethodName: On_Attack_Button
+        m_TargetAssemblyTypeName: BattleSystem, Assembly-CSharp
+        m_MethodName: OnAnswer4Button
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1174,14 +1174,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1094971335}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c15909bc68d3ea43bf61cd8927ecdfc, type: 3}
+  m_Script: {fileID: 11500000, guid: 84d4e9a61cc2b8842a3218f29aef7fd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player_prehab: {fileID: 3380340545451496639, guid: 8af6fdbad701b634dae50ace153b3f63, type: 3}
-  enemy_prehab: {fileID: 2155266804669529768, guid: ae583af61ecfdd847b81b1b99661f4d1, type: 3}
+  playerPrefab: {fileID: 3380340545451496639, guid: 8af6fdbad701b634dae50ace153b3f63, type: 3}
+  enemyPrefab: {fileID: 2155266804669529768, guid: ae583af61ecfdd847b81b1b99661f4d1, type: 3}
   dialogue: {fileID: 16085992}
-  player_hud: {fileID: 1203183940}
-  enemy_hud: {fileID: 1440067094}
+  playerHud: {fileID: 1203183940}
+  enemyHud: {fileID: 1440067094}
 --- !u!4 &1094971337
 Transform:
   m_ObjectHideFlags: 0
@@ -1281,8 +1281,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1094971336}
-        m_TargetAssemblyTypeName: Battle_System, Assembly-CSharp
-        m_MethodName: On_Attack_Button
+        m_TargetAssemblyTypeName: BattleSystem, Assembly-CSharp
+        m_MethodName: OnAnswer3Button
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1765,10 +1765,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67c3eaa21ba95fe4f9d74baa5d71f95d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name_text: {fileID: 1412462352}
-  hp_text: {fileID: 852629955}
-  current_hp: 0
-  max_hp: 0
+  nameText: {fileID: 1412462352}
+  hpText: {fileID: 852629955}
+  currentHp: 0
+  maxHp: 0
 --- !u!1 &1256375390
 GameObject:
   m_ObjectHideFlags: 0
@@ -2397,10 +2397,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67c3eaa21ba95fe4f9d74baa5d71f95d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name_text: {fileID: 1819676693}
-  hp_text: {fileID: 1179553575}
-  current_hp: 0
-  max_hp: 0
+  nameText: {fileID: 1819676693}
+  hpText: {fileID: 1179553575}
+  currentHp: 0
+  maxHp: 0
 --- !u!1 &1744582212
 GameObject:
   m_ObjectHideFlags: 0
@@ -2887,8 +2887,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1094971336}
-        m_TargetAssemblyTypeName: Battle_System, Assembly-CSharp
-        m_MethodName: On_Attack_Button
+        m_TargetAssemblyTypeName: BattleSystem, Assembly-CSharp
+        m_MethodName: OnAnswer2Button
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3142,10 +3142,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2005553467}
     m_Modifications:
-    - target: {fileID: 1175579513772623518, guid: 8af6fdbad701b634dae50ace153b3f63, type: 3}
-      propertyPath: damage
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 3380340545451496639, guid: 8af6fdbad701b634dae50ace153b3f63, type: 3}
       propertyPath: m_Name
       value: Player
