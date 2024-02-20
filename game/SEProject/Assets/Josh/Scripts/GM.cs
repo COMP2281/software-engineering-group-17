@@ -11,7 +11,7 @@ public class GM : MonoBehaviour
     public bool hasItem3;  
     public bool hasItem4;
 
-    public static int itemCount = 0;
+    public static int itemCount = 4;
 
    
 
