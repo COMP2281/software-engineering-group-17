@@ -3,9 +3,18 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class Question : MonoBehaviour
+public class Question
 {
-    public TextMeshProUGUI question_prompt;
-    public string answer;
+    public string questionPrompt;
+    public int answer;
 
+    public Question()
+    {
+    }
+
+    public void SetQuestion(string question, int correct)
+    {
+        questionPrompt = question;
+        answer = correct;
+    }
 }

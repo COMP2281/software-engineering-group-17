@@ -10,20 +10,8 @@ public class EnemyTurn : State
 
     public override IEnumerator Start()
     {
-        // BattleSystem.dialogue.text = "Question";
-        bool is_dead = BattleSystem.playerUnit.TakeDamage(BattleSystem.enemyUnit.damage);
-        BattleSystem.playerHud.SetHp(BattleSystem.playerUnit.currentHp);
-        BattleSystem.dialogue.text = "You took damage";
-
+        BattleSystem.askedQuestion.SetQuestion("Are you dead", 1);
         yield return new WaitForSeconds(2f);
-
-        if (is_dead)
-        {
-            BattleSystem.SetState(new Lost(BattleSystem));
-        }
-        else
-        {
-            BattleSystem.SetState(new PlayerTurn(BattleSystem));
-        }
+        BattleSystem.SetState(new PlayerTurn(BattleSystem));
     }
 }

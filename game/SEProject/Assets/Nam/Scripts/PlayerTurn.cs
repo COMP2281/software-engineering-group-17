@@ -14,17 +14,33 @@ public class PlayerTurn : State
         yield break;
     }
 
-    public override IEnumerator Attack()
+    public override IEnumerator Answer(int option)
     {
-        bool is_dead = BattleSystem.enemyUnit.TakeDamage(BattleSystem.playerUnit.damage);
-        BattleSystem.enemyHud.SetHp(BattleSystem.enemyUnit.currentHp);
-        BattleSystem.dialogue.text = "The enemy took damage";
+
+        bool isPlayerDead = false;
+        bool isEnemyDead = false;
+        if (option == BattleSystem.askedQuestion.answer)
+        {
+            isEnemyDead = BattleSystem.enemyUnit.TakeDamage(BattleSystem.playerUnit.damage);
+            BattleSystem.enemyHud.SetHp(BattleSystem.enemyUnit.currentHp);
+            BattleSystem.dialogue.text = BattleSystem.enemyUnit.unitName + " took damage";
+        } 
+        else
+        {
+            isPlayerDead = BattleSystem.playerUnit.TakeDamage(BattleSystem.enemyUnit.damage);
+            BattleSystem.playerHud.SetHp(BattleSystem.playerUnit.currentHp);
+            BattleSystem.dialogue.text = "You took damage";
+        }
 
         yield return new WaitForSeconds(2f);
 
-        if (is_dead)
+        if (isEnemyDead)
         {
             BattleSystem.SetState(new Won(BattleSystem));
+        }
+        else if (isPlayerDead)
+        {
+            BattleSystem.SetState(new Lost(BattleSystem));
         }
         else
         {

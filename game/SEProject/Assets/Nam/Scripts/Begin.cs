@@ -10,11 +10,13 @@ public class Begin : State
     }
     public override IEnumerator Start()
     {
-        GameObject playerGo = Object.Instantiate(BattleSystem.playerPrehab);
+        GameObject playerGo = Object.Instantiate(BattleSystem.playerPrefab);
         BattleSystem.playerUnit = playerGo.GetComponent<CombatUnit>();
 
-        GameObject enemy_go = Object.Instantiate(BattleSystem.enemyPrehab);
+        GameObject enemy_go = Object.Instantiate(BattleSystem.enemyPrefab);
         BattleSystem.enemyUnit = enemy_go.GetComponent<CombatUnit>();
+
+        BattleSystem.askedQuestion = new Question();
 
         BattleSystem.dialogue.text = "You are about to fight " + BattleSystem.enemyUnit.unitName + " !!!";
 
@@ -23,6 +25,6 @@ public class Begin : State
 
         yield return new WaitForSeconds(2f);
 
-        BattleSystem.SetState(new PlayerTurn(BattleSystem));
+        BattleSystem.SetState(new EnemyTurn(BattleSystem));
     }
 }
