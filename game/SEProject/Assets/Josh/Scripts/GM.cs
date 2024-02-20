@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static Cinemachine.DocumentationSortingAttribute;
+using UnityEngine.SceneManagement;
 
 public class GM : MonoBehaviour
 {
@@ -13,19 +13,36 @@ public class GM : MonoBehaviour
 
     public static int itemCount = 4;
 
-   
+    private bool enableParticles = true;
 
     // Start is called before the first frame update
     void Start()
     {
-        try
+        if(SceneManager.GetActiveScene().name == "Hub World New")
         {
             Destroy(MusicManager.instance.gameObject);
         }
-        catch { 
-        
+    }
+
+    private void Awake()
+    {
+
+        if (gmInstance == null)
+        {
+            gmInstance = this;
+            DontDestroyOnLoad(gameObject);
+            
         }
-        
+    }
+
+        public bool GetParticle()
+    {
+        return enableParticles;
+    }
+
+    public void SetParticle(bool ep)
+    {
+        enableParticles = ep;
     }
 
 }
