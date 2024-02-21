@@ -5820,7 +5820,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Full Screen
+  m_Text: Fullscreen
 --- !u!222 &384515902
 CanvasRenderer:
   m_ObjectHideFlags: 0
