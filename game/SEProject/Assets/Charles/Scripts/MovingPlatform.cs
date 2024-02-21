@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
-using UnityEditor.ProjectWindowCallback;
 using UnityEngine;
 
 public class MvingPlatfor : MonoBehaviour

@@ -1460,6 +1460,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 370190692}
   m_CullTransparentMesh: 1
+--- !u!1 &413838578
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 413838580}
+  - component: {fileID: 413838579}
+  m_Layer: 0
+  m_Name: Snow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &413838579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413838578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ede11044ee7c024f9c4d0eb649a1c39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &413838580
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413838578}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 5.74, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1216372757}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &435280672
 GameObject:
   m_ObjectHideFlags: 0
@@ -2394,12 +2439,12 @@ SpriteRenderer:
   m_SortingLayerID: -382136915
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 087e80b1d2c65c24cb5755a6bfeb26f8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 273655fcfd3fa6a44948049b0294158e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.4375, y: 0.46875}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -3521,12 +3566,12 @@ MonoBehaviour:
   - {fileID: 272336583}
   - {fileID: 886574718}
   - {fileID: 1745534445}
-  hitcounter: 20
+  hitCounter: 20
   button: {fileID: 928191027}
   player: {fileID: 1038646166}
   spawn: {fileID: 295275765}
   arrow: {fileID: 604413199}
-  player_script: {fileID: 0}
+  playerScript: {fileID: 1038646175}
   counterText: {fileID: 1986590003}
 --- !u!1 &973546802
 GameObject:
@@ -4212,9 +4257,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   rb: {fileID: 1038646169}
-  canmove: 1
+  canMove: 1
   anim: {fileID: 1038646168}
-  unfreezetime: 5
+  unfreezeTime: 5
   freezing: {fileID: 0}
 --- !u!1 &1041693296
 GameObject:
@@ -10161,11 +10206,11 @@ Transform:
   m_GameObject: {fileID: 1216372753}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.74, z: -1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 413838580}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1242090652
 GameObject:
@@ -24980,7 +25025,7 @@ AudioSource:
   m_GameObject: {fileID: 1513546246}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 93959bfcf3daa1048b50e9b20c468c2a, type: 2}
   m_audioClip: {fileID: 8300000, guid: 2249d941ea08dfb44a8b9ae9575c8596, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -25076,8 +25121,8 @@ AudioSource:
   m_GameObject: {fileID: 1513546246}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: fad2a47c777f0864193a77509777be36, type: 3}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 93959bfcf3daa1048b50e9b20c468c2a, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 30a7992330cb77a46a30ee06ff6a7521, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -93766,7 +93811,7 @@ SceneRoots:
   - {fileID: 1377575599}
   - {fileID: 1527471544}
   - {fileID: 1546429560}
-  - {fileID: 1216372757}
+  - {fileID: 413838580}
   - {fileID: 1665432484}
   - {fileID: 791607537}
   - {fileID: 1697499401}
