@@ -15,7 +15,7 @@ public abstract class State
     {
         yield break;
     }
-    public virtual IEnumerator Answer(int option)
+    public virtual IEnumerator Answer(bool option)
     {
         yield break;
     }

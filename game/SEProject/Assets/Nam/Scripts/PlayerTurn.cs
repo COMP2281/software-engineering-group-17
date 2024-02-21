@@ -14,7 +14,7 @@ public class PlayerTurn : State
         yield break;
     }
 
-    public override IEnumerator Answer(int option)
+    public override IEnumerator Answer(bool option)
     {
 
         bool isPlayerDead = false;

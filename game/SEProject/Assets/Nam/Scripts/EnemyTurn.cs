@@ -10,7 +10,7 @@ public class EnemyTurn : State
 
     public override IEnumerator Start()
     {
-        BattleSystem.askedQuestion.SetQuestion("Are you dead", 1);
+        //BattleSystem.askedQuestion.SetQuestion("Are you dead", 1);
         yield return new WaitForSeconds(2f);
         BattleSystem.SetState(new PlayerTurn(BattleSystem));
     }
