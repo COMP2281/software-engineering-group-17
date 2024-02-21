@@ -4,7 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - ice
+  - volume
   layers:
   - Default
   - TransparentFX
