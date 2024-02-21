@@ -14,9 +14,14 @@ public class Rotating_Turret : MonoBehaviour
     public float init_wait;
     public float speed;
     public float rotation_speed;
-
+    private float init_rotation;
+    private bool rotate_left;
+    public float rotation_range;
+    private float to_check;
     private void Start()
-    {
+    {        
+        init_rotation = gameObject.transform.eulerAngles.z;
+        rotate_left = rotation_range > 0;
         StartCoroutine(FireBullets());
     }
  
@@ -33,10 +38,41 @@ public class Rotating_Turret : MonoBehaviour
     void Update()
     {
         gameObject.transform.Rotate(0, 0, rotation_speed, Space.Self);
-        // if (isSpawned){
-        //     bullet.Rigidbody2D = rb
-        //     rb.velocity = transform.up * y * speed + transform.right * x * speed;
-        // }
+        
+        if (!rotate_left && gameObject.transform.eulerAngles.z > init_rotation+rotation_range+1) {
+            to_check = gameObject.transform.eulerAngles.z - 360;
+        }
+        else if (rotate_left && gameObject.transform.eulerAngles.z < init_rotation-rotation_range-1) {
+            to_check = gameObject.transform.eulerAngles.z + 360;
+        }
+        else {
+            to_check = gameObject.transform.eulerAngles.z;
+        }
+
+
+        if (rotate_left && to_check > init_rotation+rotation_range) {
+            rotation_speed*=-1;
+            rotate_left = false;
+
+            if (to_check < 0) {
+                to_check+=360;
+            }
+            else if (to_check > 360) {
+                to_check+=360;
+            }
+        }
+        else if (!rotate_left && to_check < init_rotation-rotation_range) {
+            rotation_speed*=-1;
+
+            if (to_check < 0) {
+                to_check+=360;
+            }
+            else if (to_check > 360) {
+                to_check-=360;
+            }
+
+            rotate_left = true;
+        }
     }
     private void FireBullet()
     {
