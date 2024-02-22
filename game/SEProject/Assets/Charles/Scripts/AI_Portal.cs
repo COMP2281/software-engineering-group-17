@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Portal : MonoBehaviour
+public class AI_Portal : MonoBehaviour
 {
     public int index;
     private GameObject player;
