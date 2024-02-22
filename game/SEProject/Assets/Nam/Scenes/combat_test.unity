@@ -928,6 +928,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 852629953}
   m_CullTransparentMesh: 1
+--- !u!1 &907514892
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 907514894}
+  - component: {fileID: 907514893}
+  m_Layer: 0
+  m_Name: Button Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &907514893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907514892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0e3a073d7f617f4d9c2b36adc250b03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answerButtons:
+  - {fileID: 7956737696146724178}
+  - {fileID: 450659579}
+  - {fileID: 1270719272}
+  - {fileID: 1488554758}
+  - {fileID: 150104117}
+--- !u!4 &907514894
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907514892}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 313.82162, y: 158.40979, z: -16.384201}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1027966304
 GameObject:
   m_ObjectHideFlags: 0
@@ -1028,6 +1078,7 @@ MonoBehaviour:
   playerPrefab: {fileID: 3380340545451496639, guid: 8af6fdbad701b634dae50ace153b3f63, type: 3}
   enemyPrefab: {fileID: 2155266804669529768, guid: ae583af61ecfdd847b81b1b99661f4d1, type: 3}
   questionManager: {fileID: 1629025929}
+  buttonManager: {fileID: 907514893}
   dialogue: {fileID: 16085992}
   playerHud: {fileID: 1203183940}
   enemyHud: {fileID: 1440067094}
@@ -1866,12 +1917,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questions: []
   questionText: {fileID: 16085992}
-  answerButtons:
-  - {fileID: 7956737696146724178}
-  - {fileID: 450659579}
-  - {fileID: 1270719272}
-  - {fileID: 1488554758}
-  - {fileID: 150104117}
+  buttonManager: {fileID: 907514893}
   correctAnswerIndex: 0
   world: AI
 --- !u!4 &1629025930
@@ -2754,6 +2800,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 1722002328680708711}
   - {fileID: 1629025930}
+  - {fileID: 907514894}
   - {fileID: 2026135357}
   - {fileID: 2005553467}
   - {fileID: 1027966307}
