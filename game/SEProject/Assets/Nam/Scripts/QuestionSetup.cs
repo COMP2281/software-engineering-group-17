@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.EventSystems;
 
 public class QuestionSetup : MonoBehaviour
 {
@@ -15,8 +14,9 @@ public class QuestionSetup : MonoBehaviour
 
     [SerializeField]
     private TextMeshProUGUI questionText;
+    
     [SerializeField]
-    private AnswerButton[] answerButtons;
+    private ButtonManager buttonManager;
 
     [SerializeField]
     private int correctAnswerIndex;
@@ -37,9 +37,7 @@ public class QuestionSetup : MonoBehaviour
     public void generate()
     {
         SelectNewQuestion();
-        DisplayButtons();
-        EventSystem.current.SetSelectedGameObject(null);
-        EventSystem.current.SetSelectedGameObject(answerButtons[0].gameObject);
+        buttonManager.DisplayButtons(numberOfAnswers);
         questionText.text = currentQuestion.question;
         SetAnswerValues();
     }
@@ -58,27 +56,6 @@ public class QuestionSetup : MonoBehaviour
         questions.RemoveAt(randomQuestionIndex);
     }
 
-    private void DisplayButtons()
-    {
-        for (int i = 0; i < numberOfAnswers; i++)
-        {
-            answerButtons[i].gameObject.SetActive(true);
-        }
-
-        for (int i = numberOfAnswers; i < answerButtons.Length; i++)
-        {
-            answerButtons[i].gameObject.SetActive(false);
-        }
-    }
-
-    public void ClearButtons()
-    {
-        for (int i = 0; i < answerButtons.Length; i++)
-        {
-            answerButtons[i].gameObject.SetActive(false);
-        }
-    }
-
     private void SetAnswerValues()
     {
         List<string> answers = RandomizeAnswers(new List<string>(currentQuestion.answers));
@@ -91,8 +68,8 @@ public class QuestionSetup : MonoBehaviour
                 isCorrect = true;
             }
 
-            answerButtons[i].SetAnswer(answers[i]);
-            answerButtons[i].SetIsCorrect(isCorrect);
+            buttonManager.answerButtons[i].SetAnswer(answers[i]);
+            buttonManager.answerButtons[i].SetIsCorrect(isCorrect);
         }
     }
 

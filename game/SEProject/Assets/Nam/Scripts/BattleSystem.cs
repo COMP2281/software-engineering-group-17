@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class BattleSystem : StateMachine
 {
@@ -14,6 +13,7 @@ public class BattleSystem : StateMachine
     protected internal CombatUnit enemyUnit;
 
     public QuestionSetup questionManager;
+    public ButtonManager buttonManager;
 
     public TextMeshProUGUI dialogue;
 
@@ -27,7 +27,7 @@ public class BattleSystem : StateMachine
 
     public void OnAnswer(bool option)
     {
-        questionManager.ClearButtons();
+        buttonManager.ClearButtons();
         StartCoroutine(State.Answer(option));
     }
 }
