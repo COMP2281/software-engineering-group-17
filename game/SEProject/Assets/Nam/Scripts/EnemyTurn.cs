@@ -11,7 +11,7 @@ public class EnemyTurn : State
     public override IEnumerator Start()
     {
         BattleSystem.questionManager.generate();
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(0);
         BattleSystem.SetState(new PlayerTurn(BattleSystem));
     }
 }

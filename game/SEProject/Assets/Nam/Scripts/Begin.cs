@@ -21,7 +21,7 @@ public class Begin : State
         BattleSystem.playerHud.SetHud(BattleSystem.playerUnit);
         BattleSystem.enemyHud.SetHud(BattleSystem.enemyUnit);
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
 
         BattleSystem.SetState(new EnemyTurn(BattleSystem));
     }

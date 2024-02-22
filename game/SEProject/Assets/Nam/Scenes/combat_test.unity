@@ -352,7 +352,11 @@ PrefabInstance:
     - target: {fileID: 7341789766086638558, guid: 76575f20723e1f34fb67714644c92908, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1094971336}
+      objectReference: {fileID: 150104117}
+    - target: {fileID: 7341789766086638558, guid: 76575f20723e1f34fb67714644c92908, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnClick
+      objectReference: {fileID: 0}
     - target: {fileID: 8447966561607342141, guid: 76575f20723e1f34fb67714644c92908, type: 3}
       propertyPath: m_Name
       value: Answer Option (4)
@@ -1442,7 +1446,11 @@ PrefabInstance:
     - target: {fileID: 7341789766086638558, guid: 76575f20723e1f34fb67714644c92908, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1094971336}
+      objectReference: {fileID: 1270719272}
+    - target: {fileID: 7341789766086638558, guid: 76575f20723e1f34fb67714644c92908, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnClick
+      objectReference: {fileID: 0}
     - target: {fileID: 8447966561607342141, guid: 76575f20723e1f34fb67714644c92908, type: 3}
       propertyPath: m_Name
       value: Answer Option (2)
@@ -1791,9 +1799,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1094971336}
     - target: {fileID: 7341789766086638558, guid: 76575f20723e1f34fb67714644c92908, type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7341789766086638558, guid: 76575f20723e1f34fb67714644c92908, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1094971336}
+      objectReference: {fileID: 1488554758}
+    - target: {fileID: 7341789766086638558, guid: 76575f20723e1f34fb67714644c92908, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnClick
+      objectReference: {fileID: 0}
     - target: {fileID: 8447966561607342141, guid: 76575f20723e1f34fb67714644c92908, type: 3}
       propertyPath: m_Name
       value: Answer Option (3)

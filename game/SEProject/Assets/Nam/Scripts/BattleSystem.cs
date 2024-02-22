@@ -27,6 +27,7 @@ public class BattleSystem : StateMachine
 
     public void OnAnswer(bool option)
     {
+        questionManager.ClearButtons();
         StartCoroutine(State.Answer(option));
     }
 }

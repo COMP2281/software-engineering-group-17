@@ -30,7 +30,7 @@ public class PlayerTurn : State
             BattleSystem.dialogue.text = "Incorrect, you lost " + BattleSystem.enemyUnit.damage + " HP";
         }
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
 
         if (isEnemyDead)
         {
