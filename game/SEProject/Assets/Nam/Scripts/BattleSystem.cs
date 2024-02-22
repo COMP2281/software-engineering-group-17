@@ -7,13 +7,13 @@ using UnityEngine.UI;
 public class BattleSystem : StateMachine
 {
 
-    public GameObject playerPrehab;
-    public GameObject enemyPrehab;
+    public GameObject playerPrefab;
+    public GameObject enemyPrefab;
 
     protected internal CombatUnit playerUnit;
     protected internal CombatUnit enemyUnit;
 
-    protected internal Question askedQuestion;
+    public QuestionSetup questionManager;
 
     public TextMeshProUGUI dialogue;
 
@@ -25,9 +25,9 @@ public class BattleSystem : StateMachine
         SetState(new Begin(this));
     }
 
-    public void OnAttackButton()
+    public void OnAnswer(bool option)
     {
-        StartCoroutine(State.Attack());
-
+        questionManager.ClearButtons();
+        StartCoroutine(State.Answer(option));
     }
 }
