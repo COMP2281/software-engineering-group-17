@@ -8,7 +8,7 @@ public class AnswerButton : MonoBehaviour
     public BattleSystem battleSystem;
     private bool isCorrect;
     [SerializeField]
-    private TextMesh option;
+    private TextMeshProUGUI option;
 
     public void SetAnswer(string newOption)
     {
@@ -24,11 +24,11 @@ public class AnswerButton : MonoBehaviour
     {
         if (isCorrect)
         {
-            Debug.Log("correct");
+            battleSystem.OnAnswer(true);
         }
         else
         {
-            Debug.Log("incorrect");
+            battleSystem.OnAnswer(false);
         }
     }
 }

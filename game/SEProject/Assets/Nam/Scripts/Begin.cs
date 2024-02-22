@@ -16,8 +16,6 @@ public class Begin : State
         GameObject enemy_go = Object.Instantiate(BattleSystem.enemyPrefab);
         BattleSystem.enemyUnit = enemy_go.GetComponent<CombatUnit>();
 
-        BattleSystem.askedQuestion = new Question();
-
         BattleSystem.dialogue.text = "You are about to fight " + BattleSystem.enemyUnit.unitName + " !!!";
 
         BattleSystem.playerHud.SetHud(BattleSystem.playerUnit);

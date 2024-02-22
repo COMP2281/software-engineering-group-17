@@ -22,13 +22,18 @@ public class QuestionSetup : MonoBehaviour
 
     [SerializeField]
     private string world;
-
     private void Awake()
     {
         GetQuestionAssets();
+        usedQuestions = new List<QuestionData>();
     }
 
-    private void Start()
+    private void GetQuestionAssets()
+    {
+        questions = new List<QuestionData>(Resources.LoadAll<QuestionData>($"{world}"));
+    }
+
+    public void generate()
     {
         SelectNewQuestion();
         DisplayButtons();
@@ -41,6 +46,7 @@ public class QuestionSetup : MonoBehaviour
         if (questions.Count == 0)
         {
             questions.AddRange(usedQuestions);
+            usedQuestions.Clear();
         }
         int randomQuestionIndex = Random.Range(0, questions.Count);
         currentQuestion = questions[randomQuestionIndex];
@@ -92,10 +98,5 @@ public class QuestionSetup : MonoBehaviour
             originalList.RemoveAt(random);
         }
         return shuffledList;
-    }
-
-    private void GetQuestionAssets()
-    {
-        questions = new List<QuestionData>(Resources.LoadAll<QuestionData>($"{world}"));
     }
 }

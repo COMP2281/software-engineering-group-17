@@ -16,10 +16,9 @@ public class PlayerTurn : State
 
     public override IEnumerator Answer(bool option)
     {
-
         bool isPlayerDead = false;
         bool isEnemyDead = false;
-        if (option == BattleSystem.askedQuestion.answer)
+        if (option)
         {
             isEnemyDead = BattleSystem.enemyUnit.TakeDamage(BattleSystem.playerUnit.damage);
             BattleSystem.enemyHud.SetHp(BattleSystem.enemyUnit.currentHp);

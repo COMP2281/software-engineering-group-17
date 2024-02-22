@@ -13,7 +13,7 @@ public class BattleSystem : StateMachine
     protected internal CombatUnit playerUnit;
     protected internal CombatUnit enemyUnit;
 
-    protected internal QuestionSetup askedQuestion;
+    public QuestionSetup questionManager;
 
     public TextMeshProUGUI dialogue;
 
