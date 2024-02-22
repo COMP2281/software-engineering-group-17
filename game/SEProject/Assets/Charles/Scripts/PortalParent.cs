@@ -17,7 +17,7 @@ public class PortalParent : MonoBehaviour
 
         for (int i = 0; i < portalNum; i++) {
             portals[i] = gameObject.transform.GetChild(i).gameObject;
-            portals[i].GetComponent<Portal>().index = i;
+            portals[i].GetComponent<AI_Portal>().index = i;
         }
     }    
 
