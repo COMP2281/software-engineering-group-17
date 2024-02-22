@@ -10,12 +10,6 @@ public class S_Timer2 : MonoBehaviour
 
     public float targetTime = 60.0f;
 
-    public AudioSource _audioSource;
-
-    public AudioSource yay;
-
-    public AudioSource musicSource;
-
     private bool startTimer = false;
 
     public Text timeText;
@@ -43,7 +37,6 @@ public class S_Timer2 : MonoBehaviour
                 if (overflowstopper2)
                 {
                     overflowstopper2 = false;
-                    musicSource.Play();
                 }
                 targetTime -= Time.deltaTime;
                 updateTimer(targetTime);
@@ -66,9 +59,7 @@ public class S_Timer2 : MonoBehaviour
             if(overflowstopper)
             {
                 overflowstopper = false;
-                musicSource.Stop();
                 
-                yay.Play();
                 StartCoroutine(PlayMusic());
             }
 
@@ -90,7 +81,6 @@ public class S_Timer2 : MonoBehaviour
     void timerEnded()
     {
         player.canmove = false;
-        _audioSource.Play();
         player.canmove = false;
         StartCoroutine(Restart());
     }
@@ -101,7 +91,6 @@ public class S_Timer2 : MonoBehaviour
         {
             startTimer = true;
             box.enabled = false;
-            Debug.Log("start");
         }
     }
 

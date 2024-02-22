@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Rotating_Turret2 : MonoBehaviour
 {
-    public GameObject bullet_prefab;
+    public GameObject bulletPrefab;
     public GameObject spawnPoint;
     public GameObject spawnPoint2;
     public bool shootTwice = false;
@@ -13,21 +13,18 @@ public class Rotating_Turret2 : MonoBehaviour
     public bool isFiring = true;
     public float x;
     public float y;
-    public float init_wait;
+    public float initWait;
     public float speed;
-    public float rotation_speed;
-    public int shots_fired;
-    public float reloading_time;
-    public float rotation_range;
-    private float init_rotation;
-    private bool rotate_left;
-    private float to_check;
-
+    public float rotationSpeed;
+    private bool startRotation = true;
+    public int shotsFired;
+    public float reloadingTime;
+    public float endPoint;
+    private float startPoint;
 
     private void Start()
     {
-        init_rotation = gameObject.transform.eulerAngles.z;
-        rotate_left = rotation_range > 0;
+        startPoint = gameObject.transform.eulerAngles.z;
         if (shootTwice) {
             StartCoroutine(FireBullets2());
         }
@@ -40,95 +37,62 @@ public class Rotating_Turret2 : MonoBehaviour
 
     private IEnumerator FireBullets()
     {
-        yield return new WaitForSeconds(init_wait);
+        yield return new WaitForSeconds(initWait);
         while (isFiring)
         {
-            for (int i = 0; i < shots_fired; i++){
+            for (int i = 0; i < shotsFired; i++){
                 FireBullet();
                 yield return new WaitForSeconds(fireRate);
             }
 
-            yield return new WaitForSeconds(reloading_time);
+            yield return new WaitForSeconds(reloadingTime);
         } 
     }
 
     private IEnumerator FireBullets2()
     {
-        yield return new WaitForSeconds(init_wait);
+        yield return new WaitForSeconds(initWait);
         while (isFiring)
         {
-            for (int i = 0; i < shots_fired; i++){
+            for (int i = 0; i < shotsFired; i++){
                 FireBullet2();
                 yield return new WaitForSeconds(fireRate);
             }
 
-            yield return new WaitForSeconds(reloading_time);
+            yield return new WaitForSeconds(reloadingTime);
         } 
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        gameObject.transform.Rotate(0, 0, rotation_speed, Space.Self);
+        gameObject.transform.Rotate(0, 0, rotationSpeed, Space.Self);
 
-        if (!rotate_left && gameObject.transform.eulerAngles.z > init_rotation+rotation_range+1) {
-            to_check = gameObject.transform.eulerAngles.z - 360;
+        if (startRotation && endPoint + 1 > gameObject.transform.eulerAngles.z  && gameObject.transform.eulerAngles.z > endPoint - 1){
+            rotationSpeed *=-1;
+            startRotation = false;
         }
-        else if (rotate_left && gameObject.transform.eulerAngles.z < init_rotation-rotation_range-1) {
-            to_check = gameObject.transform.eulerAngles.z + 360;
-        }
-        else {
-            to_check = gameObject.transform.eulerAngles.z;
-        }
-
-
-        if (rotate_left && to_check > init_rotation+rotation_range) {
-            rotation_speed*=-1;
-            rotate_left = false;
-
-            if (to_check < 0) {
-                to_check+=360;
-            }
-            else if (to_check > 360) {
-                to_check+=360;
-            }
-        }
-        else if (!rotate_left && to_check < init_rotation-rotation_range) {
-            rotation_speed*=-1;
-
-            if (to_check < 0) {
-                to_check+=360;
-            }
-            else if (to_check > 360) {
-                to_check-=360;
-            }
-
-            rotate_left = true;
-        }
+         if (!startRotation && startPoint + 1 > gameObject.transform.eulerAngles.z  && gameObject.transform.eulerAngles.z > startPoint - 1){
+            rotationSpeed *=-1;
+            startRotation = true;
+        }   
+        
     }
     private void FireBullet()
     {
         // Instantiate and set up the bullet here
-        GameObject bullet = Instantiate(bullet_prefab, spawnPoint.transform.position, spawnPoint.transform.rotation);
+        GameObject bullet = Instantiate(bulletPrefab, spawnPoint.transform.position, spawnPoint.transform.rotation);
         bullet.GetComponent<Bullet>().x = x;
         bullet.GetComponent<Bullet>().y = y;
         bullet.GetComponent<Bullet>().speed = speed;
-
-        if (shootTwice) {
-            GameObject bullet2 = Instantiate(bullet_prefab, spawnPoint2.transform.position, spawnPoint2.transform.rotation);
-            bullet2.GetComponent<Bullet>().x = x;
-            bullet2.GetComponent<Bullet>().y = y;
-            bullet2.GetComponent<Bullet>().speed = speed;
-        }
-        // isSpawned = true;
     }
     private void FireBullet2()
     {
         // Instantiate and set up the bullet here
-        GameObject bullet = Instantiate(bullet_prefab, spawnPoint.transform.position, spawnPoint.transform.rotation);
+        GameObject bullet = Instantiate(bulletPrefab, spawnPoint.transform.position, spawnPoint.transform.rotation);
         bullet.GetComponent<Bullet>().x = x;
         bullet.GetComponent<Bullet>().y = y;
         bullet.GetComponent<Bullet>().speed = speed;
-        GameObject bullet2 = Instantiate(bullet_prefab, spawnPoint2.transform.position, spawnPoint2.transform.rotation);
+        GameObject bullet2 = Instantiate(bulletPrefab, spawnPoint2.transform.position, spawnPoint2.transform.rotation);
         bullet2.GetComponent<Bullet>().x = x;
         bullet2.GetComponent<Bullet>().y = y;
         bullet2.GetComponent<Bullet>().speed = speed;

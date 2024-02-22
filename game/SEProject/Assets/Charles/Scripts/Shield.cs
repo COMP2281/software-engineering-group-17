@@ -9,7 +9,7 @@ public class Shield : MonoBehaviour
     // Start is called before the first frame update
     public bool canShield;
     public bool isShielding = false;
-    public GameObject player;
+    private GameObject player;
     public GameObject shieldBarObject;
     private SpriteRenderer sprite;
     private Collider2D shieldCollider;
@@ -17,7 +17,9 @@ public class Shield : MonoBehaviour
     private UnityEngine.UI.Slider shieldBar;
 
     void Start() {
+        player = GameObject.FindGameObjectWithTag("Player");
         Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+
         shieldBar = shieldBarObject.GetComponent<UnityEngine.UI.Slider>();
         shieldCollider = gameObject.GetComponent<Collider2D>();
         sprite = gameObject.GetComponent<SpriteRenderer>();
@@ -26,7 +28,7 @@ public class Shield : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (canShield && Input.GetKey(KeyCode.F)) {
+        if (canShield && Input.GetButton("Fire3")) {
             isShielding = true;
             sprite.enabled = true;
             shieldCollider.enabled = true;

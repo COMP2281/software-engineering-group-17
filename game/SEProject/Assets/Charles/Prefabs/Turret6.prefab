@@ -31,6 +31,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2507273219507037887}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4461842312330028298
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2200097024534449881}
+  m_Layer: 0
+  m_Name: SpawnPoint (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2200097024534449881
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4461842312330028298}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: 0, y: 0.266, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2507273219507037887}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!1 &4881451634218493046
 GameObject:
   m_ObjectHideFlags: 0
@@ -104,7 +135,7 @@ SpriteRenderer:
   m_SortingLayerID: 1965626849
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: dcb119112b387c5409a0c39a1aff5a2a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2526afd9befd9f14098b54b4d3c6cff8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -125,9 +156,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2507273219507037887}
   - component: {fileID: 6844020238583114139}
-  - component: {fileID: 4575774389098314219}
+  - component: {fileID: 837172902881189906}
   m_Layer: 0
-  m_Name: Turret1
+  m_Name: Turret6
   m_TagString: Collide
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -148,6 +179,7 @@ Transform:
   m_Children:
   - {fileID: 9035400738214074207}
   - {fileID: 8414992477807912944}
+  - {fileID: 2200097024534449881}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &6844020238583114139
@@ -195,7 +227,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.38562506, y: 0.3730442}
   m_EdgeRadius: 0
---- !u!114 &4575774389098314219
+--- !u!114 &837172902881189906
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -204,21 +236,38 @@ MonoBehaviour:
   m_GameObject: {fileID: 5282852173510691878}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52eefcf869d564f429a782d1b8ce568c, type: 3}
+  m_Script: {fileID: 11500000, guid: e7bd024cb206b914da6b5e6a0ff90d6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 2287314837687903509, guid: 0a59113dcacfff948bacb984d89499df, type: 3}
-  spawnPoint: {fileID: 3043933552638932167}
-  spawnPoint2: {fileID: 0}
-  shootTwice: 0
-  bulletClass: {fileID: 0}
-  fireRate: 2
-  isFiring: 1
-  x: 0
-  y: -1
-  initWait: 0
-  speed: 10
-  rotationSpeed: 0
-  shotsFired: 1
-  reloadingTime: 0
+  spawnPoints: []
+  prefabs:
+  - {fileID: 1608612885346453019, guid: c33c4b1011c7de44d894df5d8b1cb7cb, type: 3}
+  - {fileID: 2287314837687903509, guid: 821d1e2f3817a764aab8385f1dd4f712, type: 3}
+  - {fileID: 2287314837687903509, guid: 821d1e2f3817a764aab8385f1dd4f712, type: 3}
+  - {fileID: 8493336216404642394, guid: 7554d26b7a0396c4e93f7772272a69dc, type: 3}
+  nextState: 
+  startRotation: 0
   endPoint: 361
+  state: 1
+  stateTimers:
+  - 5
+  - 5
+  - 5
+  - 5
+  reloadingTimes:
+  - 0.5
+  - 0.5
+  - 2
+  - 0.5
+  prefabSpeeds:
+  - 4
+  - 5
+  - 5
+  - 1
+  rotationSpeed: 0.5
+  straightFireRate: 0.5
+  straightFireNum: 20
+  acceleration: 1.5
+  deceleration: 0.75
+  speedMax: 1
+  speedMin: 3

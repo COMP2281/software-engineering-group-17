@@ -125,7 +125,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2507273219507037887}
   - component: {fileID: 6844020238583114139}
-  - component: {fileID: 4768021298253952792}
+  - component: {fileID: 4618147336049232063}
   m_Layer: 0
   m_Name: Turret2
   m_TagString: Collide
@@ -195,7 +195,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.38562506, y: 0.3730442}
   m_EdgeRadius: 0
---- !u!114 &4768021298253952792
+--- !u!114 &4618147336049232063
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -204,17 +204,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 5282852173510691878}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea3a25293649ddb42ba50bfd5f68230e, type: 3}
+  m_Script: {fileID: 11500000, guid: 52eefcf869d564f429a782d1b8ce568c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet_prefab: {fileID: 2287314837687903509, guid: 821d1e2f3817a764aab8385f1dd4f712, type: 3}
+  bulletPrefab: {fileID: 2287314837687903509, guid: 821d1e2f3817a764aab8385f1dd4f712, type: 3}
   spawnPoint: {fileID: 3043933552638932167}
+  spawnPoint2: {fileID: 0}
+  shootTwice: 0
   bulletClass: {fileID: 0}
-  fireRate: 0.2
+  fireRate: 0.1
   isFiring: 1
   x: 0
   y: -1
-  init_wait: 0
+  initWait: 0
   speed: 5
-  shots_fired: 20
-  reloading_time: 2
+  rotationSpeed: 0
+  shotsFired: 20
+  reloadingTime: 2
+  endPoint: 361
