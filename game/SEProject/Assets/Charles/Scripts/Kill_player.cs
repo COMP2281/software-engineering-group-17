@@ -11,7 +11,7 @@ public class Kill_player : MonoBehaviour
         if (other.gameObject == player)
         {
             if (!player.GetComponent<Dash>().isDashing) {
-                player.GetComponent<Lives>().heart_num--; 
+                player.GetComponent<Lives>().DamagePlayer(); 
             }
         }
     }
