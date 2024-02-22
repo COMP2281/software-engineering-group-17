@@ -61,6 +61,19 @@ public class QuestionSetup : MonoBehaviour
         {
             answerButtons[i].gameObject.SetActive(true);
         }
+
+        for (int i = numberOfAnswers; i < answerButtons.Length; i++)
+        {
+            answerButtons[i].gameObject.SetActive(false);
+        }
+    }
+
+    public void ClearButtons()
+    {
+        for (int i = 0; i < answerButtons.Length; i++)
+        {
+            answerButtons[i].gameObject.SetActive(false);
+        }
     }
 
     private void SetAnswerValues()

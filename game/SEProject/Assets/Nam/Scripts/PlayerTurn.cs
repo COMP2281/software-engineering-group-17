@@ -10,7 +10,6 @@ public class PlayerTurn : State
 
     public override IEnumerator Start()
     {
-        BattleSystem.dialogue.text = "User action User action User action User action";
         yield break;
     }
 
@@ -22,16 +21,16 @@ public class PlayerTurn : State
         {
             isEnemyDead = BattleSystem.enemyUnit.TakeDamage(BattleSystem.playerUnit.damage);
             BattleSystem.enemyHud.SetHp(BattleSystem.enemyUnit.currentHp);
-            BattleSystem.dialogue.text = BattleSystem.enemyUnit.unitName + " took damage";
+            BattleSystem.dialogue.text = "Correct, " + BattleSystem.enemyUnit.unitName + " took " + BattleSystem.playerUnit.damage + " HP";
         } 
         else
         {
             isPlayerDead = BattleSystem.playerUnit.TakeDamage(BattleSystem.enemyUnit.damage);
             BattleSystem.playerHud.SetHp(BattleSystem.playerUnit.currentHp);
-            BattleSystem.dialogue.text = "You took damage";
+            BattleSystem.dialogue.text = "Incorrect, you lost " + BattleSystem.enemyUnit.damage + " HP";
         }
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
 
         if (isEnemyDead)
         {
