@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.EventSystems;
 
 public class QuestionSetup : MonoBehaviour
 {
@@ -37,6 +38,8 @@ public class QuestionSetup : MonoBehaviour
     {
         SelectNewQuestion();
         DisplayButtons();
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(answerButtons[0].gameObject);
         questionText.text = currentQuestion.question;
         SetAnswerValues();
     }
