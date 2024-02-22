@@ -8,18 +8,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Josh/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
-    path: Assets/Josh/Scenes/Josh Test Scene.unity
-    guid: 7120563bbaf7c7842837101230ed43b2
-  - enabled: 1
-    path: Assets/Josh/Scenes/Josh Test Scene.unity
-    guid: 7120563bbaf7c7842837101230ed43b2
   - enabled: 1
     path: Assets/Josh/Scenes/Main Menu.unity
     guid: 280ee7214b399484e88f37fdb2ed288f
   - enabled: 1
     path: Assets/Josh/Scenes/Hub World New.unity
     guid: c90f3de804ca7dc47800ca70eb375ea8
+  - enabled: 1
+    path: Assets/Josh/Scenes/Secret Scene.unity
+    guid: 6eda32eccd3d2d045b90dfd5b8a501ac
   - enabled: 1
     path: Assets/Josh/Scenes/Cloud World Level 1.unity
     guid: 2164cf6b8f6eaad469ef2d87ec35b277
@@ -38,7 +35,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Josh/Scenes/Cloud World Level 6.unity
     guid: 2569cae5cdab4d947b5e8472aea2c00f
-  - enabled: 1
-    path: Assets/Josh/Scenes/Secret Scene.unity
-    guid: 6eda32eccd3d2d045b90dfd5b8a501ac
   m_configObjects: {}

@@ -41,16 +41,6 @@ public class PlayerScript : MonoBehaviour
 
     private bool overloadStopper;
 
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-        //rb = GetComponent<Rigidbody2D>();
-        //anim = GetComponent<Animator>();
-
-    }
-
     // Update is called once per frame (framrate dependent)
     void Update()
     {

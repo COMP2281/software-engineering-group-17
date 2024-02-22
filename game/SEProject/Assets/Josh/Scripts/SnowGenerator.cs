@@ -8,6 +8,7 @@ public class SnowGenerator : MonoBehaviour
 
     public GameObject snowGen;
 
+    
     // Update is called once per frame
     void Update()
     {
@@ -24,5 +25,6 @@ public class SnowGenerator : MonoBehaviour
         }
 
         
+
     }
 }

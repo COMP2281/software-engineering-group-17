@@ -35,8 +35,6 @@ public class PlayerIceScript : MonoBehaviour
 
     public AudioSource freezing;
 
-    private bool overloadStopper;
-
     // Update is called once per frame (framrate dependent)
     void Update()
     {

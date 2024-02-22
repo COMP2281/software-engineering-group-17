@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:game/SEProject/Assets/Sam.meta
+guid: 918edb2f44c94ba45bb7a59dba873830
+========
 guid: 2f23f0de66357f440a338e32294187f2
+>>>>>>>> Unity-Game:game/SEProject/Assets/Charles/Audio.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

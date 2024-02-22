@@ -11,7 +11,7 @@ public class Sign : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && inRange)
+        if(Input.GetButtonDown("Fire1") && inRange)
         {
             //Debug.Log("works");
             if(question_box.activeInHierarchy)
