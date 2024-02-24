@@ -62,4 +62,9 @@ public class MainMenuButtons : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(optionsInButton);
     }
 
+    public void SetQuality(int quality)
+    {
+        GM.gmInstance.SetGraphics(quality);
+    }
+
 }
