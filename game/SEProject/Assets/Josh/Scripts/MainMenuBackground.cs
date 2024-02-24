@@ -17,14 +17,12 @@ public class MainMenuBackground : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log(anim.speed);
         if(canRoll)
         {
             canRoll = false;
@@ -32,19 +30,16 @@ public class MainMenuBackground : MonoBehaviour
             StartCoroutine(Pause());
         }
 
-        //Debug.Log(blur.HasProperty("Size"));
-
         if (randomNumber == 0)
         {
             changeRange = true;
         }
-        else if (randomNumber == 1 || randomNumber == 2 || randomNumber == 3)
+        else if (randomNumber == 1 || randomNumber == 2 || randomNumber == 3 || randomNumber == 4)
         {
             anim.enabled = true;
-            //anim.speed = 1;
             changeRange = false;
         }
-        else if (randomNumber == 4 || randomNumber == 5 || randomNumber == 6)
+        else if (randomNumber == 5 || randomNumber == 6 || randomNumber == 7)
         {
             anim.enabled = true;
             changeRange = true;
@@ -53,7 +48,6 @@ public class MainMenuBackground : MonoBehaviour
         {
             changeRange = false;
             anim.enabled = false;
-            //anim.speed = 0;
         }
         if(changeRange)
         {
@@ -78,7 +72,7 @@ public class MainMenuBackground : MonoBehaviour
 
     IEnumerator Pause()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(4);
         canRoll = true;
     }
 }

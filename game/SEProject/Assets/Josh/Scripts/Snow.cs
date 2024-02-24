@@ -14,6 +14,6 @@ public class Snow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-            snowGen.SetActive(GM.gmInstance.GetParticle());
+        snowGen.SetActive(GM.gmInstance.GetParticle());
     }
 }

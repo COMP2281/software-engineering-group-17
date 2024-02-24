@@ -11,9 +11,7 @@ public class DoorReset : MonoBehaviour
         if (collision.tag.Equals("player"))
         {
            door.finished = false;
-            door.was_hit = "";
-            
-          
+           door.was_hit = "";
         }
     }
 }

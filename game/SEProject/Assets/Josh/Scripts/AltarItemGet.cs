@@ -12,9 +12,6 @@ public class AltarItemGet : MonoBehaviour
 
     public PlayerScript player;
 
-
-
-
     // Update is called once per frame
     void Update()
     {

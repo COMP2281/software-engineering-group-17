@@ -11,7 +11,6 @@ public class IntroCutscene : MonoBehaviour
     private int dialogueCounter;
 
     public PlayerScript player;
-    
 
     // Update is called once per frame
     void Update()

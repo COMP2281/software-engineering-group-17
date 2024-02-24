@@ -5,10 +5,8 @@ using UnityEngine;
 
 public class TimerStop : MonoBehaviour
 {
-    
     public Timer timer;
     public BoxCollider2D box;
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag.Equals("Player"))
