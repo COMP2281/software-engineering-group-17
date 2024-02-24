@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AlterCutscene1 : MonoBehaviour
+public class AltarItemGet : MonoBehaviour
 {
-    public AlterCutscene2 alter;
+    public AltarCutscene4 alter;
 
     private bool startConvo = false;
 
@@ -12,8 +12,8 @@ public class AlterCutscene1 : MonoBehaviour
 
     public PlayerScript player;
 
-    
-    
+
+
 
     // Update is called once per frame
     void Update()
@@ -29,7 +29,7 @@ public class AlterCutscene1 : MonoBehaviour
                 player.canMove = true;
             }
         }
-        if(alter.cutsceneDone)
+        if (alter.cutsceneDone)
         {
             Destroy(this.gameObject);
         }

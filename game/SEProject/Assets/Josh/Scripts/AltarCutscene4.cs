@@ -1,23 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
 
-public class AlterCutscene3 : MonoBehaviour
+public class AltarCutscene4 : MonoBehaviour
 {
-    public AlterCutscene2 alter;
+    public List<GameObject> dialogueBoxes;
 
     private bool startConvo = false;
 
-    public List<GameObject> dialogueBoxes;
+    private int dialogueCounter;
 
     public PlayerScript player;
 
-    private int dialogueCounter;
-
-    public GameObject arrow;
+    public bool cutsceneDone = false;
 
     private BoxCollider2D box;
+
+    public AudioSource music;
+    public GameObject musicManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,38 +27,35 @@ public class AlterCutscene3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(alter.cutsceneDone)
-        {
-            box.enabled = true;
-        }
-
         if (startConvo)
         {
+            
             player.canMove = false;
+            musicManager.SetActive(false);
             dialogueBoxes[dialogueCounter].SetActive(true);
             if (Input.GetButtonDown("Fire1"))
             {
                 dialogueBoxes[dialogueCounter].SetActive(false);
                 dialogueCounter++;
             }
-            if(dialogueCounter == 6) { 
-                arrow.SetActive(true);
-            }
 
             if (dialogueCounter >= dialogueBoxes.Count)
             {
                 player.canMove = true;
                 startConvo = false;
-                Destroy(this.gameObject);
+                cutsceneDone = true;
+                box.enabled = false;
             }
         }
     }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag.Equals("Player"))
         {
             startConvo = true;
+            music.Play();
         }
     }
 }

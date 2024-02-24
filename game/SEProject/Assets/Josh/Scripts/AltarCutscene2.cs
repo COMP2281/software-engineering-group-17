@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AlterCutscene2 : MonoBehaviour
+public class AltarCutscene2 : MonoBehaviour
 {
     public List<GameObject> dialogueBoxes;
 
