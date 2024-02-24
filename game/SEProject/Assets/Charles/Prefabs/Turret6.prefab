@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8414992477807912944}
   m_Layer: 0
-  m_Name: SpawnPoint
+  m_Name: SpawnPointAll
   m_TagString: Untagged
   m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -41,7 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2200097024534449881}
   m_Layer: 0
-  m_Name: SpawnPoint (1)
+  m_Name: SpawnPointAll
   m_TagString: Untagged
   m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -180,6 +180,8 @@ Transform:
   - {fileID: 9035400738214074207}
   - {fileID: 8414992477807912944}
   - {fileID: 2200097024534449881}
+  - {fileID: 6855913456922182917}
+  - {fileID: 7682371429928095238}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &6844020238583114139
@@ -240,11 +242,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoints: []
+  rotationSpeeds: []
   prefabs:
   - {fileID: 1608612885346453019, guid: c33c4b1011c7de44d894df5d8b1cb7cb, type: 3}
   - {fileID: 2287314837687903509, guid: 821d1e2f3817a764aab8385f1dd4f712, type: 3}
   - {fileID: 2287314837687903509, guid: 821d1e2f3817a764aab8385f1dd4f712, type: 3}
   - {fileID: 8493336216404642394, guid: 7554d26b7a0396c4e93f7772272a69dc, type: 3}
+  prefabAttributes: []
+  straightFireNum: 20
+  straightFireRate: 0.5
   nextState: 
   startRotation: 0
   endPoint: 361
@@ -259,15 +265,71 @@ MonoBehaviour:
   - 0.5
   - 2
   - 0.5
-  prefabSpeeds:
-  - 4
-  - 5
-  - 5
-  - 1
   rotationSpeed: 0.5
-  straightFireRate: 0.5
-  straightFireNum: 20
   acceleration: 1.5
   deceleration: 0.75
+  changeOnDirection: 0
   speedMax: 1
   speedMin: 3
+--- !u!1 &5996256534717216871
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7682371429928095238}
+  m_Layer: 0
+  m_Name: SpawnPointBeam
+  m_TagString: Untagged
+  m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7682371429928095238
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5996256534717216871}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
+  m_LocalPosition: {x: -0.328, y: -0.05, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2507273219507037887}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
+--- !u!1 &6555707275150927091
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6855913456922182917}
+  m_Layer: 0
+  m_Name: SpawnPointBeam
+  m_TagString: Untagged
+  m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6855913456922182917
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6555707275150927091}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0.332, y: -0.046, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2507273219507037887}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}

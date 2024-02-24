@@ -26,7 +26,7 @@ public class MvingPlatfor : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         gameObject.transform.position += velocity;
         if (moving_down && UnityEngine.Vector3.Distance(gameObject.transform.position, startPoint) < range) {

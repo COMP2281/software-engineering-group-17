@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Data.Common;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -55,6 +57,10 @@ public abstract class TurretStateMachine : MonoBehaviour
         }
         GameObject prefab = GetPrefab();
         for (int i = 0; i < spawnPointsNum; i++) {
+            if (!spawnPoints[i].name.Contains("All") && !spawnPoints[i].name.Contains("Enemies")) {
+                    continue;
+                }
+
             GameObject enemy = Instantiate(prefab, spawnPoints[i].transform.position, spawnPoints[i].transform.rotation);
 
             enemy.GetComponent<HomingDrone>().speed = prefabAttributes[(int)state];
@@ -67,6 +73,10 @@ public abstract class TurretStateMachine : MonoBehaviour
             return;
         }
         for (int i = 0; i < spawnPointsNum; i++) {
+            if (!spawnPoints[i].name.Contains("All") && !spawnPoints[i].name.Contains("Scattered")) {
+                    continue;
+                }
+
             GameObject bullet = Instantiate(prefab, spawnPoints[i].transform.position, spawnPoints[i].transform.rotation);
 
             bullet.GetComponent<Bullet>().x = 0;
@@ -80,6 +90,9 @@ public abstract class TurretStateMachine : MonoBehaviour
         isFiring = true;
         for (int i  = 0; i < straightFireNum; i++) {
             for (int j = 0; j < spawnPointsNum; j++) {
+                if (!spawnPoints[j].name.Contains("All") && !spawnPoints[j].name.Contains("Straight")) {
+                    continue;
+                }
 
                 if (state != States.ShootStraight) {
                     yield break;
@@ -104,9 +117,11 @@ public abstract class TurretStateMachine : MonoBehaviour
         }
         GameObject prefab = GetPrefab();
         for (int i = 0; i < spawnPointsNum; i++) {
-            GameObject beam = Instantiate(prefab, spawnPoints[i].transform.position, spawnPoints[i].transform.rotation*Quaternion.Euler(0, 0, -90));
-            beam.GetComponent<Beam>().deathTime = prefabAttributes[(int)state];
-            beam.GetComponent<Beam>().spawnPoint = spawnPoints[i];
+            if (spawnPoints[i].name.Contains("Beam")) {
+                GameObject beam = Instantiate(prefab, spawnPoints[i].transform.position, spawnPoints[i].transform.rotation*Quaternion.Euler(0, 0, -90));
+                beam.GetComponent<Beam>().deathTime = prefabAttributes[(int)state];
+                beam.GetComponent<Beam>().spawnPoint = spawnPoints[i];
+            }
         } 
     }
     public abstract float GetVelocity();
