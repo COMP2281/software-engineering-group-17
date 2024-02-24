@@ -15,16 +15,19 @@ public class S_Timer2 : MonoBehaviour
     public Text timeText;
 
     public BoxCollider2D box;
+    public AudioSource escapeMusic;
+    public AudioSource oldMusic;
+    // private AudioSource finishedMusic;
 
     public bool stoptimer = false;
 
     private bool overflowstopper = true;
 
     private bool overflowstopper2 = true;
+    private bool hasStarted = false;
 
     private void Start()
     {
-        //_audioSource = GetComponent<AudioSource>();
     }
     void Update()
     {
@@ -33,7 +36,11 @@ public class S_Timer2 : MonoBehaviour
         {
             if (startTimer)
             {
-                //manager.instance.StopMusic();
+                if (!hasStarted) {
+                    escapeMusic.Play();
+                    hasStarted = true;
+                }
+                // oldMusic.Stop(); 
                 if (overflowstopper2)
                 {
                     overflowstopper2 = false;
@@ -103,7 +110,8 @@ public class S_Timer2 : MonoBehaviour
 
     IEnumerator PlayMusic()
     {
-
+        escapeMusic.Stop();
+        // escapeMusic.Play();
         yield return new WaitForSeconds(3);
     }
 }
