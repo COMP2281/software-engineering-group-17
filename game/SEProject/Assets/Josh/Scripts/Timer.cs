@@ -27,41 +27,34 @@ public class Timer : MonoBehaviour
     private bool overflowStopper = true;
 
     private bool overflowStopper2 = true;
-
-    private MusicManager musicManager;
     
     void Update()
     {
-        
         if (!stoptimer)
         {
             if (startTimer)
             {
                 MusicManager.instance.StopMusic();
-                //manager.instance.StopMusic();
                 if (overflowStopper2)
                 {
                     overflowStopper2 = false;
                     musicSource.Play();
                 }
                 targetTime -= Time.deltaTime;
-                updateTimer(targetTime);
+                UpdateTimer(targetTime);
                 if (targetTime <= 0.0f)
                 {
                     targetTime = 0.0f;
                     if(overflowStopper)
                     {
                         overflowStopper = false;
-                        timerEnded();
+                        TimerEnded();
                     }
-                    
                 }
             }
         }
         else
         {
-           
-            
             if(overflowStopper)
             {
                 overflowStopper = false;
@@ -70,12 +63,10 @@ public class Timer : MonoBehaviour
                 yay.Play();
                 StartCoroutine(PlayMusic());
             }
-
-            
         }
     }
     
-    void updateTimer(float currentTime)
+    void UpdateTimer(float currentTime)
     {
         currentTime += 1;
 
@@ -86,7 +77,7 @@ public class Timer : MonoBehaviour
     }
 
 
-    void timerEnded()
+    void TimerEnded()
     {
         player.canMove = false;
         _audioSource.Play();
@@ -100,20 +91,17 @@ public class Timer : MonoBehaviour
         {
             startTimer = true;
             box.enabled = false;
-            //Debug.Log("start");
         }
     }
 
     IEnumerator Restart()
     {
-        
         yield return new WaitForSeconds(5);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     IEnumerator PlayMusic()
     {
-
         yield return new WaitForSeconds(3);
         MusicManager.instance.ChangeMusic();
         MusicManager.instance.PlayMusic();

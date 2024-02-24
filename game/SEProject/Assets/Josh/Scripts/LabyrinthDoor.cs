@@ -29,7 +29,6 @@ public class LabyrinthDoor : MonoBehaviour
     {
         if (collider.tag.Equals("Player"))
         {
-            //StartCoroutine(Checkhit());
             if (doors[counter] == was_hit)
             {
                 counter++;
@@ -37,8 +36,6 @@ public class LabyrinthDoor : MonoBehaviour
                 {
                     correct_answer.Play();
                 }
-                
-                //Debug.Log(counter);
             }
             else
             {
@@ -47,21 +44,15 @@ public class LabyrinthDoor : MonoBehaviour
                 {
                     wrong_answer.Play();
                 }
-                
-                //Debug.Log(counter);
             }
 
             if (counter >= number_of_doors)
             {
                 
                 finished = true;
-                //Debug.Log("done");
                 counter = 0;
             }
-
-
                 was_hit = "none";
-
         }
     }
    

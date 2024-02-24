@@ -19,8 +19,6 @@ public class SnowGenerator : MonoBehaviour
             if (cam.enabled)
             {   
                 snowGen.transform.position = new Vector2(cam.transform.position.x, cam.transform.position.y+5);
-                //Debug.Log(obj.name + " contains a Camera component.");
-                // Optionally, do something with 'cam' or 'obj' here
             }
         }
 
