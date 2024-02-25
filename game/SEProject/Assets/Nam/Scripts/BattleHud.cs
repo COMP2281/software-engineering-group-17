@@ -20,6 +20,10 @@ public class BattleHud : MonoBehaviour
     }
     public void SetHp(int hp)
     {
+        if (hp < 0)
+        {
+            hp = 0;
+        }
         currentHp = hp;
         hpText.text = currentHp.ToString();
     }

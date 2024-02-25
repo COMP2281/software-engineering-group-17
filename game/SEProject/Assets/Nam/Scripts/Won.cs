@@ -11,6 +11,7 @@ public class Won : State
     public override IEnumerator Start()
     {
         BattleSystem.dialogue.text = "You have won!";
+        BattleSystem.buttonManager.ClearButtons();
         yield break;
     }
 }

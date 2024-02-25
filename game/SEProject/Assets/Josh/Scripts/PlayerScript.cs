@@ -17,7 +17,6 @@ public class PlayerScript : MonoBehaviour
 
     Vector2 movement;
  
-
     public bool canMove = true;
 
     public Animator anim;
@@ -44,10 +43,8 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame (framrate dependent)
     void Update()
     {
-        
         if (canMove)
         {
-            
             movement.x = Input.GetAxisRaw("Horizontal");
             movement.y = Input.GetAxisRaw("Vertical");
 
@@ -109,13 +106,11 @@ public class PlayerScript : MonoBehaviour
             movement.y = 0;
         }
 
-
         if (movement.x == 0 && movement.y == 0)
         {
             anim.SetTrigger("idle");
         }
         anim.SetFloat("y movement", movement.y);
-
 
         anim.SetFloat("x movement", Mathf.Abs(movement.x));
 
@@ -133,8 +128,6 @@ public class PlayerScript : MonoBehaviour
             freezeTimer -= Time.deltaTime;
             if (freezeTimer <= 0)
             {
- 
-                //freezing.Play();
                 if (overloadStopper)
                 {
                     overloadStopper = false;
@@ -142,7 +135,6 @@ public class PlayerScript : MonoBehaviour
                     
                 }
                 StartCoroutine(Frozen());
-                
             }
         }
         else
@@ -153,7 +145,6 @@ public class PlayerScript : MonoBehaviour
 
     void FixedUpdate()
     {
-        
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
 
         if (facingRight == false && movement.x > 0)
@@ -164,7 +155,6 @@ public class PlayerScript : MonoBehaviour
         {
             Flip();
         }
-
     }
 
     void Flip()
@@ -192,7 +182,6 @@ public class PlayerScript : MonoBehaviour
             freezingcold = false;
             isFrozen = false;
             canMove = true;
-            //StartCoroutine(Unfreeze());
         }
     }
 
@@ -208,7 +197,6 @@ public class PlayerScript : MonoBehaviour
 
     IEnumerator Frozen()
     {
-        
         canMove = false;
         yield return new WaitForSeconds(5);
         

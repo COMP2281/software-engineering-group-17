@@ -10,27 +10,24 @@ public class S_Timer2 : MonoBehaviour
 
     public float targetTime = 60.0f;
 
-    public AudioSource _audioSource;
-
-    public AudioSource yay;
-
-    public AudioSource musicSource;
-
     private bool startTimer = false;
 
     public Text timeText;
 
     public BoxCollider2D box;
+    public AudioSource escapeMusic;
+    public AudioSource oldMusic;
+    // private AudioSource finishedMusic;
 
     public bool stoptimer = false;
 
     private bool overflowstopper = true;
 
     private bool overflowstopper2 = true;
+    private bool hasStarted = false;
 
     private void Start()
     {
-        //_audioSource = GetComponent<AudioSource>();
     }
     void Update()
     {
@@ -39,11 +36,14 @@ public class S_Timer2 : MonoBehaviour
         {
             if (startTimer)
             {
-                //manager.instance.StopMusic();
+                if (!hasStarted) {
+                    escapeMusic.Play();
+                    hasStarted = true;
+                }
+                // oldMusic.Stop(); 
                 if (overflowstopper2)
                 {
                     overflowstopper2 = false;
-                    musicSource.Play();
                 }
                 targetTime -= Time.deltaTime;
                 updateTimer(targetTime);
@@ -66,9 +66,7 @@ public class S_Timer2 : MonoBehaviour
             if(overflowstopper)
             {
                 overflowstopper = false;
-                musicSource.Stop();
                 
-                yay.Play();
                 StartCoroutine(PlayMusic());
             }
 
@@ -90,7 +88,6 @@ public class S_Timer2 : MonoBehaviour
     void timerEnded()
     {
         player.canmove = false;
-        _audioSource.Play();
         player.canmove = false;
         StartCoroutine(Restart());
     }
@@ -101,7 +98,6 @@ public class S_Timer2 : MonoBehaviour
         {
             startTimer = true;
             box.enabled = false;
-            Debug.Log("start");
         }
     }
 
@@ -114,7 +110,8 @@ public class S_Timer2 : MonoBehaviour
 
     IEnumerator PlayMusic()
     {
-
+        escapeMusic.Stop();
+        // escapeMusic.Play();
         yield return new WaitForSeconds(3);
     }
 }

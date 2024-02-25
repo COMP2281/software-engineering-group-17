@@ -17,7 +17,6 @@ public class PlayerIceScript : MonoBehaviour
 
     Vector2 movement;
 
-
     public bool canMove = true;
 
     public Animator anim;
@@ -38,10 +37,8 @@ public class PlayerIceScript : MonoBehaviour
     // Update is called once per frame (framrate dependent)
     void Update()
     {
-
         if (canMove)
         {
-
             movement.x = Input.GetAxisRaw("Horizontal");
             movement.y = Input.GetAxisRaw("Vertical");
 
@@ -103,13 +100,11 @@ public class PlayerIceScript : MonoBehaviour
             movement.y = 0;
         }
 
-
         if (movement.x == 0 && movement.y == 0)
         {
             anim.SetTrigger("idle");
         }
         anim.SetFloat("y movement", movement.y);
-
 
         anim.SetFloat("x movement", Mathf.Abs(movement.x));
 
@@ -126,7 +121,6 @@ public class PlayerIceScript : MonoBehaviour
 
     void FixedUpdate()
     {
-
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
 
         if (facingRight == false && movement.x > 0)
@@ -153,7 +147,6 @@ public class PlayerIceScript : MonoBehaviour
             
             isFrozen = true;
             canMove = false;
-            //StartCoroutine(Unfreeze());
         }
 
     }
@@ -165,27 +158,7 @@ public class PlayerIceScript : MonoBehaviour
             
             isFrozen = false;
             canMove = true;
-            //StartCoroutine(Unfreeze());
         }
-    }
-
-    IEnumerator Unfreeze()
-    {
-        if (isFrozen)
-        {
-            yield return new WaitForSeconds(unfreezeTime);
-            canMove = true;
-            isFrozen = false;
-        }
-    }
-
-    IEnumerator Frozen()
-    {
-
-        canMove = false;
-        yield return new WaitForSeconds(5);
-
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
 

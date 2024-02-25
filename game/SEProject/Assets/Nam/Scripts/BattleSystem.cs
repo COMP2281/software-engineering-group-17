@@ -2,18 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class BattleSystem : StateMachine
 {
 
-    public GameObject playerPrehab;
-    public GameObject enemyPrehab;
+    public GameObject playerPrefab;
+    public GameObject enemyPrefab;
 
     protected internal CombatUnit playerUnit;
     protected internal CombatUnit enemyUnit;
 
-    protected internal Question askedQuestion;
+    public QuestionSetup questionManager;
+    public ButtonManager buttonManager;
 
     public TextMeshProUGUI dialogue;
 
@@ -25,9 +25,9 @@ public class BattleSystem : StateMachine
         SetState(new Begin(this));
     }
 
-    public void OnAttackButton()
+    public void OnAnswer(bool option)
     {
-        StartCoroutine(State.Attack());
-
+        buttonManager.ClearButtons();
+        StartCoroutine(State.Answer(option));
     }
 }

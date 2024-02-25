@@ -13,7 +13,6 @@ public class Sign : MonoBehaviour
     {
         if(Input.GetButtonDown("Fire1") && inRange)
         {
-            //Debug.Log("works");
             if(question_box.activeInHierarchy)
             {
                 question_box.SetActive(false);
@@ -23,7 +22,6 @@ public class Sign : MonoBehaviour
                 question_box.SetActive(true);
             }
         }
-
     }
 
     private void OnTriggerEnter2D(Collider2D other)

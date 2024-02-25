@@ -43,16 +43,14 @@ public class Spawner : MonoBehaviour
         {
             if (labyrinthDoor.finished)
             {
-                Debug.Log("does the thing");
                 player.canMove = false;
                 player.transform.position = respawner2.transform.position;
                 isMoving = true;
                 player.anim.SetTrigger("auto move");
                 player.anim.SetBool("can move", false);
-                
                 camera1.enabled = false;
                 camera2.enabled = true;
-                StartCoroutine(move_player());
+                StartCoroutine(MovePlayer());
             }
             else
             {
@@ -61,14 +59,12 @@ public class Spawner : MonoBehaviour
                 isMoving = true;
                 player.anim.SetTrigger("auto move");
                 player.anim.SetBool("can move", false);
-                
-                StartCoroutine(move_player());
+                StartCoroutine(MovePlayer());
             }
-
         }
     }
 
-    IEnumerator move_player()
+    IEnumerator MovePlayer()
     {
         yield return new WaitForSeconds(0.7f);
         isMoving = false;

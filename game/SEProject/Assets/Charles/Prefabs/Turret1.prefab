@@ -124,8 +124,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2507273219507037887}
-  - component: {fileID: 5313078558786244001}
   - component: {fileID: 6844020238583114139}
+  - component: {fileID: 4575774389098314219}
   m_Layer: 0
   m_Name: Turret1
   m_TagString: Collide
@@ -150,27 +150,6 @@ Transform:
   - {fileID: 8414992477807912944}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5313078558786244001
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5282852173510691878}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 475e103642f3c394d8084b11b64d5716, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bullet_prefab: {fileID: 2287314837687903509, guid: 0a59113dcacfff948bacb984d89499df, type: 3}
-  spawnPoint: {fileID: 3043933552638932167}
-  bulletClass: {fileID: 8165269299975872695, guid: 0a59113dcacfff948bacb984d89499df, type: 3}
-  fireRate: 2
-  isFiring: 1
-  x: 0
-  y: -1
-  init_wait: 0
-  speed: 5
 --- !u!61 &6844020238583114139
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -216,3 +195,30 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.38562506, y: 0.3730442}
   m_EdgeRadius: 0
+--- !u!114 &4575774389098314219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5282852173510691878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52eefcf869d564f429a782d1b8ce568c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 2287314837687903509, guid: 0a59113dcacfff948bacb984d89499df, type: 3}
+  spawnPoint: {fileID: 3043933552638932167}
+  spawnPoint2: {fileID: 0}
+  shootTwice: 0
+  bulletClass: {fileID: 0}
+  fireRate: 2
+  isFiring: 1
+  x: 0
+  y: -1
+  initWait: 0
+  speed: 10
+  rotationSpeed: 0
+  shotsFired: 1
+  reloadingTime: 0
+  endPoint: 361

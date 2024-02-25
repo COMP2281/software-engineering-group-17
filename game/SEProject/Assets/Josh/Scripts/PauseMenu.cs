@@ -5,6 +5,9 @@ using UnityEngine.Audio;
 using UnityEngine.EventSystems;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using System;
+using TMPro;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -20,11 +23,15 @@ public class PauseMenu : MonoBehaviour
 
     public Toggle particle;
     public Slider volumeSlider;
+    public TMPro.TMP_Dropdown graphicsDropdown;
 
+
+    public GameObject combatText;
     private void Start()
     {
         particle.isOn = GM.gmInstance.GetParticle();
         volumeSlider.value = GM.gmInstance.GetVolume();
+        graphicsDropdown.value = GM.gmInstance.GetGraphics();
     }
     // Update is called once per frame
     void Update()
@@ -89,11 +96,66 @@ public class PauseMenu : MonoBehaviour
         GM.gmInstance.SetParticle(disable_particles);
     }
 
-    public void FullScreen(bool isFS)
+    public void SkillsBuild()
     {
-        Screen.fullScreen = isFS;
+        Application.OpenURL("https://www.ibm.com/academic/home");
     }
 
+    public void SkipLevel()
+    {
+        var nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        Debug.Log(GetSceneNameByBuildIndex(nextSceneIndex));
+        if (SceneManager.GetActiveScene().name != "Cloud World Combat")
+        {
+            if (GetSceneNameByBuildIndex(nextSceneIndex) != "Cloud World Combat")
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                Resume();
+            }
+            else
+            {
+                
+                DisplayText();
+            }
+        }
+        else
+        {
+            
+            DisplayText();
+        }
+    }
+
+
+    private void DisplayText()
+    {
+        combatText.SetActive(true);
+        StartCoroutine(DisableText());
+    }
+
+    IEnumerator DisableText()
+    {
+        yield return new WaitForSecondsRealtime(3);
+        combatText.SetActive(false);
+    }
+
+    private static string GetSceneNameByBuildIndex(int buildIndex)
+    {
+        return GetSceneNameFromScenePath(SceneUtility.GetScenePathByBuildIndex(buildIndex));
+    }
+
+    private static string GetSceneNameFromScenePath(string scenePath)
+    {
+        // Unity's asset paths always use '/' as a path separator
+        var sceneNameStart = scenePath.LastIndexOf("/", StringComparison.Ordinal) + 1;
+        var sceneNameEnd = scenePath.LastIndexOf(".", StringComparison.Ordinal);
+        var sceneNameLength = sceneNameEnd - sceneNameStart;
+        return scenePath.Substring(sceneNameStart, sceneNameLength);
+    }
+
+    public void SetQuality(int quality)
+    {
+        GM.gmInstance.SetGraphics(quality);
+    }
 
 
 

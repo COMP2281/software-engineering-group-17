@@ -11,7 +11,6 @@ public class MusicManager : MonoBehaviour
     public AudioSource _audioSource2;
     private void Awake()
     {
-
         if (instance == null)
         {
             instance = this;

@@ -11,6 +11,7 @@ public class Lost : State
     public override IEnumerator Start()
     {
         BattleSystem.dialogue.text = "You have lost!";
+        BattleSystem.buttonManager.ClearButtons();
         yield break;
     }
 }

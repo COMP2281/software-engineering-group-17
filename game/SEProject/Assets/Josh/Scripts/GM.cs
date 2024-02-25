@@ -19,6 +19,8 @@ public class GM : MonoBehaviour
     private float volume;
 
     public AudioMixer mastervol;
+
+    private int graphics;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +31,7 @@ public class GM : MonoBehaviour
     }
     private void Update()
     {
-        Debug.Log(enableParticles);
+        //Debug.Log(enableParticles);
     }
 
     private void Awake()
@@ -62,6 +64,17 @@ public class GM : MonoBehaviour
     {
         volume = v;
         mastervol.SetFloat("volume", volume);
+    }
+
+    public int GetGraphics()
+    {
+        return graphics;
+    }
+
+    public void SetGraphics(int g)
+    {
+        graphics = g;
+        QualitySettings.SetQualityLevel(graphics);
     }
 
 }

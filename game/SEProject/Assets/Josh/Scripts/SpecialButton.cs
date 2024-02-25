@@ -54,8 +54,6 @@ public class SpecialButton : MonoBehaviour
                 StartCoroutine(Return());
                 player.canMove = false;
             }
-
-
         }
     }
     private void OnTriggerEnter2D(Collider2D other)

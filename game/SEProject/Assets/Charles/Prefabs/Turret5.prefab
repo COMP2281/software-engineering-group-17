@@ -239,7 +239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52eefcf869d564f429a782d1b8ce568c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet_prefab: {fileID: 2287314837687903509, guid: 821d1e2f3817a764aab8385f1dd4f712, type: 3}
+  bulletPrefab: {fileID: 2287314837687903509, guid: 821d1e2f3817a764aab8385f1dd4f712, type: 3}
   spawnPoint: {fileID: 3043933552638932167}
   spawnPoint2: {fileID: 4461842312330028298}
   shootTwice: 1
@@ -248,9 +248,9 @@ MonoBehaviour:
   isFiring: 1
   x: 0
   y: -1
-  init_wait: 0
+  initWait: 0
   speed: 5
-  rotation_speed: 2
-  shots_fired: 1
-  reloading_time: 0
-  rotation_range: 0
+  rotationSpeed: 0.1
+  shotsFired: 5
+  reloadingTime: 0
+  endPoint: 361

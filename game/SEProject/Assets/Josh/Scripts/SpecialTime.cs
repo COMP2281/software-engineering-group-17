@@ -28,17 +28,13 @@ public class S_special_Time : MonoBehaviour
 
     private bool overflowStopper2 = true;
 
-    private MusicManager musicManager;
-
     void Update()
     {
-
         if (!stoptimer)
         {
             if (startTimer)
             {
                 MusicManager.instance.StopMusic();
-                //manager.instance.StopMusic();
                 if (overflowStopper2)
                 {
                     overflowStopper2 = false;
@@ -54,14 +50,11 @@ public class S_special_Time : MonoBehaviour
                         overflowStopper = false;
                         timerEnded();
                     }
-
                 }
             }
         }
         else
         {
-
-
             if (overflowStopper)
             {
                 overflowStopper = false;
@@ -70,8 +63,6 @@ public class S_special_Time : MonoBehaviour
                 yay.Play();
                 StartCoroutine(PlayMusic());
             }
-
-
         }
     }
 
@@ -106,14 +97,12 @@ public class S_special_Time : MonoBehaviour
 
     IEnumerator Restart()
     {
-
         yield return new WaitForSeconds(5);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     IEnumerator PlayMusic()
     {
-
         yield return new WaitForSeconds(3);
         MusicManager.instance.ChangeMusic();
         MusicManager.instance.PlayMusic();

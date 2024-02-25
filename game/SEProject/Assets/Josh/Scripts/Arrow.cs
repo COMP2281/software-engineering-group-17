@@ -7,7 +7,6 @@ public class Arrow : MonoBehaviour
     public float speed;
 
     public Transform targetTransform;
-    
 
     // Update is called once per frame
     void Update()
