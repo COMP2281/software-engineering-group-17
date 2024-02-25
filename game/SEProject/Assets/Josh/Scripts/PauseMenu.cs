@@ -49,7 +49,6 @@ public class PauseMenu : MonoBehaviour
         }
         if (alreadyInitialised) return;
         if (GM.gmInstance == null) return;
-        Debug.Log("Got gm");
         float value = PlayerPrefs.GetFloat("volume", 0);
         GM.gmInstance.SetVolume(value);
         try {
