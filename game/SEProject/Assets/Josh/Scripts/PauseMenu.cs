@@ -24,13 +24,13 @@ public class PauseMenu : MonoBehaviour
     public Toggle particle;
     public Slider volumeSlider;
     public TMPro.TMP_Dropdown graphicsDropdown;
+    private bool alreadyInitialised;
 
 
     public GameObject combatText;
     private void Start()
     {
         particle.isOn = GM.gmInstance.GetParticle();
-        volumeSlider.value = GM.gmInstance.GetVolume();
         graphicsDropdown.value = GM.gmInstance.GetGraphics();
     }
     // Update is called once per frame
@@ -47,6 +47,18 @@ public class PauseMenu : MonoBehaviour
                 Pause();
             }
         }
+        if (alreadyInitialised) return;
+        if (GM.gmInstance == null) return;
+        float value = PlayerPrefs.GetFloat("volume", 0);
+        GM.gmInstance.SetVolume(value);
+        try {
+            volumeSlider = GameObject.FindWithTag("volume").GetComponent<Slider>();
+        }
+        catch {
+            return;
+        }
+        volumeSlider.value = value;
+        alreadyInitialised = true;
     }
     public void Resume()
     {
@@ -88,6 +100,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Volume(float volume)
     {
+        if (!alreadyInitialised) return;
         GM.gmInstance.SetVolume(volume);
     }
 
