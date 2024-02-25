@@ -67,4 +67,8 @@ public class MainMenuButtons : MonoBehaviour
         GM.gmInstance.SetGraphics(quality);
     }
 
+    public void Credits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
 }
