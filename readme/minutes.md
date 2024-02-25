@@ -140,3 +140,17 @@
 - Goals for the week
   - Continue working on project
   - Get started on User Manual
+
+# Week 16 Minutes
+**Last Week's Goals**: Achieved
+- Finished first iteration of the saving system
+- Made plan for User Manual
+- Made service manual section in user manual
+- Started on other sections of user manual
+- Finished fundamentals of combat system
+- Added in first set of boss sprites
+- Goals for the week
+  - Make good progress on User Manual
+  - Start planning for Presentation
+  - Tidy up combat
+  - Improve save system
