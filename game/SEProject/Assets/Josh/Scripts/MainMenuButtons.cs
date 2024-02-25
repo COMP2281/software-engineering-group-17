@@ -17,9 +17,27 @@ public class MainMenuButtons : MonoBehaviour
     public GameObject mainMenu;
 
     public Toggle particles;
+    public Slider slider;
+    private bool ready;
     private void Start()
     {
         Particles(particles);
+    }
+
+    void Update() {
+        if (ready) return;
+        if (mix == null) return;
+        if (GM.gmInstance == null) return;
+        float value = PlayerPrefs.GetFloat("volume", 0);
+        GM.gmInstance.SetVolume(value);
+        try {
+            slider = GameObject.FindWithTag("volume").GetComponent<Slider>();
+        }
+        catch {
+            return;
+        }
+        slider.value = value;
+        ready = true;
     }
     public void NewGame()
     {
@@ -33,6 +51,7 @@ public class MainMenuButtons : MonoBehaviour
 
     public void Volume(float volume)
     {
+        if (!ready) return;
         GM.gmInstance.SetVolume(volume);
     }
 

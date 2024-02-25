@@ -64,6 +64,7 @@ public class GM : MonoBehaviour
     {
         volume = v;
         mastervol.SetFloat("volume", volume);
+        PlayerPrefs.SetFloat("volume", volume);
     }
 
     public int GetGraphics()
