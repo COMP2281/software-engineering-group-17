@@ -331,8 +331,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hit the button 20 times. You have 2 minutes and 30 seconds! The arrow will
-    guide you
+  m_text: Hit the button 15 times. You have 2 minutes! The arrow will guide you
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1452,7 +1451,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 02:30
+  m_Text: 02:00
 --- !u!222 &370190695
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3567,7 +3566,7 @@ MonoBehaviour:
   - {fileID: 272336583}
   - {fileID: 886574718}
   - {fileID: 1745534445}
-  hitCounter: 20
+  hitCounter: 15
   button: {fileID: 928191027}
   player: {fileID: 1038646166}
   spawn: {fileID: 295275765}
@@ -24869,7 +24868,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  targetTime: 150
+  targetTime: 120
   _audioSource: {fileID: 1513546251}
   yay: {fileID: 1513546250}
   musicSource: {fileID: 1513546249}
