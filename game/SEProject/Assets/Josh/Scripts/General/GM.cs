@@ -24,7 +24,7 @@ public class GM : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(SceneManager.GetActiveScene().name == "Hub World New")
+        if(SceneManager.GetActiveScene().name == "Hub World New" || SceneManager.GetActiveScene().name == "DS World Boss")
         {
             Destroy(MusicManager.instance.gameObject);
         }

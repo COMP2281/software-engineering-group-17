@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class S_special_Time : MonoBehaviour
+public class Timer : MonoBehaviour
 {
-    public PlayerIceScript player;
+    public PlayerScript player;
 
     public float targetTime = 60.0f;
 
@@ -35,38 +35,39 @@ public class S_special_Time : MonoBehaviour
             if (startTimer)
             {
                 MusicManager.instance.StopMusic();
+                
                 if (overflowStopper2)
                 {
                     overflowStopper2 = false;
                     musicSource.Play();
                 }
                 targetTime -= Time.deltaTime;
-                updateTimer(targetTime);
+                UpdateTimer(targetTime);
                 if (targetTime <= 0.0f)
                 {
                     targetTime = 0.0f;
-                    if (overflowStopper)
+                    if(overflowStopper)
                     {
                         overflowStopper = false;
-                        timerEnded();
+                        TimerEnded();
                     }
                 }
             }
         }
         else
         {
-            if (overflowStopper)
+            if(overflowStopper)
             {
                 overflowStopper = false;
                 musicSource.Stop();
-
+                
                 yay.Play();
                 StartCoroutine(PlayMusic());
             }
         }
     }
-
-    void updateTimer(float currentTime)
+    
+    void UpdateTimer(float currentTime)
     {
         currentTime += 1;
 
@@ -77,7 +78,7 @@ public class S_special_Time : MonoBehaviour
     }
 
 
-    void timerEnded()
+    void TimerEnded()
     {
         player.canMove = false;
         _audioSource.Play();
@@ -91,7 +92,6 @@ public class S_special_Time : MonoBehaviour
         {
             startTimer = true;
             box.enabled = false;
-            Debug.Log("start");
         }
     }
 
@@ -108,3 +108,4 @@ public class S_special_Time : MonoBehaviour
         MusicManager.instance.PlayMusic();
     }
 }
+

@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class Timer : MonoBehaviour
+public class SpecialTime : MonoBehaviour
 {
-    public PlayerScript player;
+    public PlayerIceScript player;
 
     public float targetTime = 60.0f;
 
@@ -27,7 +27,7 @@ public class Timer : MonoBehaviour
     private bool overflowStopper = true;
 
     private bool overflowStopper2 = true;
-    
+
     void Update()
     {
         if (!stoptimer)
@@ -41,32 +41,32 @@ public class Timer : MonoBehaviour
                     musicSource.Play();
                 }
                 targetTime -= Time.deltaTime;
-                UpdateTimer(targetTime);
+                updateTimer(targetTime);
                 if (targetTime <= 0.0f)
                 {
                     targetTime = 0.0f;
-                    if(overflowStopper)
+                    if (overflowStopper)
                     {
                         overflowStopper = false;
-                        TimerEnded();
+                        timerEnded();
                     }
                 }
             }
         }
         else
         {
-            if(overflowStopper)
+            if (overflowStopper)
             {
                 overflowStopper = false;
                 musicSource.Stop();
-                
+
                 yay.Play();
                 StartCoroutine(PlayMusic());
             }
         }
     }
-    
-    void UpdateTimer(float currentTime)
+
+    void updateTimer(float currentTime)
     {
         currentTime += 1;
 
@@ -77,7 +77,7 @@ public class Timer : MonoBehaviour
     }
 
 
-    void TimerEnded()
+    void timerEnded()
     {
         player.canMove = false;
         _audioSource.Play();
@@ -91,6 +91,7 @@ public class Timer : MonoBehaviour
         {
             startTimer = true;
             box.enabled = false;
+            Debug.Log("start");
         }
     }
 
@@ -107,4 +108,3 @@ public class Timer : MonoBehaviour
         MusicManager.instance.PlayMusic();
     }
 }
-
