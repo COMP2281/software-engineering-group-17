@@ -25,7 +25,6 @@ public class PauseMenu : MonoBehaviour
     public Slider volumeSlider;
     public TMPro.TMP_Dropdown graphicsDropdown;
 
-
     public GameObject combatText;
     private void Start()
     {
