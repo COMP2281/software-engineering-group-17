@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306c7f5bb167cdb40af76353d5a8f371, type: 3}
+  m_Name: question_51
+  m_EditorClassIdentifier: 
+  question: A data analyst is reviewing an Excel spreadsheet from an insurance company.
+    The customer data that she is analyzing is sorted by name, home address, policy
+    number, etc. What type of data is she most likely working with?
+  answers:
+  - Structured data
+  - Unstructured data
+  - Bilaterally structured data
+  - Unilaterally structured data

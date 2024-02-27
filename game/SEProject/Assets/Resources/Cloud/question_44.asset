@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306c7f5bb167cdb40af76353d5a8f371, type: 3}
+  m_Name: question_44
+  m_EditorClassIdentifier: 
+  question: One of the six cloud business enablers as outlined by IBM Institute of
+    Business Value, is context-driven variability. Which of the following best describes
+    this particular business enabler?
+  answers:
+  - Supports user defined preferences
+  - The complexity becomes hidden from end-user
+  - Cloud enables a faster time to market and helps in rapid prototyping
+  - With cloud applications there is no longer a need to install software or pay
+    software license fees

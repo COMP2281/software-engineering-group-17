@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306c7f5bb167cdb40af76353d5a8f371, type: 3}
+  m_Name: question_39
+  m_EditorClassIdentifier: 
+  question: Which of the following computing resources addresses the user who does
+    not pay for the software itself. It works like a rental. They have the authorization
+    to use it for a period of time and pay for the software that they are using?
+  answers:
+  - SaaS
+  - PaaS
+  - IaaS
+  - BPaaS
