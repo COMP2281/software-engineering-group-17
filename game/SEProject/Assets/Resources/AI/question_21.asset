@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306c7f5bb167cdb40af76353d5a8f371, type: 3}
+  m_Name: question_21
+  m_EditorClassIdentifier: 
+  question: Which of the following is a key contributor to the evolution of modern
+    AI system?
+  answers:
+  - All of the others
+  - Explosive growth of available data from social media, sensors, and smart devices
+  - Development of advanced computational algorithms
+  - Modern computers have far greater power than they did in the 1950s

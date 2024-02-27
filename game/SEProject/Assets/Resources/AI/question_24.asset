@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306c7f5bb167cdb40af76353d5a8f371, type: 3}
+  m_Name: question_24
+  m_EditorClassIdentifier: 
+  question: While relevant, AI use-cases span various areas across virtually every
+    industry. Three main macro domains continue to drive the adoption as well as
+    the most economic savings across businesses. Which of the following best depicts
+    those three main domains?
+  answers:
+  - Engagement, insight, and automation
+  - Narrow, broad, and general
+  - Supervised, unsupervised, and reinforcement
+  - All of the others

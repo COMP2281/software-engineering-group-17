@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306c7f5bb167cdb40af76353d5a8f371, type: 3}
+  m_Name: question_35
+  m_EditorClassIdentifier: 
+  question: One of the challenges of a multi-cloud approach is that different cloud
+    solutions run in different software environments. Organizations want to build
+    applications that can easily move across a wide range of these environments without
+    creating integration difficulties. Which of the following helps mitigate such
+    challenges?
+  answers:
+  - Use Container technologies
+  - ' Use private cloud and public cloud in your business'
+  - Use Vmware services
+  - All of the others
