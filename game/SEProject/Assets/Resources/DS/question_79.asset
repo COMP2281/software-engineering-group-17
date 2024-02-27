@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   question: Which of the following will Watson studio be used for?
   answers:
-  - ' Data Visualisation'
+  - Data Visualisation
   - Data Security
-  - ' Data Transfer'
+  - Data Transfer

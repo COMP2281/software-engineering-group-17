@@ -14,9 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   question: Which of the following examples best illustrates a cyber threat?
   answers:
-  - Options B and C Only
-  - Hackers infiltrate a banking website and obtain customer account information
-  - A friend uses your Netflix login information without your knowledge
   - All of the others
+  - Hackers infiltrate a banking website and obtain customer account information
   - You receive an email from an unknown account asking you to click on a link to
     claim a prize

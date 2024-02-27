@@ -15,11 +15,8 @@ MonoBehaviour:
   question: What is true about misconfiguration as one of the most challenging types
     of cyber threats?
   answers:
-  - Options 'A' and 'C' Only
-  - Erroneous permission-level attribution on cloud services and networked backups
-    exposed sensitive data through weak or non-existent authentication
+  - All of the others
   - Employees and insiders falling for phishing emails that resulted in account takeover
     or access to sensitive data
   - Incidents where attackers gain access to vulnerable systems left exposed by inexperienced
     administrators or users (e.g., default factory settings)
-  - All of the others
