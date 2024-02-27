@@ -16,7 +16,7 @@ MonoBehaviour:
     Data Requirements and ends with Data Understanding. This loop will continue,
     until the Data Scientist has decided the Data set has no critical  ____________________.
   answers:
-  - ' Data Gaps'
+  - Data Gaps
   - Data cleansing
-  - ' Data representation'
-  - ' Data Collection'
+  - Data representation
+  - Data Collection

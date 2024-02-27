@@ -15,6 +15,6 @@ MonoBehaviour:
   question: In the Business Challenge, Auto Insurance Company inc. has decided to
     use Data Science technologies to help fix which problem?
   answers:
-  - ' Data Corruption'
+  - Data Corruption
   - Employee attrition
-  - ' Cyber security'
+  - Cyber security

@@ -15,7 +15,6 @@ MonoBehaviour:
   question: What is the chief weapon of a cyber attacker?
   answers:
   - Malware
-  - SQLi
   - Physical Access
   - Phishing
   - Brute Force

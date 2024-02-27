@@ -15,8 +15,7 @@ MonoBehaviour:
   question: Which are the five phases for the Cyber Resilience Lifecycle based in
     NIST CSF?
   answers:
-  - Investigate, Remediate, Protect, Recover
-  - ' Take legal action'
   - Identify, Protect, Detect, Respond, Recover
+  - Investigate, Remediate, Protect, Recover, Take legal action
   - Identify, Investigate, Remediate, Respond, Rework
   - None of the others
