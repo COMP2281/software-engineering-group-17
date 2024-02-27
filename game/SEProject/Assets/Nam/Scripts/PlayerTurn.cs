@@ -27,6 +27,9 @@ public class PlayerTurn : State
             BattleSystem.playerPrefab.gameObject.transform.GetChild(0).gameObject.SetActive(true);
             BattleSystem.playerPrefab.gameObject.transform.GetChild(2).gameObject.SetActive(false);
 
+            BattleSystem.enemyPrefab.gameObject.transform.GetChild(2).gameObject.SetActive(false);
+            BattleSystem.enemyPrefab.gameObject.transform.GetChild(1).gameObject.SetActive(true);
+
         } 
         else
         {
@@ -36,14 +39,19 @@ public class PlayerTurn : State
 
             BattleSystem.playerPrefab.gameObject.transform.GetChild(1).gameObject.SetActive(true);
             BattleSystem.playerPrefab.gameObject.transform.GetChild(2).gameObject.SetActive(false);
+
+            BattleSystem.enemyPrefab.gameObject.transform.GetChild(2).gameObject.SetActive(false);
+            BattleSystem.enemyPrefab.gameObject.transform.GetChild(0).gameObject.SetActive(true);
         }
 
         yield return new WaitForSeconds(5);
         for (int i = 0; i < 2; i++)
         {
             BattleSystem.playerPrefab.gameObject.transform.GetChild(i).gameObject.SetActive(false);
+            BattleSystem.enemyPrefab.gameObject.transform.GetChild(i).gameObject.SetActive(false);
         }
         BattleSystem.playerPrefab.gameObject.transform.GetChild(2).gameObject.SetActive(true);
+        BattleSystem.enemyPrefab.gameObject.transform.GetChild(2).gameObject.SetActive(true);
 
         if (isEnemyDead)
         {
