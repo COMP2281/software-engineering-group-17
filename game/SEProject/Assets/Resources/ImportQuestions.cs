@@ -11,13 +11,23 @@ public class ImportQuestions
     [MenuItem("Utilities/Import Questions")]
     public static void Import()
     {
-        string[] allLLines = File.ReadAllLines(Application.dataPath + questionCSVPath);
+        string[] allLines = File.ReadAllLines(Application.dataPath + questionCSVPath);
 
-        foreach (string line in allLLines)
+        // Skip first line as this is csv column name
+        for (int i = 1; i < allLines.Length; i++) 
         {
+            string line = allLines[i];
+            Debug.Log(line);
             string[] splitData = SplitCSVLine(line);
-            Debug.Log(string.Join("\n", splitData));
+            string[] answers = splitData[1].Split(";");
+            string worldType = splitData[2];
+            QuestionData questionData = ScriptableObject.CreateInstance<QuestionData>();
+            questionData.question = splitData[0];
+            questionData.answers = answers;
+            AssetDatabase.CreateAsset(questionData, $"Assets/Resources/{worldType}/question_{i}.asset");
         }
+
+        AssetDatabase.SaveAssets();
     }
 
     public static string[] SplitCSVLine(string line)
