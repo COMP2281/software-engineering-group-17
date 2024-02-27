@@ -1,12 +1,11 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Lives : MonoBehaviour
 {
-    public int heart_num = 3;
-    public int max_hearts = 5; 
+    public int heartNum = 3;
+    public int maxHearts = 5; 
     private bool invincible = false;
     public float invincibleTime = 3f;
     private SpriteRenderer sprite;
@@ -19,7 +18,7 @@ public class Lives : MonoBehaviour
 
     void Update()
     {
-        if (heart_num <= 0)
+        if (heartNum <= 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
@@ -27,7 +26,7 @@ public class Lives : MonoBehaviour
 
     public void DamagePlayer() {
         if (!invincible) {
-            heart_num-=1;
+            heartNum-=1;
             invincible = true;
             StartCoroutine(Flicker());
             StartCoroutine(InvincibleTimer());
@@ -55,8 +54,8 @@ public class Lives : MonoBehaviour
     {
         if (other.gameObject.tag == "Heart")
         {
-            if (heart_num < max_hearts) {
-                heart_num += 1;
+            if (heartNum < maxHearts) {
+                heartNum += 1;
                 Destroy(other.gameObject);
             }
         }

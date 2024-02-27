@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Numerics;
 using UnityEngine;
 
-public class MvingPlatfor : MonoBehaviour
+public class MovingPlatform : MonoBehaviour
 {
     public float x;
     public float y;
@@ -14,7 +14,7 @@ public class MvingPlatfor : MonoBehaviour
     private UnityEngine.Vector3 endPoint;
     private UnityEngine.Vector3 velocity;
     public Rigidbody2D rb;
-    private bool moving_down = false;
+    private bool movingDown = false;
     public double range;
 
     void Start()
@@ -29,13 +29,13 @@ public class MvingPlatfor : MonoBehaviour
     void FixedUpdate()
     {
         gameObject.transform.position += velocity;
-        if (moving_down && UnityEngine.Vector3.Distance(gameObject.transform.position, startPoint) < range) {
+        if (movingDown && UnityEngine.Vector3.Distance(gameObject.transform.position, startPoint) < range) {
             velocity *=-1;
-            moving_down = false;
+            movingDown = false;
         }
-        if (!moving_down && UnityEngine.Vector3.Distance(gameObject.transform.position, endPoint) < range) {
+        if (!movingDown && UnityEngine.Vector3.Distance(gameObject.transform.position, endPoint) < range) {
             velocity*= -1;
-            moving_down = true;
+            movingDown = true;
         }
     }
 }

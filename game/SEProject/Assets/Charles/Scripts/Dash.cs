@@ -1,7 +1,4 @@
 using System.Collections;
-using System;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Dash : MonoBehaviour
@@ -9,7 +6,7 @@ public class Dash : MonoBehaviour
     private float dashForce = 25f;
     public bool canDash = false;
     public bool isDashing = false;
-    private float dashtTime = 0.10f;
+    private float dashTime = 0.10f;
     private float dashCooldown = 0.5f;
     private bool left;
     private bool right;
@@ -17,26 +14,21 @@ public class Dash : MonoBehaviour
     private bool down;
     public Rigidbody2D rb;
     float x;
-    // Vector2 velocity = new Vector2(1f, 0f);
-    // rb.velocity = 
     float y;
 
-       
-
-    // Update is called once per frame
     void Update()
     {
         // rb.velocity = velocity;
         if (canDash && Input.GetKeyDown("space")) {
-            up = gameObject.GetComponent<S_player_movement_2>().up;
-            down = gameObject.GetComponent<S_player_movement_2>().down;
-            right = gameObject.GetComponent<S_player_movement_2>().right;
-            left = gameObject.GetComponent<S_player_movement_2>().left;
-            StartCoroutine(Start_Dash(up, down, left, right));
+            up = gameObject.GetComponent<PlayerMovement2>().up;
+            down = gameObject.GetComponent<PlayerMovement2>().down;
+            right = gameObject.GetComponent<PlayerMovement2>().right;
+            left = gameObject.GetComponent<PlayerMovement2>().left;
+            StartCoroutine(StartDash(up, down, left, right));
         }    
     }
 
-    IEnumerator Start_Dash(bool up, bool down, bool left, bool right){
+    IEnumerator StartDash(bool up, bool down, bool left, bool right) {
         canDash = false;
         isDashing = true;
 
@@ -62,7 +54,7 @@ public class Dash : MonoBehaviour
         }
 
         rb.velocity = new Vector2(x*dashForce, y*dashForce);
-        yield return new WaitForSeconds(dashtTime);
+        yield return new WaitForSeconds(dashTime);
 
         isDashing = false;
         yield return new WaitForSeconds(dashCooldown);

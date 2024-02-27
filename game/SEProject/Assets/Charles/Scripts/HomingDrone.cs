@@ -1,14 +1,10 @@
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class HomingDrone : MonoBehaviour
 {
     // Start is called before the first frame update
     private GameObject player;
-    private float x;
-    private float y;
     public float speed;
     public float turnSpeed;
     private bool isEnding = false;
@@ -20,8 +16,6 @@ public class HomingDrone : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        x = transform.position.x;
-        y = transform.position.y;
         StartCoroutine(DeathTimer());
         StartCoroutine(StartPhaseTimer());
     }
@@ -37,7 +31,6 @@ public class HomingDrone : MonoBehaviour
         StartCoroutine(EndDrone());
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         if (homingPhase) {

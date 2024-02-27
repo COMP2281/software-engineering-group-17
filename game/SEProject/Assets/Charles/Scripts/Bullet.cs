@@ -1,17 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.Tilemaps;
 
 public class Bullet : MonoBehaviour
 {
 
     public float speed;
     public Rigidbody2D rb;
-        
     public float x = 0f;
     public float y = 0f;
     
@@ -20,7 +13,6 @@ public class Bullet : MonoBehaviour
     {
         rb.velocity =  y * speed * transform.up + x * speed * transform.right;
     }
-
     
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -40,5 +32,4 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
 }

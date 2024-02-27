@@ -1,12 +1,11 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class S_Timer2 : MonoBehaviour
+public class Timer2 : MonoBehaviour
 {
-    public S_player_movement_2 player;
+    public PlayerMovement2 player;
 
     public float targetTime = 60.0f;
 
@@ -16,8 +15,6 @@ public class S_Timer2 : MonoBehaviour
 
     public BoxCollider2D box;
     public AudioSource escapeMusic;
-    public AudioSource oldMusic;
-    // private AudioSource finishedMusic;
 
     public bool stoptimer = false;
 
@@ -25,13 +22,9 @@ public class S_Timer2 : MonoBehaviour
 
     private bool overflowstopper2 = true;
     private bool hasStarted = false;
-
-    private void Start()
-    {
-    }
+    
     void Update()
     {
-        
         if (!stoptimer)
         {
             if (startTimer)
@@ -40,20 +33,22 @@ public class S_Timer2 : MonoBehaviour
                     escapeMusic.Play();
                     hasStarted = true;
                 }
-                // oldMusic.Stop(); 
+
                 if (overflowstopper2)
                 {
                     overflowstopper2 = false;
                 }
+
                 targetTime -= Time.deltaTime;
-                updateTimer(targetTime);
+                UpdateTimer(targetTime);
+
                 if (targetTime <= 0.0f)
                 {
                     targetTime = 0.0f;
                     if(overflowstopper)
                     {
                         overflowstopper = false;
-                        timerEnded();
+                        TimerEnded();
                     }
                     
                 }
@@ -74,7 +69,7 @@ public class S_Timer2 : MonoBehaviour
         }
     }
     
-    void updateTimer(float currentTime)
+    void UpdateTimer(float currentTime)
     {
         currentTime += 1;
 
@@ -85,7 +80,7 @@ public class S_Timer2 : MonoBehaviour
     }
 
 
-    void timerEnded()
+    void TimerEnded()
     {
         player.canmove = false;
         player.canmove = false;
