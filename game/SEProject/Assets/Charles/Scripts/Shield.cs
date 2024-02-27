@@ -1,8 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.UIElements;
 
 public class Shield : MonoBehaviour
 {
@@ -13,7 +9,7 @@ public class Shield : MonoBehaviour
     public GameObject shieldBarObject;
     private SpriteRenderer sprite;
     private Collider2D shieldCollider;
-    public float rate_decrease;
+    public float rateDecrease;
     private UnityEngine.UI.Slider shieldBar;
 
     void Start() {
@@ -45,7 +41,7 @@ public class Shield : MonoBehaviour
 
     void FixedUpdate() {
         if (isShielding) {
-            shieldBar.value-= rate_decrease;
+            shieldBar.value-= rateDecrease;
         }
 
         if (shieldBar.value <= 0) {

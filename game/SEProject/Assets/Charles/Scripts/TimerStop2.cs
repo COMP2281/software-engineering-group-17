@@ -1,9 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class S_timer_stop2 : MonoBehaviour
+public class TimerStop2 : MonoBehaviour
 {
     
     public GameObject timer;
@@ -13,7 +10,7 @@ public class S_timer_stop2 : MonoBehaviour
     {
         if (collision.tag.Equals("Player"))
         {
-            timer.GetComponent<S_Timer2>().stoptimer = true;
+            timer.GetComponent<Timer2>().stoptimer = true;
             box.enabled = false;
         }
     }

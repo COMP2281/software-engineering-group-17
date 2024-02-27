@@ -1,16 +1,12 @@
 using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using Unity.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
 
-public class S_player_movement_2 : MonoBehaviour
+public class PlayerMovement2 : MonoBehaviour
 {
-    public static S_player_movement_2 s_player_movement;
+    public static PlayerMovement2 PlayerMovement;
 
     public float moveSpeed = 5f;
 

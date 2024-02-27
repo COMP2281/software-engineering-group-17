@@ -1,10 +1,6 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class AI_Portal : MonoBehaviour
+public class AIPortal : MonoBehaviour
 {
     public int index;
     private GameObject player;

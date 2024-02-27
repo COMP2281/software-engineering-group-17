@@ -1,9 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
-using System.Data.Common;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public abstract class TurretStateMachine : MonoBehaviour
 {
@@ -16,7 +12,7 @@ public abstract class TurretStateMachine : MonoBehaviour
     public float straightFireRate;
     public int[] nextState;
     protected int spawnPointsNum;
-    protected float startPoint;
+    protected float startAngle;
     public bool startRotation;
     protected int direction = 1;
     public float endPoint;
@@ -29,8 +25,8 @@ public abstract class TurretStateMachine : MonoBehaviour
 
     public States state;
 
-    protected void SetStartPoint() {
-        startPoint = gameObject.transform.eulerAngles.z;
+    protected void SetStartAngle() {
+        startAngle = gameObject.transform.eulerAngles.z;
     }
 
     protected void GetSpawnPoints() {
@@ -133,7 +129,7 @@ public abstract class TurretStateMachine : MonoBehaviour
             direction *=-1;
             startRotation = !startRotation;
         }
-        else if (!startRotation && startPoint + 1 > gameObject.transform.eulerAngles.z  && gameObject.transform.eulerAngles.z > startPoint - 1){
+        else if (!startRotation && startAngle + 1 > gameObject.transform.eulerAngles.z  && gameObject.transform.eulerAngles.z > startAngle - 1){
             direction *=-1;
             startRotation = !startRotation;
         }

@@ -1,7 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
@@ -16,7 +12,6 @@ public class AudioManager : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other) {
         if (other.tag.Equals("Player")){
-            Debug.Log(gameObject.transform.position.x);
             backgroundMusic.Stop();
         }
     }

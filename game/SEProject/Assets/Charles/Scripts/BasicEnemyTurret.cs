@@ -1,7 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class BasicEnemyTurret : TurretStateMachine {
     public float[] stateTimers = new float[4] {1f, 1f, 1f, 1f};
@@ -10,13 +8,13 @@ public class BasicEnemyTurret : TurretStateMachine {
     public float rotationSpeed;
     public float acceleration;
     public float deceleration;
-    public bool changeOnDirection;
-    private bool isRotating;
+    public bool statesChangeDirection;
     public float speedMax;
     private bool isAccelerating;
     public float speedMin;
+
     void Start() {
-        SetStartPoint();
+        SetStartAngle();
         GetSpawnPoints();
         nextState = new int [4] {1, 2, 3, 0};
         StartCoroutine(ShootHandler());
@@ -25,8 +23,6 @@ public class BasicEnemyTurret : TurretStateMachine {
     void FixedUpdate() {
         RotateTurret();
     }
-
-
 
     IEnumerator ShootHandler() {
         int index = (int)state;
@@ -37,10 +33,11 @@ public class BasicEnemyTurret : TurretStateMachine {
             yield return new WaitForSeconds(reloadingTimes[index]);
         }
 
-        if (changeOnDirection) {
+        if (statesChangeDirection) {
             direction*=-1;
             startRotation = !startRotation;
         }
+
         rotationSpeed = rotationSpeeds[(int)state];
         isFiring = false;
         StartCoroutine(ShootHandler());

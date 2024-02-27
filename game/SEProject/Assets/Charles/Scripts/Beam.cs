@@ -1,8 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
-using System.Numerics;
-using Unity.VisualScripting;
-using UnityEditor;
 using UnityEngine;
 
 public class Beam : MonoBehaviour
@@ -19,7 +15,7 @@ public class Beam : MonoBehaviour
     private GameObject player;
 
     void Start() {
-        StartCoroutine(DeathTimer());
+        StartCoroutine(DestroyTimer());
         StartCoroutine(ManagePhase());
         line = GetComponent<LineRenderer>();
         player = GameObject.FindGameObjectWithTag("Player");
@@ -28,11 +24,11 @@ public class Beam : MonoBehaviour
     void Update() {
         Shoot();
         transform.position = spawnPoint.transform.position;
-        transform.rotation = spawnPoint.transform.rotation*UnityEngine.Quaternion.Euler(0, 0, -90);
+        transform.rotation = spawnPoint.transform.rotation*Quaternion.Euler(0, 0, -90);
     }
 
 
-    IEnumerator DeathTimer() {
+    IEnumerator DestroyTimer() {
         yield return new WaitForSeconds(deathTime);
         Destroy(gameObject);
     }
@@ -52,7 +48,7 @@ public class Beam : MonoBehaviour
         }
     }
 
-    void DrawBeam(UnityEngine.Vector2 startPos, UnityEngine.Vector2 endPos) {
+    void DrawBeam(Vector2 startPos, Vector2 endPos) {
         line.SetPosition(0, startPos);
         line.SetPosition(1, endPos);
     }
@@ -61,13 +57,14 @@ public class Beam : MonoBehaviour
         yield return new WaitForSeconds(startPhaseTime);
 
         float alpha = 1.0f;
+
         Gradient gradient = new Gradient();
         gradient.SetKeys(
             new GradientColorKey[] { new GradientColorKey(startColor, 0.0f), new GradientColorKey(endColor, 1.0f) },
             new GradientAlphaKey[] { new GradientAlphaKey(alpha, 0.0f), new GradientAlphaKey(alpha, 1.0f) }
         );
-        line.colorGradient = gradient;
 
+        line.colorGradient = gradient;
         damagePhase = true;
     }
 
