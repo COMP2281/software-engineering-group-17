@@ -19,6 +19,7 @@ public class MainMenuButtons : MonoBehaviour
     public Toggle particles;
     public Slider slider;
     private bool alreadyInitialised;
+    private const string HUB_WORLD_NAME = "Hub World New";
     private void Start()
     {
         Particles(particles);
@@ -41,7 +42,11 @@ public class MainMenuButtons : MonoBehaviour
     }
     public void NewGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(HUB_WORLD_NAME);
+    }
+
+    public void LoadFromSave() {
+        SceneManager.LoadScene("");
     }
 
     public void Quit()
