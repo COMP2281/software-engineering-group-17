@@ -40,15 +40,7 @@ public class MainMenuButtons : MonoBehaviour
         slider.value = value;
         alreadyInitialised = true;
     }
-    public void NewGame()
-    {
-        SceneManager.LoadScene(HUB_WORLD_NAME);
-    }
-
-    public void LoadFromSave() {
-        SceneManager.LoadScene("");
-    }
-
+    
     public void Quit()
     {
         Application.Quit();
