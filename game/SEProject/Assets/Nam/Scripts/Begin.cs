@@ -13,8 +13,8 @@ public class Begin : State
         GameObject playerGo = Object.Instantiate(BattleSystem.playerPrefab);
         BattleSystem.playerUnit = playerGo.GetComponent<CombatUnit>();
 
-        GameObject enemy_go = Object.Instantiate(BattleSystem.enemyPrefab);
-        BattleSystem.enemyUnit = enemy_go.GetComponent<CombatUnit>();
+        GameObject enemyGo = Object.Instantiate(BattleSystem.enemyPrefab);
+        BattleSystem.enemyUnit = enemyGo.GetComponent<CombatUnit>();
 
         BattleSystem.dialogue.text = "You are about to fight " + BattleSystem.enemyUnit.unitName + " !!!";
 
