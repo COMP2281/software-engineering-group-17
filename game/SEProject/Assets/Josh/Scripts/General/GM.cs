@@ -21,17 +21,27 @@ public class GM : MonoBehaviour
     public AudioMixer mastervol;
 
     private int graphics;
+
+    private const string HUB_WORLD_NAME = "Hub World New";
+    private const string DS_WORLD_NAME = "DS World Boss";
+    private const string MAIN_MENU_WORLD = "Main Menu";
+
+    private string CurrentScene() {
+        return SceneManager.GetActiveScene().name;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        if(SceneManager.GetActiveScene().name == "Hub World New" || SceneManager.GetActiveScene().name == "DS World Boss")
+        if(CurrentScene() == HUB_WORLD_NAME || CurrentScene() == DS_WORLD_NAME)
         {
             Destroy(MusicManager.instance.gameObject);
         }
     }
     private void Update()
     {
-        //Debug.Log(enableParticles);
+        if (CurrentScene() == MAIN_MENU_WORLD) return;
+        PlayerPrefs.SetString("last-scene", CurrentScene());
     }
 
     private void Awake()
@@ -43,6 +53,16 @@ public class GM : MonoBehaviour
             DontDestroyOnLoad(gameObject);
             
         }
+    }
+
+
+    public void NewGame()
+    {
+        SceneManager.LoadScene(HUB_WORLD_NAME);
+    }
+
+    public void LoadFromSave() {
+        SceneManager.LoadScene(PlayerPrefs.GetString("last-scene", HUB_WORLD_NAME));
     }
 
     public bool GetParticle()
