@@ -1,0 +1,29 @@
+Pokemon-MD-manual:
+  type: web
+  title: "Nintendo Pokémon Mystery Dungeon: Gates to Infinity (3DS) manual"
+  author: ["Nintendo"]
+  url: https://www.manuals.co.uk/nintendo/pok-mon-mystery-dungeon-gates-to-infinity-3ds/manual
+
+ps2-gamepad:
+  type: web
+  title: Playstation 2 Pad
+  author: ["oloff3"]
+  url: https://www.deviantart.com/oloff3/art/Playstation-2-Pad-83940856
+
+gamepad-wiki:
+  type: web
+  title: Gamepad
+  author: [Wikipedia]
+  url: https://en.wikipedia.org/wiki/Gamepad
+
+first-rpg:
+  type: web
+  title: What is the very first RPG game?
+  author: [Chris Nash]
+  url: https://www.quora.com/What-was-the-very-first-RPG-video-game
+
+franchises:
+  type: web
+  title: List of highest-grossing media franchises
+  author: [Wikipedia]
+  url: https://en.wikipedia.org/wiki/List_of_highest-grossing_media_franchises
