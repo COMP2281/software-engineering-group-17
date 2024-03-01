@@ -10,6 +10,8 @@ TagManager:
   - Collide
   - Heart
   - Kill
+  - graphics
+  - particles
   layers:
   - Default
   - TransparentFX
