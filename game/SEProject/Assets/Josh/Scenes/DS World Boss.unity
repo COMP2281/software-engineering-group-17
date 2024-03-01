@@ -466,7 +466,7 @@ GameObject:
   - component: {fileID: 207007952}
   - component: {fileID: 207007954}
   m_Layer: 0
-  m_Name: 'Cutscene 1 '
+  m_Name: Pre Battle Cutscene
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

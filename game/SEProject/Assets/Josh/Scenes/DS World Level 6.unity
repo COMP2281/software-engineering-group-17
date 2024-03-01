@@ -232,7 +232,6 @@ Transform:
   - {fileID: 1696057381}
   - {fileID: 2037903644}
   - {fileID: 562938578}
-  - {fileID: 1566230002}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &133671435
@@ -1780,7 +1779,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2059325285}
   - {fileID: 1988165302}
   - {fileID: 1693765322}
   m_Father: {fileID: 0}
@@ -1842,9 +1840,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Answer 2
-
-'
+  m_text: Data Cleansing
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8681,7 +8677,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Answer 4
+  m_text: 'Model Implementation
 
 
 '
@@ -78767,7 +78763,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Answer 1
+  m_text: Data Modeling
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -78901,10 +78897,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Answer 3
-
-
-'
+  m_text: Model Deployment
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -88838,12 +88831,12 @@ Transform:
   m_GameObject: {fileID: 1566230000}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.34, y: -37.161, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -410.3252, y: -232.5121, z: -6.9204144}
+  m_LocalScale: {x: 0.69204146, y: 0.69204146, z: 0.69204146}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1030581501}
-  m_Father: {fileID: 132174365}
+  m_Father: {fileID: 1650202294}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1579747204
 GameObject:
@@ -88902,7 +88895,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Question msdfjasjf
+  m_text: _____________ is the stage whereby a data model is tested for its quality
+    and put into production.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -88929,8 +88923,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -89021,6 +89015,8 @@ RectTransform:
   - {fileID: 201080234}
   - {fileID: 136493859}
   - {fileID: 1899391218}
+  - {fileID: 1566230002}
+  - {fileID: 2059325285}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -91483,12 +91479,12 @@ Transform:
   m_GameObject: {fileID: 2059325280}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.289228, y: -20.444233, z: -9.235956}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -410.5882, y: -232.5121, z: -6.9204144}
+  m_LocalScale: {x: 0.69204146, y: 0.69204146, z: 0.69204146}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1843443590}
-  m_Father: {fileID: 292789794}
+  m_Father: {fileID: 1650202294}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2112946294
 GameObject:
