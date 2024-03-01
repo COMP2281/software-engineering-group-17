@@ -4,7 +4,7 @@ using UnityEngine;
 public class DashItem : MonoBehaviour
 {
     public AudioSource audioSource;
-    private AudioSource backgroundMusic;
+    public AudioSource backgroundMusic;
 
     void Update(){
         if (audioSource.isPlaying) {

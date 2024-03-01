@@ -641,7 +641,7 @@ Transform:
   m_GameObject: {fileID: 133877466}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.79, y: 18.59, z: 0}
+  m_LocalPosition: {x: -0.1, y: -12.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -659,8 +659,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d09b83cef6db7b429c77a62dc3995df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heart_num: 3
-  max_hearts: 5
+  heartNum: 3
+  maxHearts: 5
+  invincibleTime: 3
 --- !u!114 &133877475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7655,9 +7656,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hearts: []
-  max_hearts: 5
-  heart_num: 0
-  new_heart_num: 0
+  maxHearts: 5
+  heartNum: 0
+  newHeartNum: 0
   player: {fileID: 133877466}
 --- !u!1001 &760824715
 PrefabInstance:
@@ -8060,7 +8061,7 @@ Tilemap:
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.97735846, g: 0, b: 0, a: 1}
   m_Origin: {x: -40, y: -14, z: 0}
   m_Size: {x: 106, y: 63, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -8138,6 +8139,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4293220583025000123, guid: 1c9939c164b06d743a100779a906a1d9, type: 3}
+      propertyPath: keyManager
+      value: 
+      objectReference: {fileID: 1188111461}
     - target: {fileID: -4293220583025000123, guid: 1c9939c164b06d743a100779a906a1d9, type: 3}
       propertyPath: Key_Manager
       value: 
@@ -8445,6 +8450,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4293220583025000123, guid: 1c9939c164b06d743a100779a906a1d9, type: 3}
+      propertyPath: keyManager
+      value: 
+      objectReference: {fileID: 1188111461}
     - target: {fileID: -4293220583025000123, guid: 1c9939c164b06d743a100779a906a1d9, type: 3}
       propertyPath: Key_Manager
       value: 
@@ -8874,14 +8883,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beb68cf556e6b544abbb05941eb7efe4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door_to_remove: {fileID: 1188724178}
-  prev_audio: {fileID: 0}
-  next_audio: {fileID: 0}
-  temp_add: {fileID: 0}
-  perma_add: {fileID: 0}
-  key_num: 4
-  adds_sound: 0
-  wait_time: 0
+  doorToRemove: {fileID: 1188724178}
+  prevAudio: {fileID: 0}
+  nextAudio: {fileID: 0}
+  tempAdd: {fileID: 0}
+  permaAdd: {fileID: 0}
+  keyNum: 4
+  addsSound: 0
+  waitTime: 0
 --- !u!4 &1188111463
 Transform:
   m_ObjectHideFlags: 0
@@ -23102,6 +23111,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -4293220583025000123, guid: 1c9939c164b06d743a100779a906a1d9, type: 3}
+      propertyPath: keyManager
+      value: 
+      objectReference: {fileID: 1188111461}
+    - target: {fileID: -4293220583025000123, guid: 1c9939c164b06d743a100779a906a1d9, type: 3}
       propertyPath: Key_Manager
       value: 
       objectReference: {fileID: 1188111461}
@@ -23941,6 +23954,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4293220583025000123, guid: 1c9939c164b06d743a100779a906a1d9, type: 3}
+      propertyPath: keyManager
+      value: 
+      objectReference: {fileID: 1188111461}
     - target: {fileID: -4293220583025000123, guid: 1c9939c164b06d743a100779a906a1d9, type: 3}
       propertyPath: Key_Manager
       value: 
