@@ -29,6 +29,14 @@ public class GM : MonoBehaviour
     private const string DS_WORLD_NAME = "DS World Boss";
     private const string MAIN_MENU_WORLD = "Main Menu";
 
+    private const int DEFAULT_ATTACK_DAMAGE = 1;
+    private const int DEFAULT_HEALTH_POINTS = 10;
+
+    private const bool DEFAULT_ENABLE_PARTICLES = true;
+    
+    // TODO: What is the default vlalue?
+    private const int DEFAULT_GRAPHICS = 0;
+
     private string CurrentScene() {
         return SceneManager.GetActiveScene().name;
     }
@@ -48,6 +56,27 @@ public class GM : MonoBehaviour
         Debug.Log(itemCount);
     }
 
+    [System.Serializable]
+    public class GMException : System.Exception
+    {
+        public GMException() { }
+        public GMException(string message) : base(message) { }
+        public GMException(string message, System.Exception inner) : base(message, inner) { }
+        protected GMException(
+            System.Runtime.Serialization.SerializationInfo info,
+            System.Runtime.Serialization.StreamingContext context) : base(info, context) { }
+    }
+
+    private static bool asBool(int value) {
+        if (value == 0) return false;
+        if (value == 1) return true;
+        throw new GMException($"Expected boolean value to be either 0 or 1 but got {value} instead.");
+    }
+
+    private static int asInt(bool value) {
+        return value ? 1 : 0;
+    }
+
     private void Awake()
     {
 
@@ -57,21 +86,33 @@ public class GM : MonoBehaviour
             DontDestroyOnLoad(gameObject);
             
         }
+        
+        itemCount = PlayerPrefs.GetInt("hasItem1") + PlayerPrefs.GetInt("hasItem2") + PlayerPrefs.GetInt("hasItem3") + PlayerPrefs.GetInt("hasItem4");
+        hasItem1 = asBool(PlayerPrefs.GetInt("hasItem1", 0));
+        hasItem2 = asBool(PlayerPrefs.GetInt("hasItem2", 0));
+        hasItem3 = asBool(PlayerPrefs.GetInt("hasItem3", 0));
+        hasItem4 = asBool(PlayerPrefs.GetInt("hasItem4", 0));
+
+        attackDamage = PlayerPrefs.GetInt("attackDamage", DEFAULT_ATTACK_DAMAGE);
+        hP = PlayerPrefs.GetInt("hP", DEFAULT_HEALTH_POINTS);
+        enableParticles = asBool(PlayerPrefs.GetInt("enableParticles", asInt(DEFAULT_ENABLE_PARTICLES)));
+        graphics = PlayerPrefs.GetInt("graphics", DEFAULT_GRAPHICS);
     }
 
     public int GetItemCount()
     {
-        return itemCount;
+        return asInt(hasItem1) + asInt(hasItem2) + asInt(hasItem3) + asInt(hasItem4);
     }
 
     public void AddItem()
     {
-        itemCount += 1;
+        // Does nothing
     }
 
     public void GotItem1()
     {
         hasItem1 = true;
+        PlayerPrefs.SetInt("hasItem1", 1);
     }
 
     public bool GetItem1()
@@ -82,6 +123,7 @@ public class GM : MonoBehaviour
     public void GotItem2()
     {
         hasItem2 = true;
+        PlayerPrefs.SetInt("hasItem2", 1);
     }
 
     public bool GetItem2()
@@ -92,6 +134,7 @@ public class GM : MonoBehaviour
     public void GotItem3()
     {
         hasItem3 = true;
+        PlayerPrefs.SetInt("hasItem3", 1);
     }
 
     public bool GetItem3()
@@ -102,6 +145,7 @@ public class GM : MonoBehaviour
     public void GotItem4()
     {
         hasItem4 = true;
+        PlayerPrefs.SetInt("hasItem4", 1);
     }
 
     public bool GetItem4()
@@ -117,10 +161,12 @@ public class GM : MonoBehaviour
     public void AddAttackDamage(int damage)
     {
         attackDamage += damage;
+        PlayerPrefs.SetInt("attackDamage", damage);
     }
 
     public int GetHP()
     {
+        PlayerPrefs.SetInt("hP", hP);
         return hP;
     }
 
@@ -147,6 +193,7 @@ public class GM : MonoBehaviour
     public void SetParticle(bool ep)
     {
         enableParticles = ep;
+        PlayerPrefs.SetInt("enableParticles", asInt(ep));
     }
 
     public float GetVolume()
@@ -170,6 +217,7 @@ public class GM : MonoBehaviour
     {
         graphics = g;
         QualitySettings.SetQualityLevel(graphics);
+        PlayerPrefs.SetInt("graphics", g);
     }
 
 }

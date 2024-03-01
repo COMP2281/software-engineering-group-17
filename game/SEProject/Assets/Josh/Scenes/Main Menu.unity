@@ -589,7 +589,7 @@ GameObject:
   - component: {fileID: 148371529}
   - component: {fileID: 148371528}
   - component: {fileID: 148371527}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Viewport
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -753,7 +753,7 @@ GameObject:
   - component: {fileID: 196605344}
   - component: {fileID: 196605346}
   - component: {fileID: 196605345}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1068,7 +1068,7 @@ GameObject:
   - component: {fileID: 280101588}
   m_Layer: 5
   m_Name: Particle System
-  m_TagString: Untagged
+  m_TagString: particles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1207,7 +1207,7 @@ GameObject:
   - component: {fileID: 286209425}
   - component: {fileID: 286209427}
   - component: {fileID: 286209426}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2028,7 +2028,7 @@ GameObject:
   - component: {fileID: 575836902}
   - component: {fileID: 575836904}
   - component: {fileID: 575836903}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Item Checkmark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2128,7 +2128,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 101.9593, y: -12.6}
+  m_AnchoredPosition: {x: 101.9593, y: 30}
   m_SizeDelta: {x: 201.51, y: 37.7826}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &644713413
@@ -2235,7 +2235,7 @@ GameObject:
   m_Component:
   - component: {fileID: 852149681}
   - component: {fileID: 852149682}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Item
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2697,9 +2697,9 @@ GameObject:
   - component: {fileID: 1008017792}
   - component: {fileID: 1008017791}
   - component: {fileID: 1008017790}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Dropdown
-  m_TagString: Untagged
+  m_TagString: graphics
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2845,7 +2845,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1014780935}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Sliding Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2881,7 +2881,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1050972367}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3131,7 +3131,7 @@ GameObject:
   - component: {fileID: 1225977345}
   - component: {fileID: 1225977347}
   - component: {fileID: 1225977346}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3798,7 +3798,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 250, y: -12}
+  m_AnchoredPosition: {x: 100, y: -12}
   m_SizeDelta: {x: 201.51, y: 37.7826}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1513129875
@@ -4101,6 +4101,8 @@ MonoBehaviour:
   mainMenu: {fileID: 1772857673}
   particles: {fileID: 280101589}
   slider: {fileID: 0}
+  graphicsDropdown: {fileID: 0}
+  particlesToggle: {fileID: 0}
 --- !u!224 &1752727835
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4605,7 +4607,7 @@ GameObject:
   - component: {fileID: 1972148696}
   - component: {fileID: 1972148695}
   - component: {fileID: 1972148694}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Template
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4845,7 +4847,7 @@ GameObject:
   - component: {fileID: 2085629646}
   - component: {fileID: 2085629648}
   - component: {fileID: 2085629647}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Item Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4920,7 +4922,7 @@ GameObject:
   - component: {fileID: 2095972759}
   - component: {fileID: 2095972761}
   - component: {fileID: 2095972760}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Item Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5055,7 +5057,7 @@ GameObject:
   - component: {fileID: 2123765851}
   - component: {fileID: 2123765850}
   - component: {fileID: 2123765849}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Scrollbar
   m_TagString: Untagged
   m_Icon: {fileID: 0}

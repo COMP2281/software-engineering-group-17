@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using TMPro;
 
 public class MainMenuButtons : MonoBehaviour
 {
@@ -18,29 +19,70 @@ public class MainMenuButtons : MonoBehaviour
 
     public Toggle particles;
     public Slider slider;
-    private bool alreadyInitialised;
+    public TMPro.TMP_Dropdown graphicsDropdown;
+    public Toggle particlesToggle;
+    private bool initialisedVolume;
+    private bool initialisedGraphics;
+    private bool initialisedParticles;
     private const string HUB_WORLD_NAME = "Hub World New";
     private void Start()
     {
         Particles(particles);
     }
 
-    void Update() {
-        if (alreadyInitialised) return;
+    void loadVolumeSettings()
+    {
+        if (initialisedVolume) return;
         if (mix == null) return;
         if (GM.gmInstance == null) return;
         float value = PlayerPrefs.GetFloat("volume", 0);
         GM.gmInstance.SetVolume(value);
-        try {
+        try
+        {
             slider = GameObject.FindWithTag("volume").GetComponent<Slider>();
+        }
+        catch
+        {
+            return;
+        }
+        slider.value = value;
+        initialisedVolume = true;
+    }
+
+    void loadQualitySettings()
+    {
+        if (initialisedGraphics) return;
+        if (GM.gmInstance == null) return;
+        try {
+            graphicsDropdown = GameObject.FindWithTag("graphics").GetComponent<TMP_Dropdown>();
         }
         catch {
             return;
         }
-        slider.value = value;
-        alreadyInitialised = true;
+        graphicsDropdown.value = GM.gmInstance.GetGraphics();
+        initialisedGraphics = true;
     }
-    
+
+    void loadParticleSettings() {
+        if (initialisedParticles) return;
+        if (GM.gmInstance == null) return;
+        try {
+            particlesToggle = GameObject.FindWithTag("particles").GetComponent<Toggle>();
+        }
+        catch {
+            return;
+        }
+        particlesToggle.isOn = GM.gmInstance.GetParticle();
+        initialisedParticles = true;
+    }
+
+    void Update()
+    {
+        loadVolumeSettings();
+        loadQualitySettings();
+        loadParticleSettings();
+    }
+
     public void Quit()
     {
         Application.Quit();
@@ -48,12 +90,13 @@ public class MainMenuButtons : MonoBehaviour
 
     public void Volume(float volume)
     {
-        if (!alreadyInitialised) return;
+        if (!initialisedVolume) return;
         GM.gmInstance.SetVolume(volume);
     }
 
     public void Particles(bool disable_particles)
     {
+        if (!initialisedParticles) return;
         GM.gmInstance.SetParticle(disable_particles);
     }
 
@@ -80,6 +123,7 @@ public class MainMenuButtons : MonoBehaviour
 
     public void SetQuality(int quality)
     {
+        if (!initialisedGraphics) return;
         GM.gmInstance.SetGraphics(quality);
     }
 
