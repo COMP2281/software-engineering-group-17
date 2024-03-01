@@ -73,6 +73,41 @@ public class GM : MonoBehaviour
         hasItem1 = true;
     }
 
+    public bool GetItem1()
+    {
+        return hasItem1;
+    }
+
+    public void GotItem2()
+    {
+        hasItem2 = true;
+    }
+
+    public bool GetItem2()
+    {
+        return hasItem2;
+    }
+
+    public void GotItem3()
+    {
+        hasItem3 = true;
+    }
+
+    public bool GetItem3()
+    {
+        return hasItem3;
+    }
+
+    public void GotItem4()
+    {
+        hasItem4 = true;
+    }
+
+    public bool GetItem4()
+    {
+        return hasItem4;
+    }
+
     public int GetAttackDamage()
     {
         return attackDamage;
