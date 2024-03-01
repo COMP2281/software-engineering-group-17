@@ -17,6 +17,7 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject pauseMenu;
     public GameObject optionsMenu;
+    public GameObject inventory;
 
     public GameObject optionsFirst;
     public GameObject pauseFirst;
@@ -167,6 +168,13 @@ public class PauseMenu : MonoBehaviour
     public void SetQuality(int quality)
     {
         GM.gmInstance.SetGraphics(quality);
+    }
+
+    public void Inventory()
+    {
+        pauseMenu.SetActive(false);
+        inventory.SetActive(true);
+
     }
 
 

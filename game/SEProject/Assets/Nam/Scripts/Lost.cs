@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Lost : State
 {
@@ -12,6 +13,7 @@ public class Lost : State
     {
         BattleSystem.dialogue.text = "You have lost!";
         BattleSystem.buttonManager.ClearButtons();
-        yield break;
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene(BattleSystem.previousScene);
     }
 }

@@ -12,6 +12,8 @@ public class Begin : State
     {
         GameObject playerGo = Object.Instantiate(BattleSystem.playerPrefab);
         BattleSystem.playerUnit = playerGo.GetComponent<CombatUnit>();
+        BattleSystem.playerUnit.currentHp = GM.gmInstance.GetHP();
+        BattleSystem.playerUnit.damage = GM.gmInstance.GetAttackDamage();
 
         GameObject enemyGo = Object.Instantiate(BattleSystem.enemyPrefab);
         BattleSystem.enemyUnit = enemyGo.GetComponent<CombatUnit>();

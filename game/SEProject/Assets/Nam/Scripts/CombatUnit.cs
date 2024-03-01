@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CombatUnit : MonoBehaviour
 {
-    public string unitName;
+    public string unitName = "Player";
     public int damage;
     public int maxHp;
     public int currentHp;

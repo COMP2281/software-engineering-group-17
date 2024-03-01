@@ -24,8 +24,6 @@ public class KeyManager : MonoBehaviour
 
             else {
                 doorToRemove.SetActive(false);
-                prevAudio.SetActive(false);
-                nextAudio.SetActive(true);
             }
 
             opened = true;

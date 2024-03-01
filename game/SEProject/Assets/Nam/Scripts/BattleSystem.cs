@@ -20,6 +20,9 @@ public class BattleSystem : StateMachine
     public BattleHud playerHud;
     public BattleHud enemyHud;
 
+    public string nextScene;
+    public string previousScene;
+
     void Start()
     {
         SetState(new Begin(this));
