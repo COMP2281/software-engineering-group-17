@@ -3224,10 +3224,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac5ee9ac7b1b90847a5eea0363837cab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasItem1: 0
-  hasItem2: 0
-  hasItem3: 0
-  hasItem4: 0
   mastervol: {fileID: 24100000, guid: 93959bfcf3daa1048b50e9b20c468c2a, type: 2}
 --- !u!4 &1253532689
 Transform:
@@ -5215,6 +5211,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 1253532689}
   - {fileID: 923533217}
-  - {fileID: 1880744069}
-  - {fileID: 273551978}
   - {fileID: 1117786565}
+  - {fileID: 273551978}
+  - {fileID: 1880744069}

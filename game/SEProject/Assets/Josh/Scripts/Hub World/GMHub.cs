@@ -31,23 +31,23 @@ public class GMHub : MonoBehaviour
             aIMagicCircle.GetComponent<CircleCollider2D>().enabled = false;
         }
         */
-        if (GM.itemCount == 0)
+        if (GM.gmInstance.GetItemCount() == 0)
         {
             entry1.SetActive(true);
         }
-        else if (GM.itemCount == 1)
+        else if (GM.gmInstance.GetItemCount() == 1)
         {
             entry2.SetActive(true);
         }
-        else if (GM.itemCount == 2)
+        else if (GM.gmInstance.GetItemCount() == 2)
         {
             entry3.SetActive(true);
         }
-        else if (GM.itemCount == 3)
+        else if (GM.gmInstance.GetItemCount() == 3)
         {
             entry4.SetActive(true);
         }
-        else if (GM.itemCount == 4)
+        else if (GM.gmInstance.GetItemCount() == 4)
         {
             entry5.SetActive(true);
         }

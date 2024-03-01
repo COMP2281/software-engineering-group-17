@@ -44,7 +44,7 @@ public class PlayerTurn : State
             BattleSystem.enemyPrefab.gameObject.transform.GetChild(0).gameObject.SetActive(true);
         }
 
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
         for (int i = 0; i < 2; i++)
         {
             BattleSystem.playerPrefab.gameObject.transform.GetChild(i).gameObject.SetActive(false);
