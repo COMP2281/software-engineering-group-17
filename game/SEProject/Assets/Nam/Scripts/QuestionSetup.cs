@@ -34,7 +34,7 @@ public class QuestionSetup : MonoBehaviour
         questions = new List<QuestionData>(Resources.LoadAll<QuestionData>($"{world}"));
     }
 
-    public void generate()
+    public void Generate()
     {
         SelectNewQuestion();
         buttonManager.DisplayButtons(numberOfAnswers);
