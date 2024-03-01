@@ -154,3 +154,24 @@
   - Start planning for Presentation
   - Tidy up combat
   - Improve save system
+
+# Week 17 Minutes
+**Last Week's Goals**: Achieved
+- Major work done on user manual:
+  - Charles: 4.2.4, 4.4.3, 5.4
+  - Josh: 2.3, 4.1.1, 4.1.2, 4.3, 4.4.2, 4.4.4, 5.4
+  - James: 3.4.2, 4.4, 4.4.5, 4.4.6
+  - Nam: 1.5.4
+  - Sam: 5.4
+- Major Game Progress Made:
+  - Added major game progression elements
+  - Tidied up combat
+  - Added boss fight cutscenes
+  - Added NPCs in the hub world
+  - Save system functioning as intended
+  - Imported questions into overworld
+- Planned who will be performing each section for the presentation.
+- Goals for the week
+  - Finish User Manual
+  - Make major progress on presentation
+  - Tidy up game for presenting
