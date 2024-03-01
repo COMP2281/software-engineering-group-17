@@ -753,7 +753,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5398377470443930699, guid: d7df7f66c797b3d40b97bd2a6e8fe633, type: 3}
       propertyPath: cooldownTime
-      value: 0.1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5398377470443930699, guid: d7df7f66c797b3d40b97bd2a6e8fe633, type: 3}
       propertyPath: disableOnUse
@@ -2826,7 +2826,7 @@ MonoBehaviour:
   canShield: 1
   isShielding: 0
   shieldBarObject: {fileID: 777438237}
-  rate_decrease: 0.5
+  rateDecrease: 0.3
 --- !u!61 &586398420
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3244,7 +3244,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5398377470443930699, guid: d7df7f66c797b3d40b97bd2a6e8fe633, type: 3}
       propertyPath: cooldownTime
-      value: 0.1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5398377470443930699, guid: d7df7f66c797b3d40b97bd2a6e8fe633, type: 3}
       propertyPath: disableOnUse
@@ -4744,11 +4744,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6375653036402327178, guid: ca6004481edb3d145a861aed5ae4ae6e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.1
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 6375653036402327178, guid: ca6004481edb3d145a861aed5ae4ae6e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14.7
+      value: -1.83
       objectReference: {fileID: 0}
     - target: {fileID: 6375653036402327178, guid: ca6004481edb3d145a861aed5ae4ae6e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5680,9 +5680,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hearts: []
-  max_hearts: 5
-  heart_num: 0
-  new_heart_num: 0
+  maxHearts: 5
+  heartNum: 0
+  newHeartNum: 0
   player: {fileID: 0}
 --- !u!222 &1391458395
 CanvasRenderer:
@@ -137970,7 +137970,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5398377470443930699, guid: d7df7f66c797b3d40b97bd2a6e8fe633, type: 3}
       propertyPath: cooldownTime
-      value: 0.1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5398377470443930699, guid: d7df7f66c797b3d40b97bd2a6e8fe633, type: 3}
       propertyPath: disableOnUse
@@ -138304,7 +138304,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5398377470443930699, guid: d7df7f66c797b3d40b97bd2a6e8fe633, type: 3}
       propertyPath: cooldownTime
-      value: 0.1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5398377470443930699, guid: d7df7f66c797b3d40b97bd2a6e8fe633, type: 3}
       propertyPath: disableOnUse
