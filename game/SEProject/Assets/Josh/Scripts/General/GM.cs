@@ -7,12 +7,15 @@ using UnityEngine.SceneManagement;
 public class GM : MonoBehaviour
 {
     public static GM gmInstance;
-    public bool hasItem1;
-    public bool hasItem2;
-    public bool hasItem3;  
-    public bool hasItem4;
+    private bool hasItem1;
+    private bool hasItem2;
+    private bool hasItem3;  
+    private bool hasItem4;
 
-    public static int itemCount = 0;
+    private int itemCount = 0;
+
+    private int attackDamage = 1;
+    private int hP = 10;
 
     private bool enableParticles;
 
@@ -53,6 +56,41 @@ public class GM : MonoBehaviour
             DontDestroyOnLoad(gameObject);
             
         }
+    }
+
+    public int GetItemCount()
+    {
+        return itemCount;
+    }
+
+    public void AddItem()
+    {
+        itemCount += 1;
+    }
+
+    public void GotItem1()
+    {
+        hasItem1 = true;
+    }
+
+    public int GetAttackDamage()
+    {
+        return attackDamage;
+    }
+
+    public void AddAttackDamage(int damage)
+    {
+        attackDamage += damage;
+    }
+
+    public int GetHP()
+    {
+        return hP;
+    }
+
+    public void AddHP(int hp)
+    {
+        hP += hp;
     }
 
 
