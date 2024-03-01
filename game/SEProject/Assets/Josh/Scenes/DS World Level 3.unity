@@ -347,7 +347,7 @@ Transform:
   m_GameObject: {fileID: 37432573}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.079994, y: -1.7199996, z: 0}
+  m_LocalPosition: {x: 10.17, y: -0.86, z: 0}
   m_LocalScale: {x: 2.8075, y: 2.8075, z: 2.8075}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -838,10 +838,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Answer 4
-
-
-'
+  m_text: Refers to the trustworthiness of the data
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1304,7 +1301,7 @@ Transform:
   m_GameObject: {fileID: 312983121}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.119995, y: -1.6700001, z: 0}
+  m_LocalPosition: {x: 3.1, y: -0.87, z: 0}
   m_LocalScale: {x: 2.8075, y: 2.8075, z: 2.8075}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -28395,9 +28392,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Question mmmm
-
-'
+  m_text: When thinking about the 5 main Vs of data, what does Veracity refer to?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -29876,7 +29871,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Answer 3
+  m_text: 'Refers to the vast amounts of data generated every second
 
 
 '
@@ -30635,7 +30630,7 @@ Transform:
   m_GameObject: {fileID: 1199184653}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.17, y: -14.68, z: 0}
+  m_LocalPosition: {x: -9.1, y: -14.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -41028,7 +41023,7 @@ Transform:
   m_GameObject: {fileID: 1397092675}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.099998, y: -4.92, z: 0}
+  m_LocalPosition: {x: 10.17, y: -5.93, z: 0}
   m_LocalScale: {x: 2.8075, y: 2.8075, z: 2.8075}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -41752,9 +41747,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Answer 2
-
-'
+  m_text: Refers to the different types of data we can now use
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -43421,7 +43414,7 @@ Transform:
   m_GameObject: {fileID: 1946474701}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.699997, y: -3.3600001, z: 0}
+  m_LocalPosition: {x: 6.75, y: -3.39, z: 0}
   m_LocalScale: {x: 2.8075, y: 2.8075, z: 2.8075}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -43484,7 +43477,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Answer 1
+  m_text: Refers to the speed at which new data is generated and the speed at which
+    data moves around
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -43511,8 +43505,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 33
+  m_fontSizeBase: 33
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -50713,7 +50707,7 @@ Transform:
   m_GameObject: {fileID: 2086944210}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.119995, y: -4.9399986, z: 0}
+  m_LocalPosition: {x: 3.15, y: -5.92, z: 0}
   m_LocalScale: {x: 2.8075, y: 2.8075, z: 2.8075}
   m_ConstrainProportionsScale: 0
   m_Children: []

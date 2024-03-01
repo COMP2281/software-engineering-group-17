@@ -157,8 +157,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 657}
-  m_SizeDelta: {x: 800, y: 118.9403}
+  m_AnchoredPosition: {x: 21.8626, y: 431}
+  m_SizeDelta: {x: 584.288, y: 118.9403}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &15227867
 MonoBehaviour:
@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2e62cb66a22acff4783e8530e315b838, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2dee2a3ae7aa60d4ea956f6c0a1666a8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2801,6 +2801,10 @@ PrefabInstance:
     - target: {fileID: 2005766624886794962, guid: ae583af61ecfdd847b81b1b99661f4d1, type: 3}
       propertyPath: unitName
       value: Co-worker
+      objectReference: {fileID: 0}
+    - target: {fileID: 2005766624886794962, guid: ae583af61ecfdd847b81b1b99661f4d1, type: 3}
+      propertyPath: currentHp
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2155266804669529768, guid: ae583af61ecfdd847b81b1b99661f4d1, type: 3}
       propertyPath: m_Name

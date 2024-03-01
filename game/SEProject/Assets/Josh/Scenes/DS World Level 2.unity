@@ -656,7 +656,7 @@ Transform:
   m_GameObject: {fileID: 96142301}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.1985757, y: -1.1576135, z: 0}
+  m_LocalPosition: {x: 2.85, y: -1.43, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1392,7 +1392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1041991389}
-  correct_answer: 0
+  correct_answer: 1
   correct_answerbox: {fileID: 1499562986}
   wrong_answerbox: {fileID: 1346162513}
   wall: {fileID: 1610106486}
@@ -6925,7 +6925,7 @@ Transform:
   m_GameObject: {fileID: 515489731}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.33, y: -0.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7025,7 +7025,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Answer 1
+  m_text: Having a sense of curiosity about all things
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -12490,7 +12490,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.6069, y: -128.35086}
+  m_AnchoredPosition: {x: -2.6069, y: -127.94}
   m_SizeDelta: {x: 672.7863, y: 93.0517}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &718266003
@@ -12513,7 +12513,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Question text ah yes mmm very good
+  m_text: Which of the following is one of the most fundamental characteristics of
+    a data scientist?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -12540,8 +12541,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 33
+  m_fontSizeBase: 33
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -13101,9 +13102,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Answer 2
-
-'
+  m_text: Being proficient in R or Python
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -13615,7 +13614,7 @@ Transform:
   m_GameObject: {fileID: 1041991388}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.17, y: -11.9, z: 0}
+  m_LocalPosition: {x: -7.92, y: -11.84, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15003,7 +15002,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Answer 3
+  m_text: 'Using open-source software libraries and packages
 
 
 '
@@ -15153,7 +15152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1041991389}
-  correct_answer: 1
+  correct_answer: 0
   correct_answerbox: {fileID: 1499562986}
   wrong_answerbox: {fileID: 1346162513}
   wall: {fileID: 1610106486}
@@ -21488,7 +21487,7 @@ Transform:
   m_GameObject: {fileID: 1659379091}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.1647367, z: 0}
+  m_LocalPosition: {x: 0.36, y: -1.41, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -30660,7 +30659,7 @@ Transform:
   m_GameObject: {fileID: 1815318756}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.1914518, y: -0.017809168, z: 0}
+  m_LocalPosition: {x: 2.87, y: 0.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -30967,7 +30966,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Answer 4
+  m_text: 'Having a strong background in high power computing (HPC)
 
 
 '
