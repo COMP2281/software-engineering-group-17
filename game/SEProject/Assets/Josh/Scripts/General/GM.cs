@@ -45,6 +45,7 @@ public class GM : MonoBehaviour
     {
         if (CurrentScene() == MAIN_MENU_WORLD) return;
         PlayerPrefs.SetString("last-scene", CurrentScene());
+        Debug.Log(itemCount);
     }
 
     private void Awake()
