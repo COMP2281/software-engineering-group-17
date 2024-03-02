@@ -4,14 +4,13 @@ using UnityEngine;
 public abstract class TurretStateMachine : MonoBehaviour
 {
     public GameObject[] spawnPoints;
-    public float beamStartup = 0.4f;
     public float[] rotationSpeeds;
     public GameObject[] prefabs;
     public float[] prefabAttributes;
     protected bool isFiring;
     public int straightFireNum;
     public float straightFireRate;
-    public int[] nextState = new int [4] {1, 2, 3, 0};
+    public int[] nextState;
     protected int spawnPointsNum;
     protected float startAngle;
     public bool startRotation;
@@ -117,7 +116,6 @@ public abstract class TurretStateMachine : MonoBehaviour
             if (spawnPoints[i].name.Contains("Beam")) {
                 GameObject beam = Instantiate(prefab, spawnPoints[i].transform.position, spawnPoints[i].transform.rotation*Quaternion.Euler(0, 0, -90));
                 beam.GetComponent<Beam>().deathTime = prefabAttributes[(int)state];
-                beam.GetComponent<Beam>().startPhaseTime = beamStartup;
                 beam.GetComponent<Beam>().spawnPoint = spawnPoints[i];
             }
         } 

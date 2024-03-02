@@ -82,8 +82,8 @@ public class Timer2 : MonoBehaviour
 
     void TimerEnded()
     {
-        player.canMove = false;
-        player.canMove = false;
+        player.canmove = false;
+        player.canmove = false;
         StartCoroutine(Restart());
     }
 
