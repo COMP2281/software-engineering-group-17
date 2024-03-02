@@ -4,6 +4,7 @@ using UnityEngine;
 public class BasicEnemyTurret : TurretStateMachine {
     public float[] stateTimers = new float[4] {1f, 1f, 1f, 1f};
     public float[] reloadingTimes = new float[4] {0.5f, 0.5f, 0.5f, 0.5f};
+
     public float rotationSpeed;
     public float acceleration;
     public float deceleration;
@@ -15,6 +16,7 @@ public class BasicEnemyTurret : TurretStateMachine {
     void Start() {
         SetStartAngle();
         GetSpawnPoints();
+        nextState = new int [4] {1, 2, 3, 0};
         StartCoroutine(ShootHandler());
     }
 
