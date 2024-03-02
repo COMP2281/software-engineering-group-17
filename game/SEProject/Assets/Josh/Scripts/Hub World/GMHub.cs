@@ -19,18 +19,18 @@ public class GMHub : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        /*
-        if (GM.gmInstance.hasItem1)
+        
+        if (GM.gmInstance.GetItem1())
         {
             cloudMagicCircle.GetComponent<HubBackground>().enabled = false;
             cloudMagicCircle.GetComponent<CircleCollider2D>().enabled = false;
         }
-        if (GM.gmInstance.hasItem2)
+        if (GM.gmInstance.GetItem2())
         {
             aIMagicCircle.GetComponent<HubBackground>().enabled = false;
             aIMagicCircle.GetComponent<CircleCollider2D>().enabled = false;
         }
-        */
+        
         if (GM.gmInstance.GetItemCount() == 0)
         {
             entry1.SetActive(true);

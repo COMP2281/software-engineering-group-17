@@ -28,6 +28,7 @@ public class PauseMenu : MonoBehaviour
     private bool alreadyInitialised;
 
     public GameObject combatText;
+    public GameObject saveText;
     private void Start()
     {
         particle.isOn = GM.gmInstance.GetParticle();
@@ -85,6 +86,7 @@ public class PauseMenu : MonoBehaviour
     {
         pauseMenu.SetActive(true);
         optionsMenu.SetActive(false);
+        inventory.SetActive(false);
         EventSystem.current.SetSelectedGameObject(null);
         EventSystem.current.SetSelectedGameObject(pauseFirst);
     }
@@ -93,6 +95,7 @@ public class PauseMenu : MonoBehaviour
     {
         pauseMenu.SetActive(false);
         optionsMenu.SetActive(true);
+        inventory.SetActive(false);
         EventSystem.current.SetSelectedGameObject(null);
         EventSystem.current.SetSelectedGameObject(optionsFirst);
         
@@ -173,8 +176,21 @@ public class PauseMenu : MonoBehaviour
     public void Inventory()
     {
         pauseMenu.SetActive(false);
+        optionsMenu.SetActive(false);
         inventory.SetActive(true);
 
+    }
+
+    public void Save()
+    {
+        saveText.SetActive(true);
+        StartCoroutine(RemoveSaveText());
+    }
+
+    IEnumerator RemoveSaveText()
+    {
+        yield return new WaitForSecondsRealtime(3);
+        saveText.SetActive(false);
     }
 
 
