@@ -2563,7 +2563,6 @@ MonoBehaviour:
   nameText: {fileID: 1160013458}
   hpText: {fileID: 2039843844}
   currentHp: 0
-  maxHp: 0
 --- !u!114 &1194941448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2783,7 +2782,6 @@ MonoBehaviour:
   nameText: {fileID: 1972792823}
   hpText: {fileID: 711309300}
   currentHp: 0
-  maxHp: 0
 --- !u!114 &1632352475
 MonoBehaviour:
   m_ObjectHideFlags: 0
