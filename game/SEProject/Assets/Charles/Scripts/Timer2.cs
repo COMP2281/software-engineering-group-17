@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -6,7 +7,8 @@ using UnityEngine.UI;
 public class Timer2 : MonoBehaviour
 {
     public PlayerMovement2 player;
-
+    public GameObject[] previousMusic;
+    public int previousMusicNum;
     public float targetTime = 60.0f;
 
     private bool startTimer = false;
@@ -91,7 +93,11 @@ public class Timer2 : MonoBehaviour
     {
         if (collision.tag.Equals("Player"))
         {
+            for (int i = 0; i < previousMusicNum; i++) {
+                previousMusic[i].SetActive(false);
+            }
             startTimer = true;
+            timeText.enabled = true;
             box.enabled = false;
         }
     }

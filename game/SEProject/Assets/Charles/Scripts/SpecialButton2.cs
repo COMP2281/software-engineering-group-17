@@ -25,19 +25,11 @@ public class SpecialButton2 : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1") && inRange)
         {
+            player.canMove = false;
             clip.Play();
             if (correct_answer)
             {
                 StartCoroutine(End());
-                if (correct_answerbox.activeInHierarchy)
-                {
-                    correct_answerbox.SetActive(false);
-                }
-                else
-                {
-                    correct_answerbox.SetActive(true);
-                }
-                StartCoroutine(OpenDoor());
             }
             else
             {
@@ -72,18 +64,13 @@ public class SpecialButton2 : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         wrong_answerbox.SetActive(false);
-        Destroy(this.gameObject);
-    }
-
-    IEnumerator OpenDoor()
-    {
-        yield return new WaitForSeconds(2);
-        correct_answerbox.SetActive(false);
+        player.canMove = true;
         Destroy(this.gameObject);
     }
 
     IEnumerator End()
     {
+        correct_answerbox.SetActive(true);
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
     }
