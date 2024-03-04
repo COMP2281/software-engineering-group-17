@@ -62,5 +62,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Charles/AI-World/Puzzle-4.unity
     guid: 1008a48ab548a3a4889b4645f531688f
+  - enabled: 1
+    path: Assets/Charles/AI-World/Puzzle-Boss.unity
+    guid: c2fe8b32eafba794b89948bc916c920f
+  - enabled: 1
+    path: Assets/Charles/AI-World/AI-Combat.unity
+    guid: 54f6f5f37657a084bb4a7a4b33be3860
+  - enabled: 1
+    path: Assets/Charles/AI-World/AI-World-Complete.unity
+    guid: 1cda1305b6cb78a48b42fbda6afa3b86
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 517a42f1583a77d4798879b47da499b9, type: 2}
