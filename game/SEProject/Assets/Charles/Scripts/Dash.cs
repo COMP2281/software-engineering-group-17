@@ -55,7 +55,6 @@ public class Dash : MonoBehaviour
 
         rb.velocity = new Vector2(x*dashForce, y*dashForce);
         yield return new WaitForSeconds(dashTime);
-
         isDashing = false;
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;

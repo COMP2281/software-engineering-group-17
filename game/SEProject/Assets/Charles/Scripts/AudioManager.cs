@@ -12,6 +12,7 @@ public class AudioManager : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other) {
         if (other.tag.Equals("Player")){
+            Debug.Log("Stop");
             backgroundMusic.Stop();
         }
     }

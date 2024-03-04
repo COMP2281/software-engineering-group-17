@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -15,7 +16,7 @@ public class PlayerMovement2 : MonoBehaviour
     Vector2 movement;
  
 
-    public bool canmove = true;
+    public bool canMove = true;
 
     public Animator anim;
 
@@ -51,8 +52,7 @@ public class PlayerMovement2 : MonoBehaviour
     // Update is called once per frame (framrate dependent)
     void Update()
     {
-        
-        if (canmove)
+        if (canMove)
         {
             
             movement.x = Input.GetAxisRaw("Horizontal");
@@ -90,7 +90,7 @@ public class PlayerMovement2 : MonoBehaviour
                 up = false;
             }
         }
-        else if (!canmove && isfrozen)
+        else if (!canMove && isfrozen)
         {
             if (right)
             {
@@ -187,7 +187,7 @@ public class PlayerMovement2 : MonoBehaviour
         {
             freezingcold = true;
             isfrozen = true;
-            canmove = false;
+            canMove = false;
             StartCoroutine(Unfreeze());
         }
        
@@ -199,7 +199,7 @@ public class PlayerMovement2 : MonoBehaviour
         {
             freezingcold = false;
             isfrozen = false;
-            canmove = true;
+            canMove = true;
             //StartCoroutine(Unfreeze());
         }
     }
@@ -209,7 +209,7 @@ public class PlayerMovement2 : MonoBehaviour
         if (isfrozen)
         {
             yield return new WaitForSeconds(unfreezetime);
-            canmove = true;
+            canMove = true;
             isfrozen = false;
         }
     }
@@ -217,7 +217,7 @@ public class PlayerMovement2 : MonoBehaviour
     IEnumerator Frozen()
     {
         
-        canmove = false;
+        canMove = false;
         yield return new WaitForSeconds(5);
         
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
