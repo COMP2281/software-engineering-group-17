@@ -48,7 +48,7 @@ public class PostBattleCutscene : MonoBehaviour
                 }
 
                 
-                GM.gmInstance.AddItem();
+                dialogueCounter = 0;
                 Destroy(this.gameObject);
             }
         }
