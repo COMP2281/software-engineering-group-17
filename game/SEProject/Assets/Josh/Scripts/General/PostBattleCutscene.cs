@@ -36,8 +36,19 @@ public class PostBattleCutscene : MonoBehaviour
                 startConvo = false;
                 powerUp.SetActive(true);
                 coWorker.SetActive(false);
-                GM.gmInstance.GotItem1();
-                GM.gmInstance.AddItem();
+
+
+                if(SceneManager.GetActiveScene().name == "DS World Boss Complete")
+                {
+                    GM.gmInstance.GotItem1();
+                }
+                else if(SceneManager.GetActiveScene().name == "AI-World-Complete")
+                {
+                    GM.gmInstance.GotItem2();
+                }
+
+                
+                dialogueCounter = 0;
                 Destroy(this.gameObject);
             }
         }

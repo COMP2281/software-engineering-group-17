@@ -7,14 +7,14 @@ using UnityEngine.SceneManagement;
 public class GM : MonoBehaviour
 {
     public static GM gmInstance;
-    private bool hasItem1;
-    private bool hasItem2;
-    private bool hasItem3;  
-    private bool hasItem4;
+    private bool hasItem1 = false;
+    private bool hasItem2 = false;
+    private bool hasItem3 = false;  
+    private bool hasItem4 = false;
 
     private int itemCount = 0;
 
-    private int attackDamage = 1;
+    private int attackDamage = 2;
     private int hP = 10;
 
     private bool enableParticles;
@@ -29,31 +29,34 @@ public class GM : MonoBehaviour
     private const string DS_WORLD_NAME = "DS World Boss";
     private const string MAIN_MENU_WORLD = "Main Menu";
 
-    private const int DEFAULT_ATTACK_DAMAGE = 1;
+    private const int DEFAULT_ATTACK_DAMAGE = 2;
     private const int DEFAULT_HEALTH_POINTS = 10;
 
     private const bool DEFAULT_ENABLE_PARTICLES = true;
-    
+
     // TODO: What is the default vlalue?
     private const int DEFAULT_GRAPHICS = 0;
 
-    private string CurrentScene() {
+    private string CurrentScene()
+    {
         return SceneManager.GetActiveScene().name;
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        if(CurrentScene() == HUB_WORLD_NAME || CurrentScene() == DS_WORLD_NAME)
+        if (CurrentScene() == HUB_WORLD_NAME || CurrentScene() == DS_WORLD_NAME)
         {
-            Destroy(MusicManager.instance.gameObject);
+            if (MusicManager.instance != null)
+                Destroy(MusicManager.instance.gameObject);
         }
     }
     private void Update()
     {
         if (CurrentScene() == MAIN_MENU_WORLD) return;
         PlayerPrefs.SetString("last-scene", CurrentScene());
-        Debug.Log(itemCount);
+        //Debug.Log(itemCount);
+        Debug.Log(asInt(hasItem1));
     }
 
     [System.Serializable]
@@ -67,13 +70,15 @@ public class GM : MonoBehaviour
             System.Runtime.Serialization.StreamingContext context) : base(info, context) { }
     }
 
-    private static bool asBool(int value) {
+    private static bool asBool(int value)
+    {
         if (value == 0) return false;
         if (value == 1) return true;
         throw new GMException($"Expected boolean value to be either 0 or 1 but got {value} instead.");
     }
 
-    private static int asInt(bool value) {
+    private static int asInt(bool value)
+    {
         return value ? 1 : 0;
     }
 
@@ -84,9 +89,9 @@ public class GM : MonoBehaviour
         {
             gmInstance = this;
             DontDestroyOnLoad(gameObject);
-            
+
         }
-        
+
         itemCount = PlayerPrefs.GetInt("hasItem1") + PlayerPrefs.GetInt("hasItem2") + PlayerPrefs.GetInt("hasItem3") + PlayerPrefs.GetInt("hasItem4");
         hasItem1 = asBool(PlayerPrefs.GetInt("hasItem1", 0));
         hasItem2 = asBool(PlayerPrefs.GetInt("hasItem2", 0));
@@ -102,11 +107,6 @@ public class GM : MonoBehaviour
     public int GetItemCount()
     {
         return asInt(hasItem1) + asInt(hasItem2) + asInt(hasItem3) + asInt(hasItem4);
-    }
-
-    public void AddItem()
-    {
-        // Does nothing
     }
 
     public void GotItem1()
@@ -178,10 +178,25 @@ public class GM : MonoBehaviour
 
     public void NewGame()
     {
+        resetSave();
         SceneManager.LoadScene(HUB_WORLD_NAME);
     }
 
-    public void LoadFromSave() {
+    private void resetSave()
+    {
+        PlayerPrefs.SetInt("hasItem1", 0);
+        PlayerPrefs.SetInt("hasItem2", 0);
+        PlayerPrefs.SetInt("hasItem3", 0);
+        PlayerPrefs.SetInt("hasItem4", 0);
+
+        PlayerPrefs.SetInt("attackDamage", DEFAULT_ATTACK_DAMAGE);
+        PlayerPrefs.SetInt("hP", DEFAULT_HEALTH_POINTS);
+        PlayerPrefs.SetInt("enableParticles", asInt(DEFAULT_ENABLE_PARTICLES));
+        PlayerPrefs.SetInt("graphics", DEFAULT_GRAPHICS);
+    }
+
+    public void LoadFromSave()
+    {
         SceneManager.LoadScene(PlayerPrefs.GetString("last-scene", HUB_WORLD_NAME));
     }
 

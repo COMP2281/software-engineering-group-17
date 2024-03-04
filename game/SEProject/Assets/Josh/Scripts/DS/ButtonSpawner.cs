@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ButtonSpawner : MonoBehaviour
@@ -62,7 +63,10 @@ public class ButtonSpawner : MonoBehaviour
         }
         counterText.text = hitCounter.ToString();
 
-
+        if (Input.GetButtonDown("Fire3"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 
     void Spawn(int numb)

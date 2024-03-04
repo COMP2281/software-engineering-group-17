@@ -231,7 +231,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.6069, y: -128.35086}
+  m_AnchoredPosition: {x: -2.6069, y: -137.1}
   m_SizeDelta: {x: 672.7863, y: 93.0517}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &110756447
@@ -254,7 +254,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hit the button 15 times. You have 2 minutes! The arrow will guide you
+  m_text: Hit the button 15 times. You have 2 minutes! The arrow will guide you.
+    Use left shift to reset the level if necessary.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -281,8 +282,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 34
-  m_fontSizeBase: 34
+  m_fontSize: 26
+  m_fontSizeBase: 26
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -465,11 +466,11 @@ Transform:
   m_GameObject: {fileID: 144555139}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 33.13, y: -19.44, z: -9.235956}
+  m_LocalPosition: {x: 29.11923, y: -9.725768, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2075759122}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &144555141
 BoxCollider2D:
@@ -91828,7 +91829,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 144555140}
   - {fileID: 1331978358}
   - {fileID: 1366880182}
   m_Father: {fileID: 0}
@@ -91842,6 +91842,7 @@ SceneRoots:
   - {fileID: 1377575599}
   - {fileID: 258217920}
   - {fileID: 2075759122}
+  - {fileID: 144555140}
   - {fileID: 413838580}
   - {fileID: 685486712}
   - {fileID: 456085507}
