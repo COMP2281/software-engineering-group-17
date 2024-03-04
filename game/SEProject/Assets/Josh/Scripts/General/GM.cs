@@ -29,7 +29,7 @@ public class GM : MonoBehaviour
     private const string DS_WORLD_NAME = "DS World Boss";
     private const string MAIN_MENU_WORLD = "Main Menu";
 
-    private const int DEFAULT_ATTACK_DAMAGE = 1;
+    private const int DEFAULT_ATTACK_DAMAGE = 2;
     private const int DEFAULT_HEALTH_POINTS = 10;
 
     private const bool DEFAULT_ENABLE_PARTICLES = true;
@@ -53,7 +53,27 @@ public class GM : MonoBehaviour
     {
         if (CurrentScene() == MAIN_MENU_WORLD) return;
         PlayerPrefs.SetString("last-scene", CurrentScene());
-        Debug.Log(itemCount);
+    }
+
+    [System.Serializable]
+    public class GMException : System.Exception
+    {
+        public GMException() { }
+        public GMException(string message) : base(message) { }
+        public GMException(string message, System.Exception inner) : base(message, inner) { }
+        protected GMException(
+            System.Runtime.Serialization.SerializationInfo info,
+            System.Runtime.Serialization.StreamingContext context) : base(info, context) { }
+    }
+
+    private static bool asBool(int value) {
+        if (value == 0) return false;
+        if (value == 1) return true;
+        throw new GMException($"Expected boolean value to be either 0 or 1 but got {value} instead.");
+    }
+
+    private static int asInt(bool value) {
+        return value ? 1 : 0;
     }
 
     [System.Serializable]

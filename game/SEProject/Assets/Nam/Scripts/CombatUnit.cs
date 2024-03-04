@@ -6,7 +6,6 @@ public class CombatUnit : MonoBehaviour
 {
     public string unitName = "Player";
     public int damage;
-    public int maxHp;
     public int currentHp;
 
     public bool TakeDamage(int dmg)
