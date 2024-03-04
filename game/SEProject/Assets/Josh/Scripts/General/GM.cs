@@ -178,7 +178,20 @@ public class GM : MonoBehaviour
 
     public void NewGame()
     {
+        resetSave();
         SceneManager.LoadScene(HUB_WORLD_NAME);
+    }
+
+    private void resetSave() {
+        PlayerPrefs.SetInt("hasItem1", 0)
+        PlayerPrefs.SetInt("hasItem2", 0);
+        PlayerPrefs.SetInt("hasItem3", 0);
+        PlayerPrefs.SetInt("hasItem4", 0);
+
+        PlayerPrefs.SetInt("attackDamage", DEFAULT_ATTACK_DAMAGE);
+        PlayerPrefs.SetInt("hP", DEFAULT_HEALTH_POINTS);
+        PlayerPrefs.SetInt("enableParticles", asInt(DEFAULT_ENABLE_PARTICLES));
+        PlayerPrefs.SetInt("graphics", DEFAULT_GRAPHICS);
     }
 
     public void LoadFromSave() {
