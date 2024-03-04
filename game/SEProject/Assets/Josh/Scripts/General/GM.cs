@@ -9,7 +9,7 @@ public class GM : MonoBehaviour
     public static GM gmInstance;
     private bool hasItem1;
     private bool hasItem2;
-    private bool hasItem3;  
+    private bool hasItem3;
     private bool hasItem4;
 
     private int itemCount = 0;
@@ -33,20 +33,22 @@ public class GM : MonoBehaviour
     private const int DEFAULT_HEALTH_POINTS = 10;
 
     private const bool DEFAULT_ENABLE_PARTICLES = true;
-    
+
     // TODO: What is the default vlalue?
     private const int DEFAULT_GRAPHICS = 0;
 
-    private string CurrentScene() {
+    private string CurrentScene()
+    {
         return SceneManager.GetActiveScene().name;
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        if(CurrentScene() == HUB_WORLD_NAME || CurrentScene() == DS_WORLD_NAME)
+        if (CurrentScene() == HUB_WORLD_NAME || CurrentScene() == DS_WORLD_NAME)
         {
-            Destroy(MusicManager.instance.gameObject);
+            if (MusicManager.instance != null)
+                Destroy(MusicManager.instance.gameObject);
         }
     }
     private void Update()
@@ -66,13 +68,15 @@ public class GM : MonoBehaviour
             System.Runtime.Serialization.StreamingContext context) : base(info, context) { }
     }
 
-    private static bool asBool(int value) {
+    private static bool asBool(int value)
+    {
         if (value == 0) return false;
         if (value == 1) return true;
         throw new GMException($"Expected boolean value to be either 0 or 1 but got {value} instead.");
     }
 
-    private static int asInt(bool value) {
+    private static int asInt(bool value)
+    {
         return value ? 1 : 0;
     }
 
@@ -83,9 +87,9 @@ public class GM : MonoBehaviour
         {
             gmInstance = this;
             DontDestroyOnLoad(gameObject);
-            
+
         }
-        
+
         itemCount = PlayerPrefs.GetInt("hasItem1") + PlayerPrefs.GetInt("hasItem2") + PlayerPrefs.GetInt("hasItem3") + PlayerPrefs.GetInt("hasItem4");
         hasItem1 = asBool(PlayerPrefs.GetInt("hasItem1", 0));
         hasItem2 = asBool(PlayerPrefs.GetInt("hasItem2", 0));
@@ -181,7 +185,8 @@ public class GM : MonoBehaviour
         SceneManager.LoadScene(HUB_WORLD_NAME);
     }
 
-    private void resetSave() {
+    private void resetSave()
+    {
         PlayerPrefs.SetInt("hasItem1", 0);
         PlayerPrefs.SetInt("hasItem2", 0);
         PlayerPrefs.SetInt("hasItem3", 0);
@@ -193,7 +198,8 @@ public class GM : MonoBehaviour
         PlayerPrefs.SetInt("graphics", DEFAULT_GRAPHICS);
     }
 
-    public void LoadFromSave() {
+    public void LoadFromSave()
+    {
         SceneManager.LoadScene(PlayerPrefs.GetString("last-scene", HUB_WORLD_NAME));
     }
 
