@@ -183,7 +183,7 @@ public class GM : MonoBehaviour
     }
 
     private void resetSave() {
-        PlayerPrefs.SetInt("hasItem1", 0)
+        PlayerPrefs.SetInt("hasItem1", 0);
         PlayerPrefs.SetInt("hasItem2", 0);
         PlayerPrefs.SetInt("hasItem3", 0);
         PlayerPrefs.SetInt("hasItem4", 0);
