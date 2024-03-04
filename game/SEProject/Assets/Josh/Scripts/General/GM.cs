@@ -7,14 +7,14 @@ using UnityEngine.SceneManagement;
 public class GM : MonoBehaviour
 {
     public static GM gmInstance;
-    private bool hasItem1;
-    private bool hasItem2;
-    private bool hasItem3;  
-    private bool hasItem4;
+    private bool hasItem1 = false;
+    private bool hasItem2 = false;
+    private bool hasItem3 = false;  
+    private bool hasItem4 = false;
 
     private int itemCount = 0;
 
-    private int attackDamage = 1;
+    private int attackDamage = 2;
     private int hP = 10;
 
     private bool enableParticles;
@@ -53,6 +53,8 @@ public class GM : MonoBehaviour
     {
         if (CurrentScene() == MAIN_MENU_WORLD) return;
         PlayerPrefs.SetString("last-scene", CurrentScene());
+        //Debug.Log(itemCount);
+        Debug.Log(asInt(hasItem1));
     }
 
     [System.Serializable]
@@ -101,11 +103,6 @@ public class GM : MonoBehaviour
     public int GetItemCount()
     {
         return asInt(hasItem1) + asInt(hasItem2) + asInt(hasItem3) + asInt(hasItem4);
-    }
-
-    public void AddItem()
-    {
-        // Does nothing
     }
 
     public void GotItem1()
