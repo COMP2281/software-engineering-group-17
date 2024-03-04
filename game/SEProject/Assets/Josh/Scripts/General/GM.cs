@@ -76,16 +76,6 @@ public class GM : MonoBehaviour
         return value ? 1 : 0;
     }
 
-    private static bool asBool(int value) {
-        if (value == 0) return false;
-        if (value == 1) return true;
-        throw new GMException($"Expected boolean value to be either 0 or 1 but got {value} instead.");
-    }
-
-    private static int asInt(bool value) {
-        return value ? 1 : 0;
-    }
-
     private void Awake()
     {
 
