@@ -76,17 +76,6 @@ public class GM : MonoBehaviour
         return value ? 1 : 0;
     }
 
-    [System.Serializable]
-    public class GMException : System.Exception
-    {
-        public GMException() { }
-        public GMException(string message) : base(message) { }
-        public GMException(string message, System.Exception inner) : base(message, inner) { }
-        protected GMException(
-            System.Runtime.Serialization.SerializationInfo info,
-            System.Runtime.Serialization.StreamingContext context) : base(info, context) { }
-    }
-
     private static bool asBool(int value) {
         if (value == 0) return false;
         if (value == 1) return true;
