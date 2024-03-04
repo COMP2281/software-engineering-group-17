@@ -171,6 +171,20 @@ public class GM : MonoBehaviour
         SceneManager.LoadScene(HUB_WORLD_NAME);
     }
 
+
+ private void loadSaveData()
+    {
+        hasItem1 = asBool(PlayerPrefs.GetInt("hasItem1", 0));
+        hasItem2 = asBool(PlayerPrefs.GetInt("hasItem2", 0));
+        hasItem3 = asBool(PlayerPrefs.GetInt("hasItem3", 0));
+        hasItem4 = asBool(PlayerPrefs.GetInt("hasItem4", 0));
+        itemCount = PlayerPrefs.GetInt("hasItem1") + PlayerPrefs.GetInt("hasItem2") + PlayerPrefs.GetInt("hasItem3") + PlayerPrefs.GetInt("hasItem4");
+
+        attackDamage = PlayerPrefs.GetInt("attackDamage", DEFAULT_ATTACK_DAMAGE);
+        hP = PlayerPrefs.GetInt("hP", DEFAULT_HEALTH_POINTS);
+        enableParticles = asBool(PlayerPrefs.GetInt("enableParticles", asInt(DEFAULT_ENABLE_PARTICLES)));
+        graphics = PlayerPrefs.GetInt("graphics", DEFAULT_GRAPHICS);
+    }
     private void resetSave()
     {
         PlayerPrefs.SetInt("hasItem1", 0);
@@ -185,20 +199,6 @@ public class GM : MonoBehaviour
 
         loadSaveData();
     }
-
-    private void resetSave()
-    {
-        PlayerPrefs.SetInt("hasItem1", 0);
-        PlayerPrefs.SetInt("hasItem2", 0);
-        PlayerPrefs.SetInt("hasItem3", 0);
-        PlayerPrefs.SetInt("hasItem4", 0);
-
-        PlayerPrefs.SetInt("attackDamage", DEFAULT_ATTACK_DAMAGE);
-        PlayerPrefs.SetInt("hP", DEFAULT_HEALTH_POINTS);
-        PlayerPrefs.SetInt("enableParticles", asInt(DEFAULT_ENABLE_PARTICLES));
-        PlayerPrefs.SetInt("graphics", DEFAULT_GRAPHICS);
-    }
-
     public void LoadFromSave()
    
     {
