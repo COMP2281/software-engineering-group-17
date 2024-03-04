@@ -29,7 +29,7 @@ public class GM : MonoBehaviour
     private const string DS_WORLD_NAME = "DS World Boss";
     private const string MAIN_MENU_WORLD = "Main Menu";
 
-    private const int DEFAULT_ATTACK_DAMAGE = 1;
+    private const int DEFAULT_ATTACK_DAMAGE = 2;
     private const int DEFAULT_HEALTH_POINTS = 10;
 
     private const bool DEFAULT_ENABLE_PARTICLES = true;
@@ -53,7 +53,6 @@ public class GM : MonoBehaviour
     {
         if (CurrentScene() == MAIN_MENU_WORLD) return;
         PlayerPrefs.SetString("last-scene", CurrentScene());
-        Debug.Log(itemCount);
     }
 
     [System.Serializable]
