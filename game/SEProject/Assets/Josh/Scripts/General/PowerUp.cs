@@ -12,7 +12,6 @@ public class PowerUp : MonoBehaviour
     public void Attack()
     {
         GM.gmInstance.AddAttackDamage(attackUp);
-        GM.gmInstance.GotItem1();
         powerUp.SetActive(false);
         player.canMove = true;
     }
@@ -20,7 +19,6 @@ public class PowerUp : MonoBehaviour
     public void Hp()
     {
         GM.gmInstance.AddHP(hPUp);
-        GM.gmInstance.GotItem1();
         powerUp.SetActive(false);
         player.canMove = true;
     }
