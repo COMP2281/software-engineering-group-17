@@ -12,8 +12,6 @@ public class GM : MonoBehaviour
     private bool hasItem3 = false;  
     private bool hasItem4 = false;
 
-    private int itemCount = 0;
-
     private int attackDamage = 2;
     private int hP = 10;
 
@@ -54,8 +52,6 @@ public class GM : MonoBehaviour
     {
         if (CurrentScene() == MAIN_MENU_WORLD) return;
         PlayerPrefs.SetString("last-scene", CurrentScene());
-        //Debug.Log(itemCount);
-        Debug.Log(asInt(hasItem1));
     }
 
     [System.Serializable]
@@ -178,7 +174,6 @@ public class GM : MonoBehaviour
         hasItem2 = asBool(PlayerPrefs.GetInt("hasItem2", 0));
         hasItem3 = asBool(PlayerPrefs.GetInt("hasItem3", 0));
         hasItem4 = asBool(PlayerPrefs.GetInt("hasItem4", 0));
-        itemCount = PlayerPrefs.GetInt("hasItem1") + PlayerPrefs.GetInt("hasItem2") + PlayerPrefs.GetInt("hasItem3") + PlayerPrefs.GetInt("hasItem4");
 
         attackDamage = PlayerPrefs.GetInt("attackDamage", DEFAULT_ATTACK_DAMAGE);
         hP = PlayerPrefs.GetInt("hP", DEFAULT_HEALTH_POINTS);
