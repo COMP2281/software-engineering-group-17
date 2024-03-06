@@ -3845,8 +3845,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1752727834}
-        m_TargetAssemblyTypeName: MainMenuButtons, Assembly-CSharp
+      - m_Target: {fileID: 1253532688}
+        m_TargetAssemblyTypeName: GM, Assembly-CSharp
         m_MethodName: LoadFromSave
         m_Mode: 1
         m_Arguments:
