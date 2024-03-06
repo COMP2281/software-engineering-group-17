@@ -4,26 +4,113 @@ Pokemon-MD-manual:
   author: ["Nintendo"]
   url: https://www.manuals.co.uk/nintendo/pok-mon-mystery-dungeon-gates-to-infinity-3ds/manual
 
+FSM-combat-tutorial:
+  type: web
+  title: "Develop a modular, flexible codebase with the state programming pattern "
+  author: ["Unity"]
+  url: https://unity.com/how-to/develop-modular-flexible-codebase-state-programming-pattern
+
+Game-nature:
+  type: book
+  title: "Fundamentals of Game Design"
+  author: ["E. Adams"]
+  date: 2014-01-07
+  url: https://www.amazon.co.uk/Fundamentals-Game-Design-Ernest-Adams/dp/0321929675
+
+Game-impact-health:
+  type: web
+  title: "Video games and health"
+  author: ["M. Griffiths"]
+  date: 2005-06-16
+  url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC558687/
+
+Game-impact-diversity:
+  type: web
+  title: "The Importance of Equity, Diversity and Inclusion in the Video Game Industry "
+  author: ["Mohawk College"]
+  url: https://www.mohawkcollege.ca/about/news/blogs/importance-of-equity-diversity-and-inclusion-video-game-industry%C2%A0
+
 ps2-gamepad:
   type: web
-  title: Playstation 2 Pad
+  title: "Playstation 2 Pad"
   author: ["oloff3"]
   url: https://www.deviantart.com/oloff3/art/Playstation-2-Pad-83940856
 
 gamepad-wiki:
   type: web
-  title: Gamepad
-  author: [Wikipedia]
+  title: "Gamepad"
+  author: ["Wikipedia"]
   url: https://en.wikipedia.org/wiki/Gamepad
 
 first-rpg:
   type: web
-  title: What is the very first RPG game?
-  author: [Chris Nash]
+  title: "What is the very first RPG game?"
+  author: ["C. Nash"]
   url: https://www.quora.com/What-was-the-very-first-RPG-video-game
 
 franchises:
   type: web
-  title: List of highest-grossing media franchises
-  author: [Wikipedia]
+  title: "List of highest-grossing media franchises"
+  author: ["Wikipedia"]
   url: https://en.wikipedia.org/wiki/List_of_highest-grossing_media_franchises
+
+Requirement-Specification:
+  type: original
+  title: "Group 17 Requirement Specification"
+  author: ["J. Pulham", "J. Watson", "C. Dubois-Veltman", "S. Ezeh", "N. Le", "A. Sirohia"]
+  date: 2023-11-23
+
+
+indiegame:
+  type: web
+  title: "What is an Indie Game? A Comprehensive Guide"
+  author: ["N. Pajkovic"]
+  url: https://www.torontofilmschool.ca/blog/what-is-an-indie-game/#:~:text=Indie%20games%20stand%20for%20%E2%80%9Cindependent,studios%2C%20both%20financially%20and%20creatively.
+
+hp:
+  type: web
+  title: "What Is the Meaning of HP and What Does It Stand For?"
+  author: ["PLARIUM"]
+  url: https://plarium.com/en/glossary/hp/#:~:text=HP%20in%20games%20refers%20to,of%20the%20screen%20before%2C%20right%3F
+
+sprite:
+  type: web
+  title: "What is a sprite?"
+  author: ["Lenovo"]
+  url: https://www.lenovo.com/us/en/glossary/sprite/#:~:text=A%20sprite%20is%20a%20term,special%20effects%20within%20a%20game.
+
+hud:
+  type: web
+  title: "HUD"
+  author: ["Cambridge Dictionary"]
+  url: https://dictionary.cambridge.org/dictionary/english/hud
+
+gamify:
+  type: web
+  title: "GAMIFY"
+  author: ["Cambridge Dictionary"]
+  url: https://dictionary.cambridge.org/dictionary/english/gamify
+
+boss:
+  type: web
+  title: "BOSS"
+  author: ["Cambridge Dictionary"]
+  url: https://dictionary.cambridge.org/dictionary/english/boss
+
+enemy:
+  type: web
+  title: "Glossary of video game terms"
+  author: ["Wikipedia"]
+  url: https://en.wikipedia.org/wiki/Glossary_of_video_game_terms
+
+cyberpunk:
+  type: web
+  title: "Cyberpunk"
+  author: ["Wikipedia"]
+  url: https://en.wikipedia.org/wiki/Cyberpunk
+
+synthwave:
+  type: web
+  title: "Synthwave"
+  author: ["Aesthetics Wiki"]
+  url: https://aesthetics.fandom.com/wiki/Synthwave
