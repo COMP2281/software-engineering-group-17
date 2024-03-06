@@ -713,10 +713,10 @@ The Protagonist might not have noticed this, but there seems to be three types o
 + *Beams:* These travel at the speed of light, instantly reaching a target, be it a wall or the Protagonist.
 + *Drones:* These are slow moving entities which automatically home towards the Protagonist, exploding when they are in close proximity. These drones are highly experimental, and thus will explode on their own shortly after being released.
 
-// #figure(
-//   image("Images/AllProjectiles.png", width: 90%),
-//   caption: [Image showing the 3 types of projectiles (zoomed in) side by side with the left being the bullet, the middle one being the drone and the left one being the beam]
-// )
+#figure(
+  image("Images/AllProjectiles.png", width: 90%),
+  caption: [Image showing the 3 types of projectiles (zoomed in) side by side with the left being the bullet, the middle one being the drone and the left one being the beam]
+)
 
 By identifying the different threats, you can devise specific strategies that will help the Protagonist deal with the threats individually and avoid the jaws of death.
 
@@ -729,10 +729,10 @@ The projectiles are shot by sentient turrets which have gone rogue. There are fo
 + *Mobile:* - A setting which toggles the wheels on the turrets, allowing it to move (and potentially rotate as well) between two fixed points.
 + *Experimental:* - Reserved only for in-house testing, this mode goes well beyond the commercially available functionalities, allowing for phases changes while also increasing the variety of projectiles that can be shot.
 
-// #figure(
-//   image("Images/TurretTypes.png", width: 90%),
-//   caption: [Image showing the stationary turret (on the left), the rotating turrets (middle left), the mobile turrets (middle right) and the experimental turret (right)]
-// )
+#figure(
+  image("Images/TurretTypes.png", width: 90%),
+  caption: [Image showing the stationary turret (on the left), the rotating turrets (middle left), the mobile turrets (middle right) and the experimental turret (right)]
+)
 
 ==== Abilities
 
@@ -750,28 +750,28 @@ There are a few types of items lying around on the ground in this place, presuma
 
 These are beneficial pickups which will heal up the Protagonist, letting them survive one more hit. The maximum amount of hearts that can be held by the Protagonist at all times is five, since this is the extent of the Altar's magic.
 
-// #figure(
-//   image("Images/HeartPickup.png", width: 90%),
-//   caption: [Image showing the stationary turret (on the left), the rotating turrets (middle left), the mobile turrets (middle right) and the experimental turret (right)]
-// )
+#figure(
+  image("Images/PickupHearts.png", width: 90%),
+  caption: [Image showing the stationary turret (on the left), the rotating turrets (middle left), the mobile turrets (middle right) and the experimental turret (right)]
+)
 
 ===== Keys
 
 In some places, you will see walls blocking the path to progress the level. To get rid of this barricade, you must guide the Protagonist to pick up the green keys on the screen. Only after collecting them all will the path finally be opened.
 
-// #figure(
-//   image("Images/Keys.png", width: 90%),
-//   caption: [Image showing the keys to collect throughout the level to progress]
-// )
+#figure(
+  image("Images/Keys.png", width: 90%),
+  caption: [Image showing the keys to collect throughout the level to progress]
+)
 
 ===== Boots of Speed
 
 A rare item which only shows up once in this world, the Boots of Speed makes the Protagonist much more agile, allowing them to swiftly manoeuvre around the projectiles shot by the turrets. Having permanent access to these would be great, however the boots works only when paired via a Bluetooth with a nearby device, so wearing them to the next level would (unfortunately) not grant the Protagonist extreme speed.
 
-// #figure(
-//   image("Images/SpeedBoots.png", width: 90%),
-//   caption: [Image showing the item which increases the player's movement speed]
-// )
+#figure(
+  image("Images/SpeedBoost.png", width: 90%),
+  caption: [Image showing the item which increases the player's movement speed]
+)
 
 Do not be too sad, as even if the shoes are non-functional, they still look great on the Protagonist.
 
@@ -791,10 +791,10 @@ There are two types of portals present in this world:
 
 In some levels, there are moving platforms which move between 2 points at a constant speed. Moving along with these can help block incoming projectiles. Use these wisely!
 
-// #figure(
-//   image("Images/MovingPlatform.png", width: 90%),
-//   caption: [Image showing a moving platform which moves between the 2 points (shown as small diamonds)]
-// )
+#figure(
+  image("Images/MovingPlatform.png", width: 90%),
+  caption: [Image showing a moving platform which moves between the 2 points (shown as small diamonds)]
+)
 
 === Data Science World
 
@@ -1137,7 +1137,7 @@ The following section is split into two parts. The first part is a table overvie
   [*Class*], [*Descriptions*], [*Functions*],
   [`AddEscape` \ (@AddEscapeDetailed)], [Adds objects specified and removes other objects specified], [`Start` \ `Update` \ `StartEscape`],
   
-  [`AIPortal` \ (@AIPortalDetailed)], [Teleports player on collision to another portal (this portal is specified by the parent object of the portal itself)],[`Start` \ `OnTriggerEnter2d`],
+  [`AIPortal` \ (@PortalsDetailed)], [Teleports player on collision to another portal (this portal is specified by the parent object of the portal itself)],[`Start` \ `OnTriggerEnter2d`],
   
   [`AudioManager` \ (@AudioManagerDetailed)], [Manage the music that plays on collision. Attached to an empty object with a collision box for when the player enters/exits], [`OnTriggerEnter2D` \ `OnTriggerExit2D`], 
   
@@ -2117,10 +2117,10 @@ Located in puzzle 3 of AI world, attached to the `AddEscape` `GameObject`.
   
 - `StartEscape`: Adds the desired objects, and removes the other objects specified.
 
-==== `AIPortal` <AIPortalDetailed>
+==== `Portals` <PortalsDetailed>
 
 #figure(
-image("Images/AIPortal.png", width:90%),
+image("Images/Portals.png", width:90%),
 caption: [Image of `AIPortal` script attached to a Portal `GameObject` in Puzzle-4.]
 )
 
@@ -2282,7 +2282,10 @@ caption: [Image of `AIPortal` script attached to a Portal `GameObject` in Puzzle
 ==== `Keys` <KeysDetailed>
 
 // 
-[UNTOGGLE IMAGE BLOCK HERE]
+#figure(
+  image("Images/Keys.png"),
+  caption: [Image of `keys` script attached to a `key` `GameObject` in Puzzle-4.]
+)
 
 / Function description:
 
@@ -2290,7 +2293,10 @@ caption: [Image of `AIPortal` script attached to a Portal `GameObject` in Puzzle
 
 ==== `KillPlayer` <KillPlayerDetailed>
 
-[TODO] Image
+#figure(
+  image("Images/TilemapKill.png"),
+  caption: [Image of `keys` script attached to a `key` `GameObject` in Puzzle-4.]
+)
 
 / Function description:
 
@@ -2314,7 +2320,10 @@ caption: [Image of `AIPortal` script attached to a Portal `GameObject` in Puzzle
 
 ==== `MovingPlatform` <MovingPlatformDetailed>
 
-[TODO] Image
+#figure(
+  image("Images/MovingPlatform.png"),
+  caption: [Image of `MovingPlatform` script attached to a platform `GameObject` with two points under the same parent object in Puzzle-4.]
+)
 
 / Function description:
 
@@ -2358,10 +2367,10 @@ The `player` `GameObject` holds this script in every level in the AI World.
 
 ==== `Shield` <ShieldDetailed>
 
-// #figure(
-//   image("Images/Shield.png", width: 90%),
-//   caption: [Image showing the player using the shield ability, follows the player around]
-// )
+#figure(
+  image("Images/Shield.png", width: 90%),
+  caption: [Image showing the player using the shield ability, follows the player around]
+)
 
 / Function description:
 
@@ -2373,10 +2382,10 @@ The `player` `GameObject` holds this script in every level in the AI World.
 
 ==== `ShieldItem` <ShieldItemDetailed>
 
-// #figure(
-//   image("Images/AIPortal.png", width: 90%),
-//   caption: [Image showing the item which gives the player the ability to shield.]
-// )
+#figure(
+  image("Images/ShieldItem.png", width: 90%),
+  caption: [Image showing the item which gives the player the ability to shield.]
+)
 
 / Function description:
 
@@ -2384,10 +2393,10 @@ The `player` `GameObject` holds this script in every level in the AI World.
 
 ==== `SpeedBoost` <SpeedBoostDetailed>
 
-// #figure(
-//   image("Images/SpeedBoots.png", width: 90%),
-//   caption: [Image showing the item which increases the player's movement speed]
-// )
+#figure(
+  image("Images/SpeedBoost.png", width: 90%),
+  caption: [Image showing the item which increases the player's movement speed]
+)
 
 / Function description:
 
@@ -2395,10 +2404,10 @@ The `player` `GameObject` holds this script in every level in the AI World.
 
 ==== `TimedRoom` <TimedRoomDetailed>
 
-// #figure(
-//   image("Images/TimedRoom.png", width: 90%),
-//   caption: [Image showing the room which the player must survive in for a certain amount of time to progress, with the bar at the bottom.]
-// )
+#figure(
+  image("Images/TimedRoom.png", width: 90%),
+  caption: [Image showing the room which the player must survive in for a certain amount of time to progress, with the bar at the bottom.]
+)
 
 / Function description:
 
@@ -2426,11 +2435,10 @@ The `timer` `GameObject` has the `Timer2` script attached, which is used in AI W
 
 ==== `TimerStop2` <TimerStop2Detailed>
 
-// #figure(
-//   image("Images/timerstop2.png", width: 90%),
-//   caption: [Image showing where the `GameObject` which contains the timerstop2 script.]
-// )
-[TOGGLE IMAGE]
+#figure(
+  image("Images/timerstop2.png", width: 90%),
+  caption: [Image showing where the `GameObject` which contains the timerstop2 script.]
+)
 
 / Function description:
 
@@ -2438,10 +2446,10 @@ The `timer` `GameObject` has the `Timer2` script attached, which is used in AI W
 
 ==== `Turret` <TurretDetailed>
 
-// #figure(
-//   image("Images/Turret.png", width: 90%),
-//   caption: [Image showing the basic turrets]
-// )
+#figure(
+  image("Images/Turret.png", width: 90%),
+  caption: [Image showing the basic turrets]
+)
 
 / Function description:
 
