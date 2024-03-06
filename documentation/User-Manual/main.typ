@@ -74,7 +74,7 @@ The new system aims to gamify the learning experience, allowing for a more fun a
 
 = Solution discussion <Solution-discussion-section>
 
-== Project brief analysis <Project-brief-section>
+== Project Brief Analysis <Project-brief-section>
 
 Our solution has covered the main requirement from [LINK TO < Project-brief >]. So far, we have a functioning RPG game with items that can be acquired from beating the bosses through Q&A style combat in different worlds linked to the Skills Build badges.
 
@@ -91,7 +91,7 @@ Unfortunately, we did not add any of the documentation, as the resources could n
 
 Regarding the "challenge to be addressed" section, we have done lots of research on existing 21#super([st]) games (see @Initial-idea-section) as well as existing learning games (see our requirement specification @Requirement-Specification), and have made design choices driven by the findings to make our game fit the "21#super([st]) century learning game" demand.
 
-== Installation guide <Installation-guide-section>
+== Installation Guide <Installation-guide-section>
 
 The following section will give a step-by-step guide on how to download and run the game in its latest build. The steps are as follows:
 
@@ -120,7 +120,7 @@ The following section will give a step-by-step guide on how to download and run 
 
 #pagebreak()
 
-== User requirements considerations <User-requirement-section>
+== User Requirements Considerations <User-requirement-section>
 
 In this section, we refer back to the requirement specification and go through an analysis of functional and non-functional requirements in regard to our current solution. We consider their current status, the extent to which they have been fulfilled, and provide some additional justification for how we came to these conclusions.
 
@@ -432,7 +432,7 @@ In this section, we refer to the user in the 2#super([nd]) person format, addres
 
 This document will be included alongside the final game build as a kind of game introduction booklet. The presentation will of course be more bright and lively compared to how it is shown in this document, including custom-crafted backgrounds, less formal fonts, decorated tables and image positioning, etc.
 
-== Getting started
+== Getting Started
 
 === Introduction
 
@@ -580,7 +580,7 @@ For the controls below, Left/Right Stick Up/Down/Left/Right refers to pushing th
   caption: "Table of controls for battles"
 )
 
-=== World Specific mappings
+=== World Specific Mappings
 
 ==== AI World
 
@@ -847,7 +847,7 @@ Upon reaching the end of any world, the player is met with a final encounter whi
   caption: [Image of a corrupted employee conversing with the player character.]
 )
 
-=== Combat sequence
+=== Combat Sequence
 
 Following the discussion with the co-worker, you will be shown a brief cutscene with some intense combat music before the screen fades into the fight sequence. Both the player and enemy combat sprites, alongside their animations, have been manually handcrafted to make the game feel more alive, and the background used for the fights seamlessly matches up with the theme of the world. After all, what good showdown would be complete without an epic title card sequence of the combatants?
 
@@ -865,7 +865,7 @@ During a fight, the co-worker will ask the player a set of questions taken from 
 
 Losing the fight sequence will take the player back to the start of the combat stage, allowing them to retry the encounter, whereas winning will bring you to an unfamiliar selection screen.
 
-=== Skills Build#super([TM]) system
+=== Skills Build#super([TM]) System
 
 After defeating a co-worker and helping them snap out of the corruption, the player will receive the relic. These artefacts are so powerful that merely being in the vicinity grants unimaginable powers; no wonder the player's co-workers are so strong! With this, you are able to grant the player one of two special bonuses, permanently enhancing their combat capabilities to make future fights easier.
 
@@ -883,7 +883,7 @@ In this section of the user manual, we will be going over the technical details 
 
 To start working on our project and make changes, a few preliminary steps will have to be done.
 
-=== Getting project files
+=== Getting Project Files
 
 To download our code base, follow these simple steps:
 
@@ -891,7 +891,7 @@ To download our code base, follow these simple steps:
 + *Choosing the branch:* Currently, our code base is located on the "Unity-Game" branch. From the drop-down menu under the project name, which should originally have "main" on it, select "Unity-Game".
 + *Downloading the repo:* Once on this branch, click on the green button that says "Code", and download the code base either as a .zip file, or by cloning it. Note that this does require Git to be installed on your machine.
 
-=== Setting up Unity
+=== Setting Up Unity
 
 The entire project was built using Unity, therefore it is crucial to install it correctly. To do so, follow the steps shown below:
 
@@ -935,7 +935,7 @@ The following is the general workflow in Unity.
   caption: [Image of the Unity workflow.],
 )
 
-=== Integrated development environment
+=== Integrated Development Environment
 
 As our code base is written in C\#, you are not forced into using any specific IDEs, as long as you feel comfortable with it. However, we recommend using either VSCode with the C\# extension, or using Visual Studio as it is the default IDE for a Unity project. Visual Studio also includes some built-in functionality that might be useful, like a UML diagram generator.
 
@@ -952,7 +952,7 @@ In this section, we provide the documentation for the classes used to build the 
 
 The following section is split into two parts. The first part is a table overview of the classes, containing its name, description and functions. The second part is an extensive description of what each class' functions do, and includes images to show where one can find the classes used in.
 
-==== General classes
+==== General Classes
 
 #table(
   columns: (1fr, 1fr, 1fr),
@@ -1179,7 +1179,7 @@ The following section is split into two parts. The first part is a table overvie
 )
 
 #pagebreak()
-=== Detailed class description
+=== Detailed Class Description
 
 ==== `AnswerButton` <AnswerButtonDetailed>
 
@@ -1196,6 +1196,7 @@ The following section is split into two parts. The first part is a table overvie
 
 - `OnClick`: Calls the `battleSystem` `GameObject`'s `OnAnswer` function while passing in either true or false based on `AnswerButton`'s `isCorrect`.
 
+#pagebreak()
 ==== `Arrow` <ArrowDetailed>
 
 #figure(
@@ -1222,6 +1223,7 @@ The following section is split into two parts. The first part is a table overvie
 
 - `FadeOutRoutine`: Fades out all images in the cutscene.
 
+#pagebreak()
 ==== `BattleHud` <BattleHudDetailed>
 
 #figure(
@@ -1282,6 +1284,7 @@ See @Combat-system-section for more detail.
 
 - `TakeDamage`: Subtract `currentHP` variable by the input amount. Returns true if `currentHP` is at or below 0 from the damage, otherwise return false.
 
+#pagebreak()
 ==== `CoWorkerCutscene` <CoWorkerCutscene>
 
 #figure(
@@ -1305,6 +1308,7 @@ See @Combat-system-section for more detail.
 
 - `Update`: Check if the item has been acquired in one of the worlds and spawn the corresponding co-worker if so.
 
+#pagebreak()
 ==== `Credits` <CreditsDetailed>
 
 #figure(
@@ -1339,6 +1343,7 @@ See @Combat-system-section for more detail.
 
 - `Start`: Generate a question from `QuestionSetup`'s `Generate` function, then transition to `PlayerTurn`.
 
+#pagebreak()
 ==== `GM` <GMDetailed>
 
 The game manager enters the game environment through the `MainMenu` and then duplicates itself across scenes.
@@ -1375,6 +1380,7 @@ See section
 
 - `Update`: Checks the `Game Manager` for which items have been acquired by the player and displays the acquired items in the inventory menu. Also, checks if any input is pressed to close the inventory menu. 
 
+#pagebreak()
 ==== `Lost` <LostDetailed>
 
 See @Combat-system-section for more detail.
@@ -1463,6 +1469,7 @@ See @Combat-system-section for more detail.
 
 - `Answer`: Depending on input, run `CombatUnit`'s `TakeDamage` function on either the player unit or the enemy unit. Both actions update the HUD using the `SetHp` function for HP, changes `BattleSystem`'s `dialogue` variable for text display, and changes the player and enemy sprites with `GameObject` transforms. After resolving the damage, go to the `Won` or `Lost` state, depending on whether the enemy or the player is dead. If none of these occur, transition to `EnemyTurn`.
 
+#pagebreak()
 ==== `PostBattleCutscene` <PostBattleCutscene>
 
 #figure(
@@ -1487,6 +1494,7 @@ See @Combat-system-section for more detail.
 - `Attack`: Increases the player's attack stat by a specified amount. 
 - `Hp`: Increases the player's hp stat by a specified amount.
 
+#pagebreak()
 ==== `PreBattleCutscene` <PreBattleCutscene>
 
 #figure(
@@ -1510,6 +1518,7 @@ See @Combat-system-section for more detail.
 
 None
 
+#pagebreak()
 ==== `QuestionSetup` <QuestionSetupDetailed>
 
 #figure(
@@ -1585,6 +1594,7 @@ See @Combat-system-section for more detail.
   
 - `OnTriggerEnter2D`: Check if the player collides with `GameObject` and if this is the case, load the first dialogue box.
 
+#pagebreak()
 ==== `AltarCutscene2` <AltarCutscene2Detailed>
 
 #figure(
@@ -1617,6 +1627,7 @@ The `Altar Cutscene 3` `GameObject` is not a physical object and is enabled duri
 
 - `OnTriggerEnter2D`: Check if the player collides with `GameObject` and if this is the case, load the first dialogue box.
 
+#pagebreak()
 ==== `AltarCutscene4` <AltarCutscene4Detailed>
 
 #figure(
@@ -1645,6 +1656,7 @@ The `Altar Cutscene 3` `GameObject` is not a physical object and is enabled duri
 
 - `OnTriggerEnter2D`: Check if the player collides with `GameObject` and if this is the case, load the first dialogue box.
 
+#pagebreak()
 ==== `CreepyCutscene` <CreepyCutsceneDetailed>
 
 #figure(
@@ -1710,13 +1722,14 @@ The `Altar Cutscene 3` `GameObject` is not a physical object and is enabled duri
 
 #figure(
   image("Images/gmhubworld.png", width: 90%),
-  caption: [Image showing the GameMangerHubWorld `GameObjects` with the `GMHub` script attached.]
+  caption: [Image showing the `GameMangerHubWorld` `GameObjects` with the `GMHub` script attached.]
 )
 
 / Function description:
 
 - `Start`: Check the number of items acquired and change the `Act` depending on how many have been acquired. Also disables the portal from worlds already entered
 
+#pagebreak()
 ==== `HubBackground` <HubBackgroundDetailed>
 
 #figure(
@@ -1732,7 +1745,7 @@ The `Altar Cutscene 3` `GameObject` is not a physical object and is enabled duri
 
 #figure(
   image("Images/nameplayer.png", width: 90%),
-  caption: [Image showing the NamePlayer script attached to a Text `GameObject`. This is not a physical `GameObject`]
+  caption: [Image showing the `NamePlayer` script attached to a Text `GameObject`. This is not a physical `GameObject`]
 )
 
 / Function description:
@@ -1743,10 +1756,8 @@ The `Altar Cutscene 3` `GameObject` is not a physical object and is enabled duri
 
 #figure(
   image("Images/portal.png", width: 90%),
-  caption: [Image of Portal script attached to Portal `GameObject` in Hub World.]
+  caption: [Image of `Portal` script attached to Portal `GameObject` in Hub World. This object is enabled during act 5.]
 )
-
-The `Portal` `GameObject` is enabled during act 5.
 
 / Function description:
 
@@ -1775,6 +1786,7 @@ The `Portal` `GameObject` is enabled during act 5.
 
 - `OpenDoor`: Waits for 2 seconds, then destroys the `GameObject` attached to this script and disables the corresponding dialogue.
 
+#pagebreak()
 ==== `ButtonSpawner` <ButtonSpawnerDetailed>
 
 #figure(
@@ -1794,6 +1806,7 @@ The `Portal` `GameObject` is enabled during act 5.
 
 - `OnTriggerExit2D`: Check if the player leaves the collision range of the `GameObject` and if this is the case, the player can no longer press the interact button.
 
+#pagebreak()
 ==== `CameraFollow` <CameraFollowDetailed>
 
 #figure(
@@ -1818,13 +1831,13 @@ The `Portal` `GameObject` is enabled during act 5.
 
 - `OnTriggerExit2D`:  If the player leaves the collision range of the `GameObject` holding this script the camera `GameObject` is disabled.
 
+#pagebreak()
 ==== `DoorTriggerLeft` <DoorTriggerLeftDetailed>
 
 #figure(
   image("Images/doortriggerleft.png", width: 90%),
   caption: [Image of `DoorTriggerLeft` script attached to a Door trigger left `GameObject` in DS World Level 2. This script also exists in DS World Level 4.]
 )
-
 
 / Function description:
 
@@ -1841,6 +1854,7 @@ The `Portal` `GameObject` is enabled during act 5.
 
 - `OnTriggerEnter2D`: If the player collides with the `GameObject`, set the `was_hit` string of the `LabyrinthDoor` script to "right", indicating that the right door has been interacted with.
 
+#pagebreak()
 ==== `DoorTriggerTop`: <DoorTriggerTopDetailed>
 
 #figure(
@@ -1863,6 +1877,7 @@ The `Portal` `GameObject` is enabled during act 5.
 
 - `OnTriggerEnter2D`: If the player collides with the `GameObject` holding this script, the whole `GameObject` is enabled.
 
+#pagebreak()
 ==== `LabyrinthDoor` <LabyrinthDoorDetailed>
 
 #figure(
@@ -1885,6 +1900,7 @@ The `Portal` `GameObject` is enabled during act 5.
 
 - `OnTriggerEnter2D`: Check if the player collides with `GameObject` and if this is the case, load the next scene ID. Scene ID is set in the build settings.
 
+#pagebreak()
 ==== `PlayerIceScript` <PlayerIceScriptDetailed>
 
 #figure(
@@ -1911,6 +1927,7 @@ The `Portal` `GameObject` is enabled during act 5.
   caption: [Image of `PlayerScript` script attached to the player `GameObject` in DS World Level 1. This script is held by the player in all levels in DS World and Hub World]
 )
 
+#pagebreak()
 / Function description:
 
 - `Update`: Updates the player's position based on the directional input keys pressed, and updates the player's animation sprites based on this movement. It also disables the player's movement when on ice.
@@ -1938,6 +1955,7 @@ The `Portal` `GameObject` is enabled during act 5.
 
 - `OnTriggerEnter2D`: Check if the player collides with `GameObject` and if this is the case, destroy the arrow `GameObject`.
 
+#pagebreak()
 ==== `SecretRoom` <SecretRoomDetailed>
 
 #figure(
@@ -1966,6 +1984,7 @@ The `Portal` `GameObject` is enabled during act 5.
   
 - `Update`: If particle effects are ever disabled in the Pause Menu, then the child `GameObject` is disabled.
 
+#pagebreak()
 ==== `SnowGenerator` <SnowGeneratorDetailed>
 
 #figure(
@@ -2056,6 +2075,7 @@ The `Portal` `GameObject` is enabled during act 5.
 
 - `OnTriggerEnter2D`: Check if player collides with `GameObject` and if this is the case, stop the timer from running.
 
+#pagebreak()
 ==== `TimerStopSpecial` <TimerStopSpecialDetailed>
 
 #figure(
@@ -2078,6 +2098,7 @@ The `Portal` `GameObject` is enabled during act 5.
 
 - `OnTriggerEnter2D`: Check if the player collides with `GameObject` and if this is the case, enable a `Child` `GameObject`, which has a collision `GameObject`.
 
+#pagebreak()
 ==== `AddEscape` <AddEscapeDetailed>
 
 Located in puzzle 3 of AI world, attached to the `AddEscape` `GameObject`.
@@ -2107,7 +2128,7 @@ caption: [Image of `AIPortal` script attached to a Portal `GameObject` in Puzzle
 ==== `AudioManager` <AudioManagerDetailed>
 
 #figure(
-  image("Images/AudioManager.png", width:90%),
+  image("Images/AudioManager.png", width: 90%),
   caption: [Image of `AudioManager` script attached to a `MusicStartRoom` `GameObject` in Puzzle-2.]
 )
 
@@ -2117,10 +2138,11 @@ caption: [Image of `AIPortal` script attached to a Portal `GameObject` in Puzzle
   
 - `OnTriggerExit2D`: Stops background music played when the player enters the box.
 
+#pagebreak()
 ==== `BasicEnemyTurret` <BasicEnemyTurretDetailed>
 
 #figure(
-  image("Images/BasicTurret.png", width:90%),
+  image("Images/BasicTurret.png", width: 90%),
   caption: [Image of `BasicEnemyTurret` script attached to a Turret `GameObject` in Puzzle-4.]
 )
 
@@ -2162,7 +2184,7 @@ caption: [Image of `AIPortal` script attached to a Portal `GameObject` in Puzzle
 ==== `Bullet` <BulletDetailed>
 
 #figure(
-  image("Images/Bullet.png"),
+  image("Images/Bullet.png", width:90%),
   caption: [Image of `Bullet` script attached to a fast_bullet `GameObject` in Puzzle-4.]
 )
 
@@ -2180,10 +2202,11 @@ caption: [Image of `AIPortal` script attached to a Portal `GameObject` in Puzzle
   
 - `StartDash`: Moves the player in its current direction for a set amount of time and puts the dash on a cooldown.
 
+#pagebreak()
 ==== `DashItem` <DashItemDetailed>
 
 #figure(
-  image("Images/DashItem.png"),
+  image("Images/DashItem.png", width:90%),
   caption: [Image of `DashItem` script attached to a `Dash` `GameObject` in Puzzle-2.]
 )
 
@@ -2198,18 +2221,20 @@ caption: [Image of `AIPortal` script attached to a Portal `GameObject` in Puzzle
 ==== `EscapeButton` <EscapeButtonDetailed>
 
 #figure(
-image("Images/EscapeButton.png")
+  image("Images/EscapeButton.png", width:90%),
+  caption: ["Image of `EscapeButton` script attached to a `EscapeStart` `GameObject` in Puzzle-3."]
 )
 
 / Function description:
 
 - `OnTriggerEnter2D`: If the collided object has the "`Player`", sets the `key manager`'s `escapeStart` boolean to true and destroys the `GameObject`.
 
+
 ==== `Hearts` <HeartsDetailed>
 
 #figure(
-  image("Images/Hearts.png"),
-  caption: [Image of Hearts script attached to a Hearts `GameObject` in Puzzle-2.]
+  image("Images/HeartsDetailed.png"),
+  caption: [Image of `Hearts` script attached to a Hearts `GameObject` in Puzzle-2.]
 )
 
 / Function description:
@@ -2227,6 +2252,7 @@ image("Images/EscapeButton.png")
   caption: [Image of `HomingDrone` script attached to a `Drone` `GameObject` in Puzzle-4.]
 )
 
+#pagebreak()
 / Function description:
 
 - `Start`: Initialises the player object variable and starts the coroutines `DeathTimer` and `StartPhaseTimer`
@@ -2254,7 +2280,7 @@ image("Images/EscapeButton.png")
 ==== `Keys` <KeysDetailed>
 
 #figure(
-  image("Images/Keys.png"),
+  image("Images/KeysDetailed.png"),
   caption: [Image of `keys` script attached to a `key` `GameObject` in Puzzle-4.]
 )
 
@@ -2262,6 +2288,7 @@ image("Images/EscapeButton.png")
 
 - `OnTriggerEnter2D`: If the object that collided has the "`Player`" tag, reduce the variable `keyNum` of the `KeyManager` by 1, and destroy the object.
 
+#pagebreak()
 ==== `KillPlayer` <KillPlayerDetailed>
 
 #figure(
@@ -2289,10 +2316,11 @@ image("Images/EscapeButton.png")
 
 - `OnTriggerEnter2D`: If the collided object has the "`Heart`" tag, increase the number of lives by 1 and destroy the object which collided (not the object the script is called to).
 
+#pagebreak()
 ==== `MovingPlatform` <MovingPlatformDetailed>
 
 #figure(
-  image("Images/MovingPlatform.png"),
+  image("Images/MovingPlatformDetailed.png"),
   caption: [Image of `MovingPlatform` script attached to a platform `GameObject` with two points under the same parent object in Puzzle-4.]
 )
 
@@ -2318,7 +2346,7 @@ The `player` `GameObject` holds this script in every level in the AI World.
 
 - `OnTriggerExit2D`: Check if the player leaves the collision range of the ice `GameObjects` and if this is the case, re-enable the player's movement input.
 
-
+#pagebreak()
 ==== `PortalParent` <PortalParentDetailed>
 
 #figure(
@@ -2404,6 +2432,7 @@ The `timer` `GameObject` has the `Timer2` script attached, which is used in AI W
 
 - `PlayMusic`: Wait for 3 seconds, then turn off the timer music.
 
+#pagebreak()
 ==== `TimerStop2` <TimerStop2Detailed>
 
 #figure(
@@ -2450,6 +2479,7 @@ The `timer` `GameObject` has the `Timer2` script attached, which is used in AI W
 
 - `GetPrefab`: Returns the prefab corresponding to the current state.
 
+#pagebreak()
 == System maintenance <System-maintenance-section>
 
 In this section, we will go over the main technical aspects of our game that might require maintenance. We also cover how to work with them, which will be useful for @Future-development-section. 
@@ -2495,7 +2525,7 @@ A FSM is an abstract model that holds a finite number of states and their respec
 The state design pattern exists to convert the FSM concept to code, allowing one to naturally and cleanly implement systems. This in turn keeps the code base clean and helps with extensibility, which is particularly useful in case the client wants more features added.
 
 #figure(
-  image("Images/CombatFSM.png", width: 90%),
+  image("Images/CombatFSM.png", width: 80%),
   caption: [Image of the in-game combat finite state machine.],
 )
 
@@ -2511,7 +2541,7 @@ Armed with this knowledge, we can finally talk about how to add a new state. The
 
 Whenever a state breaks, or has issues, first check the code of the individual states as this holds most, if not all the logic of the states. Issues with inheritance might also occur, so make sure that the entire structure is set up appropriately (with the `StateMachine` and `State` functions).
 
-=== Working with questions
+=== Working with Questions
 
 To modify or add additional questions to the game, follow these steps:
 
@@ -2531,7 +2561,8 @@ To modify or add additional questions to the game, follow these steps:
 
 3. *Update fight scene:* If the questions added are for a new world, make sure to change the `QuestionManager` to use this world name (see @QuestionSetupDetailed).
 
-== Future developments <Future-development-section>
+#pagebreak()
+== Future Developments <Future-development-section>
 
 In this section, we will go over what additional features and content could be for the game. While this does not cover everything, it should at least be helpful for future developers.
 
@@ -2612,16 +2643,15 @@ There were a number of other concepts that weren't implemented into the game, ho
 
 ==== World Theme
 
-Although a theme has not been decided, we wanted to implement a cyberpunk or synthwave world. Cyberpunk is a genre of science fiction that focuses on a combination of high technology and low quality of living, for example cyborgs and artificial intelligence, juxtaposed with societal decay. @cyberpunk Synthwave, on the other hand, is a genre of music, that often draws inspiration from graphics seen in the 1980's, such as neon, wireframes, video cassettes and more as part of a visual aesthetic. @synthwave
+Although a theme has not been decided, we wanted to implement a cyberpunk or synthwave world. Cyberpunk is a genre of science fiction that focuses on a combination of high technology and low quality of living, for example cyborgs and artificial intelligence, juxtaposed with societal decay @cyberpunk. Synthwave, on the other hand, is a genre of music, that often draws inspiration from graphics seen in the 1980's, such as neon, wireframes, video cassettes and more as part of a visual aesthetic @synthwave. 
 
 #figure(
   image("Images/synthwave.png", width: 70%),
   caption: [Image of the synthwave aesthetic.]
 )
 
-Within these worlds there will be a number of puzzle ideas which we wanted to implement.
 
-==== Dance Dance Revolution
+==== Dance Dance Revolution Puzzle
 
 Dance Dance Revolution is a series of arcade video machines, where the player is required to step on the specified locations on the floor of the machine. The floor of the game is partitioned into four sections using the four cardinal directions with symbols pointing in each direction. The game indicates the section of the floor on which the user is to step by presenting luminous arrows on the screen that point in the direction corresponding to the relevant section of the floor. Dance Dance Revolution presents the on-screen arrows as travelling from one side of the arcade machine's screen to another, entering a virtual box. When the arrow symbol enters this box, the user is to step on the corresponding section of the machine's floor. The game synchronises these events to music so the movement of the player's feet will roughly follow the beat of the song that is playing which mimicks dancing hence the name "Dance Dance Revolution".
 
@@ -2632,6 +2662,7 @@ We adapt Dance Dance Revolution to a computer game by using the arrow keys as di
    caption: [Two young men playing Dance Dance Revolution on an arcade machine.]
 )
 
+#pagebreak()
 ==== Conveyor Belt Puzzle
 
 A conveyor belt puzzle is a type of puzzle in which the player wants to get to the other side of the room, but to do so they need to step on a series of conveyor belts, when you step on one of these, they will send you to the other end of the conveyor belt, not allowing you to get off. You need to step on the correct conveyor belts to get to the other side of the map, and if you step on the wrong one, you get sent backwards instead.
@@ -2643,11 +2674,12 @@ This type of puzzle can be implemented without conveyor belts too, for example i
   caption: [Image of a Pokemon Emerald's Seafloor Cavern water current puzzle.]
 )
 
-== Ethical and societal impacts <Ethical-societal-section>
+#pagebreak()
+== Ethical and Societal Impacts <Ethical-societal-section>
 
 Our project, whilst only being a game, might have some potential ethical issues that need to be considered. On the contrary, the project might also have some potential upside when it comes to societal impacts.
 
-=== Ethical impacts
+=== Ethical Impacts
 
 Games, by the nature of their existence, are meant to be a form of interactive entertainment that provide users with artificial challenges to overcome in order to reach a final goal @Game-nature. This greatly mimics the concept of studying where, for example in subjects like mathematics, students are given problem sets to solve in order to pass an examination. 
 
@@ -2659,13 +2691,13 @@ Another ethical issue that might arise is with respect to diversity. Any game sh
 
 For our game, this mainly affects the choice of sprites for the main and side characters. Given that these are hand-crafted, a lot of work has to go into designing each character, and due to the time constraints we have not been able to fully implement other versions of the main character besides male, such as a female or a non-binary variant. Despite that, we have tried our hardest given the time constraints to make a set of diverse characters.
 
-=== Societal impacts
+=== Societal Impacts
 
 In its current iteration, the game serves as a tool to be used alongside Skills Build to learn the content in a way that is less formal and more enjoyable. Perhaps users will be more inclined to use the website and start a course due to it having a game associated with. Nevertheless, the scope of impact is limited to Skills Build users are interested in gaming, and who want to specifically learn the courses covered in the game. 
 
 By implementing our project on a wider scale (like having a section in-game for each badge) and integrating more closely the course content (beyond simply linking the Skills Build badge) whilst also being accommodating to users who have not had lots of experience gaming, we could elevate the scope of impact outside the previously mentioned restrictions, allowing almost all Skills Build users to benefit from the positive effects of gamification in learning.
 
-=== Copyright concerns <Copyright-section>
+=== Copyright Concerns <Copyright-section>
 
 Our game uses various copyrighted assets such as music and some images. Since this game is for educational purposes, and we will not be charging people to play the game, we are mostly exempt from the copyright laws concerning the use of copyrighted assets.
 
@@ -2701,6 +2733,7 @@ If we were to monetize the game, however, changing the following list of assets 
 - Doki Doki Literature Club Dialogue Box
 - Sprite Mancer Ice Cave 
 
+#pagebreak()
 = Glossary <Glossary-section>
 
 In this section, we include some terms which are domain specific to game development. Having this separate section avoids the need of explaining a term in the middle of a sentence.
