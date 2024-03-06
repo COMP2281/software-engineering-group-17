@@ -121,7 +121,7 @@ public class PauseMenu : MonoBehaviour
     {
         var nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
         Debug.Log(GetSceneNameByBuildIndex(nextSceneIndex));
-        if (SceneManager.GetActiveScene().name != "Cloud World Combat")
+        if (SceneManager.GetActiveScene().name != "DS World Boss Complete" && SceneManager.GetActiveScene().name != "Hub World New" && SceneManager.GetActiveScene().name != "DS World Boss" && SceneManager.GetActiveScene().name != "Puzzle-Boss" && SceneManager.GetActiveScene().name != "AI-World-Complete")
         {
             if (GetSceneNameByBuildIndex(nextSceneIndex) != "Cloud World Combat")
             {

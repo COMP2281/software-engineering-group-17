@@ -50,6 +50,11 @@ public class GM : MonoBehaviour
     }
     private void Update()
     {
+        if (CurrentScene() == HUB_WORLD_NAME || CurrentScene() == DS_WORLD_NAME)
+        {
+            if (MusicManager.instance != null)
+                Destroy(MusicManager.instance.gameObject);
+        }
         if (CurrentScene() == MAIN_MENU_WORLD) return;
         PlayerPrefs.SetString("last-scene", CurrentScene());
     }
