@@ -76,11 +76,10 @@ The new system aims to gamify the learning experience, allowing for a more fun a
 
 Our solution has covered the main requirement from [LINK TO < Project-brief >]. So far, we have a functioning RPG game with items that can be acquired from beating the bosses through Q&A style combat in different worlds linked to the Skills Build badges.
 
-// #figure(
-//   image("Images/ProjectBrief.png", width: 90%),
-//   caption: [Image of the project brief sent by the client.],
-// ) <Project-brief>
-[ENABLE IMAGE]
+#figure(
+  image("Images/ProjectBrief.png", width: 90%),
+  caption: [Image of project description and challenge to be addressed in the project brief sent by the client.],
+) <Project-brief>
 
 Currently, two badges have been fully implemented in the game as worlds, those being "Introduction to AI" and "Introduction to Data Science". We planned to cover IBM Skills Build Courses "Intro to Cloud", "Journey to Cloud", and "Threat Intelligence and Hunting" in three other worlds, however, we were not able to finish these worlds due to time constraints and project down scoping. 
 
@@ -94,29 +93,26 @@ Regarding the "challenge to be addressed" section, we have done lots of research
 
 The following section will give a step-by-step guide on how to download and run the game in its latest build. The steps are as follows:
 
-1. Head to the project's GitHub page. Once on there, look for the release section as shown in [LINK TO < Releases-github >], and click on it. This will take you to our releases.
+1. Head to the project's GitHub page (#link("https://github.com/COMP2281/software-engineering-group-17/releases")). Once on there, look for the release section as shown in @Releases-github, and click on it. This will take you to our releases.
 
-// #figure(
-//   image("Images/ReleasesGithub.png", width: 90%),
-//   caption: [Image of the release section on the project GitHub page.],
-// ) <Releases-github>
-[TOGGLE IMAGE HERE]
+#figure(
+  image("Images/ReleasesGithub.png", width: 90%),
+  caption: [Image of the release section on the project GitHub page.],
+) <Releases-github>
 
 2. Once inside the releases, look for the newest version of the game. This should be the first card you see on the screen. Press on the "Assets" dropdown to show the files available, and press on the "rpg-skills-build" .zip to download the build.
 
-// #figure(
-//   image("Images/BuildDownload.png", width: 90%),
-//   caption: [Image of the .zip build folder in the release section.],
-// ) <Releases-github>
-[TOGGLE IMAGE HERE]
+#figure(
+  image("Images/BuildDownload.png", width: 90%),
+  caption: [Image of the .zip build folder in the release section.],
+)
 
 3. After downloading the game build folder, unzip it using your tool of choice. Once unzipping is done, open the folder and look for the "SEProject.exe" file, and run it. This should open the start screen of the game.
 
-// #figure(
-//   image("Images/GameExe.png", width: 90%),
-//   caption: [Image of the .exe file in the game build folder.],
-// ) <Releases-github>
-[TOGGLE IMAGE HERE]
+#figure(
+  image("Images/GameExe.png", width: 90%),
+  caption: [Image of the .exe file in the game build folder.],
+)
 
 / Note: The game is only compatible with Windows 10 and 11 as per the request of the client. We recommend having a computer with a minimum of 4GBs of RAM to run the game. You can feel free to plug in a controller or play the game using the keyboard and mouse. 
 
@@ -128,7 +124,7 @@ In this section, we refer back to the requirement specification and go through a
 
 === Functional Requirements
 #table(
-  columns: (25%, 20%, 20%, 35%),
+  columns: (20%, 25%, 20%, 35%),
   align: horizon,
   inset: 10pt,
   [Requirement Name], [Current Status], [Extent to which this is fulfilled], [Justification of fulfilment],
@@ -157,7 +153,7 @@ In this section, we refer back to the requirement specification and go through a
 === Non-Functional Requirements <NFR-section>
 
 #table(
-  columns: (25%, 20%, 20%, 35%),
+  columns: (20%, 25%, 20%, 35%),
   align: horizon,
   inset: 10pt,
   [Requirement Name], [Current Status], [Extent to which this is fulfilled], [Justification of fulfilment],
@@ -323,11 +319,10 @@ From the above market research, we decided to model the combat on Ace Attorney I
 === Game Design Philosophy
 After looking into the different possibilities discussed above, we had to decide how we wanted to implement them in our game design. The biggest inspirations for how we wanted to design the game overworld sections were two indie games named Undertale and Deltarune, primarily due to them being top-down 2D Pixel Art RPG games like ours will be, alongside the bulk of the game being interesting puzzles, broken up by fun combat mechanics. Overall it is a simple but very effective game design, making it perfect for this project.
 
-// #figure(
-//   image("Images/deltaruneimage.png", width: 80%),
-//   caption: [Image of Deltarune]
-// )
-[image]
+#figure(
+  image("Images/deltaruneimage.jpg", width: 80%),
+  caption: [Image of Deltarune.]
+)
 
 Furthermore, we needed to figure out how we wanted to split the game up, as we wanted each section of the game to correspond with a section of IBM Skills Build. Therefore, we decided to connect levels through a "Hub World", which is a world separate from the main levels, there to allow you to access individual levels. This was predominantly inspired by Crash Bandicoot: The Wrath of Cortex, due to its visually pleasing Hub World, and interactable NPCs. This concept fits nicely with the user requirements, as well as allowing the developers to work on separate worlds in parallel, without disrupting other progress.
 
