@@ -17,7 +17,7 @@
 - **Last Week's Goals**: Achieved
 - **Bottlenecks**: None
 - Introduction to project manager
-- Finalisation of project idea
+- Finalization of project idea
 - Meeting with IBM client
 - Market Research
 - Goals for the week:
@@ -26,7 +26,7 @@
 ## Week 3 Minutes
 - **Lest Week's Goals**: Partially achieved; Some members did all the skills build badges whilst others decided to do them weekly instead. Everyone will however have them complete by the time game development starts.
 - Discussion of market research 
-- Finalisation of ideas based on market research
+- Finalization of ideas based on market research
 - Discussion of Requirement Specification sheet
 - Created some functional and non-functional requirements
 - Goals for the week
@@ -91,3 +91,87 @@
 - Everyone is satisfied with the quality of the video
 - Goals for the week
     - Learn Unity, start setting up the game.
+
+# Week 10 Minutes
+**Last Week's Goals**: Achieved
+- Did not do any work on Software Engineering as an AI report was due the next week
+
+# Week 11 Minutes
+- Discussed Test Plan Report
+- Completed Section 3 of Test Plan Report
+- Discussed game development plan and implementation for project presentation
+- Goals for the week
+  - Write as many test plan cases as possible for next week
+
+# Week 12 Minutes
+**Last Week's Goals**: Achieved
+- Wrote test plan overview and context
+- Finished writing all tests for Test Plan Report
+- Started game programming
+- Finished main character overworld sprites
+- Goals for the week
+  - Polish and submit Test Plan Report
+
+# Week 13 Minutes
+**Last Week's Goals**: Achieved
+- Added placeholder sound effects and music
+- Added question puzzle
+- Added "Lost Woods" puzzle
+- Goals for the week
+  - Work on Unity project
+
+# Week 14 Minutes
+**Last Week's Goals**: Achieved
+- Started implementing game
+- Made more game sprites
+- Added particle system
+- Added ice physics
+- Added race puzzle and timer
+- Goals for the week
+  - Continue working on unity project
+
+# Week 15 Minutes
+**Last Week's Goals**: Achieved
+- Implemented multiple worlds fully
+- Added shields and hearts mechanic for "bullet hell" puzzle
+- Implemented hub world
+- Made progress on combat system
+- Started work on save system
+- Goals for the week
+  - Continue working on project
+  - Get started on User Manual
+
+# Week 16 Minutes
+**Last Week's Goals**: Achieved
+- Finished first iteration of the saving system
+- Made plan for User Manual
+- Made service manual section in user manual
+- Started on other sections of user manual
+- Finished fundamentals of combat system
+- Added in first set of boss sprites
+- Goals for the week
+  - Make good progress on User Manual
+  - Start planning for Presentation
+  - Tidy up combat
+  - Improve save system
+
+# Week 17 Minutes
+**Last Week's Goals**: Achieved
+- Major work done on user manual:
+  - Charles: 4.2.4, 4.4.3, 5.4
+  - Josh: 2.3, 4.1.1, 4.1.2, 4.3, 4.4.2, 4.4.4, 5.4
+  - James: 3.4.2, 4.4, 4.4.5, 4.4.6
+  - Nam: 1.5.4
+  - Sam: 5.4
+- Major Game Progress Made:
+  - Added major game progression elements
+  - Tidied up combat
+  - Added boss fight cutscenes
+  - Added NPCs in the hub world
+  - Save system functioning as intended
+  - Imported questions into overworld
+- Planned who will be performing each section for the presentation.
+- Goals for the week
+  - Finish User Manual
+  - Make major progress on presentation
+  - Tidy up game for presenting
