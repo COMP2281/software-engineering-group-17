@@ -710,7 +710,7 @@ The Protagonist might not have noticed this, but there seems to be three types o
 
 #figure(
   image("Images/AllProjectiles.png", width: 90%),
-  caption: [Image showing the 3 types of projectiles (zoomed in) side by side with the left being the bullet, the middle one being the drone and the left one being the beam.]
+  caption: [Image showing the 3 types of projectiles side by side with the left being the bullet, the middle one being the drone and the left one being the beam.]
 )
 
 By identifying the different threats, you can devise specific strategies that will help the Protagonist deal with the threats individually and avoid the jaws of death.
@@ -761,14 +761,12 @@ In some places, you will see walls blocking the path to progress the level. To g
 
 ===== Boots of Speed
 
-A rare item which only shows up once in this world, the Boots of Speed makes the Protagonist much more agile, allowing them to swiftly manoeuvre around the projectiles shot by the turrets. Having permanent access to these would be great, however the boots works only when paired via a Bluetooth with a nearby device, so wearing them to the next level would (unfortunately) not grant the Protagonist extreme speed.
+A rare item which only shows up once in this world, the Boots of Speed makes the Protagonist much more agile, allowing them to swiftly manoeuvre around the projectiles shot by the turrets. Having permanent access to these would be great, however the boots works only when paired via a Bluetooth with a nearby device, so wearing them to the next level would (unfortunately) not grant the Protagonist extreme speed. Do not be too sad, as even if the shoes are non-functional, they still look great on the Protagonist.
 
 #figure(
-  image("Images/SpeedBoost.png", width: 90%),
-  caption: [Image showing the item which increases the player's movement speed]
+  image("Images/SpeedBoost.png", width: 70%),
+  caption: [Image showing the Boots of Speed, which increases the player's movement speed.]
 )
-
-Do not be too sad, as even if the shoes are non-functional, they still look great on the Protagonist.
 
 ==== Portals
 
@@ -778,8 +776,8 @@ There are two types of portals present in this world:
 2. *Two-way:* Stable portals that are used inside a level. Utilizing these in a clever way will greatly help the Protagonist avoid projectiles! Note however that these have a short cooldown between uses as the portals have to recharge. It also prevents the Protagonist from teleport back and forth indefinitely.
 
 #figure(
-  image("Images/AIPortal.png", width: 90%),
-  caption: [Image showing the portal parent and the points of the portal (green portals).]
+  image("Images/AIPortal.png", width: 70%),
+  caption: [Image showing the two-way portal (in dark green) and one way portal (in light green, above the bottom portal).]
 )
 
 ==== Moving platforms
@@ -787,8 +785,8 @@ There are two types of portals present in this world:
 In some levels, there are moving platforms which move between 2 points at a constant speed. Moving along with these can help block incoming projectiles. Use these wisely!
 
 #figure(
-  image("Images/MovingPlatform.png", width: 90%),
-  caption: [Image showing a moving platform which moves between the 2 points (shown as small diamonds).]
+  image("Images/MovingPlatform.png", width: 70%),
+  caption: [Image showing a moving platform which moves up and down, blocking the turret on the right.]
 )
 
 === Data Science World
@@ -839,6 +837,7 @@ In level 6, the player can find the Dark Maze, in which the player must find the
   caption: [Image of Dark Maze in DS World Level 6.]
 )
 
+#pagebreak()
 == Combat
 
 Upon reaching the end of any world, the player is met with a final encounter which will test their understanding of the concepts learnt. These enemies are corrupted IBM co-workers who are masters in their respective fields, and only by proving yourself to be knowledgable and worthy would they come back to their senses and hand over the relics required to face the creator of this world! 
@@ -908,13 +907,13 @@ Working with Unity can be challenging for new users. However, there are lots of 
 
 In this section, we will be giving a brief introduction to the Unity Editor, how to work with it, as well as talking about some fundamental concepts.
 
+#pagebreak()
 The Unity Editor is split into 6 views: Project, Scene, Game, Console, Hierarchy, and Inspect.
 
 #figure(
    image("Images/unity.png", width: 100%),
    caption: [Image of the Unity Editor split into the 4 main views. The game view is another tab inside the Scene view window, and the Console is another tab inside Project view.]
 )
-[ENABLE IMAGE]
 
 - *The Project view* is the main folder which holds all of your game files, such as scenes, objects, prefabs and much more. Think of this as a root folder for the code base.
 
@@ -928,6 +927,7 @@ The Unity Editor is split into 6 views: Project, Scene, Game, Console, Hierarchy
 
 - *The Inspect view* shows different attributes that make up an object component selected in the Hierarchy. Not only that, it allows developers from accessing an object's public variables and allows scripts to be attached to objects. This is the main tool for adding functionality to the scene objects, such as collision for walls, or health for a player character.
 
+#pagebreak()
 The following is the general workflow in Unity.
 
 #figure(
@@ -2197,10 +2197,9 @@ caption: [Image of `AIPortal` script attached to a Portal `GameObject` in Puzzle
 
 ==== `EscapeButton` <EscapeButtonDetailed>
 
-//#figure(
-// image("Images/EscapeButton.png")
-//)
-[UNTOGGLE IMAGE BLOCK HERE]
+#figure(
+image("Images/EscapeButton.png")
+)
 
 / Function description:
 
