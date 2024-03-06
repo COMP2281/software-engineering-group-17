@@ -32,7 +32,7 @@ public class ShieldItem : MonoBehaviour
         player.GetComponent<PlayerMovement2>().canMove = false;
         player.GetComponent<Dash>().canDash = false;
 
-        yield return new WaitForSeconds(9.5f);
+        yield return new WaitForSeconds(6.5f);
 
         shield.GetComponent<Shield>().canShield = true;
         player.GetComponent<Dash>().canDash = true;

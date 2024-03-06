@@ -30,7 +30,7 @@ public class DashItem : MonoBehaviour
         gameObject.GetComponent<SpriteRenderer>().enabled = false;
         player.GetComponent<PlayerMovement2>().canMove = false;
 
-        yield return new WaitForSeconds(9.5f);
+        yield return new WaitForSeconds(6.5f);
 
         player.GetComponent<Dash>().canDash = true;
         player.GetComponent<PlayerMovement2>().canMove = true;
