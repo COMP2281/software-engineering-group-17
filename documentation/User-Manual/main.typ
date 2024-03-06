@@ -79,7 +79,7 @@ The new system aims to gamify the learning experience, allowing for a more fun a
 Our solution has covered the main requirement from [LINK TO < Project-brief >]. So far, we have a functioning RPG game with items that can be acquired from beating the bosses through Q&A style combat in different worlds linked to the Skills Build badges.
 
 #figure(
-  image("Images/ProjectBrief.png", width: 90%),
+  image("Images/ProjectBrief.png", width: 80%),
   caption: [Image of project description and challenge to be addressed in the project brief sent by the client.],
 ) <Project-brief>
 
@@ -270,6 +270,7 @@ RPGMaker is a game development engine inspired by classic RPG games, and thus op
 ==== Simple
 Finally, we have the super simple 16x16 sprites, which conform to tiles, but lack a lot of detail.
 
+#pagebreak()
 === Health
 We need to be able to keep track of how many questions have been answered correctly and there are several ways to do this, however keeping in line with RPG games, the best way is through Hit Points (HP), which normally represent how much damage the player has taken [CHECK DEFINITION]. Converting this to Q&A style combat, we can say that if the player answers a question correctly, the enemy takes damage, and if you answer a question wrong, the player character takes damage.
 
@@ -297,6 +298,7 @@ Or take another example from Trails from Zero, an RPG originally released in 201
 
 The advantage of health bars is that they are simple and easy to look at, as they can be represented numerically, and thus can be manipulated freely.
 
+#pagebreak()
 ==== Heart Bars
 
 Heart bars are a more discrete representation of health bars, as instead of having a large number to represent health, you instead have a more constant smaller numerical representation, and each piece of damage would represent one "heart".
@@ -328,12 +330,14 @@ After looking into the different possibilities discussed above, we had to decide
   caption: [Image of Deltarune.]
 )
 
-Furthermore, we needed to figure out how we wanted to split the game up, as we wanted each section of the game to correspond with a section of IBM Skills Build. Therefore, we decided to connect levels through a "Hub World", which is a world separate from the main levels, there to allow you to access individual levels. This was predominantly inspired by Crash Bandicoot: The Wrath of Cortex, due to its visually pleasing Hub World, and interactable NPCs. This concept fits nicely with the user requirements, as well as allowing the developers to work on separate worlds in parallel, without disrupting other progress.
+Furthermore, we needed to figure out how we wanted to split the game up, as we wanted each section of the game to correspond with a section of IBM Skills Build. Therefore, we decided to connect levels through a "Hub World", which is a world separate from the main levels, there to allow you to access individual levels. 
 
 #figure(
   image("Images/hub.png", width: 80%),
   caption: [Image of the Hub World in Crash Bandicoot: The Wrath of Cortex.]
 )
+
+This was predominantly inspired by Crash Bandicoot: The Wrath of Cortex, due to its visually pleasing Hub World, and interactable NPCs. This concept fits nicely with the user requirements, as well as allowing the developers to work on separate worlds in parallel, without disrupting other progress.
 
 === Overworld Sprites
 
@@ -384,6 +388,7 @@ Lastly, we have two bosses who we didn't implement sprites for, the second of wh
   caption: [Image of concept work for the two unimplemented bosses.]
 )
 
+#pagebreak()
 === Combat Menu
 
 Other than sprite choices, the other major combat design choices we had to make were on the menu and the health, as well as the general presentation.
@@ -418,6 +423,7 @@ Upon answering incorrectly, the sprites once again change, but this time the pla
 
 Additionally, due to time constraints, we weren't able to implement true heart bars, as such they simply display the heart and the number of hearts for now.
 
+#pagebreak()
 = Non-technical manual <Game-instruction-manual-section>
 
 The structure of the non-technical manual is inspired by a manual from a Nintendo title called "Pokémon Mystery Dungeon: Gates to Infinity" @Pokemon-MD-manual. 
@@ -458,9 +464,15 @@ Armed with this knowledge, the Protagonist embarks on a journey through each of 
 )
 Will you succeed in saving everyone and help them return to their original world? 
 
+#pagebreak()
 === Main Menu
 
 The Main Menu is an inviting location, with sombre music and a futuristic background image with the IBM logo in it. The lively Menus background image moves around at random intervals in time, and blurs and unblurs itself too. 
+
+#figure(
+  image("Images/main_menu.png", width: 100%),
+  caption: [Image of Main Menu including background image and all buttons, with the "New Game" button being highlighted.],
+)
 
 #figure(
   table(
@@ -481,11 +493,9 @@ The Main Menu is an inviting location, with sombre music and a futuristic backgr
 )
 
 #figure(
-  image("Images/main_menu.png", width: 90%),
-  caption: [Image of Main Menu including background image and all buttons, with the "New Game" button being highlighted.],
+  image("Images/settings_menu.png", width: 90%),
+  caption: [Image of Settings menu including background image and all buttons.],
 )
-
-#pagebreak()
 
 #figure(
   table(
@@ -503,15 +513,9 @@ The Main Menu is an inviting location, with sombre music and a futuristic backgr
   caption: "Table of buttons for the Pause Menu"
 )
 
-
-  
-#figure(
-  image("Images/settings_menu.png", width: 90%),
-  caption: [Image of Settings menu including background image and all buttons.],
-)
-
 Now that you've seen all that we have to offer in the Main Menu, let us explore The _IBM Tower of Skills Build Mastery_ by starting a New Game!
 
+#pagebreak()
 == Controls
 
 This game is designed to be played using either a gamepad or a keyboard and mouse. While the game should be compatible with most gamepads, it has been designed primarily for the Playstation DualSense™ Controllers, the Xbox Wireless Controllers and the Nintendo Switch Pro Controllers. 
@@ -525,6 +529,7 @@ For the controls below, Left/Right Stick Up/Down/Left/Right refers to pushing th
   caption: [Image of a generic Gamepad with Button Labels @ps2-gamepad.],
 )
 
+#pagebreak()
 === Menu
 #figure(
   table(
@@ -559,6 +564,7 @@ For the controls below, Left/Right Stick Up/Down/Left/Right refers to pushing th
   caption: "Table of controls for the overworld."
 )
 
+#pagebreak()
 === Battle
 
 #figure(
@@ -634,6 +640,7 @@ Upon entering the Pause Menu, you will see a familiar sight; the same background
   
   Make sure to reach the next floor before quitting the game!
 
+#pagebreak()
 == Worlds <World-section>
 
 The game takes place in multiple worlds, each being a collection of levels that represent a different section of IBM Skills Build with its own themes and challenges. The only exception to this is the Hub World and the Final World.
@@ -669,7 +676,10 @@ After completing a world, the Protagonist will be rewarded with an item, corresp
 
 Whenever the Protagonist successfully defeats an IBM co-worker in a World through combat, they then come to their senses and return with the Protagonist to the Hub World, slowly populating the once empty and desolate location. Whilst there, the Protagonist can talk to them to learn more about IBM Skills Build courses. They also tend to give useful advice, so be on the lookout for what they say!
 
-[Image of NPCs]
+#figure(
+  image("Images/NPCHubworld.png", width: 90%),
+  caption: [Image of the Protagonist next to an NPC in the Hub World.]
+)
 
 After collecting all 4 items, the Spirit of the Altar can use all its powers to open a rift in the world leading to the final world.
 
