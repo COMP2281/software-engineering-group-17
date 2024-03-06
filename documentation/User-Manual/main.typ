@@ -731,7 +731,7 @@ The projectiles are shot by sentient turrets which have gone rogue. There are fo
 
 #figure(
   image("Images/TurretTypes.png", width: 90%),
-  caption: [Image showing the stationary turret (on the left), the rotating turrets (middle left), the mobile turrets (middle right) and the experimental turret (right)]
+  caption: [Image showing a stationary turret (on the left), a rotating turret (middle left), a mobile turret (middle right) and a experimental turret (right)]
 )
 
 ==== Abilities
@@ -752,7 +752,7 @@ These are beneficial pickups which will heal up the Protagonist, letting them su
 
 #figure(
   image("Images/PickupHearts.png", width: 90%),
-  caption: [Image showing the stationary turret (on the left), the rotating turrets (middle left), the mobile turrets (middle right) and the experimental turret (right)]
+  caption: [Image showing hearts which can be picked up by the player]
 )
 
 ===== Keys
@@ -2295,7 +2295,7 @@ caption: [Image of `AIPortal` script attached to a Portal `GameObject` in Puzzle
 
 #figure(
   image("Images/TilemapKill.png"),
-  caption: [Image of `keys` script attached to a `key` `GameObject` in Puzzle-4.]
+  caption: [Image of obstacles (highlighted) which the player must avoid.]
 )
 
 / Function description:
