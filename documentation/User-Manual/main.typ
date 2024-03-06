@@ -36,7 +36,7 @@ This document is split up into six main sections beside this summary. Since it i
 
 - *@Installation-guide-section:* Usable access to the system developed.
 
--  *@User-requirement-section:* Description for each of the user requirements, including the initial and current status, the extent to which it is fulfilled, and justification for the extent of fulfilment.
+-  *@Project-brief-section and @User-requirement-section:* Description for each of the user requirements, including the initial and current status, the extent to which it is fulfilled, and justification for the extent of fulfilment.
 
 - *@NFR-section:*  Detail how the other non-functional aspects of the system are handled.
 
@@ -50,9 +50,11 @@ This document is split up into six main sections beside this summary. Since it i
 
 - *@System-maintenance-section:* Specifics of how the system can be maintained. 
 
-- *@Future-development-section*: Possible future development that can be implemented.
+- *@Future-development-section:* Possible future development that can be implemented.
 
-- *@Ethical-societal-section*: Potential ethical and societal impacts of the system in its current and possible future status.
+- *@Ethical-societal-section:* Potential ethical and societal impacts of the system in its current and possible future status.
+
+- *@Glossary-section:* A glossary for terms specific to game development.
 
 = Project introduction <Project-introduction-section>
 
@@ -72,7 +74,7 @@ The new system aims to gamify the learning experience, allowing for a more fun a
 
 = Solution discussion <Solution-discussion-section>
 
-== Project brief analysis
+== Project brief analysis <Project-brief-section>
 
 Our solution has covered the main requirement from [LINK TO < Project-brief >]. So far, we have a functioning RPG game with items that can be acquired from beating the bosses through Q&A style combat in different worlds linked to the Skills Build badges.
 
@@ -172,6 +174,7 @@ In this section, we refer back to the requirement specification and go through a
   
 )
 
+#pagebreak()
 =  Conceptualisation and development <Initial-idea-section>
 
 In this section, we will discuss the source materials upon which the conceptualisation
@@ -312,6 +315,7 @@ The positives of heart bars are they also allow you to represent health in uniqu
   caption: [Image of heart HUD in Hollow Knight, with the player having 5 hearts.]
 )
 
+#pagebreak()
 == Current Implementation
 
 From the above market research, we decided to model the combat on Ace Attorney Investigations, with 2 big sprites of the characters on each side, the menu used will be list style and the character sprites will be modeled on Pokemon characters, and the health system will be based on hearts.
@@ -326,67 +330,59 @@ After looking into the different possibilities discussed above, we had to decide
 
 Furthermore, we needed to figure out how we wanted to split the game up, as we wanted each section of the game to correspond with a section of IBM Skills Build. Therefore, we decided to connect levels through a "Hub World", which is a world separate from the main levels, there to allow you to access individual levels. This was predominantly inspired by Crash Bandicoot: The Wrath of Cortex, due to its visually pleasing Hub World, and interactable NPCs. This concept fits nicely with the user requirements, as well as allowing the developers to work on separate worlds in parallel, without disrupting other progress.
 
-// #figure(
-//   image("Images/hub.png", width: 80%),
-//   caption: [Image of the Hub World in Crash Bandicoot: The Wrath of Cortex]
-// )
-[image]
+#figure(
+  image("Images/hub.png", width: 80%),
+  caption: [Image of the Hub World in Crash Bandicoot: The Wrath of Cortex.]
+)
 
 === Overworld Sprites
 
 Following the style guidelines of Pokémon for the overworld sprites, our artist made a set of walking sprites for the main character, as well as standing sprites for each of the bosses, for the player to interact with for boss battles, and in the Hub World.
 
-// #figure(
-//   image("Images/spritesheetfull.png", width: 80%),
-//   caption: [Image of main character's full walk cycle]
-// )
-[image]
+#figure(
+  image("Images/spritesheet.png", width: 80%),
+  caption: [Image of main character's full walk cycle.]
+)
 
-// #figure(
-//   image("Images/bosssprites.png", width: 80%),
-//   caption: [Image of all the boss' overworld sprites]
-// )
-[image]
+#figure(
+  image("Images/bosssprites.png", width: 50%),
+  caption: [Image of all the boss' overworld sprites.]
+)
 
 === Combat Sprites
 
 As we decided to base our combat around the Pheonix Wright Ace Attorney games, it felt only logical to use similar sprites for our combat as well, as such we decided to make our main character have a similar base to Ace Attorney's main protagonist, Pheonix.
 
-// #figure(
-//   image("Images/mcsprites.png", width: 80%),
-//   caption: [Image of the sprites used for the main character in combat]
-// )
-[image]
+#figure(
+  image("Images/mcsprites.png", width: 80%),
+  caption: [Image of the sprites used for the main character in combat.]
+)
 
 For the boss sprites, we used a similar base to Ace Attorney's main antagonist, Miles Edgeworth.
 
-// #figure(
-//   image("Images/kiryusprites.png", width: 80%),
-//   caption: [Image of the sprites used for one of the bosses in combat]
-// )
-[image]
+#figure(
+  image("Images/kiryusprites.png", width: 80%),
+  caption: [Image of the sprites used for one of the bosses in combat.]
+)
 
-// #figure(
-//   image("Images/ichibansprites.png", width: 80%),
-//   caption: [Image of the sprites used for another of the bosses in combat]
-// )
-[image]
+#figure(
+  image("Images/ichibansprites.png", width: 80%),
+  caption: [Image of the sprites used for another of the bosses in combat.]
+)
 
 For our final boss, we decided early on in development that we wanted to base our final boss on a cyborg version of John McNamara.
 
-// #figure(
-//   image("Images/johnsprites.png", width: 80%),
-//   caption: [Image of the sprites used for cyborg John McNamara in combat]
-// )
-[image]
+#figure(
+  image("Images/johnsprites.png", width: 80%),
+  caption: [Image of the sprites used for cyborg John McNamara in combat.]
+)
 
 Lastly, we have two bosses who we didn't implement sprites for, the second of which is based on Mia Fey, also from the Ace Attorney games.
 
-// #figure(
-//   image("Images/othersprites.png", width: 80%),
-//   caption: [Image of concept work for the two unimplemented bosses.]
-// )
-[image]
+#figure(
+  image("Images/othersprites.png", width: 80%),
+  caption: [Image of concept work for the two unimplemented bosses.]
+)
 
 === Combat Menu
 
@@ -394,35 +390,31 @@ Other than sprite choices, the other major combat design choices we had to make 
 
 For the start of the battle, we decided to have the two characters point at each other, initiating the fight, before switching to the main combat section. An additional point to make is the combat backgrounds, we decided to use generative AI to produce backgrounds for combat, themed around our worlds, due to the speed and quality that they can be produced.
 
-// #figure(
-//   image("Images/combatstart.png", width: 80%),
-//   caption: [Image of the opening to a combat section.]
-// )
-[image]
+#figure(
+  image("Images/combatstart.png", width: 80%),
+  caption: [Image of the opening to a combat section.]
+)
 
 After combat has fully started, the characters return to their neutral position, the question appears in the blue box, and the possible answers are in Final Fantasy list style in the box below it. You can tell which item you have highlighted by the red box, and this can be changed by moving up or down.
 
-// #figure(
-//   image("Images/combatmenu.png", width: 80%),
-//   caption: [Image of the regular combat menu.]
-// )
-[image]
+#figure(
+  image("Images/combatmenu.png", width: 80%),
+  caption: [Image of the regular combat menu.]
+)
 
 Upon answering the question correctly, the sprites change to their relevant states, and the boss loses health.
 
-// #figure(
-//   image("Images/combatwin.png", width: 80%),
-//   caption: [Image of the player answering a question correctly.]
-// )
-[image]
+#figure(
+  image("Images/combatwin.png", width: 80%),
+  caption: [Image of the player answering a question correctly.]
+)
 
 Upon answering incorrectly, the sprites once again change, but this time the player loses health.
 
-// #figure(
-//   image("Images/combatloss.png", width: 80%),
-//   caption: [Image of the player answering incorrectly.]
-// )
-[image]
+#figure(
+  image("Images/combatloss.png", width: 80%),
+  caption: [Image of the player answering incorrectly.]
+)
 
 Additionally, due to time constraints, we weren't able to implement true heart bars, as such they simply display the heart and the number of hearts for now.
 
@@ -460,12 +452,10 @@ The spirit instructs the Protagonist to find 4 relics of alternate worlds and br
 
 Armed with this knowledge, the Protagonist embarks on a journey through each of the worlds, solving puzzles, playing mini-games, answering questions from Skills Build and fighting battles of wits against corrupted IBM co-workers who have also been trapped in the Tower of Skills Build Mastery.
 
-// #figure(
-//   image("Images/coworker.png", width: 80%),
-//   caption: [Image of the Protagonist talking to a coworker],
-// )
-[ENABLE IMAGE]
-
+#figure(
+  image("Images/coworker.png", width: 80%),
+  caption: [Image of the Protagonist in front of a corrupted coworker.],
+)
 Will you succeed in saving everyone and help them return to their original world? 
 
 === Main Menu
@@ -710,7 +700,7 @@ The Protagonist might not have noticed this, but there seems to be three types o
 
 #figure(
   image("Images/AllProjectiles.png", width: 90%),
-  caption: [Image showing the 3 types of projectiles (zoomed in) side by side with the left being the bullet, the middle one being the drone and the left one being the beam]
+  caption: [Image showing the 3 types of projectiles (zoomed in) side by side with the left being the bullet, the middle one being the drone and the left one being the beam.]
 )
 
 By identifying the different threats, you can devise specific strategies that will help the Protagonist deal with the threats individually and avoid the jaws of death.
@@ -726,7 +716,7 @@ The projectiles are shot by sentient turrets which have gone rogue. There are fo
 
 #figure(
   image("Images/TurretTypes.png", width: 90%),
-  caption: [Image showing a stationary turret (on the left), a rotating turret (middle left), a mobile turret (middle right) and a experimental turret (right)]
+  caption: [Image showing a stationary turret, a rotating turret, a mobile turret and a experimental turret (from left to right).]
 )
 
 ==== Abilities
@@ -747,7 +737,7 @@ These are beneficial pickups which will heal up the Protagonist, letting them su
 
 #figure(
   image("Images/PickupHearts.png", width: 90%),
-  caption: [Image showing hearts which can be picked up by the player]
+  caption: [Image showing hearts which can be picked up by the player.]
 )
 
 ===== Keys
@@ -756,7 +746,7 @@ In some places, you will see walls blocking the path to progress the level. To g
 
 #figure(
   image("Images/Keys.png", width: 90%),
-  caption: [Image showing the keys to collect throughout the level to progress]
+  caption: [Image showing the keys to collect throughout the level to progress.]
 )
 
 ===== Boots of Speed
@@ -779,7 +769,7 @@ There are two types of portals present in this world:
 
 #figure(
   image("Images/AIPortal.png", width: 90%),
-  caption: [Image showing the portal parent and the points of the portal (green portals)]
+  caption: [Image showing the portal parent and the points of the portal (green portals).]
 )
 
 ==== Moving platforms
@@ -788,7 +778,7 @@ In some levels, there are moving platforms which move between 2 points at a cons
 
 #figure(
   image("Images/MovingPlatform.png", width: 90%),
-  caption: [Image showing a moving platform which moves between the 2 points (shown as small diamonds)]
+  caption: [Image showing a moving platform which moves between the 2 points (shown as small diamonds).]
 )
 
 === Data Science World
@@ -843,29 +833,26 @@ In level 6, the player can find the Dark Maze, in which the player must find the
 
 Upon reaching the end of any world, the player is met with a final encounter which will test their understanding of the concepts learnt. These enemies are corrupted IBM co-workers who are masters in their respective fields, and only by proving yourself to be knowledgable and worthy would they come back to their senses and hand over the relics required to face the creator of this world! 
 
-// #figure(
-//   image("Images/MindControlledCoworker.png", width: 90%),
-//   caption: [Image of a corrupted employee conversing with the player character.]
-// )
-[ENABLE IMAGE]
+#figure(
+  image("Images/MindControlledCoworker.png", width: 90%),
+  caption: [Image of a corrupted employee conversing with the player character.]
+)
 
 === Combat sequence
 
 Following the discussion with the co-worker, you will be shown a brief cutscene with some intense combat music before the screen fades into the fight sequence. Both the player and enemy combat sprites, alongside their animations, have been manually handcrafted to make the game feel more alive, and the background used for the fights seamlessly matches up with the theme of the world. After all, what good showdown would be complete without an epic title card sequence of the combatants?
 
-// #figure(
-//   image("Images/CombatCutscene.png", width: 90%),
-//   caption: [Image of the pre-combat cutscene.]
-// )
-[ENABLE IMAGE]
+#figure(
+  image("Images/CombatCutscene.png", width: 90%),
+  caption: [Image of the pre-combat cutscene.]
+)
 
 During a fight, the co-worker will ask the player a set of questions taken from the current world's Skills Build badge quiz. When answered correctly, they will take damage, whereas if answered incorrectly, the player will take damage. The questions will be asked until one of the two character's health reaches zero. Setting up the Q&A in this manner makes the whole experience more exciting and different compared to the traditional quizzes.
 
-// #figure(
-//   image("Images/CombatGameplay.png", width: 90%),
-//   caption: [Image of the combat sequence.]
-// )
-[ENABLE IMAGE]
+#figure(
+  image("Images/CombatGameplay.png", width: 90%),
+  caption: [Image of the combat sequence.]
+)
 
 Losing the fight sequence will take the player back to the start of the combat stage, allowing them to retry the encounter, whereas winning will bring you to an unfamiliar selection screen.
 
@@ -873,11 +860,10 @@ Losing the fight sequence will take the player back to the start of the combat s
 
 After defeating a co-worker and helping them snap out of the corruption, the player will receive the relic. These artefacts are so powerful that merely being in the vicinity grants unimaginable powers; no wonder the player's co-workers are so strong! With this, you are able to grant the player one of two special bonuses, permanently enhancing their combat capabilities to make future fights easier.
 
-// #figure(
-//   image("Images/skilltree.png", width: 90%),
-//   caption: [Image of Skill Tree power-up option after combat.],
-// )
-[ENABLE IMAGE]
+#figure(
+  image("Images/skilltree.png", width: 90%),
+  caption: [Image of Skill Tree power-up option after combat.],
+)
 
 #pagebreak()
 = Technical Manual <Service-manual-section>
@@ -912,23 +898,23 @@ Working with Unity can be challenging for new users. However, there are lots of 
 
 In this section, we will be giving a brief introduction to the Unity Editor, how to work with it, as well as talking about some fundamental concepts.
 
-The Unity Editor is split into 6 tabs: Project, Scene view, Game view, Console, Hierarchy, and Inspect view,.
+The Unity Editor is split into 6 views: Project, Scene, Game, Console, Hierarchy, and Inspect.
 
-// #figure(
-//    image("Images/unity.png", width: 90%),
-//    caption: [Image of the Unity Editor split into the 6 tabs.]
-// )
+#figure(
+   image("Images/unity.png", width: 100%),
+   caption: [Image of the Unity Editor split into the 4 main views. The game view is another tab inside the Scene view window, and the Console is another tab inside Project view.]
+)
 [ENABLE IMAGE]
 
-- *The Project* is the main folder which holds all of your game files, such as scenes, objects, prefabs and much more. Think of this as a root folder for the code base.
+- *The Project view* is the main folder which holds all of your game files, such as scenes, objects, prefabs and much more. Think of this as a root folder for the code base.
 
 - *The Scene view* is an interactive editor for individual scenes. A scene can be thought of as a canvas developers can add objects onto. This is one of the main parts that will be used to design the game, with everything in the scene being viewable by the user when playing the game. In this view, objects can be moved around the scene, rotated, scaled and transformed.
 
 - *The Game view* is what the user sees when they play the game. This is essential for testing whether everything in the scene works or not. To build the scene into the Game view, press the play icon up top in the center of the screen. While in this view, you can pause the game, change public variables' values, and even move objects in the scene around.
 
-- *The Console* acts like any other consoles in an IDE. Whenever an error is thrown in the game, it will be shown in the console. You can also use the console to test your code with print statements.
+- *The Console (view)* acts like any other consoles in an IDE. Whenever an error is thrown in the game, it will be shown in the console. You can also use the console to test your code with print statements.
 
-- *The Hierarchy* is where all objects in the Scene view can be found, broken down to its components. For example, a dialogue box that you see in the Scene view could be made up of a background image and a textUI component inside the Hierarchy. The Hierarchy can be used to quickly select an item in the scene, even when they are invisible.
+- *The Hierarchy view* is where all objects in the Scene view can be found, broken down to its components. For example, a dialogue box that you see in the Scene view could be made up of a background image and a textUI component inside the Hierarchy. The Hierarchy can be used to quickly select an item in the scene, even when they are invisible.
 
 - *The Inspect view* shows different attributes that make up an object component selected in the Hierarchy. Not only that, it allows developers from accessing an object's public variables and allows scripts to be attached to objects. This is the main tool for adding functionality to the scene objects, such as collision for walls, or health for a player character.
 
@@ -943,11 +929,10 @@ The following is the general workflow in Unity.
 
 As our code base is written in C\#, you are not forced into using any specific IDEs, as long as you feel comfortable with it. However, we recommend using either VSCode with the C\# extension, or using Visual Studio as it is the default IDE for a Unity project. Visual Studio also includes some built-in functionality that might be useful, like a UML diagram generator.
 
-// #figure(
-//   image("Images/CombatUML.png", width: 90%),
-//   caption: [Image of the combat system UML diagram.],
-// )
-[ENABLE IMAGE]
+#figure(
+  image("Images/CombatUML.jpg", width: 90%),
+  caption: [Image of the combat system UML diagram.],
+)
 
 == Class documentation <Class-documentation-section>
 
@@ -1289,11 +1274,10 @@ See @Combat-system-section for more detail.
 
 ==== `CoWorkerCutscene` <CoWorkerCutscene>
 
-// #figure(
-//   image("Images/coworkercutscene.png", width: 90%),
-//   caption: [Image showing the `GameObjects` with the `CoWorkerSpawner` script attached]
-// )
-[ENABLE IMAGE]
+#figure(
+  image("Images/coworkercutscene.png", width: 90%),
+  caption: [Image showing the `GameObjects` with the `CoWorkerSpawner` script attached.]
+)
 
 / Function description:
 
@@ -1302,11 +1286,10 @@ See @Combat-system-section for more detail.
 
 ==== `CoWorkerSpawner` <CoWorkerSpawner>
 
-// #figure(
-//   image("Images/coworkerspawner.png", width: 90%),
-//   caption: [Image showing the `GameObjects` with the `CoWorkerSpawner` script attached]
-// )
-[ENABLE IMAGE]
+#figure(
+  image("Images/coworkerspawner.png", width: 90%),
+  caption: [Image showing the `GameObjects` with the `CoWorkerSpawner` script attached.]
+)
 
 / Function description:
 
@@ -1363,19 +1346,7 @@ The game manager enters the game environment through the `MainMenu` and then dup
 
 ==== `ImportQuestions` <ImportQuestionsDetailed>
 
-// #figure(
-//  image("Images/QuestionCSV.png", width: 90%),
-//  caption: [Image of the CSV file containing a list of questions, answers, as well as topics from IBM Skills Build's various badges. The first answer in the answers column is the correct one.]
-// )
-[UNTOGGLE IMAGE BLOCK HERE]
-
-To import the questions, place the CSV file inside the "Resources" folder, then press on "Utilities" $arrow$ "Import Questions".
-
-// #figure(
-//  image("Images/UtilitiesImport.png", width: 90%),
-//  caption: [Image of the import question option in Unity.]
-// )
-[UNTOGGLE IMAGE BLOCK HERE]
+See section 
 
 / Function description:
 
@@ -1385,11 +1356,10 @@ To import the questions, place the CSV file inside the "Resources" folder, then 
 
 ==== `Inventory` <Inventory>
 
-// #figure(
-//  image("Images/inventory.png", width: 90%),
-//  caption: [Image of the Inventory with the player not having acquired any items yet.]
-// )
-[ENABLE IMAGE]
+#figure(
+ image("Images/inventory.png", width: 90%),
+ caption: [Image of the Inventory with the player not having acquired any items yet.]
+)
 
 / Function description:
 
@@ -1485,10 +1455,10 @@ See @Combat-system-section for more detail.
 
 ==== `PostBattleCutscene` <PostBattleCutscene>
 
-// #figure(
-//   image("Images/postbattlecutscene.png", width: 90%),
-//   caption: [Image of the Post Battle Cutscene `GameObject` with the `PostBattleCutscene` script attached.]
-// )
+#figure(
+  image("Images/postbattlecutscene.png", width: 90%),
+  caption: [Image of the Post Battle Cutscene `GameObject` with the `PostBattleCutscene` script attached.]
+)
 
 / Function description:
 
@@ -1497,11 +1467,10 @@ See @Combat-system-section for more detail.
 
 ==== `PowerUp` <PowerUp>
 
-// #figure(
-//   image("Images/powerup.png", width: 90%),
-//   caption: [Image of the power-up selection screen, where the player can choose which stat to upgrade.]
-// )
-[ENABLE IMAGE]
+#figure(
+  image("Images/powerup.png", width: 90%),
+  caption: [Image of the power-up selection screen, where the player can choose which stat to upgrade.]
+)
 
 / Function description:
 
@@ -1510,11 +1479,10 @@ See @Combat-system-section for more detail.
 
 ==== `PreBattleCutscene` <PreBattleCutscene>
 
-// #figure(
-//   image("Images/prebattlecutscene.png", width: 90%),
-//   caption: [Image of the pre-battle cutscene `GameObject` with the `PreBattleCutscene` script attached.]
-// )
-[ENABLE IMAGE]
+#figure(
+  image("Images/prebattlecutscene.png", width: 90%),
+  caption: [Image of the pre-battle cutscene `GameObject` with the `PreBattleCutscene` script attached.]
+)
 
 / Function description:
 
@@ -1730,10 +1698,10 @@ The `Altar Cutscene 3` `GameObject` is not a physical object and is enabled duri
 
 ==== `GMHub` <GMHubdetail>
 
-// #figure(
-//   image("Images/gmhubworld.png", width: 90%),
-//   caption: [Image showing the GameMangerHubWorld `GameObjects` with the `GMHub` script attached.]
-// )
+#figure(
+  image("Images/gmhubworld.png", width: 90%),
+  caption: [Image showing the GameMangerHubWorld `GameObjects` with the `GMHub` script attached.]
+)
 
 / Function description:
 
@@ -2276,7 +2244,6 @@ caption: [Image of `AIPortal` script attached to a Portal `GameObject` in Puzzle
 
 ==== `Keys` <KeysDetailed>
 
-// 
 #figure(
   image("Images/Keys.png"),
   caption: [Image of `keys` script attached to a `key` `GameObject` in Puzzle-4.]
@@ -2518,11 +2485,10 @@ A FSM is an abstract model that holds a finite number of states and their respec
 
 The state design pattern exists to convert the FSM concept to code, allowing one to naturally and cleanly implement systems. This in turn keeps the code base clean and helps with extensibility, which is particularly useful in case the client wants more features added.
 
-// #figure(
-//   image("Images/CombatFSM.png", width: 90%),
-//   caption: [Image of the in-game combat finite state machine.],
-// )
-[ENABLE IMAGE]
+#figure(
+  image("Images/CombatFSM.png", width: 90%),
+  caption: [Image of the in-game combat finite state machine.],
+)
 
 Instead of using `switch` statements, `enums` and lots of conditional logic branches, all components are separated into different classes which all inherit from an abstract `State` class the `start` and `answer` functions (see @StateDetailed). 
 
@@ -2535,6 +2501,26 @@ Armed with this knowledge, we can finally talk about how to add a new state. The
 + *Set the outward transitions:* Decide what the next `State` the `StateMachine` should move to. This can either be an unconditional transition, or it can have some logic to decide which transition to take.
 
 Whenever a state breaks, or has issues, first check the code of the individual states as this holds most, if not all the logic of the states. Issues with inheritance might also occur, so make sure that the entire structure is set up appropriately (with the `StateMachine` and `State` functions).
+
+=== Working with questions
+
+To modify or add additional questions to the game, follow these steps:
+
+1. *Add questions in spreadsheet:* Navigate to the "questions.csv" file inside of the Resource folder (in the Project view), and add the questions in the format: Question, Answers, World. The answers are split by semi-colons, and The first answer in this column is the correct one. Make sure that all folders for different worlds exists before importing the questions. For example, if you wanted to add another world called "JourneyCloud", a folder called "JourneyCloud" should exist inside "Resources".
+
+#figure(
+ image("Images/QuestionCSV.png", width: 90%),
+ caption: [Image of the CSV file containing a list of questions, answers, as well as topics from IBM Skills Build's various badges.]
+) <Question-csv>
+
+2. *Import questions into Unity:* To import the questions, place the CSV file inside the "Resources" folder, then press on "Utilities" $arrow$ "Import Questions". This should have generated the questions as `ScriptableObject`s inside the appropriate world folders.
+
+#figure(
+ image("Images/UtilitiesImport.png", width: 90%),
+ caption: [Image of the import question option in Unity.]
+)
+
+3. *Update fight scene:* If the questions added are for a new world, make sure to change the `QuestionManager` to use this world name (see @QuestionSetupDetailed).
 
 == Future developments <Future-development-section>
 
@@ -2550,39 +2536,33 @@ The primary concept for the cloud world is to traverse a series of islands in th
 
 The main puzzle concept for this world is jumping puzzles. A jumping puzzle is a type of puzzle where there are a series of floating platforms and the player needs to jump between them. There are many variations of jumping puzzles; in games like Destiny 2 or Final Fantasy XIV, jumping puzzles are predominantly about how skilled the player is with the game's mechanics.
 
-// #figure(
-//   image("Images/kuganetower.jpg", width: 80%),
-//   caption: [Image of Kugane Tower, Final Fantasy XIV's hardest jumping puzzle, which requires a series of complex jumps to scale the outside of the tower.]
-// )
-[ENABLE IMAGE]
+#figure(
+  image("Images/kuganetower.jpg", width: 80%),
+  caption: [Image of Kugane Tower, Final Fantasy XIV's hardest jumping puzzle, which requires a series of complex jumps to scale the outside of the tower.]
+)
 
 However, as our game is in 2D, the world will focus more on jumping puzzles which requires you to traverse platforms in a specific order to reach the other side. For example, take Undertale's Hotland jumping puzzle, where standing on the steam vent, will make the player jump to the platform the arrow is pointing in, with some platforms having buttons in the middle which change the active steam vents, meaning when the player lands, the steam vents may point in an unexpected direction.
 
-// #figure(
-//   image("Images/hotland.jpg", width: 80%),
-//   caption: [Image of Undertale's Hotland jumping puzzle.]
-// )
-[ENABLE IMAGE]
-
-//could write more here about more types of jumping puzzle
+#figure(
+  image("Images/hotland.jpg", width: 80%),
+  caption: [Image of Undertale's Hotland jumping puzzle.]
+)
 
 Another puzzle concept which we aim to implement in the cloud world is light and reflection puzzles. An example of this is in Portal 2, in which the player must redirect lasers using "Discouragement Redirection Cubes" to a destination to power a device in the room.
 
-// #figure(
-//   image("Images/reflectioncube.jpg", width: 80%),
-//   caption: [Image of a Discouragement Redirection Cube reflecting a laser.]
-// )
-[ENABLE IMAGE]
+#figure(
+  image("Images/reflectioncube.jpg", width: 80%),
+  caption: [Image of a Discouragement Redirection Cube reflecting a laser.]
+)
 
 We could implement this with a number of mirrors which could be rotated by a series of switches, requiring the player to rotate the mirrors into the correct position, in order to open a door or move to another sky island.
 
 Finally, for the boss fight, one of the islands would contain a golden temple, and upon entering the player would meet the boss, beginning a boss fight on a temple in the clouds. This idea was inspired by both the Golden Temple at the end of Ma'habre in Fear and Hunger, where the player  fights a powerful enemy
 
-// #figure(
-//   image("Images/goldentemple.png", width: 80%),
-//   caption: [Image of the Ma'habre Golden Temple]
-// )
-[ENABLE IMAGE]
+#figure(
+  image("Images/goldentemple.png", width: 80%),
+  caption: [Image of the Ma'habre Golden Temple]
+)
 
 === Threat Intelligence World <Threat-intelligence-world-section>
 
@@ -2625,13 +2605,10 @@ There were a number of other concepts that weren't implemented into the game, ho
 
 Although a theme has not been decided, we wanted to implement a cyberpunk or synthwave world. Cyberpunk is a genre of science fiction that focuses on a combination of high technology and low quality of living, for example cyborgs and artificial intelligence, juxtaposed with societal decay. @cyberpunk Synthwave, on the other hand, is a genre of music, that often draws inspiration from graphics seen in the 1980's, such as neon, wireframes, video cassettes and more as part of a visual aesthetic. @synthwave
 
-
-
-// #figure(
-//   image("Images/synthwave.png", width: 70%),
-//   caption: [Image of the synthwave aesthetic.]
-// )
-[ENABLE IMAGE]
+#figure(
+  image("Images/synthwave.png", width: 70%),
+  caption: [Image of the synthwave aesthetic.]
+)
 
 Within these worlds there will be a number of puzzle ideas which we wanted to implement.
 
@@ -2652,11 +2629,10 @@ A conveyor belt puzzle is a type of puzzle in which the player wants to get to t
 
 This type of puzzle can be implemented without conveyor belts too, for example in Pokemon Emerald, you must ride on a series of water currents. In the image below, the green arrows show how taking a wrong path could lead to being sent back, and the red arrows show the correct path.
 
-// #figure(
-//   image("Images/pokemonwater.png", width: 70%),
-//   caption: [Image of a Pokemon Emerald's Seafloor Cavern water current puzzle.]
-// )
-[ENABLE IMAGE]
+#figure(
+  image("Images/pokemonwater.png", width: 70%),
+  caption: [Image of a Pokemon Emerald's Seafloor Cavern water current puzzle.]
+)
 
 == Ethical and societal impacts <Ethical-societal-section>
 
@@ -2716,7 +2692,7 @@ If we were to monetize the game, however, changing the following list of assets 
 - Doki Doki Literature Club Dialogue Box
 - Sprite Mancer Ice Cave 
 
-= Glossary
+= Glossary <Glossary-section>
 
 In this section, we include some terms which are domain specific to game development. Having this separate section avoids the need of explaining a term in the middle of a sentence.
 
