@@ -65,7 +65,7 @@ Skills Build is an educational website which provides free courses in multiple f
 However, Skills Build in its current rendition is very complex to navigate and has some other issues. In particular, there is/are: 
 - No separation between a beginner course and an advanced course
 - No way to retry quizzes and courses once completed
-- Various ways of cheating the system and getting a badge without knowing the content
+- Various ways of cheating the system and obtaining a badge without knowing the content
 - Multiple websites used to host the Skills Build content
 
 All these issues combined lead to students getting lost on the website(s), reducing the amount of knowledge acquired, and worsening the user experience in general.
@@ -83,13 +83,13 @@ Our solution has covered the main requirement from @Project-brief. So far, we ha
   caption: [Image of project description and challenge to be addressed in the project brief sent by the client.],
 ) <Project-brief>
 
-Currently, two badges have been fully implemented in the game as worlds, those being "Introduction to AI" and "Introduction to Data Science". We planned to cover IBM Skills Build Courses "Intro to Cloud", "Journey to Cloud", and "Threat Intelligence and Hunting" in three other worlds, however, we were not able to finish these worlds when this document was writted due to time constraints and project down scoping. 
+Currently, two badges have been fully implemented in the game as worlds, those being "Introduction to AI" and "Introduction to Data Science". We planned to cover IBM Skills Build Courses "Intro to Cloud", "Journey to Cloud", and "Threat Intelligence and Hunting" in three other worlds, however, we were not able to finish these worlds at the time of writing this document due to time constraints and project down scoping. 
 
 Despite this, we have laid the foundation in the game so that adding the other three badges would be very simple. We also have concepts for the other three badges' worlds, which will be further discussed in @World-section.
 
 Unfortunately, we did not add any of the documentation, as the resources could not be found on the IBM Skills Build website.
 
-Regarding the "challenge to be addressed" section, we have done lots of research on existing 21#super([st]) century games (see @Initial-idea-section) as well as existing learning games (see our requirement specification @Requirement-Specification), and have made design choices driven by the findings to make our game fit the "21#super([st]) century learning game" demand.
+Regarding the "challenge to be addressed" section, we have done extensive research on existing 21#super([st]) century games (see @Initial-idea-section) as well as existing learning games (see our requirement specification @Requirement-Specification), and have made design choices driven by the findings to make our game fit the "21#super([st]) century learning game" demand.
 
 == Installation Guide <Installation-guide-section>
 
@@ -129,7 +129,7 @@ In this section, we refer back to the requirement specification and go through a
   columns: (20%, 25%, 20%, 35%),
   align: horizon,
   inset: 10pt,
-  [Requirement Name], [Current Status], [Extent to which this is fulfilled], [Justification of fulfilment],
+  [Requirement Name], [Current Status], [Extent to which this is fulfilled], [Justification for fulfilment],
   [FR1.1 - Player Character], [Unchanged], [Implemented], [The Player Character is an IBM employee and has distinct sprites in and out of combat.],
   
   [FR1.2 - Player Character Movement], [Dash added for AI World], [Implemented + Additional Features Added ], [The player is able to move in all cardinal directions. One of the worlds (AI-World) has a dash feature which the player can use to get a very quick speed boost in the direction they are currently facing. ],
@@ -214,7 +214,7 @@ As the highest-grossing media franchise in the world@franchises, the original Po
 
 ==== Ace Attorney Investigations
 
-While not an RPG series, the Ace Attorney games are puzzle games, where the main "combat" encounters take place within a courtroom, featuring the attorney and prosecutor in a battle of wits. In the mainline games, these characters take up a full screen to themselves, however, the spinoff Ace Attorney Investigations features the two characters on one screen, battling with their words. Considering the dynamic expressions and how the game requires you to "talk to fight", I thought this would be a good fit for the style of game we are making.
+While not an RPG series, the Ace Attorney games are puzzle games, where the main "combat" encounters take place within a courtroom, featuring the attorney and prosecutor in a battle of wits. In the mainline games, these characters take up a full screen to themselves, however, the spinoff Ace Attorney Investigations features the two characters on one screen, battling with their words. Considering the dynamic expressions and how the game requires you to "talk to fight", we thought this would be a good fit for the style of game we are making.
 
 #figure(
   image("Images/battle4.png", width: 80%),
@@ -225,7 +225,7 @@ While not an RPG series, the Ace Attorney games are puzzle games, where the main
 We also need to consider how the player will answer questions, and what type of menu we want the player to use.
 
 ==== List Style
-This is arguably the most popular style of menu in RPG games and involves a scrollable list, to which players will move down the list. This is relatively simple to implement and does what it needs to.
+This is arguably the most popular style of menu in RPG games and involves a scrollable list, in which players can move down. This is relatively simple to implement and does what it needs to.
 
 #figure(
   image("Images/menu1.png", width: 90%),
@@ -233,7 +233,7 @@ This is arguably the most popular style of menu in RPG games and involves a scro
 )
 
 ==== Square Style
-Having a square menu style with 4 options is less popular in the genre, but is still featured in the monolithic franchise Pokemon, this style may work quite well for Q&A style combat, however is slightly more difficult to implement, and limits us to 4 answers.
+Having a square menu style with 4 options is less popular in the genre, but is still featured in the monolithic franchise Pokemon. However, this style may work quite well for Q&A style combat, however is slightly more difficult to implement, and limits us to 4 answers.
 
 #figure(
   image("Images/menu2.png", width: 90%),
@@ -241,9 +241,9 @@ Having a square menu style with 4 options is less popular in the genre, but is s
 )
 
 === Sprites
-While combat sprites depend on the combat style we choose, all the characters in the game need to have consistent sprites in the overworld, and so we looked into the different sprite sheets used in various other RPG games, both from a complexity standpoint, due to our limited knowledge of art, and stylistic standpoint
+While combat sprites depend on the combat style we choose, all the characters in the game need to have consistent sprites in the overworld, and so we looked into the different sprite sheets used in various other RPG games, both from a complexity standpoint, due to our limited knowledge of art, and stylistic standpoint.
 
-One of the biggest things to consider with sprite sheets is the amount of space they take up relative to the world around them, traditional RPG style has the world split into "tiles", which can be thought of as a square grid, in which the characters normally move between these tiles, and normally mean that sprites have to fit into that square area. However, newer top-down 2D games are less restrictive, and have more free movement, which also means that character sprites do not have to conform to set tile space
+One of the biggest things to consider with sprite sheets is the amount of space they take up relative to the world around them, traditional RPG style has the world split into "tiles", which can be thought of as a square grid, in which the characters normally move between these tiles, and normally mean that sprites have to fit into that square area. However, newer top-down 2D games are less restrictive, and have more free movement, which also means that character sprites do not have to conform to set tile space.
 
 The sprites shown in this section are all walking animation sprites, with a step-stand-step style of animation, which is simple to animate, but works brilliantly, and is still used in modern top-down games today.
 
@@ -253,10 +253,10 @@ The sprites shown in this section are all walking animation sprites, with a step
 )
 
 ==== Final Fantasy VI
-Final Fantasy 6 sprites differ from the rest as they only have 2 frames on their sideways walk, they are slightly taller than a single tile but would still work for a tile-based game, and are relatively simple. And considering the person doing the art for our group does not have a great deal of experience, simple sprites are probably better.
+Final Fantasy 6 sprites differ from the rest as they only have 2 frames on their sideways walk, they are slightly taller than a single tile but would still work for a tile-based game, and are relatively simple. In light of the fact that the person responsible for the art in our group has limited experience in this area, simple sprites are considered a more sensible choice.
 
 ==== Fear and Hunger
-Fear and Hunger sprites are 2 tiles tall, which means that while their hitbox is in their lower half, they also have an upper half, which lets them appear much more human and realistic. These sprites are much more complicated but look amazing because of it.
+Fear and Hunger sprites are 2 tiles tall, which means that while their hitbox is in their lower half, they also have an upper half, which lets them appear much more human and realistic. These sprites are much more complicated but look amazing because of it. 
 
 ==== Stardew Valley
 Stardew Valley's sprites do not conform to the tile system, but character designs are still simple, yet appear to be humanlike by not conforming to tiles.
@@ -321,10 +321,10 @@ The positives of heart bars are they also allow you to represent health in uniqu
 #pagebreak()
 == Current Implementation
 
-From the above market research, we decided to model the combat on Ace Attorney Investigations, with 2 big sprites of the characters on each side, the menu used will be list style and the character sprites will be modeled on Pokemon characters, and the health system will be based on hearts.
+From the above market research, we decided to model the combat on Ace Attorney Investigations, with 2 big sprites of the characters on each side. The menu used will be list style and the character sprites will be modeled on Pokemon characters, and the health system will be based on hearts.
 
 === Game Design Philosophy
-After looking into the different possibilities discussed above, we had to decide how we wanted to implement them in our game design. The biggest inspirations for how we wanted to design the game overworld sections were two indie games named Undertale and Deltarune, primarily due to them being top-down 2D Pixel Art RPG games like ours will be, alongside the bulk of the game being interesting puzzles, broken up by fun combat mechanics. Overall it is a simple but very effective game design, making it perfect for this project.
+After looking into the different possibilities discussed above, we had to decide how we wanted to implement them in our game design. The biggest inspirations for our design of the game overworld sections were two indie games named Undertale and Deltarune, primarily due to them being top-down 2D Pixel Art RPG games like ours will be, alongside the bulk of the game being interesting puzzles, broken up by fun combat mechanics. Overall it is a simple but very effective game design, making it perfect for this project.
 
 #figure(
   image("Images/deltaruneimage.jpg", width: 80%),
@@ -394,7 +394,7 @@ Lastly, we have two bosses who we didn't implement sprites for, the second of wh
 
 Other than sprite choices, the other major combat design choices we had to make were on the menu and the health, as well as the general presentation.
 
-For the start of the battle, we decided to have the two characters point at each other, initiating the fight, before switching to the main combat section. An additional point to make is the combat backgrounds, we decided to use generative AI to produce backgrounds for combat, themed around our worlds, due to the speed and quality that they can be produced.
+For the start of the battle, we decided to have the two characters point at each other, initiating the fight, before switching to the main combat section. An additional point to make concerning the combat backgrounds is that we decided to use generative AI to produce backgrounds for combat, themed around our worlds, due to the speed and quality that they can be produced.
 
 #figure(
   image("Images/combatstart.png", width: 80%),
@@ -422,7 +422,7 @@ Upon answering incorrectly, the sprites once again change, but this time the pla
   caption: [Image of the player answering incorrectly.]
 )
 
-Additionally, due to time constraints, we weren't able to implement true heart bars, as such they simply display the heart and the number of hearts for now.
+Additionally, due to time constraints, we were unable to implement true heart bars and as such they simply display the heart and the number of hearts for now.
 
 #pagebreak()
 = Non-technical Manual <Game-instruction-manual-section>
@@ -468,7 +468,7 @@ Will you succeed in saving everyone and help them return to their original world
 #pagebreak()
 === Main Menu
 
-The Main Menu is an inviting location, with sombre music and a futuristic background image with the IBM logo in it. The background image moves around at random intervals in time, and blurs and unblurs itself too. 
+The Main Menu is an inviting location, with sombre music and a futuristic background image incorporating the IBM logo. The background image moves around at random intervals in time, and blurs and unblurs itself too. 
 
 #figure(
   image("Images/main_menu.png", width: 100%),
@@ -481,9 +481,9 @@ The Main Menu is an inviting location, with sombre music and a futuristic backgr
   inset: 10pt,
   align: horizon,
   [*Main Menu Button*], [*Description*],
-  [New game], [The new game button starts creates a new save file and loads the first level of the game.],
+  [New game], [The new game button creates a new save file and loads the first level of the game.],
 
-  [Continue], [The continue button loads the last save file and loads the level that was last saved.],
+  [Continue], [The continue button loads the last saved file and loads the level that was last saved.],
 
   [Settings], [The settings button opens the settings menu.],
   
@@ -521,7 +521,7 @@ Now that you've seen all that we have to offer in the Main Menu, let us explore 
 
 This game is designed to be played using either a gamepad or a keyboard and mouse. While the game should be compatible with most gamepads, it has been designed primarily for the Playstation DualSense™ Controllers, the Xbox Wireless Controllers and the Nintendo Switch Pro Controllers. 
 
-As each of these controllers has a different layout, below is a graphic that can be mapped onto any controller, used for our control descriptions, for keyboard controls we will be referencing the key that needs to be pressed.
+As each of these controllers has a different layout, below is a graphic that can be mapped onto any controller, used for our control descriptions and for keyboard controls we will be referencing the key that needs to be pressed.
 
 For the controls below, Left/Right Stick Up/Down/Left/Right refers to pushing the Left/Right stick in the specified direction enough for the game to register it as an input. Similarly, for D-Pad Up/Down/Left/Right and the other buttons listed, these require pushing the button enough for the game to register this as an input.
 
@@ -673,7 +673,7 @@ Once the portals have opened in the Hub World the Protagonist can experience:
   caption: [Image of the Protagonist inside the AI portal room in the Hub World.]
 )
 
-After completing a world, the Protagonist will be rewarded with an item, corresponding to the IBM Skills Build course of the world, which can be user to activate a pillar of the altar. Each item offered to the pedestal will strengthen the Spirit of the Altar, prompting it to communicate with the Protagonist more often.
+After completing a world, the Protagonist will be rewarded with an item, corresponding to the IBM Skills Build course of the world, which can be used to activate a pillar of the altar. Each item offered to the pedestal will strengthen the Spirit of the Altar, prompting it to communicate with the Protagonist more often.
 
 Whenever the Protagonist successfully defeats an IBM co-worker in a World through combat, they then come to their senses and return with the Protagonist to the Hub World, slowly populating the once empty and desolate location. Whilst there, the Protagonist can talk to them to learn more about IBM Skills Build courses. They also tend to give useful advice, so be on the lookout for what they say!
 
@@ -686,13 +686,13 @@ After collecting all 4 items, the Spirit of the Altar can use all its powers to 
 
 === Artificial Intelligence World
 
-The AI world takes place in what seems to be an active battlefield. Whether it be the near constant raining of bullets from turrets, or the head seeking explosive drones ready to chase down anything that moves, or the active minefields that will punish any intruder's missteps, nobody can make even a single mistake in this environment. 
+The AI world takes place in what seems to be an active battlefield. Whether it be the near constant raining of bullets from turrets, or the heat seeking explosive drones ready to chase down anything that moves, or the active minefields that will punish any intruder's missteps, nobody can make even a single mistake in this environment. 
 
 But fret not, with your guidance and the helpful magic of the Spirit of the Altar (which miraculously grants anyone with incredible durability), the Protagonist will be able to push through till the end!
 
 ==== Heart System
 
-With the Altar's magic, the Protagonist is able to take quite a few hits. After each time damaged, they are able to ward off anymore threats for a good two seconds, and only after touching three deadly projectiles would they faint.
+With the Altar's magic, the Protagonist is able to take a number of hits. After each time damaged, they are able to ward off anymore threats for a good two seconds, and only after touching three deadly projectiles would they faint.
 
 #figure(
   image("Images/Hearts.png", width: 90%),
@@ -723,7 +723,7 @@ The projectiles are shot by sentient turrets which have gone rogue. There are fo
 + *Stationary:* The default factory setting, where the turrets stand still facing one direction, and shoot at a constant fire rate.
 + *Rotating:* An advanced setting, promising 360$degree$ coverage about a fixed point. 
 + *Mobile:* - A setting which toggles the wheels on the turrets, allowing it to move (and potentially rotate as well) between two fixed points.
-+ *Experimental:* - Reserved only for in-house testing, this mode goes well beyond the commercially available functionalities, allowing for phases changes while also increasing the variety of projectiles that can be shot.
++ *Experimental:* - Reserved only for in-house testing, this mode goes well beyond the commercially available functionalities, allowing for phase changes while also increasing the variety of projectiles that can be shot.
 
 #figure(
   image("Images/TurretTypes.png", width: 90%),
@@ -762,7 +762,7 @@ In some places, you will see walls blocking the path to progress the level. To g
 
 ===== Boots of Speed
 
-A rare item which only shows up once in this world, the Boots of Speed makes the Protagonist much more agile, allowing them to swiftly manoeuvre around the projectiles shot by the turrets. Having permanent access to these would be great, however the boots works only when paired via a Bluetooth with a nearby device, so wearing them to the next level would (unfortunately) not grant the Protagonist extreme speed. Do not be too sad, as even if the shoes are non-functional, they still look great on the Protagonist.
+A rare item which only shows up once in this world, the Boots of Speed make the Protagonist much more agile, allowing them to swiftly manoeuvre around the projectiles shot by the turrets. Having permanent access to these would be great, however the boots work only when paired via a Bluetooth with a nearby device, so wearing them to the next level would (unfortunately) not grant the Protagonist extreme speed. Do not be too sad, as even if the shoes are non-functional, they still look great on the Protagonist.
 
 #figure(
   image("Images/SpeedBoost.png", width: 70%),
@@ -774,7 +774,7 @@ A rare item which only shows up once in this world, the Boots of Speed makes the
 There are two types of portals present in this world:
 
 1. *One-way:* One-time use gates. These usually appear in at the end of a level and are used as a means of transportation between levels.
-2. *Two-way:* Stable portals that are used inside a level. Utilizing these in a clever way will greatly help the Protagonist avoid projectiles! Note however that these have a short cooldown between uses as the portals have to recharge. It also prevents the Protagonist from teleport back and forth indefinitely.
+2. *Two-way:* Stable portals that are used inside a level. Utilizing these in a clever way will greatly help the Protagonist avoid projectiles! Note however that these have a short cooldown between uses as the portals have to recharge. It also prevents the Protagonist from teleporting back and forth indefinitely.
 
 #figure(
   image("Images/AIPortal.png", width: 70%),
@@ -926,7 +926,7 @@ The Unity Editor is split into 6 views: Project, Scene, Game, Console, Hierarchy
 
 - *The Hierarchy view* is where all objects in the Scene view can be found, broken down to its components. For example, a dialogue box that you see in the Scene view could be made up of a background image and a textUI component inside the Hierarchy. The Hierarchy can be used to quickly select an item in the scene, even when they are invisible.
 
-- *The Inspect view* shows different attributes that make up an object component selected in the Hierarchy. Not only that, it allows developers from accessing an object's public variables and allows scripts to be attached to objects. This is the main tool for adding functionality to the scene objects, such as collision for walls, or health for a player character.
+- *The Inspect view* shows different attributes that make up an object component selected in the Hierarchy. Not only that, it allows developers to access an object's public variables and allows scripts to be attached to objects. This is the main tool for adding functionality to the scene objects, such as collision for walls, or health for a player character.
 
 #pagebreak()
 The following is the general workflow in Unity.
@@ -1017,7 +1017,7 @@ The following section is split into two parts. The first part is a table overvie
   
   [`Sign` \ (@SignDetailed)], [Used to display dialogue when `GameObject` is interacted with], [`Update` \ `OnTriggerEnter2D` \ `OnTriggerExit2D`],
 
-  [`State` \ (@StateDetailed)], [An abstract class which represents a state in the combat sequence. Every combat state inherits from this. initialises with `BattleSystem`], [`Start` \ `Answer`],
+  [`State` \ (@StateDetailed)], [An abstract class which represents a state in the combat sequence. Every combat state inherits from this. Initialises with `BattleSystem`], [`Start` \ `Answer`],
 
   [`StateMachine` \ (@StateMachineDetailed)], [An abstract class which represents a finite state machine. `BattleSystem` inherits from this], [`SetState`],
 
@@ -1040,7 +1040,7 @@ The following section is split into two parts. The first part is a table overvie
   
   [`AltarCutscene4` \ (@AltarCutscene4Detailed)], [Loads dialogue for the fourth cutscene with altar], [`Start` \ `Update` \ `OnTriggerEnter2D`],
   
-  [`AltarItemGet` \ (@AltarItemGetDetailed)], [Loads dialogue for cutscene when the player has got an item], [`Update` \ `OnTriggerEnter2D`],
+  [`AltarItemGet` \ (@AltarItemGetDetailed)], [Loads dialogue for cutscene when the player obtains an item], [`Update` \ `OnTriggerEnter2D`],
   
   [`CreepyCutscene` \ (@CreepyCutsceneDetailed)], [Load dialogue boxes of cutscene and open a URL link], [`Update`],
   
@@ -1072,7 +1072,7 @@ The following section is split into two parts. The first part is a table overvie
 
   [`Button` \ (@ButtonDetailed)], [Button corresponding to the questions on signs, used to input the answer to the signs questions], [`Start` \ `Update` \ `OnTriggerEnter2D` \ `OnTriggerExit2D` \ `Return` \ `OpenDoor`],
 
-  [`ButtonSpawner` \ (@ButtonSpawnerDetailed)], [Button `GameObject` that when interacted with, moves to a random different location out of a specified list. Must be interacted with a specified amount of times], [`Start` \ `Update` \ `Spawn` \ `OnTriggerEnter2D` \ `OnTriggerExit2D`],
+  [`ButtonSpawner` \ (@ButtonSpawnerDetailed)], [Button `GameObject` that, when interacted with, moves to a random different location out of a specified list. Must be interacted with a specified amount of times], [`Start` \ `Update` \ `Spawn` \ `OnTriggerEnter2D` \ `OnTriggerExit2D`],
 
   [`CameraFollow` \ (@CameraFollowDetailed)], [Used to switch between a camera that follows the player and stationary cameras], [`OnTriggerEnter2D`],
 
@@ -1086,7 +1086,7 @@ The following section is split into two parts. The first part is a table overvie
 
   [`Hole` \ (@HoleDetailed)], [Enables the hole `GameObject`], [`OnTriggerEnter2D`],
 
-  [`LabyrinthDoor` \ (@LabyrinthDoorDetailed)], [Keeps track of, and updates player progress in a specific puzzle on collision (Puzzle archetype 1)], [`OnTriggerEnter2D`],
+  [`LabyrinthDoor` \ (@LabyrinthDoorDetailed)], [Keeps track of and updates player progress in a specific puzzle on collision (Puzzle archetype 1)], [`OnTriggerEnter2D`],
 
   [`LevelChanger` \ (@LevelChangerDetailed)], [Changes the level to the next level], [`OnTriggerEnter2D`],
 
@@ -1162,7 +1162,7 @@ The following section is split into two parts. The first part is a table overvie
   
   [`PortalParent` \ (@PortalParentDetailed)], [Manages multiple portals and controls what portals the portals teleport to, also manages the cooldown of the portals.], [`Start` \ `GetNextPortal` \ `StartCooldown` \ `DisableAll`], 
   
-  [`Shield` \ (@ShieldDetailed)], [Manages the shield which follows the player and blocks projectiles when activated but has a limited amount of time to use], [`Start` \ `Update` \ `FixedUpdate` \ `OnTriggerEnter2D`],
+  [`Shield` \ (@ShieldDetailed)], [Manages the shield which follows the player and blocks projectiles when activated, but has a limited amount of time to use], [`Start` \ `Update` \ `FixedUpdate` \ `OnTriggerEnter2D`],
   
   [`ShieldItem` \ (@ShieldItemDetailed)], [Activates the shield upon collision with the player.], [`OnTriggerEnter2D`], 
   
@@ -1236,7 +1236,7 @@ The `BattleHud` script can be found attached to both PlayerHud and EnemyHud, whi
 
 / Function description:
 
-- `SetHud`: initialise HUD with associated `CombatUnit`'s attributes. This includes `unitName`, `currentHP`, `maxHP`.
+- `SetHud`: Initialise HUD with associated `CombatUnit`'s attributes. This includes `unitName`, `currentHP` and `maxHP`.
 
 - `SetHp`: Set the HP shown on the HUD to input amount. If the input amount is less than 0, set it to zero.
 
@@ -1259,7 +1259,7 @@ See @Combat-system-section for more detail.
 
 / Function description:
 
-- `Start`: initialise the player and enemy object, wait until the combat cutscene finishes playing, then transition into `EnemyTurn` state.
+- `Start`: Initialise the player and enemy object, wait until the combat cutscene finishes playing, then transition into `EnemyTurn` state.
 
 ==== `ButtonManager` <ButtonManagerDetailed>
 
@@ -1278,7 +1278,7 @@ See @Combat-system-section for more detail.
 
 #figure(
   image("Images/CombatUnit.png", width: 90%),
-  caption: [Image showing the `GameObjects` with the `CombatUnit` script attached. These are present in every combat scene, and represents the player and enemy characters.]
+  caption: [Image showing the `GameObjects` with the `CombatUnit` script attached. These are present in every combat scene, and represent the player and enemy characters.]
 )
 
 / Function description:
@@ -1351,12 +1351,12 @@ The game manager enters the game environment through the `MainMenu` and then dup
 
 / Function description:
 
-- `Update`: The Update method is executed at the beginning of each frame in the Unity game, we use this to poll the game engine state to check whether key variables are loaded such as the audio mixer and relevant sliders and user input fields for fields such as the volume.
-- `Awake`: The Awake method is called at the creation of a new GM object. As we are using the singleton pattern, we use this to check whether there is already an instance of a game manager that is globally loaded. In the case that no game manager object is loaded globally then we assign the current game manager object as the designated global instance, otherwise, we leave the global game manager instance untouched.
+- `Update`: The Update method is executed at the beginning of each frame in the Unity game. We use this to poll the game engine state to check whether key variables are loaded, such as the audio mixer and relevant sliders, and user input fields for fields such as the volume.
+- `Awake`: The Awake method is called at the creation of a new GM object. As we are using the singleton pattern, we use this to check whether there is already an instance of a game manager that is globally loaded. In the case that no game manager object is loaded globally, we assign the current game manager object as the designated global instance, otherwise, we leave the global game manager instance untouched.
 - `GetParticle`: Returns the user's particle preference settings.
 - `SetParticle`: Sets the user's particle preference to the boolean value provided.
 - `GetVolume`: Returns the game's current volume level.
-- `SetVolume`: Accepts a float as input and then uses this to set the volume level associated with the audio mixer and stores this volume level to disk so that it can be recovered during the next load of the game.
+- `SetVolume`: Accepts a float as input and then uses this to set the volume level associated with the audio mixer, and stores this volume level to disk so that it can be recovered during the next load of the game.
 - `GetGraphics`: Returns the user's graphics quality settings.
 - `SetGraphics`: Accepts an integer and then sets the graphics quality level to be equal to this integer.
 
@@ -1379,7 +1379,7 @@ See @Working-with-questions-section for more detail.
 
 / Function description:
 
-- `Update`: Checks the `Game Manager` for which items have been acquired by the player and displays the acquired items in the inventory menu. Also, checks if any input is pressed to close the inventory menu. 
+- `Update`: Checks the `Game Manager` for which items have been acquired by the player and displays the acquired items in the inventory menu. Also checks if any input is pressed to close the inventory menu. 
 
 #pagebreak()
 ==== `Lost` <LostDetailed>
@@ -1408,10 +1408,10 @@ See @Combat-system-section for more detail.
 
 / Function description:
 
-- `Start`: The `Start` method is called on the first frame of the scene, we use this method to enable particle effects 
+- `Start`: The `Start` method is called on the first frame of the scene. We use this method to enable particle effects. 
 - `Quit`:  The `Quit` method handles the click event from the Quit button in the Main Menu. When the Quit button is clicked, the Quit method uses the `Application.Quit` function from the Unity API to quit the game.
 - `Volume`:  The `Volume` method handles input change events from the Volume slider in the Main Menu. The `Volume` method in the `MainMenuButtons` class uses the singleton Game Manager instance to globally set the volume across the game.
-- `Particles`:  The `Particles` method is called in response to the `Particles` settings changing in the Settings sub-menu of the Main Menu. When called, the `Particles` method forwards its argument to the singleton `GameManager` object, which then globally sets particle settings. This system allows users to specify whether they would like particles to be displayed in the game so we can ensure that users with low-end hardware can turn off computationally expensive particle rendering, which ensures that they can still have a smooth experience while playing the game.
+- `Particles`:  The `Particles` method is called in response to the `Particles` settings changing in the Settings sub-menu of the Main Menu. When called, the `Particles` method forwards its argument to the singleton `GameManager` object, which then globally sets particle settings. This system allows users to specify whether they would like particles to be displayed in the game, so that it can be ensured that users with low-end hardware can turn off computationally expensive particle rendering, guaranteeing that they can still have a smooth gameplay experience.
 - `FullScreen`:  The `FullScreen` method toggles whether the game is to be played in full screen.
 - `MainMenu`:  The `MainMenu` method initialises the `MainMenu` scene by setting the components of the Main Menu to be visible to the user.
 - `OptionsMenu`:  The `OptionsMenu` method displays the game options that the player can control alongside sliders, toggle buttons and dropdowns to manipulate their values.
@@ -1445,22 +1445,21 @@ See @Combat-system-section for more detail.
 - `Resume`: The `Resume` method in the `PauseMenu` class responds to the user pressing the Resume button to allow them to re-enter the game after pausing it.
 - `Pause`: The `Pause` method loads the Pause Menu interface onto the screen and allows the user to take a break from the game.
 - `QuitGame`: The `QuitGame` method responds to the Quit button in the Pause Menu's user interface. When the Quit button is pressed, the `PauseMenu` instance uses the Unity API to exit the game.
-- `MainMenu`: The `MainMenu` method is called in response to the user pressing the Main Menu button in the Pause Menu's interface. When called, the `MainMenu` method loads the Main Menu and exits the Pause Menu interface
+- `MainMenu`: The `MainMenu` method is called in response to the user pressing the Main Menu button in the Pause Menu's interface. When called, the `MainMenu` method loads the Main Menu and exits the Pause Menu interface.
 - `OptionsMenu`: The `OptionsMenu` method loads the options into the Pause Menu interface.
 - `Volume`: The `Volume` method is called in response to changes to the Volume slider in the user interface for the Pause Menu. When called, the `Volume` method propagates changes towards the singleton Game Manager instance so that Volume settings persist globally throughout the game.
-- `Particles`: The `Particles` method is called in response to changes in the Particles toggle button in the Pause Menu's user interface. When the user toggles the state of the Particle setting, Unity calls the `Particles` method with the updated value which we then propagate to the singleton Game Manager instance to ensure that particle settings persist throughout the game.
+- `Particles`: The `Particles` method is called in response to changes in the Particles toggle button in the Pause Menu's user interface. When the user toggles the state of the Particle setting, Unity calls the `Particles` method with the updated value, which we then propagate to the singleton Game Manager instance to ensure that particle settings persist throughout the game.
 - `SkillsBuild`: The `SkillsBuild` method uses the Unity API to open up the IBM Skills Build website in the player's browser
-- `SkipLevel`: The `SkipLevel` method instructs the to skip the current level that the player is in
+- `SkipLevel`: The `SkipLevel` method instructs the script to skip the current level that the player is in
 - `DisplayText`: The `DisplayText` method displays the combat text from the current scene 
 - `DisableText`: The `DisableText` method is a coroutine that hides the combat text after a delay.
-- `WaitForSecondsRealtime`: The `WaitForSecondsRealTime` method is a coroutine that removes the save text in the Pause Menu's user interface after a delay.
-- `GetSceneNameByBuildIndex`: `GetSceneNameByBuildIndex` is static method that takes the build index of a scene as an argument and returns the corresponding scene name.
+- `WaitForSecondsRealTime`: The `WaitForSecondsRealTime` method is a coroutine that removes the save text in the Pause Menu's user interface after a delay.
+- `GetSceneNameByBuildIndex`: `GetSceneNameByBuildIndex` is a static method that takes the build index of a scene as an argument and returns the corresponding scene name.
 - `GetSceneNameFromScenePath`: The static `GetSceneNameFromScenePath` method takes the path of a scene as an argument and mechanically produces the name of the scene.
-- `SetQuality`: The `SetQuality` method is bound the the Graphics Quality drop down in the user interface for the Pause Menu. When the player selects a new graphics quality level in the user interface.
+- `SetQuality`: The `SetQuality` method is bound to the Graphics Quality drop down in the user interface for the Pause Menu.
 - `Inventory`: The `Inventory` method displays the user's inventory
-- `Save`: The `Save` method saves the game state to disk to later be reloaded by.
+- `Save`: The `Save` method saves the game state to disk to later be reloaded when requested by the user.
 - `RemoveSaveText`: The `RemoveSaveText` button removes the Save text.
-- `WaitForSecondsRealtime`: The `WaitForSecondsRealtime` method is a corountine that inserts a delay of 3 seconds.
 
 ==== `PlayerTurn` <PlayerTurnDetailed>
 
@@ -1506,7 +1505,7 @@ See @Combat-system-section for more detail.
 / Function description:
 
 - `Update`: Load the next dialogue box when the player presses the interact key. If there are no more dialogue boxes to load, then the combat level is loaded. 
-- `OnTriggerEnter2D`: Check if the player collides with the `GameObject` that has this script attached and starts the dialogue if so.
+- `OnTriggerEnter2D`: Check if the player collides with the `GameObject` that has this script attached and start the dialogue if so.
 
 ==== `QuestionData` <QuestionDataDetailed>
 
@@ -1537,7 +1536,7 @@ None
 
 - `SelectNewQuestion`: Pop a random question off from the `questions` array to update the `currentQuestion` and `numberOfAnswers` variables with, then add it to `usedQuestions`.
 
-- `SetAnswerValues`: Call `RandomizeAnswers`, then set the answers, and whether it is correct or not on the answer buttons through `ButtonManager`.
+- `SetAnswerValues`: Call `RandomizeAnswers`, then set the answers, and whether it is correct, or not on the answer buttons through `ButtonManager`.
 
 - `RandomizeAnswers`: Shuffle the original answers list, while keeping track of where the correct answer is in the `correctAnswerIndex` variable. Return a shuffled list of answers.
 
@@ -1580,7 +1579,7 @@ See @Combat-system-section for more detail.
 
 / Function description:
 
-- `Start`: Display text after the player wins, call `ButtonManager`'s `ClearButtons` function and quits the combat scene.
+- `Start`: Display text after the player wins, calls `ButtonManager`'s `ClearButtons` function and quits the combat scene.
 
 ==== `AltarCutscene1` <AltarCutscene1Detailed>
 
@@ -1762,7 +1761,7 @@ The `Altar Cutscene 3` `GameObject` is not a physical object and is enabled duri
 
 / Function description:
 
-- `Start`: Gets the `BoxCollider2D` component from the `GameObject` holding this script. Gets the `SpriteRenderer` component from the `GameObject` holding this script. Disables the `BoxCollider2D` component and disables the `SpriteRenderer` component
+- `Start`: Gets the `BoxCollider2D` component from the `GameObject` holding this script. Gets the `SpriteRenderer` component from the `GameObject` holding this script. Disables the `BoxCollider2D` component and disables the `SpriteRenderer` component.
 
 - `Update`: If the specified cutscene is done, enable both the `BoxCollider2d` and `SpriteRenderer` components.
 
@@ -1799,7 +1798,7 @@ The `Altar Cutscene 3` `GameObject` is not a physical object and is enabled duri
 
 - `Start`: Generates a random number between 0 and 19, then runs the `Spawn` Function.
 
-- `Update`: Check if the player is in range of the `GameObject` holding this script and if so and the interact key is pressed the specified number of times the button was hit updates and then the `Spawn` function is run with a new random number. If the specified number of hits is reached, then the player `GameObject` is teleported to a specified location.
+- `Update`: Check if the player is in range of the `GameObject` holding this script and if so and the interact key is pressed the specified number of times the button was hit, updates, and then the `Spawn` function is run with a new random number. If the specified number of hits is reached, then the player `GameObject` is teleported to a specified location.
 
 - `Spawn`: Sets the button `GameObjects` spawn location to that of the index in the location list of the random number.
 
@@ -1830,7 +1829,7 @@ The `Altar Cutscene 3` `GameObject` is not a physical object and is enabled duri
 
 - `OnTriggerEnter2D`: If the player collides with the `GameObject` holding this script, the camera `GameObject` is enabled.
 
-- `OnTriggerExit2D`:  If the player leaves the collision range of the `GameObject` holding this script the camera `GameObject` is disabled.
+- `OnTriggerExit2D`:  If the player leaves the collision range of the `GameObject` holding this script, the camera `GameObject` is disabled.
 
 #pagebreak()
 ==== `DoorTriggerLeft` <DoorTriggerLeftDetailed>
@@ -1888,7 +1887,7 @@ The `Altar Cutscene 3` `GameObject` is not a physical object and is enabled duri
 
 / Function description:
 
-- `OnTriggerEnter2D`: Check if the player collides with `GameObject` and if this is the case, get the current string out of a list of strings corresponding to either "top", "left" or "right". If this string is equal to that of the door interacted with (left door = "left", right door = "right", top door = "top"), which is got from the `DoorTrigger` scripts, then increase the counter by one. Once the counter reaches a specified maximum, set the `finished` boolean to true.
+- `OnTriggerEnter2D`: Check if the player collides with `GameObject` and if this is the case, get the current string out of a list of strings corresponding to either "top", "left" or "right". If this string is equal to that of the door interacted with (left door = "left", right door = "right", top door = "top"), which is obtained from the `DoorTrigger` scripts, then increase the counter by one. Once the counter reaches a specified maximum, set the `finished` boolean to true.
 
 ==== `LevelChanger` <LevelChangerDetailed>
 
@@ -1911,7 +1910,7 @@ The `Altar Cutscene 3` `GameObject` is not a physical object and is enabled duri
 
 / Function description:
 
-- `Update`: Updates the player's position based on the directional input keys pressed, and updates the player's animation sprites based on this movement. It also disables the players' movement when on ice.
+- `Update`: Updates the player's position based on the directional input keys pressed, and updates the player's animation sprites based on this movement. It also disables the player's movement when on ice.
 
 - `FixedUpdate`: Physically moves the player rather than just updating the movement values. 
 
@@ -1995,7 +1994,7 @@ The `Altar Cutscene 3` `GameObject` is not a physical object and is enabled duri
 
 / Function description:
 
-- `Update`: Checks the currently active camera and move the `snow generator` `GameObject` above the currently active camera.
+- `Update`: Checks the currently active camera and moves the `snow generator` `GameObject` above the currently active camera.
 
 ==== `Spawner` <SpawnerDetailed>
 
@@ -2012,7 +2011,7 @@ The `Altar Cutscene 3` `GameObject` is not a physical object and is enabled duri
 
 - `FixedUpdate`: Move the player up by a fixed amount (simulates the player pressing a directional input).
 
-- `OnTriggerEnter2D`: Check if the player collides with `GameObject` and if this is the case teleport the player to a specified location, update the animation sprites and disable the player's movement input.
+- `OnTriggerEnter2D`: Check if the player collides with `GameObject`, and if this is the case, teleport the player to a specified location, update the animation sprites and disable the player's movement input.
 
 - `MovePlayer`: Wait 0.75 seconds, then re-enable the player's movement input.
 
@@ -2039,7 +2038,7 @@ The `Altar Cutscene 3` `GameObject` is not a physical object and is enabled duri
 
 #figure(
   image("Images/teleporter.png", width: 90%),
-  caption: [Image of `Teleporter` script attached to a `Teleporter` `GameObject` in DS World Level 6. The `teleporter` `GameObject` is not a physical object, but has a collision trigger attached that activate the script's function.]
+  caption: [Image of `Teleporter` script attached to a `Teleporter` `GameObject` in DS World Level 6. The `teleporter` `GameObject` is not a physical object, but has a collision trigger attached that activates the script's function.]
 )
 
 / Function description:
@@ -2176,7 +2175,7 @@ caption: [Image of `AIPortal` script attached to a Portal `GameObject` in Puzzle
   
 - `DestroyTimer`: Waits a specified time and then destroys the `GameObject`.
 
-- `Shoot`: Uses Unity's 2D Physics' `Raycast` method to get the stopping point of the laser, and the box which collided with it. Calls the player's `DamagePlayer` method if the raycast hits the player (whilst the beam is not in its start phase), it then draws the beam using the position of the raycast hit as the end position.
+- `Shoot`: Uses Unity's 2D Physics' `Raycast` method to get the stopping point of the laser, and the box which collided with it. Calls the player's `DamagePlayer` method if the raycast hits the player (whilst the beam is not in its start phase). It then draws the beam using the position of the raycast hit as the end position.
   
 - `DrawBeam`: Takes in two arguments, `startPosition` and `endPosition` and uses this to draw the beam using the `line renderer` of the beam.
   
@@ -2215,7 +2214,7 @@ caption: [Image of `AIPortal` script attached to a Portal `GameObject` in Puzzle
 
 - `Update`: Pauses current background music if any background music is playing.
 
-- `OnTriggerEnter2D`: Sets the `canDash` value of the `Dash` object attached to the player's to true.
+- `OnTriggerEnter2D`: Sets the `canDash` value of the `Dash` object attached to the player's as true.
 
 - `PlayAudio`: Plays the attached sound effect and disables the object's collision box and sprite renderer. Waits for a set amount of time and then stops the sound effect and resumes the background music.
 
@@ -2242,7 +2241,7 @@ caption: [Image of `AIPortal` script attached to a Portal `GameObject` in Puzzle
 
 - `Start`: Initialises the `player` variable, and the `heart` variables by getting the child objects of the object.
   
-- `Update`: Gets the number of lives of the player and calls the `ShowHearts` function if the number of lives has changed.
+- `Update`: Retrieves the number of lives of the player and calls the `ShowHearts` function if the number of lives has changed.
   
 - `ShowHearts`: Activates the hearts on the canvas to active if their index in the hearts array is less than the number of hearts, and deactivates the rest.
 
@@ -2256,7 +2255,7 @@ caption: [Image of `AIPortal` script attached to a Portal `GameObject` in Puzzle
 #pagebreak()
 / Function description:
 
-- `Start`: Initialises the player object variable and starts the coroutines `DeathTimer` and `StartPhaseTimer`
+- `Start`: Initialises the player object variable and starts the coroutines `DeathTimer` and `StartPhaseTimer`.
 
 - `StartPhaseTimer`: Waits a specified amount of time and then sets the `homingPhase` boolean to true.
   
@@ -2376,7 +2375,7 @@ The `player` `GameObject` holds this script in every level in the AI World.
 
 - `Start`: Initialises the `player`, `shieldBar` (the slider on the canvas), `shieldCollider` and `sprite` variables, sets the shield to ignore collision with the player.
 
-- `Update`: If the `canShield` boolean is true and the player holds down the "`Fire3`" button, activates the collider and sprite of the shield, else, disables the sprite and collider of the shield. Updates the shield's position so that is equal to that of the player.
+- `Update`: If the `canShield` boolean is true and the player holds down the "`Fire3`" button, activates the collider and sprite of the shield, else, disables the sprite and collider of the shield. Updates the shield's position so that it is equal to that of the player.
   
 - `FixedUpdate`: If the player `isShielding`, decrease the value of the shield bar slider by a fixed rate. If the value of the shield bar is 0, set the `canShield` boolean to false.
 
@@ -2438,7 +2437,7 @@ The `timer` `GameObject` has the `Timer2` script attached, which is used in AI W
 
 #figure(
   image("Images/timerstop2.png", width: 90%),
-  caption: [Image showing where the `GameObject` which contains the timerstop2 script.]
+  caption: [Image showing where the `GameObject` which contains the timerstop2 script is.]
 )
 
 / Function description:
@@ -2468,11 +2467,11 @@ The `timer` `GameObject` has the `Timer2` script attached, which is used in AI W
 
 - `SetStartPoint`: Initialise the starting angle.
 
-- `GetSpawnPoints`: Makes an array with all the children objects of the object which have "`Point`" in their name.
+- `GetSpawnPoints`: Makes an array with all the children objects of the objects which have "`Point`" in their name.
 
 - `MakeEnemy`: For all spawn points with "`All`" or "`Enemies`" in their name, instantiate an object (which must have the `homingDrone` class) with the spawn point's position and rotation, and set the speed of this object to the speed specified.
 
-- `ShootScatter`: For all spawn points with "`All`" or "`Enemies`" in their name, instantiate a `bullet` with a specified speed a specified rate.
+- `ShootScatter`: For all spawn points with "`All`" or "`Enemies`" in their name, instantiate a `bullet` with a specified speed at a specified rate.
 
 - `ShootStraight`: For all spawn points with "`All`" or "`Enemies`" in their name, instantiate a `bullet` with a specified speed a specified number of times at a specified rate.
 
@@ -2489,13 +2488,13 @@ In this section, we will go over the main technical aspects of our game that mig
 
 To create a new world, the following steps should be carried out:
 
-+ *Obtain a tileset:* This can either be found online (given that there is a licence) or it can be hand drawn. After importing the tileset change the sprite rendering mode from "single" to "multiple" and then autoslice the tiles into even cube shapes. Then create a tilepallet and add all the newly imported tiles to it. Finally, use the brush tool to create a suitable level for the player. Remember to switch between tile plates that have collision enabled and ones that don't to create an environment the player can roam around but cannot exit the desired play space. 
++ *Obtain a tileset:* This can either be found online (given that there is a licence) or it can be hand drawn. After importing the tileset, change the sprite rendering mode from "single" to "multiple" and then autoslice the tiles into even cube shapes. Then create a tilepallet and add all the newly imported tiles to it. Finally, use the brush tool to create a suitable level for the player. Remember to switch between tile palletes that have collision enabled and ones that don't, to create an environment the player can roam around but cannot exit the desired play space. 
 + *Get IBM Questions:* A new IBM Skills Build course should be chosen (as the game should cover a variety of topics). Then, gather the questions, append them onto the central questions CSV file located inside the "Resources" folder in the appropriate format and run the import questions functionality in the Unity editor (see @ImportQuestionsDetailed for more details). 
 + *Copy core game mechanics:* Reuse key parts of our game, which should include the player object, the template for the boss fight and the cameras (unless you wish to have a different system for how the player stays on screen). Note that other objects/scripts can be copied/used as well if the world to be created has similar features to one already created. For example, the AI World contains a dash script which can be used if another world needs to have a dashing ability.
 + *Add new puzzle mechanics:* Implement a new puzzle mechanic/main world concept, such as turrets in AI World or timer challenges in DS World. 
-+ *Add Boss fight:* A level which leads up to the boss fight should first be added. After this, the actual combat scene copied from previous worlds should be added, but with some changes to the sprites as well as images to match the world. After setting the questions up in step 2, make sure the `QuestionManager` in the scene uses questions from the right folder (see @QuestionSetupDetailed for more details).
-+ *Hub World linking:* Link the newly created world to the Hub world by adding a room with a magic circle in it, and set the world to be teleported to by that magic circle to be the newly created world. Add a door to the Hub World in order to be able to enter that magic circle room.
-+ *Build tests:* During the development of this world, unit tests should be added incrementally, followed by integration tests. Once the world is finished, system tests can be added, if those pass, you can move on to user acceptance tests to get playtesting feedback.
++ *Add Boss fight:* A level which leads up to the boss fight should first be added. After this, the actual combat scene copied from previous worlds should be added, but with some changes to the sprites, as well as images to match the world. After setting the questions up in step 2, make sure the `QuestionManager` in the scene uses questions from the right folder (see @QuestionSetupDetailed for more details).
++ *Hub World linking:* Link the newly created world to the Hub world by adding a room with a magic circle in it, and set the world that the magic circle will teleport the player to to be the newly created world. Add a door to the Hub World in order to be able to enter that magic circle room.
++ *Build tests:* During the development of this world, unit tests should be added incrementally, followed by integration tests. Once the world is finished, system tests can be added; if those pass, you can move on to user acceptance tests to get playtesting feedback.
 
 This general structure holds true for the existing worlds that we currently have. Therefore, if there is an issue with a world, check that each bullet point has been covered properly. A lot of the bugs will be collision issues, which can be fixed inside Scene view in the Unity Editor by moving the tile objects around.
 
@@ -2515,7 +2514,7 @@ To create a new Setting in the Menu, the following steps should be carried out:
 + *Link to `GM` script:* Link the newly created function to the `GM` script.
 + *Add `OnClick` function:* Add the newly created function to the `OnClick` function of the new UI button in the unity editor.
 
-If a button does not perform the functionality assigned to it, first check that the object has the appropriate script attached using the Unity Editor Inspect mode. Then, if the script is present, then it is most likely an issue with the logic of the code.
+If a button does not perform the functionality assigned to it, first check that the object has the appropriate script attached using the Unity Editor Inspect mode. If the script is present, then it is most likely an issue with the logic of the code.
 
 === Combat System <Combat-system-section>
 
@@ -2546,7 +2545,7 @@ Whenever a state breaks, or has issues, first check the code of the individual s
 
 To modify or add additional questions to the game, follow these steps:
 
-1. *Add questions in spreadsheet:* Navigate to the "questions.csv" file inside of the Resource folder (in the Project view), and add the questions in the format: Question, Answers, World. The answers are split by semi-colons, and The first answer in this column is the correct one. Make sure that all folders for different worlds exists before importing the questions. For example, if you wanted to add another world called "JourneyCloud", a folder called "JourneyCloud" should exist inside "Resources".
+1. *Add questions in spreadsheet:* Navigate to the "questions.csv" file inside of the Resource folder (in the Project view), and add the questions in the format: Question, Answers, World. The answers are split by semi-colons, and The first answer in this column is the correct one. Make sure that all folders for different worlds exist before importing the questions. For example, if you wanted to add another world called "JourneyCloud", a folder called "JourneyCloud" should exist inside "Resources".
 
 #figure(
  image("Images/QuestionCSV.png", width: 90%),
@@ -2568,7 +2567,7 @@ To modify or add additional questions to the game, follow these steps:
 In this section, we will go over what additional features and content could be for the game. While this does not cover everything, it should at least be helpful for future developers.
 
 === Cloud World <Cloud-world-section>
-The primary concept for the cloud world is to traverse a series of islands in the sky, where you can walk on clouds and grass alike. In addition to regular question puzzles,
+The primary concept for the cloud world is to traverse a series of islands in the sky, where you can walk on clouds and grass alike. 
 
 #figure(
   image("Images/clouds.png", width: 80%),
@@ -2582,7 +2581,7 @@ The main puzzle concept for this world is jumping puzzles. A jumping puzzle is a
   caption: [Image of Kugane Tower, Final Fantasy XIV's hardest jumping puzzle, which requires a series of complex jumps to scale the outside of the tower.]
 )
 
-However, as our game is in 2D, the world will focus more on jumping puzzles which requires you to traverse platforms in a specific order to reach the other side. For example, take Undertale's Hotland jumping puzzle, where standing on the steam vent, will make the player jump to the platform the arrow is pointing in, with some platforms having buttons in the middle which change the active steam vents, meaning when the player lands, the steam vents may point in an unexpected direction.
+However, as our game is in 2D, the world will focus more on jumping puzzles which requires you to traverse platforms in a specific order to reach the other side. For example, in Undertale's Hotland jumping puzzle, standing on the steam vent will make the player jump to the platform the arrow is pointing in, with some platforms having buttons in the middle which change the active steam vents, meaning when the player lands, the steam vents may point in an unexpected direction.
 
 #figure(
   image("Images/hotland.jpg", width: 80%),
@@ -2598,7 +2597,7 @@ Another puzzle concept which we aim to implement in the cloud world is light and
 
 We could implement this with a number of mirrors which could be rotated by a series of switches, requiring the player to rotate the mirrors into the correct position, in order to open a door or move to another sky island.
 
-Finally, for the boss fight, one of the islands would contain a golden temple, and upon entering the player would meet the boss, beginning a boss fight on a temple in the clouds. This idea was inspired by both the Golden Temple at the end of Ma'habre in Fear and Hunger, where the player  fights a powerful enemy
+Finally, for the boss fight, one of the islands would contain a golden temple, and upon entering, the player would meet the boss, beginning a boss fight on a temple in the clouds. This idea was inspired by the Golden Temple at the end of Ma'habre in Fear and Hunger, where the player  fights a powerful enemy.
 
 #figure(
   image("Images/goldentemple.png", width: 80%),
@@ -2611,14 +2610,14 @@ The threat intelligence world is to be set inside volcanic caves, and most of th
 
 The main puzzle theme for this area was intended to be block puzzles. Block puzzles come in two main forms:
 
-*Sliding block puzzles* involve pushing blocks which slide in the direction the player pushes them in, until it hits a wall or another block, and then stops. For example, in the sliding block puzzle in Fear and Hunger, the player must push the block labelled 1 to the tile labelled 2. To do this the player would stand on the left of block 1, push it to the right, then standing below the block and push it upwards. Afterwards, the player must stand to the right of the block and push it left, following the blue line annotation.
+*Sliding block puzzles* involve pushing blocks which slide in the direction the player pushes them in, until they hit a wall or another block, and then stops. For example, in the sliding block puzzle in Fear and Hunger, the player must push the block labelled 1 to the tile labelled 2. To do this, the player would stand on the left of block 1, push it to the right, then stand below the block and push it upwards. Afterwards, the player must stand to the right of the block and push it left, following the blue line annotation.
 
 #figure(
   image("Images/fearhungerpuzzle.png", width: 70%),
   caption: [Image of the first block sliding puzzle in Fear and Hunger, with its solution annotated.]
 )
 
-*Pushing block puzzles* are distinct from sliding block puzzles, as these blocks only move 1 tile at a time. The goal in the puzzle shown below is to get the player character to the other side of the boulders blocking the path. This is done by pushing boulders in the order shown by the numbers in the image. What makes this puzzle not possible in *sliding block style* is moving number 4 in the image, as the boulder only moves 1 tile over. It allows for the player to exit when the boulders are pushed correctly as if the boulder slid another tile along, the exit would be blocked.
+*Pushing block puzzles* are distinct from sliding block puzzles, as these blocks only move 1 tile at a time. The goal in the puzzle shown below is to get the player character to the other side of the boulders blocking the path. This is done by pushing boulders in the order shown by the numbers in the image. What makes this puzzle not possible in *sliding block style* is moving number 4 in the image, as the boulder only moves 1 tile over. It allows for the player to exit when the boulders are pushed correctly, as if the boulder slid another tile along, the exit would be blocked.
 
 #figure(
   image("Images/pokemonblock.png", width: 70%),
@@ -2634,7 +2633,7 @@ The boss battle in this world would take place at the heart of the volcano, simi
 
 === Final Boss World
 
-The final world would be designed to test everything the player had learned from the 4 major worlds through a final combat section against a cyborg John McNamara, utilizing Skills Build Questions from all 4 previously fought bosses!
+The final world would be designed to test everything the player has learned from the 4 major worlds through a final combat section against a cyborg John McNamara, utilizing Skills Build Questions from all 4 previously fought bosses!
 
 Carrying on with the main theme from the Hub World, this area would utilize a space theme, where tiles from every world would be used to line a path leading to the final boss, showcasing how all 4 worlds have come together to make one final section.
 
@@ -2644,7 +2643,7 @@ There were a number of other concepts that weren't implemented into the game, ho
 
 ==== World Theme
 
-Although a theme has not been decided, we wanted to implement a cyberpunk or synthwave world. Cyberpunk is a genre of science fiction that focuses on a combination of high technology and low quality of living, for example cyborgs and artificial intelligence, juxtaposed with societal decay @cyberpunk. Synthwave, on the other hand, is a genre of music, that often draws inspiration from graphics seen in the 1980's, such as neon, wireframes, video cassettes and more as part of a visual aesthetic @synthwave. 
+Although a theme has not been decided, we wanted to implement a cyberpunk or synthwave world. Cyberpunk is a genre of science fiction that focuses on a combination of high technology and low quality of living, for example cyborgs and artificial intelligence, juxtaposed with societal decay @cyberpunk. Synthwave, on the other hand, is a genre of music that often draws inspiration from graphics seen in the 1980s, such as neon, wireframes, video cassettes and more as part of a visual aesthetic @synthwave. 
 
 #figure(
   image("Images/synthwave.png", width: 70%),
@@ -2654,7 +2653,7 @@ Although a theme has not been decided, we wanted to implement a cyberpunk or syn
 
 ==== Dance Dance Revolution Puzzle
 
-Dance Dance Revolution is a series of arcade video machines, where the player is required to step on the specified locations on the floor of the machine. The floor of the game is partitioned into four sections using the four cardinal directions with symbols pointing in each direction. The game indicates the section of the floor on which the user is to step by presenting luminous arrows on the screen that point in the direction corresponding to the relevant section of the floor. Dance Dance Revolution presents the on-screen arrows as travelling from one side of the arcade machine's screen to another, entering a virtual box. When the arrow symbol enters this box, the user is to step on the corresponding section of the machine's floor. The game synchronises these events to music so the movement of the player's feet will roughly follow the beat of the song that is playing which mimicks dancing hence the name "Dance Dance Revolution".
+Dance Dance Revolution is a series of arcade video machines where the player is required to step on the specified locations on the floor of the machine. The floor of the game is partitioned into four sections using the four cardinal directions with symbols pointing in each direction. The game indicates the section of the floor on which the user is to step by presenting luminous arrows on the screen that point in the direction corresponding to the relevant section of the floor. Dance Dance Revolution presents the on-screen arrows as travelling from one side of the arcade machine's screen to another, entering a virtual box. When the arrow symbol enters this box, the user is to step on the corresponding section of the machine's floor. The game synchronises these events to music so the movement of the player's feet will roughly follow the beat of the song that is playing, which mimicks, dancing hence the name "Dance Dance Revolution".
 
 We adapt Dance Dance Revolution to a computer game by using the arrow keys as digital analogues to the sections of the arcade machine's floor.
 
@@ -2666,9 +2665,9 @@ We adapt Dance Dance Revolution to a computer game by using the arrow keys as di
 #pagebreak()
 ==== Conveyor Belt Puzzle
 
-A conveyor belt puzzle is a type of puzzle in which the player wants to get to the other side of the room, but to do so they need to step on a series of conveyor belts, when you step on one of these, they will send you to the other end of the conveyor belt, not allowing you to get off. You need to step on the correct conveyor belts to get to the other side of the map, and if you step on the wrong one, you get sent backwards instead.
+A conveyor belt puzzle is a type of puzzle in which the player wants to get to the other side of the room, but to do so, need to step on a series of conveyor belts. When you step on one of these, they will send you to the other end of the conveyor belt, not allowing you to get off. You need to step on the correct conveyor belts to get to the other side of the map, and if you step on the wrong one, you get sent backwards instead.
 
-This type of puzzle can be implemented without conveyor belts too, for example in Pokemon Emerald, you must ride on a series of water currents. In the image below, the green arrows show how taking a wrong path could lead to being sent back, and the red arrows show the correct path.
+This type of puzzle can be implemented without conveyor belts too; for example, in Pokemon Emerald, you must ride on a series of water currents. In the image below, the green arrows show how taking a wrong path could lead to being sent back, and the red arrows show the correct path.
 
 #figure(
   image("Images/pokemonwater.png", width: 70%),
@@ -2678,29 +2677,29 @@ This type of puzzle can be implemented without conveyor belts too, for example i
 #pagebreak()
 == Ethical and Societal Impacts <Ethical-societal-section>
 
-Our project, whilst only being a game, might have some potential ethical issues that need to be considered. On the other hand, the project might also have some potential upside when it comes to societal impacts.
+Our project, whilst only being a game, might have some potential ethical issues that need to be considered. On the other hand, the project might also have some potential upsides when it comes to societal impacts.
 
 === Ethical Impacts
 
-Games, by the nature of their existence, are meant to be a form of interactive entertainment that provide users with artificial challenges to overcome in order to reach a final goal @Game-nature. This greatly mimics the concept of studying where, for example in subjects like mathematics, students are given problem sets to solve in order to pass an examination. 
+Games, by the nature of their existence, are meant to be a form of interactive entertainment that provide users with artificial challenges to overcome in order to reach a final goal @Game-nature. This greatly mimics the concept of studying where, for example, in subjects like mathematics, students are given problem sets to solve in order to pass an examination. 
 
-Combining the two might be an appealing concept at a first glance, since you get a system that can both teach useful content while also being fun and engaging, however we must be careful of the downsides of gaming. Gaming, when in long sessions and frequently, have been shown to lead to adverse health effect such as causing addiction and lead to increased aggravation. Games which have lots of flashing images also have known to cause epileptic seizures for photosensitive individuals with epilepsy @Game-impact-health.
+Combining the two might be an appealing concept at a first glance, since you get a system that can both teach useful content while also being fun and engaging, however, we must be mindful of the downsides of gaming. Gaming, when done in long sessions and frequently, has been shown to lead to adverse health effects such as causing addiction and lead to increased aggravation. Games which have lots of flashing images have also been known to cause epileptic seizures for photosensitive individuals with epilepsy @Game-impact-health.
 
-Our game only has around one to two hours of play time at most, and has features such as saving and pausing, allowing for users to take a break whenever they wish. This alleviates the issue of long gaming sessions. The issue of frequent play is also taken care of, as the game offers little in the way of replayability (which is not a problem for an RPG as it should be a one-time experience) besides refreshing on the contents of Skills Build courses.
+Our game only has around one to two hours of play time at most, and includes features such as saving and pausing, allowing for users to take a break whenever they wish. This alleviates the issue of long gaming sessions. The issue of frequent play is also taken care of, as the game offers little in the way of replayability (which is not a problem for an RPG as it intended to be a one-time experience) besides refreshing on the contents of Skills Build courses.
 
-Another ethical issue that might arise is with respect to diversity. Any game should include in it a diverse set of characters, ideals, backgrounds, and perspectives, as this leads to a more engaging and enjoyable experience for all people regardless of their attributes @Game-impact-diversity. However, implementing this in a game can be a daunting task, considering how much more research and expertise is necessary to appropriately represent diversity.
+Another ethical issue that might arise is with respect to diversity. Any game should include in it a diverse set of characters, backgrounds, and perspectives, as this leads to a more engaging and enjoyable experience for all people regardless of their attributes @Game-impact-diversity. However, implementing this in a game can be a daunting task, considering how much more research and expertise is necessary to appropriately incorporate.
 
-For our game, this mainly affects the choice of sprites for the main and side characters. Given that these are hand-crafted, a lot of work has to go into designing each character, and due to the time constraints we have not been able to fully implement other versions of the main character besides male, such as a female or a non-binary variant. Despite that, we have tried our hardest given the time constraints to make a set of diverse characters.
+For our game, this mainly affects the choice of sprites for the main and side characters. Given that these are hand-crafted, a lot of work has to go into designing each character, and due to the time constraints, we have not been able to fully implement other versions of the main character besides male, such as a female or a non-binary version. Despite that, we have tried our hardest given the time constraints to create a set of diverse characters.
 
 === Societal Impacts
 
 In its current iteration, the game serves as a tool to be used alongside Skills Build to learn the content in a way that is less formal and more enjoyable. Perhaps users will be more inclined to use the website and start a course due to it having a game associated with. Nevertheless, the scope of impact is limited to Skills Build users are interested in gaming, and who want to specifically learn the courses covered in the game. 
 
-By implementing our project on a wider scale (like having a section in-game for each badge) and integrating more closely the course content (beyond simply linking the Skills Build badge) whilst also being accommodating to users who have not had lots of experience gaming, we could elevate the scope of impact outside the previously mentioned restrictions, allowing almost all Skills Build users to benefit from the positive effects of gamification in learning.
+By implementing our project on a wider scale (such as having a section in-game for each badge) and integrating more closely the course content (beyond simply linking the Skills Build badge), whilst also being accommodating to users who have limited gaming experience, we could elevate the scope of impact outside the previously mentioned restrictions, allowing almost all Skills Build users to benefit from the positive effects of gamification in learning.
 
 === Copyright Concerns <Copyright-section>
 
-Our game uses various copyrighted assets such as music and some images. Since this game is for educational purposes, and we will not be charging people to play the game, we are mostly exempt from the copyright laws concerning the use of copyrighted assets.
+Our game uses various copyrighted assets, such as music and some images. Since this game is for educational purposes, and we will not be charging people to play the game, we are mostly exempt from the copyright laws concerning the use of copyrighted assets.
 
 If we were to monetize the game, however, changing the following list of assets would make our game copyright-free.
 
@@ -2737,7 +2736,7 @@ If we were to monetize the game, however, changing the following list of assets 
 #pagebreak()
 = Glossary <Glossary-section>
 
-In this section, we include some terms which are domain specific to game development. Having this separate section avoids the need of explaining a term in the middle of a sentence.
+In this section, we include some terms which are domain-specific to game development. Having this separate section avoids the need of explaining a term in the middle of a sentence.
 
 *Player*: The person controlling the game. Similar to how the person controlling a car is a driver.
 
