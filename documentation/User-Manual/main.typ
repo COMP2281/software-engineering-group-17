@@ -1176,7 +1176,7 @@ The following section is split into two parts. The first part is a table overvie
   
   [`Turret` \ (@TurretDetailed)], [Manages a turret which fires bullets and can rotate], [`Start` \ `FixedUpdate` \ `FireBullets` \ `Fire`], 
   
-  [`TurretStateMachine` \ (@TurretStateMachineDetailed)], [Defines an abstract class for turrets which have 4 set phases], [`SetStartPoint` \ `GetSpawnPoints` \ `MakeEnemy` \ `ShootScatter` \ `ShootStraight` \ `ShootBeam` \ `RotateTurret` \ `GetPrefab`], 
+  [`TurretStateMachine` \ (@TurretStateMachineDetailed)], [Defines an abstract class for turrets which have 4 set phases], [`SetStartPoint` \ `GetSpawnPoints` \ `MakeEnemy` \ `ShootScatter` \ `ShootStraight` \ `ShootBeam` \ `GetPrefab`], 
 )
 
 #pagebreak()
@@ -2149,7 +2149,7 @@ caption: [Image of `AIPortal` script attached to a Portal `GameObject` in Puzzle
 
 / Function description:
 
-- `Start`: Calls the `Set Start Rotation` and `GetSpawnPoints` methods from the abstract parent class.
+- `Start`: Calls the `SetStartPoint` and `GetSpawnPoints` methods from the abstract parent class.
   
 - `FixedUpdate`: Calls the `RotateTurret` method from the abstract parent class.
   
@@ -2228,7 +2228,7 @@ caption: [Image of `AIPortal` script attached to a Portal `GameObject` in Puzzle
 
 / Function description:
 
-- `OnTriggerEnter2D`: If the collided object has the "`Player`", sets the `key manager`'s `escapeStart` boolean to true and destroys the `GameObject`.
+- `OnTriggerEnter2D`: If the collided object has the "`Player`", sets the `key manager`'s boolean to true and destroys the `EscapeStart` `GameObject`.
 
 
 ==== `Hearts` <HeartsDetailed>
@@ -2460,7 +2460,7 @@ The `timer` `GameObject` has the `Timer2` script attached, which is used in AI W
 
 - `Fire`: Takes in a `spawn` `GameObject` as a parameter and instantiates a specified prefab at the `spawn`'s position and rotation. Sets the instantiated object's speed to a specified speed.
 
-- `FireBullets`: Waits for a specified number of seconds and then calls the Fire method at a specified rate, after which it reloads for a specified number of seconds. If the turret is meant to shoot in both directions, calls the Fire method twice for each spawn point.
+- `FireBullets`: Waits for a specified number of seconds and then calls the `Fire` method at a specified rate, after which it reloads for a specified number of seconds. If the turret is meant to shoot in both directions, calls the `Fire` method twice for each spawn point.
 
 ==== `TurretStateMachine` <TurretStateMachineDetailed>
 
@@ -2481,7 +2481,7 @@ The `timer` `GameObject` has the `Timer2` script attached, which is used in AI W
 - `GetPrefab`: Returns the prefab corresponding to the current state.
 
 #pagebreak()
-== System maintenance <System-maintenance-section>
+== System Maintenance <System-maintenance-section>
 
 In this section, we will go over the main technical aspects of our game that might require maintenance. We also cover how to work with them, which will be useful for @Future-development-section. 
 
@@ -2519,7 +2519,7 @@ If a button does not perform the functionality assigned to it, first check that 
 
 === Combat System <Combat-system-section>
 
-To add or fix more features in the combat system, we must first understand the state design pattern and finite state machines @FSM-combat-tutorial. 
+To add or fix more features in the combat system, we must first understand the state design pattern and finite state machines (we will now refer to these as FSM) @FSM-combat-tutorial. 
 
 A FSM is an abstract model that holds a finite number of states and their respective transitions, while also keeping track of the current state of the system during its execution. This is useful for game development as lots of in-game systems, such as enemy actions or combat, have behaviours that can be directly mapped to a FSM. 
 
@@ -2678,7 +2678,7 @@ This type of puzzle can be implemented without conveyor belts too, for example i
 #pagebreak()
 == Ethical and Societal Impacts <Ethical-societal-section>
 
-Our project, whilst only being a game, might have some potential ethical issues that need to be considered. On the contrary, the project might also have some potential upside when it comes to societal impacts.
+Our project, whilst only being a game, might have some potential ethical issues that need to be considered. On the other hand, the project might also have some potential upside when it comes to societal impacts.
 
 === Ethical Impacts
 
