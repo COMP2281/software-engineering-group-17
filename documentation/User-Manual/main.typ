@@ -129,7 +129,7 @@ In this section, we refer back to the requirement specification and go through a
   columns: (20%, 25%, 20%, 35%),
   align: horizon,
   inset: 10pt,
-  [Requirement Name], [Current Status], [Extent to which this is fulfilled], [Justification for fulfilment],
+  [Requirement Name], [Current Status], [Extent to which this is fulfilled], [Justification of fulfilment],
   [FR1.1 - Player Character], [Unchanged], [Implemented], [The Player Character is an IBM employee and has distinct sprites in and out of combat.],
   
   [FR1.2 - Player Character Movement], [Dash added for AI World], [Implemented + Additional Features Added ], [The player is able to move in all cardinal directions. One of the worlds (AI-World) has a dash feature which the player can use to get a very quick speed boost in the direction they are currently facing. ],
@@ -394,7 +394,7 @@ Lastly, we have two bosses who we didn't implement sprites for, the second of wh
 
 Other than sprite choices, the other major combat design choices we had to make were on the menu and the health, as well as the general presentation.
 
-For the start of the battle, we decided to have the two characters point at each other, initiating the fight, before switching to the main combat section. An additional point to make concerning the combat backgrounds is that we decided to use generative AI to produce backgrounds for combat, themed around our worlds, due to the speed and quality that they can be produced.
+For the start of the battle, we decided to have the two characters point at each other, initiating the fight, before switching to the main combat section. An additional point to make, concerning the combat backgrounds, is that we decided to use generative AI to produce backgrounds for combat, themed around our worlds, due to the speed and quality that they can be produced.
 
 #figure(
   image("Images/combatstart.png", width: 80%),
@@ -2665,9 +2665,9 @@ We adapt Dance Dance Revolution to a computer game by using the arrow keys as di
 #pagebreak()
 ==== Conveyor Belt Puzzle
 
-A conveyor belt puzzle is a type of puzzle in which the player wants to get to the other side of the room, but to do so, need to step on a series of conveyor belts. When you step on one of these, they will send you to the other end of the conveyor belt, not allowing you to get off. You need to step on the correct conveyor belts to get to the other side of the map, and if you step on the wrong one, you get sent backwards instead.
+A conveyor belt puzzle is a type of puzzle in which the player wants to get to the other side of the room, but to do so, they need to step on a series of conveyor belts. When you step on one of these, they will send you to the other end of the conveyor belt, not allowing you to get off. You need to step on the correct conveyor belts to get to the other side of the map, and if you step on the wrong one, you get sent backwards instead.
 
-This type of puzzle can be implemented without conveyor belts too; for example, in Pokemon Emerald, you must ride on a series of water currents. In the image below, the green arrows show how taking a wrong path could lead to being sent back, and the red arrows show the correct path.
+This type of puzzle can be implemented without conveyor belts too. For example, in Pokemon Emerald, you must ride on a series of water currents. In the image below, the green arrows show how taking a wrong path could lead to being sent back, and the red arrows show the correct path.
 
 #figure(
   image("Images/pokemonwater.png", width: 70%),
