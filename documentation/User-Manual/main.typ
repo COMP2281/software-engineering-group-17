@@ -38,15 +38,15 @@ This document is split up into six main sections beside this summary. Since it i
 
 -  *@Project-brief-section and @User-requirement-section:* Description for each of the user requirements, including the initial and current status, the extent to which it is fulfilled, and justification for the extent of fulfilment.
 
-- *@NFR-section:*  Detail how the other non-functional aspects of the system are handled.
+- *@NFR-section:*  Detail on how the other non-functional aspects of the system are handled.
 
 - *@Initial-idea-section:* Source materials upon which the conceptualisation and development of the system is built
 
-- *@Game-instruction-manual-section:* Jargon-free detail how to use the system from the perspective of non-technical users.
+- *@Game-instruction-manual-section:* Jargon-free detail on how to use the system from the perspective of non-technical users.
 
-- *@Code-accessibility-section:* Technical detail how to use the system from the perspective of technical users.
+- *@Code-accessibility-section:* Technical detail on how to use the system from the perspective of technical users.
 
-- *@Class-documentation-section:* Technical detail how each of the system’s functionalities is developed.
+- *@Class-documentation-section:* Technical detail on how each of the system’s functionalities is developed.
 
 - *@System-maintenance-section:* Specifics of how the system can be maintained. 
 
@@ -76,20 +76,20 @@ The new system aims to gamify the learning experience, allowing for a more fun a
 
 == Project Brief Analysis <Project-brief-section>
 
-Our solution has covered the main requirement from [LINK TO < Project-brief >]. So far, we have a functioning RPG game with items that can be acquired from beating the bosses through Q&A style combat in different worlds linked to the Skills Build badges.
+Our solution has covered the main requirement from @Project-brief. So far, we have a functioning RPG game with items that can be acquired from beating the bosses through Q&A style combat in different worlds linked to the Skills Build badges.
 
 #figure(
   image("Images/ProjectBrief.png", width: 80%),
   caption: [Image of project description and challenge to be addressed in the project brief sent by the client.],
 ) <Project-brief>
 
-Currently, two badges have been fully implemented in the game as worlds, those being "Introduction to AI" and "Introduction to Data Science". We planned to cover IBM Skills Build Courses "Intro to Cloud", "Journey to Cloud", and "Threat Intelligence and Hunting" in three other worlds, however, we were not able to finish these worlds due to time constraints and project down scoping. 
+Currently, two badges have been fully implemented in the game as worlds, those being "Introduction to AI" and "Introduction to Data Science". We planned to cover IBM Skills Build Courses "Intro to Cloud", "Journey to Cloud", and "Threat Intelligence and Hunting" in three other worlds, however, we were not able to finish these worlds when this document was writted due to time constraints and project down scoping. 
 
-Despite this, we have laid the foundation in the game so that adding the other three badges would be very simple. We also have concepts for the other three badges' world, which will be further discussed in @World-section.
+Despite this, we have laid the foundation in the game so that adding the other three badges would be very simple. We also have concepts for the other three badges' worlds, which will be further discussed in @World-section.
 
 Unfortunately, we did not add any of the documentation, as the resources could not be found on the IBM Skills Build website.
 
-Regarding the "challenge to be addressed" section, we have done lots of research on existing 21#super([st]) games (see @Initial-idea-section) as well as existing learning games (see our requirement specification @Requirement-Specification), and have made design choices driven by the findings to make our game fit the "21#super([st]) century learning game" demand.
+Regarding the "challenge to be addressed" section, we have done lots of research on existing 21#super([st]) century games (see @Initial-idea-section) as well as existing learning games (see our requirement specification @Requirement-Specification), and have made design choices driven by the findings to make our game fit the "21#super([st]) century learning game" demand.
 
 == Installation Guide <Installation-guide-section>
 
@@ -116,7 +116,7 @@ The following section will give a step-by-step guide on how to download and run 
   caption: [Image of the .exe file in the game build folder.],
 )
 
-/ Note: The game is only compatible with Windows 10 and 11 as per the request of the client. We recommend having a computer with a minimum of 4GBs of RAM to run the game. You can feel free to plug in a controller or play the game using the keyboard and mouse. 
+/ Note -: The game is only compatible with Windows 10 and 11 as per the request of the client. We recommend having a computer with a minimum of 4GBs of RAM to run the game. You can feel free to plug in a controller or play the game using the keyboard and mouse. 
 
 #pagebreak()
 
@@ -133,15 +133,15 @@ In this section, we refer back to the requirement specification and go through a
   [FR1.1 - Player Character], [Unchanged], [Implemented], [The Player Character is an IBM employee and has distinct sprites in and out of combat.],
   
   [FR1.2 - Player Character Movement], [Dash added for AI World], [Implemented + Additional Features Added ], [The player is able to move in all cardinal directions. One of the worlds (AI-World) has a dash feature which the player can use to get a very quick speed boost in the direction they are currently facing. ],
-  [FR1.3 - Player-Based system-Controls], [Added additional controls for actions in AI World], [Implemented with additional controls], [Player has a dedicated interact key as well as a secondary interact key for other abilities such as the Shield added in AI World.],
+  [FR1.3 - Player-Based system-Controls], [Added additional controls for actions in AI World], [Implemented with additional controls], [The player has a dedicated interact key as well as a secondary interact key for other abilities such as the Shield added in AI World.],
   [FR2.1 - Game System - Main Menu], [Unchanged], [Implemented], [The Main Menu contains all buttons specified: Make a new game, continue an ongoing session, open the options, quit and close the game window.],
   [FR2.2 - Game System - Pause Menu], [Unchanged], [Implemented], [The player is able to open the pause menu using either the Escape or Tab key and in the Pause Menu is able to access the inventory, save the game, open the options menu, or quit the game.],
   [FR2.3 - Game System - Saving], [Unchanged], [Implemented], [The player is able to save the game in the Pause Menu.],
   [FR2.4 - Game System - Inventory], [Unchanged], [Implemented], [The inventory exists in the Pause Menu and the player is able to view their collected items.],
-  [FR2.5 - Game System - Camera], [Modified to have two types of cameras, cameras which stand still, and cameras which move with the player, this was done to provide a smoother experience, and is common for 2d top-down games], [Implemented modified version], [AI World and Data Science World use fixed camera and camera which follows the player, the Hub World only uses a camera which follows the player.],
+  [FR2.5 - Game System - Camera], [Modified to have two types of cameras, cameras which stand still, and cameras which move with the player], [Implemented modified version], [AI World and Data Science World use fixed camera and camera which follows the player, the Hub World only uses a camera which follows the player. This was done to provide a smoother experience, and is common for 2d top-down games.],
 
   [FR3.1 - Gameplay Systems - Combat], [Modified - health bar replaced by a number of hearts], [Implemented modified version as a number of hearts works better for answering questions, as answering wrongly deduces a fixed number of hearts], [The game features a combat system where the player takes damage when attacked by an enemy, and dies when at 0 hearts.],
-  [FR3.2 - Gameplay Systems - Skills Build System], [Modified - replaced skill tree with options which show up upon completing a world with different options available as to which power up to apply. This was done to increase simplicity for the user as well as for developing.], [Implemented modified version], [The Skill Tree permanently upgrades the player's abilities, but cannot be accessed in the pause menu.],
+  [FR3.2 - Gameplay Systems - Skills Build System], [Modified - replaced skill tree with options which show up upon completing a world with different options available as to which power up to apply], [Implemented modified version], [The Skill Tree permanently upgrades the player's abilities, but cannot be accessed in the Pause Menu. This was done to increase simplicity for the user as well as for devlopers.],
   [FR4.1 - Gameplay - Central Hub], [Unchanged], [Implemented], [The Hub World can be accessed and the player can enter all other worlds from it.],
   [FR4.2 - Gameplay - Worlds], [Unchanged], [Implemented], [Each world contains many rooms and ends with a boss fight.],
   [FR4.3 - Gameplay - Rooms], [Modified with a more accurate term 'Levels', where levels each have a puzzle that can span multiple rooms.], [Implemented], [Levels contains a puzzle or a boss with a door to the next level.],
@@ -164,7 +164,7 @@ In this section, we refer back to the requirement specification and go through a
   [NFR2.1 - Graphics], [Unchanged], [Satisfied], [See @MainMenuButtonsDetailed],
   [NFR3.1 - Response Time], [Unchanged], [Satisfied], [After testing the response time using a recording software to measure the response time between button press and movement on the screen, the response time was less than 0.1 seconds.],
   [NFR3.2 - Smooth Movement], [Unchanged], [Satisfied], [After surveying multiple people after they have played our game, the consensus was that the player's movement in the game felt smooth.],
-  [NFR3.3 - Beginner Friendly], [Unchanged], [Satisfied], [Although not specifically survey, all players that had little to no experience playing games did not have any issues understanding how to play our game, therefore we believe that this NFR is fulfilled.],
+  [NFR3.3 - Beginner Friendly], [Unchanged], [Satisfied], [Although not specifically surveyed, all players that had little to no experience playing games did not have any issues understanding how to play our game, therefore we believe that this NFR is fulfilled.],
   [NFR3.4 - Room Transitions], [Unchanged], [Not Satisfied], [Due to time constraints, room transition effects were not added.],
   [NFR3.5 - Boss Battles], [Unchanged], [Satisfied], [After surveying multiple people after they have played our game, the consensus was that the boss battles were engaging.],
   [NFR3.6 - Music], [Unchanged], [Satisfied], [After surveying multiple people after they have played our game, the consensus was that the music fit each area of the game.],
@@ -225,7 +225,7 @@ While not an RPG series, the Ace Attorney games are puzzle games, where the main
 We also need to consider how the player will answer questions, and what type of menu we want the player to use.
 
 ==== List Style
-This is arguably the most popular style of menu in RPG games and involves a scrollable list, to which players will move down the list, relatively simple to implement and does what it needs to.
+This is arguably the most popular style of menu in RPG games and involves a scrollable list, to which players will move down the list. This is relatively simple to implement and does what it needs to.
 
 #figure(
   image("Images/menu1.png", width: 90%),
@@ -245,7 +245,7 @@ While combat sprites depend on the combat style we choose, all the characters in
 
 One of the biggest things to consider with sprite sheets is the amount of space they take up relative to the world around them, traditional RPG style has the world split into "tiles", which can be thought of as a square grid, in which the characters normally move between these tiles, and normally mean that sprites have to fit into that square area. However, newer top-down 2D games are less restrictive, and have more free movement, which also means that character sprites do not have to conform to set tile space
 
-The sprites I am showing off in this section are all walking animation sprites, with a step-stand-step style of animation, which is simple to animate, but works brilliantly, and is still used in modern top-down games today.
+The sprites shown in this section are all walking animation sprites, with a step-stand-step style of animation, which is simple to animate, but works brilliantly, and is still used in modern top-down games today.
 
 #figure(
   image("Images/spritesheet.png", width: 90%),
@@ -272,12 +272,13 @@ Finally, we have the super simple 16x16 sprites, which conform to tiles, but lac
 
 #pagebreak()
 === Health
-We need to be able to keep track of how many questions have been answered correctly and there are several ways to do this, however keeping in line with RPG games, the best way is through Hit Points (HP), which normally represent how much damage the player has taken [CHECK DEFINITION]. Converting this to Q&A style combat, we can say that if the player answers a question correctly, the enemy takes damage, and if you answer a question wrong, the player character takes damage.
+We need to be able to keep track of how many questions have been answered correctly and there are several ways to do this, however keeping in line with RPG games, the best way is through Hit Points (HP), which normally represent how much damage the player has taken. Converting this to Q&A style combat, we can say that if the player answers a question correctly, the enemy takes damage, and if you answer a question wrong, the player character takes damage.
 
 There are multiple ways of representing HP, however we will be deciding between health bars and heart bars.
 
 ==== Health Bars
-A health bar is quite simply a bar to display health which is normally analogue. We take an example from Guilty Gear Xrd, a fighting game released in 2014. As this health bar depletes it will "empty" towards the centre of the screen.
+
+A health bar is simply a bar to display health which is normally analogue. We take an example from Guilty Gear Xrd, a fighting game released in 2014. As this health bar depletes it will "empty" towards the centre of the screen.
 
 #figure(
   image("Images/GGX1.png", width: 90%),
