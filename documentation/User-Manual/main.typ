@@ -175,7 +175,7 @@ In this section, we refer back to the requirement specification and go through a
 )
 
 #pagebreak()
-=  Conceptualisation and development <Initial-idea-section>
+=  Conceptualisation and Development <Initial-idea-section>
 
 In this section, we will discuss the source materials upon which the conceptualisation
 and development of the system is built upon, and then show how we executed upon those ideas.
