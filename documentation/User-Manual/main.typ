@@ -38,15 +38,15 @@ This document is split up into six main sections beside this summary. Since it i
 
 -  *@Project-brief-section and @User-requirement-section:* Description for each of the user requirements, including the initial and current status, the extent to which it is fulfilled, and justification for the extent of fulfilment.
 
-- *@NFR-section:*  Detail how the other non-functional aspects of the system are handled.
+- *@NFR-section:*  Detail on how the other non-functional aspects of the system are handled.
 
 - *@Initial-idea-section:* Source materials upon which the conceptualisation and development of the system is built
 
-- *@Game-instruction-manual-section:* Jargon-free detail how to use the system from the perspective of non-technical users.
+- *@Game-instruction-manual-section:* Jargon-free detail on how to use the system from the perspective of non-technical users.
 
-- *@Code-accessibility-section:* Technical detail how to use the system from the perspective of technical users.
+- *@Code-accessibility-section:* Technical detail on how to use the system from the perspective of technical users.
 
-- *@Class-documentation-section:* Technical detail how each of the system’s functionalities is developed.
+- *@Class-documentation-section:* Technical detail on how each of the system’s functionalities is developed.
 
 - *@System-maintenance-section:* Specifics of how the system can be maintained. 
 
@@ -76,20 +76,20 @@ The new system aims to gamify the learning experience, allowing for a more fun a
 
 == Project Brief Analysis <Project-brief-section>
 
-Our solution has covered the main requirement from [LINK TO < Project-brief >]. So far, we have a functioning RPG game with items that can be acquired from beating the bosses through Q&A style combat in different worlds linked to the Skills Build badges.
+Our solution has covered the main requirement from @Project-brief. So far, we have a functioning RPG game with items that can be acquired from beating the bosses through Q&A style combat in different worlds linked to the Skills Build badges.
 
 #figure(
   image("Images/ProjectBrief.png", width: 80%),
   caption: [Image of project description and challenge to be addressed in the project brief sent by the client.],
 ) <Project-brief>
 
-Currently, two badges have been fully implemented in the game as worlds, those being "Introduction to AI" and "Introduction to Data Science". We planned to cover IBM Skills Build Courses "Intro to Cloud", "Journey to Cloud", and "Threat Intelligence and Hunting" in three other worlds, however, we were not able to finish these worlds due to time constraints and project down scoping. 
+Currently, two badges have been fully implemented in the game as worlds, those being "Introduction to AI" and "Introduction to Data Science". We planned to cover IBM Skills Build Courses "Intro to Cloud", "Journey to Cloud", and "Threat Intelligence and Hunting" in three other worlds, however, we were not able to finish these worlds when this document was writted due to time constraints and project down scoping. 
 
-Despite this, we have laid the foundation in the game so that adding the other three badges would be very simple. We also have concepts for the other three badges' world, which will be further discussed in @World-section.
+Despite this, we have laid the foundation in the game so that adding the other three badges would be very simple. We also have concepts for the other three badges' worlds, which will be further discussed in @World-section.
 
 Unfortunately, we did not add any of the documentation, as the resources could not be found on the IBM Skills Build website.
 
-Regarding the "challenge to be addressed" section, we have done lots of research on existing 21#super([st]) games (see @Initial-idea-section) as well as existing learning games (see our requirement specification @Requirement-Specification), and have made design choices driven by the findings to make our game fit the "21#super([st]) century learning game" demand.
+Regarding the "challenge to be addressed" section, we have done lots of research on existing 21#super([st]) century games (see @Initial-idea-section) as well as existing learning games (see our requirement specification @Requirement-Specification), and have made design choices driven by the findings to make our game fit the "21#super([st]) century learning game" demand.
 
 == Installation Guide <Installation-guide-section>
 
@@ -116,7 +116,7 @@ The following section will give a step-by-step guide on how to download and run 
   caption: [Image of the .exe file in the game build folder.],
 )
 
-/ Note: The game is only compatible with Windows 10 and 11 as per the request of the client. We recommend having a computer with a minimum of 4GBs of RAM to run the game. You can feel free to plug in a controller or play the game using the keyboard and mouse. 
+/ Note -: The game is only compatible with Windows 10 and 11 as per the request of the client. We recommend having a computer with a minimum of 4GBs of RAM to run the game. You can feel free to plug in a controller or play the game using the keyboard and mouse. 
 
 #pagebreak()
 
@@ -133,15 +133,15 @@ In this section, we refer back to the requirement specification and go through a
   [FR1.1 - Player Character], [Unchanged], [Implemented], [The Player Character is an IBM employee and has distinct sprites in and out of combat.],
   
   [FR1.2 - Player Character Movement], [Dash added for AI World], [Implemented + Additional Features Added ], [The player is able to move in all cardinal directions. One of the worlds (AI-World) has a dash feature which the player can use to get a very quick speed boost in the direction they are currently facing. ],
-  [FR1.3 - Player-Based system-Controls], [Added additional controls for actions in AI World], [Implemented with additional controls], [Player has a dedicated interact key as well as a secondary interact key for other abilities such as the Shield added in AI World.],
+  [FR1.3 - Player-Based system-Controls], [Added additional controls for actions in AI World], [Implemented with additional controls], [The player has a dedicated interact key as well as a secondary interact key for other abilities such as the Shield added in AI World.],
   [FR2.1 - Game System - Main Menu], [Unchanged], [Implemented], [The Main Menu contains all buttons specified: Make a new game, continue an ongoing session, open the options, quit and close the game window.],
   [FR2.2 - Game System - Pause Menu], [Unchanged], [Implemented], [The player is able to open the pause menu using either the Escape or Tab key and in the Pause Menu is able to access the inventory, save the game, open the options menu, or quit the game.],
   [FR2.3 - Game System - Saving], [Unchanged], [Implemented], [The player is able to save the game in the Pause Menu.],
   [FR2.4 - Game System - Inventory], [Unchanged], [Implemented], [The inventory exists in the Pause Menu and the player is able to view their collected items.],
-  [FR2.5 - Game System - Camera], [Modified to have two types of cameras, cameras which stand still, and cameras which move with the player, this was done to provide a smoother experience, and is common for 2d top-down games], [Implemented modified version], [AI World and Data Science World use fixed camera and camera which follows the player, the Hub World only uses a camera which follows the player.],
+  [FR2.5 - Game System - Camera], [Modified to have two types of cameras, cameras which stand still, and cameras which move with the player], [Implemented modified version], [AI World and Data Science World use fixed camera and camera which follows the player, the Hub World only uses a camera which follows the player. This was done to provide a smoother experience, and is common for 2d top-down games.],
 
   [FR3.1 - Gameplay Systems - Combat], [Modified - health bar replaced by a number of hearts], [Implemented modified version as a number of hearts works better for answering questions, as answering wrongly deduces a fixed number of hearts], [The game features a combat system where the player takes damage when attacked by an enemy, and dies when at 0 hearts.],
-  [FR3.2 - Gameplay Systems - Skills Build System], [Modified - replaced skill tree with options which show up upon completing a world with different options available as to which power up to apply. This was done to increase simplicity for the user as well as for developing.], [Implemented modified version], [The Skill Tree permanently upgrades the player's abilities, but cannot be accessed in the pause menu.],
+  [FR3.2 - Gameplay Systems - Skills Build System], [Modified - replaced skill tree with options which show up upon completing a world with different options available as to which power up to apply], [Implemented modified version], [The Skill Tree permanently upgrades the player's abilities, but cannot be accessed in the Pause Menu. This was done to increase simplicity for the user as well as for devlopers.],
   [FR4.1 - Gameplay - Central Hub], [Unchanged], [Implemented], [The Hub World can be accessed and the player can enter all other worlds from it.],
   [FR4.2 - Gameplay - Worlds], [Unchanged], [Implemented], [Each world contains many rooms and ends with a boss fight.],
   [FR4.3 - Gameplay - Rooms], [Modified with a more accurate term 'Levels', where levels each have a puzzle that can span multiple rooms.], [Implemented], [Levels contains a puzzle or a boss with a door to the next level.],
@@ -164,7 +164,7 @@ In this section, we refer back to the requirement specification and go through a
   [NFR2.1 - Graphics], [Unchanged], [Satisfied], [See @MainMenuButtonsDetailed],
   [NFR3.1 - Response Time], [Unchanged], [Satisfied], [After testing the response time using a recording software to measure the response time between button press and movement on the screen, the response time was less than 0.1 seconds.],
   [NFR3.2 - Smooth Movement], [Unchanged], [Satisfied], [After surveying multiple people after they have played our game, the consensus was that the player's movement in the game felt smooth.],
-  [NFR3.3 - Beginner Friendly], [Unchanged], [Satisfied], [Although not specifically survey, all players that had little to no experience playing games did not have any issues understanding how to play our game, therefore we believe that this NFR is fulfilled.],
+  [NFR3.3 - Beginner Friendly], [Unchanged], [Satisfied], [Although not specifically surveyed, all players that had little to no experience playing games did not have any issues understanding how to play our game, therefore we believe that this NFR is fulfilled.],
   [NFR3.4 - Room Transitions], [Unchanged], [Not Satisfied], [Due to time constraints, room transition effects were not added.],
   [NFR3.5 - Boss Battles], [Unchanged], [Satisfied], [After surveying multiple people after they have played our game, the consensus was that the boss battles were engaging.],
   [NFR3.6 - Music], [Unchanged], [Satisfied], [After surveying multiple people after they have played our game, the consensus was that the music fit each area of the game.],
@@ -225,7 +225,7 @@ While not an RPG series, the Ace Attorney games are puzzle games, where the main
 We also need to consider how the player will answer questions, and what type of menu we want the player to use.
 
 ==== List Style
-This is arguably the most popular style of menu in RPG games and involves a scrollable list, to which players will move down the list, relatively simple to implement and does what it needs to.
+This is arguably the most popular style of menu in RPG games and involves a scrollable list, to which players will move down the list. This is relatively simple to implement and does what it needs to.
 
 #figure(
   image("Images/menu1.png", width: 90%),
@@ -245,7 +245,7 @@ While combat sprites depend on the combat style we choose, all the characters in
 
 One of the biggest things to consider with sprite sheets is the amount of space they take up relative to the world around them, traditional RPG style has the world split into "tiles", which can be thought of as a square grid, in which the characters normally move between these tiles, and normally mean that sprites have to fit into that square area. However, newer top-down 2D games are less restrictive, and have more free movement, which also means that character sprites do not have to conform to set tile space
 
-The sprites I am showing off in this section are all walking animation sprites, with a step-stand-step style of animation, which is simple to animate, but works brilliantly, and is still used in modern top-down games today.
+The sprites shown in this section are all walking animation sprites, with a step-stand-step style of animation, which is simple to animate, but works brilliantly, and is still used in modern top-down games today.
 
 #figure(
   image("Images/spritesheet.png", width: 90%),
@@ -272,12 +272,13 @@ Finally, we have the super simple 16x16 sprites, which conform to tiles, but lac
 
 #pagebreak()
 === Health
-We need to be able to keep track of how many questions have been answered correctly and there are several ways to do this, however keeping in line with RPG games, the best way is through Hit Points (HP), which normally represent how much damage the player has taken [CHECK DEFINITION]. Converting this to Q&A style combat, we can say that if the player answers a question correctly, the enemy takes damage, and if you answer a question wrong, the player character takes damage.
+We need to be able to keep track of how many questions have been answered correctly and there are several ways to do this, however keeping in line with RPG games, the best way is through Hit Points (HP), which normally represent how much damage the player has taken. Converting this to Q&A style combat, we can say that if the player answers a question correctly, the enemy takes damage, and if you answer a question wrong, the player character takes damage.
 
 There are multiple ways of representing HP, however we will be deciding between health bars and heart bars.
 
 ==== Health Bars
-A health bar is quite simply a bar to display health which is normally analogue. We take an example from Guilty Gear Xrd, a fighting game released in 2014. As this health bar depletes it will "empty" towards the centre of the screen.
+
+A health bar is simply a bar to display health which is normally analogue. We take an example from Guilty Gear Xrd, a fighting game released in 2014. As this health bar depletes it will "empty" towards the centre of the screen.
 
 #figure(
   image("Images/GGX1.png", width: 90%),
@@ -430,7 +431,7 @@ The structure of the non-technical manual is inspired by a manual from a Nintend
 
 In this section, we refer to the user in the 2#super([nd]) person format, addressing them with "you" and "your". We also use less formal language and terminology. This is because the document aims to talk the user through the game as if they themselves were playing and experiencing it. 
 
-This document will be included alongside the final game build as a kind of game introduction booklet. The presentation will of course be more bright and lively compared to how it is shown in this document, including custom-crafted backgrounds, less formal fonts, decorated tables and image positioning, etc.
+A game introduction booklet could be produced from this document. The presentation will of course be more bright and lively compared to how it is shown in this document, including custom-crafted backgrounds, less formal fonts, decorated tables and image positioning, etc. However, this task will most likely have to be done on the client-side (IBM) as it is not in the requirement specification nor the project brief.
 
 == Getting Started
 
@@ -467,7 +468,7 @@ Will you succeed in saving everyone and help them return to their original world
 #pagebreak()
 === Main Menu
 
-The Main Menu is an inviting location, with sombre music and a futuristic background image with the IBM logo in it. The lively Menus background image moves around at random intervals in time, and blurs and unblurs itself too. 
+The Main Menu is an inviting location, with sombre music and a futuristic background image with the IBM logo in it. The background image moves around at random intervals in time, and blurs and unblurs itself too. 
 
 #figure(
   image("Images/main_menu.png", width: 100%),
@@ -575,7 +576,7 @@ For the controls below, Left/Right Stick Up/Down/Left/Right refers to pushing th
     [*Keyboard*], [*Controller*], [*Action*],
     [W / Arrow Up], [Left Stick Up /\ D-Pad Up], [Navigate menu up.],
     [S / Arrow Down], [Left Stick Down /\ D-Pad Down], [Navigate menu down.],
-    [Space], [Button 1], [Accept answer/choice / Advance text.]
+    [Space], [Button 1], [Accept answer or choice or Advance text.]
   ),
   caption: "Table of controls for battles"
 )
@@ -634,7 +635,7 @@ Upon entering the Pause Menu, you will see a familiar sight; the same background
   
   The Settings Menu in the Pause Menu is the same as in the Main Menu, containing the same buttons and layout.
 
-  Skipping a level cannot be done in a Boss world or in the Hub World, meaning that you must beat the boss of each world to progress. 
+  Skipping a level cannot be done in a Boss World or in the Hub World, meaning that you must beat the boss of each world to progress. 
 
   When saving the game, any ongoing progress within the current level is not saved, meaning that if you decided to close the game after saving, you would have to redo everything in the current level. 
   
@@ -643,7 +644,7 @@ Upon entering the Pause Menu, you will see a familiar sight; the same background
 #pagebreak()
 == Worlds <World-section>
 
-The game takes place in multiple worlds, each being a collection of levels that represent a different section of IBM Skills Build with its own themes and challenges. The only exception to this is the Hub World and the Final World.
+The game takes place in multiple worlds, each being a collection of levels that represent a different section of IBM Skills Build with its own themes and challenges. The only exception to this is the Hub World and the Boss World.
 
 === Hub World
 
@@ -791,7 +792,7 @@ In some levels, there are moving platforms which move between 2 points at a cons
 
 === Data Science World
 
-The Data Science world takes place in an icy cave. This cave hides secrets of forgotten life, with the relics of a civilization present, eveident by man made pillars scattered around to hold unstable ice chunks on the roof up, and bookcases containing knowledge of past times. Sometimes the cave is nice to you; with open planes of snowy surfaces and illusory mist doors. But sometimes can be treacherous; with icy floor and heavy snowfall. Sliding on ice is natural, just don't get stuck sliding on it for eturnity! Even the Altar Spirits power can't help you overcome that challenge, so tread carefully! 
+The Data Science world takes place in an icy cave. This cave hides secrets of forgotten life, with the relics of a civilization present, evident by man-made pillars scattered around to hold unstable chunks of the roof up, and bookcases containing knowledge of past times. Sometimes the cave is nice to you; with open planes of snowy surfaces and illusory mist doors. But sometimes it can be treacherous; with an icy floor and heavy snowfall. Sliding on ice is natural, just don't get stuck sliding on it for eternity! Even the Altar Spirits power can't help you overcome that challenge, so tread carefully! 
 
 ==== Icy Floor
 
@@ -950,7 +951,7 @@ In this section, we provide the documentation for the classes used to build the 
 
 === Overview
 
-The following section is split into two parts. The first part is a table overview of the classes, containing its name, description and functions. The second part is an extensive description of what each class' functions do, and includes images to show where one can find the classes used in.
+The following section is split into two parts. The first part is a table overview of the classes, containing their name, description and functions. The second part is an extensive description of what each class' functions do, and includes images to show where one can find the classes used in.
 
 ==== General Classes
 
@@ -1075,7 +1076,7 @@ The following section is split into two parts. The first part is a table overvie
 
   [`CameraFollow` \ (@CameraFollowDetailed)], [Used to switch between a camera that follows the player and stationary cameras], [`OnTriggerEnter2D`],
 
-  [`CameraManager` \ (@CameraManagerDetailed)], [Switch between Stationary cameras], [`OnTriggerEnter2D` \ `OnTriggerExit2D`],
+  [`CameraManager` \ (@CameraManagerDetailed)], [Switch between stationary cameras], [`OnTriggerEnter2D` \ `OnTriggerExit2D`],
 
   [`DoorTriggerLeft` \ (@DoorTriggerLeftDetailed)], [Check door collision. Used in the `LabyrinthDoor` script], [`OnTriggerEnter2D`],
 
@@ -1175,7 +1176,7 @@ The following section is split into two parts. The first part is a table overvie
   
   [`Turret` \ (@TurretDetailed)], [Manages a turret which fires bullets and can rotate], [`Start` \ `FixedUpdate` \ `FireBullets` \ `Fire`], 
   
-  [`TurretStateMachine` \ (@TurretStateMachineDetailed)], [Defines an abstract class for turrets which have 4 set phases], [`SetStartPoint` \ `GetSpawnPoints` \ `MakeEnemy` \ `ShootScatter` \ `ShootStraight` \ `ShootBeam` \ `RotateTurret` \ `GetPrefab`], 
+  [`TurretStateMachine` \ (@TurretStateMachineDetailed)], [Defines an abstract class for turrets which have 4 set phases], [`SetStartPoint` \ `GetSpawnPoints` \ `MakeEnemy` \ `ShootScatter` \ `ShootStraight` \ `ShootBeam` \ `GetPrefab`], 
 )
 
 #pagebreak()
@@ -1217,7 +1218,7 @@ The following section is split into two parts. The first part is a table overvie
 
 / Function description:
 
-- `Start`: Gets all `image components` from every `GameObject` in the cutscene.
+- `Start`: Gets all image components from every `GameObject` in the cutscene.
 
 - `Update`: Moves all images to their specified location in the `scene`
 
@@ -1361,7 +1362,7 @@ The game manager enters the game environment through the `MainMenu` and then dup
 
 ==== `ImportQuestions` <ImportQuestionsDetailed>
 
-See section 
+See @Working-with-questions-section for more detail.
 
 / Function description:
 
@@ -1401,7 +1402,7 @@ See @Combat-system-section for more detail.
 
 #figure(
   image("Images/main_menu.png", width: 90%),
-  caption: "The main menu of the game"
+  caption: "The Main Menu of the game"
 )
   
 
@@ -1409,7 +1410,7 @@ See @Combat-system-section for more detail.
 
 - `Start`: The `Start` method is called on the first frame of the scene, we use this method to enable particle effects 
 - `Quit`:  The `Quit` method handles the click event from the Quit button in the Main Menu. When the Quit button is clicked, the Quit method uses the `Application.Quit` function from the Unity API to quit the game.
-- `Volume`:  The Volume method handles input change events from the Volume slider in the Main Menu. The `Volume` method in the `MainMenuButtons` class uses the singleton Game Manager instance to globally set the volume across the game.
+- `Volume`:  The `Volume` method handles input change events from the Volume slider in the Main Menu. The `Volume` method in the `MainMenuButtons` class uses the singleton Game Manager instance to globally set the volume across the game.
 - `Particles`:  The `Particles` method is called in response to the `Particles` settings changing in the Settings sub-menu of the Main Menu. When called, the `Particles` method forwards its argument to the singleton `GameManager` object, which then globally sets particle settings. This system allows users to specify whether they would like particles to be displayed in the game so we can ensure that users with low-end hardware can turn off computationally expensive particle rendering, which ensures that they can still have a smooth experience while playing the game.
 - `FullScreen`:  The `FullScreen` method toggles whether the game is to be played in full screen.
 - `MainMenu`:  The `MainMenu` method initialises the `MainMenu` scene by setting the components of the Main Menu to be visible to the user.
@@ -1440,10 +1441,10 @@ See @Combat-system-section for more detail.
 / Function description:
 
 - `Start`: The `Start` method is called on the first frame of the scene, we use this method to enable particle effects and load the user's graphics quality preferences into the dropdown in the UI.
-- `Update`: The `Update` method is called during every frame. We use the update method as a hook to initialise the game's settings and load them into the interface from the GameManager.
-- `Resume`: The `Resume` method in the PauseMenu class responds to the user pressing the Resume button to allow them to re-enter the game after pausing it.
+- `Update`: The `Update` method is called during every frame. We use the update method as a hook to initialise the game's settings and load them into the interface from the `GameManager`.
+- `Resume`: The `Resume` method in the `PauseMenu` class responds to the user pressing the Resume button to allow them to re-enter the game after pausing it.
 - `Pause`: The `Pause` method loads the Pause Menu interface onto the screen and allows the user to take a break from the game.
-- `QuitGame`: The `QuitGame` method responds to the Quit button in the Pause Menu's user interface. When the Quit button is called, the PauseMenu instance uses the Unity API to exit the game.
+- `QuitGame`: The `QuitGame` method responds to the Quit button in the Pause Menu's user interface. When the Quit button is pressed, the `PauseMenu` instance uses the Unity API to exit the game.
 - `MainMenu`: The `MainMenu` method is called in response to the user pressing the Main Menu button in the Pause Menu's interface. When called, the `MainMenu` method loads the Main Menu and exits the Pause Menu interface
 - `OptionsMenu`: The `OptionsMenu` method loads the options into the Pause Menu interface.
 - `Volume`: The `Volume` method is called in response to changes to the Volume slider in the user interface for the Pause Menu. When called, the `Volume` method propagates changes towards the singleton Game Manager instance so that Volume settings persist globally throughout the game.
@@ -1452,11 +1453,11 @@ See @Combat-system-section for more detail.
 - `SkipLevel`: The `SkipLevel` method instructs the to skip the current level that the player is in
 - `DisplayText`: The `DisplayText` method displays the combat text from the current scene 
 - `DisableText`: The `DisableText` method is a coroutine that hides the combat text after a delay.
-- `WaitForSecondsRealtime`: The `WaitForSecondsRealTime` method is a coroutine that removes the save text in the Pause Menu's User Interface after a delay.
+- `WaitForSecondsRealtime`: The `WaitForSecondsRealTime` method is a coroutine that removes the save text in the Pause Menu's user interface after a delay.
 - `GetSceneNameByBuildIndex`: `GetSceneNameByBuildIndex` is static method that takes the build index of a scene as an argument and returns the corresponding scene name.
 - `GetSceneNameFromScenePath`: The static `GetSceneNameFromScenePath` method takes the path of a scene as an argument and mechanically produces the name of the scene.
-- `SetQuality`: The `SetQuality` method is bound the the Graphiccs Quality drop down in the User Interface for the Pause Menu. When the player selects a new graphics quality level in the User interface.
-- `Inventory`: The `Invetory` method displays the user's inventory
+- `SetQuality`: The `SetQuality` method is bound the the Graphics Quality drop down in the user interface for the Pause Menu. When the player selects a new graphics quality level in the user interface.
+- `Inventory`: The `Inventory` method displays the user's inventory
 - `Save`: The `Save` method saves the game state to disk to later be reloaded by.
 - `RemoveSaveText`: The `RemoveSaveText` button removes the Save text.
 - `WaitForSecondsRealtime`: The `WaitForSecondsRealtime` method is a corountine that inserts a delay of 3 seconds.
@@ -1672,12 +1673,12 @@ The `Altar Cutscene 3` `GameObject` is not a physical object and is enabled duri
 
 #figure(
   image("Images/hubdoor.png", width: 90%),
-  caption: [Image showing the `GameObjects` with the `HubDoor` script attached. 2 of the 4 doors, currently do not have a connected room, as we have only created 2 worlds so far.]
+  caption: [Image showing the `GameObjects` with the `HubDoor` script attached. 2 of the 4 doors currently do not have a connected room, as we have only created 2 worlds so far.]
 )
 
 / Function description:
 
-- `Update`: Check if the player is in range of the `GameObject` holding this script and if so and the interact key is pressed the door sprite changes to that of an open door and the door no longer has collision so that the player can enter.
+- `Update`: Check if the player is in range of the `GameObject` holding this script. If this is the case and the interact key is pressed, the door sprite changes to that of an open door. This also removes the door's collision so that the player can enter.
 
 - `OnTriggerEnter2D`: Check if the player collides with `GameObject` and if this is the case, the player can press the interact key.
 
@@ -1727,7 +1728,7 @@ The `Altar Cutscene 3` `GameObject` is not a physical object and is enabled duri
 
 / Function description:
 
-- `Start`: Check the number of items acquired and change the `Act` depending on how many have been acquired. Also disables the portal from worlds already entered
+- `Start`: Check the number of items acquired and change the `Act` depending on how many have been acquired. Also disables the portal from worlds already entered.
 
 #pagebreak()
 ==== `HubBackground` <HubBackgroundDetailed>
@@ -1796,7 +1797,7 @@ The `Altar Cutscene 3` `GameObject` is not a physical object and is enabled duri
 
 / Function description:
 
-- `Start`: Generates a random number between 0 and 19, then runs the Spawn Function.
+- `Start`: Generates a random number between 0 and 19, then runs the `Spawn` Function.
 
 - `Update`: Check if the player is in range of the `GameObject` holding this script and if so and the interact key is pressed the specified number of times the button was hit updates and then the `Spawn` function is run with a new random number. If the specified number of hits is reached, then the player `GameObject` is teleported to a specified location.
 
@@ -1811,7 +1812,7 @@ The `Altar Cutscene 3` `GameObject` is not a physical object and is enabled duri
 
 #figure(
   image("Images/camerafollow.png", width: 90%),
-  caption: [Image of `CameraFollow` script attached to camera fixer `GameObject` in DS World Level 5. This is not a physical `GameObject`, but contains a collision trigger that triggers the script to run.]
+  caption: [Image of `CameraFollow` script attached to `camera fixer` `GameObject` in DS World Level 5. This is not a physical `GameObject`, but contains a collision trigger that triggers the script to run.]
 )
 
 / Function description:
@@ -1882,7 +1883,7 @@ The `Altar Cutscene 3` `GameObject` is not a physical object and is enabled duri
 
 #figure(
   image("Images/labyrinthdoor.png", width: 90%),
-  caption: [Image of `LabyrinthDoor` script attached to a Door Manager `GameObject` in DS World Level 2. The `Door manager` object is the parent object of the `GameObjects` containing the `DoorTriggerLeft`, `DoorTriggerRight` and `DoorTriggerTop` scripts.]
+  caption: [Image of `LabyrinthDoor` script attached to a `Door Manager` `GameObject` in DS World Level 2. The `Door Manager` object is the parent object of the `GameObjects` containing the `DoorTriggerLeft`, `DoorTriggerRight` and `DoorTriggerTop` scripts.]
 )
 
 / Function description:
@@ -1905,7 +1906,7 @@ The `Altar Cutscene 3` `GameObject` is not a physical object and is enabled duri
 
 #figure(
   image("Images/playericescript.png", width: 90%),
-  caption: [Image of `PlayerIceScript` script attached to the player `GameObject` in DS World Level 5. The `player` game object holds this script only in DS World Level 5.]
+  caption: [Image of `PlayerIceScript` script attached to the player `GameObject` in DS World Level 5. The `player` `GameObject` holds this script only in DS World Level 5.]
 )
 
 / Function description:
@@ -1948,7 +1949,7 @@ The `Altar Cutscene 3` `GameObject` is not a physical object and is enabled duri
 
 #figure(
   image("Images/removearrow.png", width: 90%),
-  caption: [Image of `RemoveArrow` script attached to a `Remove Arrow` `GameObject` in Hub World. The `Remove arrow` `GameObject` is not a physical object, but has 2 collision triggers attached that activate the script's function.]
+  caption: [Image of `RemoveArrow` script attached to a `Remove Arrow` `GameObject` in Hub World. The `Remove Arrow` `GameObject` is not a physical object, but has 2 collision triggers attached that activate the script's function.]
 )
 
 / Function description:
@@ -2009,7 +2010,7 @@ The `Altar Cutscene 3` `GameObject` is not a physical object and is enabled duri
 
 - `Update`: Check if the `finished` boolean has been triggered from the `LabyrinthDoor` script.
 
-- `FixedUpdate`: move the player up by a fixed amount (simulates the player pressing a directional input).
+- `FixedUpdate`: Move the player up by a fixed amount (simulates the player pressing a directional input).
 
 - `OnTriggerEnter2D`: Check if the player collides with `GameObject` and if this is the case teleport the player to a specified location, update the animation sprites and disable the player's movement input.
 
@@ -2043,13 +2044,13 @@ The `Altar Cutscene 3` `GameObject` is not a physical object and is enabled duri
 
 / Function description:
 
-- `OnTriggerEnter2D`: Check if player collides with `GameObject` and if this is the case, move the player to a specified location in the scene and disable the hole `GameObject`.
+- `OnTriggerEnter2D`: Check if player collides with `GameObject` and if this is the case, move the player to a specified location in the scene and disable the `Hole` `GameObject`.
 
 ==== `Timer` <TimerDetailed>
 
 #figure(
   image("Images/timer.png", width: 90%),
-  caption: [Image of Timer script attached to a timer `GameObject` in DS World Level 3. This script is also used in DS World Level 6.]
+  caption: [Image of `Timer` script attached to a `timer` `GameObject` in DS World Level 3. This script is also used in DS World Level 6.]
 )
 
 / Function description:
@@ -2148,7 +2149,7 @@ caption: [Image of `AIPortal` script attached to a Portal `GameObject` in Puzzle
 
 / Function description:
 
-- `Start`: Calls the `Set Start Rotation` and `Get Spawn Points` methods from the abstract parent class.
+- `Start`: Calls the `SetStartPoint` and `GetSpawnPoints` methods from the abstract parent class.
   
 - `FixedUpdate`: Calls the `RotateTurret` method from the abstract parent class.
   
@@ -2227,7 +2228,7 @@ caption: [Image of `AIPortal` script attached to a Portal `GameObject` in Puzzle
 
 / Function description:
 
-- `OnTriggerEnter2D`: If the collided object has the "`Player`", sets the `key manager`'s `escapeStart` boolean to true and destroys the `GameObject`.
+- `OnTriggerEnter2D`: If the collided object has the "`Player`", sets the `key manager`'s boolean to true and destroys the `EscapeStart` `GameObject`.
 
 
 ==== `Hearts` <HeartsDetailed>
@@ -2459,7 +2460,7 @@ The `timer` `GameObject` has the `Timer2` script attached, which is used in AI W
 
 - `Fire`: Takes in a `spawn` `GameObject` as a parameter and instantiates a specified prefab at the `spawn`'s position and rotation. Sets the instantiated object's speed to a specified speed.
 
-- `FireBullets`: Waits for a specified number of seconds and then calls the Fire method at a specified rate, after which it reloads for a specified number of seconds. If the turret is meant to shoot in both directions, calls the Fire method twice for each spawn point.
+- `FireBullets`: Waits for a specified number of seconds and then calls the `Fire` method at a specified rate, after which it reloads for a specified number of seconds. If the turret is meant to shoot in both directions, calls the `Fire` method twice for each spawn point.
 
 ==== `TurretStateMachine` <TurretStateMachineDetailed>
 
@@ -2480,7 +2481,7 @@ The `timer` `GameObject` has the `Timer2` script attached, which is used in AI W
 - `GetPrefab`: Returns the prefab corresponding to the current state.
 
 #pagebreak()
-== System maintenance <System-maintenance-section>
+== System Maintenance <System-maintenance-section>
 
 In this section, we will go over the main technical aspects of our game that might require maintenance. We also cover how to work with them, which will be useful for @Future-development-section. 
 
@@ -2518,7 +2519,7 @@ If a button does not perform the functionality assigned to it, first check that 
 
 === Combat System <Combat-system-section>
 
-To add or fix more features in the combat system, we must first understand the state design pattern and finite state machines @FSM-combat-tutorial. 
+To add or fix more features in the combat system, we must first understand the state design pattern and finite state machines (we will now refer to these as FSM) @FSM-combat-tutorial. 
 
 A FSM is an abstract model that holds a finite number of states and their respective transitions, while also keeping track of the current state of the system during its execution. This is useful for game development as lots of in-game systems, such as enemy actions or combat, have behaviours that can be directly mapped to a FSM. 
 
@@ -2541,7 +2542,7 @@ Armed with this knowledge, we can finally talk about how to add a new state. The
 
 Whenever a state breaks, or has issues, first check the code of the individual states as this holds most, if not all the logic of the states. Issues with inheritance might also occur, so make sure that the entire structure is set up appropriately (with the `StateMachine` and `State` functions).
 
-=== Working with Questions
+=== Working with Questions <Working-with-questions-section>
 
 To modify or add additional questions to the game, follow these steps:
 
@@ -2677,7 +2678,7 @@ This type of puzzle can be implemented without conveyor belts too, for example i
 #pagebreak()
 == Ethical and Societal Impacts <Ethical-societal-section>
 
-Our project, whilst only being a game, might have some potential ethical issues that need to be considered. On the contrary, the project might also have some potential upside when it comes to societal impacts.
+Our project, whilst only being a game, might have some potential ethical issues that need to be considered. On the other hand, the project might also have some potential upside when it comes to societal impacts.
 
 === Ethical Impacts
 
