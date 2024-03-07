@@ -28,7 +28,7 @@
 #outline(indent: auto, depth: 3)
 #pagebreak()
 
-= Summary of document
+= Summary of Document
 
 This document is split up into six main sections beside this summary. Since it is a large document, we will be giving point of interests so that you can navigate this easier.
 
@@ -56,7 +56,7 @@ This document is split up into six main sections beside this summary. Since it i
 
 - *@Glossary-section:* A glossary for terms specific to game development.
 
-= Project introduction <Project-introduction-section>
+= Project Introduction <Project-introduction-section>
 
 This is the user manual for IBM's "Reimagine Skills Build as an RPG game" project. 
 
@@ -72,7 +72,7 @@ All these issues combined lead to students getting lost on the website(s), reduc
 
 The new system aims to gamify the learning experience, allowing for a more fun and engaging experience as students quest for in-game items relating to the badges, while still keeping the Q&A structure of the original quizzes. We include in-game links to Skills Build courses to deal with the complex-to-navigate issue, add preventative measures against cheating in the form of a boss fight, and allow for retrying courses and quizzes by presenting the player with the option of starting a new save file.
 
-= Solution discussion <Solution-discussion-section>
+= Solution Discussion <Solution-discussion-section>
 
 == Project Brief Analysis <Project-brief-section>
 
@@ -425,7 +425,7 @@ Upon answering incorrectly, the sprites once again change, but this time the pla
 Additionally, due to time constraints, we weren't able to implement true heart bars, as such they simply display the heart and the number of hearts for now.
 
 #pagebreak()
-= Non-technical manual <Game-instruction-manual-section>
+= Non-technical Manual <Game-instruction-manual-section>
 
 The structure of the non-technical manual is inspired by a manual from a Nintendo title called "Pokémon Mystery Dungeon: Gates to Infinity" @Pokemon-MD-manual. 
 
