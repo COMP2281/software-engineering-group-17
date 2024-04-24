@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - volume
+  - ice
+  - Bullet
+  - Collide
+  - Heart
+  - Kill
+  - graphics
+  - particles
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Character
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Tilemap_no_collision
+    uniqueID: 921398611
+    locked: 0
+  - name: Tilemap_collision
+    uniqueID: 756646087
+    locked: 0
+  - name: Tilemap_overlay
+    uniqueID: 3912830381
+    locked: 0
+  - name: Player
+    uniqueID: 1965626849
+    locked: 0
+  - name: Tilemap_overlay
+    uniqueID: 3912830381
+    locked: 0
+  - name: Tilemap_underlay
+    uniqueID: 2556650535
+    locked: 0
+  - name: camera layer
+    uniqueID: 2126484991
+    locked: 0

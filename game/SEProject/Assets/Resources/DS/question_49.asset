@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306c7f5bb167cdb40af76353d5a8f371, type: 3}
+  m_Name: question_49
+  m_EditorClassIdentifier: 
+  question: When thinking about the 5 main Vs of data, what does Veracity refer to?
+  answers:
+  - Refers to the trustworthiness of the data
+  - Refers to the vast amounts of data generated every second
+  - Refers to the different types of data we can now use
+  - Refers to the speed at which new data is generated and the speed at which data
+    moves around

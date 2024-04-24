@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Josh/Scenes/SampleScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Josh/Scenes/Main Menu.unity
+    guid: 280ee7214b399484e88f37fdb2ed288f
+  - enabled: 1
+    path: Assets/Josh/Scenes/Hub World New.unity
+    guid: c90f3de804ca7dc47800ca70eb375ea8
+  - enabled: 1
+    path: Assets/Josh/Scenes/Secret Scene.unity
+    guid: 6eda32eccd3d2d045b90dfd5b8a501ac
+  - enabled: 1
+    path: Assets/Josh/Scenes/Credits.unity
+    guid: fc148b2ca854c3144bba433635c5cf7d
+  - enabled: 1
+    path: Assets/Josh/Scenes/DS World Level 1.unity
+    guid: 2164cf6b8f6eaad469ef2d87ec35b277
+  - enabled: 1
+    path: Assets/Josh/Scenes/DS World Level 2.unity
+    guid: a3b9ad924f2e94d42a3462545121a3b3
+  - enabled: 1
+    path: Assets/Josh/Scenes/DS World Level 3.unity
+    guid: ec1102c9ac2dbfc4fad2abb0eba76abb
+  - enabled: 1
+    path: Assets/Josh/Scenes/DS World Level 4.unity
+    guid: 6a6707564fe3b3840894c9907b833d61
+  - enabled: 1
+    path: Assets/Josh/Scenes/DS World Level 5.unity
+    guid: a93970b923b9e804bb91c0eec5185af0
+  - enabled: 1
+    path: Assets/Josh/Scenes/DS World Level 6.unity
+    guid: 2569cae5cdab4d947b5e8472aea2c00f
+  - enabled: 1
+    path: Assets/Josh/Scenes/DS World Boss.unity
+    guid: 02101b7da60d1b54188339b7f4080ca0
+  - enabled: 1
+    path: Assets/Josh/Scenes/DS World Combat.unity
+    guid: 7b596872d5225a24cb0fb21f5576c338
+  - enabled: 1
+    path: Assets/Josh/Scenes/DS World Boss Complete.unity
+    guid: f5f40aab394a1eb49bf68a36639dcf84
+  - enabled: 1
+    path: Assets/Charles/AI-World/Puzzle-0.unity
+    guid: 26b4c93af275de64db8d985a35ba06f8
+  - enabled: 1
+    path: Assets/Charles/AI-World/Puzzle-1.unity
+    guid: a550370fbf5fb1d41ba491afd6dc7da7
+  - enabled: 1
+    path: Assets/Charles/AI-World/Puzzle-2.unity
+    guid: 9108ae1241c342c4598b332bc6a97bc9
+  - enabled: 1
+    path: Assets/Charles/AI-World/Puzzle-3.unity
+    guid: 76ad78f73950cbd4b922d2d6e81ee478
+  - enabled: 1
+    path: Assets/Charles/AI-World/Puzzle-4.unity
+    guid: 1008a48ab548a3a4889b4645f531688f
+  - enabled: 1
+    path: Assets/Charles/AI-World/Puzzle-Boss.unity
+    guid: c2fe8b32eafba794b89948bc916c920f
+  - enabled: 1
+    path: Assets/Charles/AI-World/AI-Combat.unity
+    guid: 54f6f5f37657a084bb4a7a4b33be3860
+  - enabled: 1
+    path: Assets/Charles/AI-World/AI-World-Complete.unity
+    guid: 1cda1305b6cb78a48b42fbda6afa3b86
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 517a42f1583a77d4798879b47da499b9, type: 2}

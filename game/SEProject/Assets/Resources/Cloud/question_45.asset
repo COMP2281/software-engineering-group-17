@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306c7f5bb167cdb40af76353d5a8f371, type: 3}
+  m_Name: question_45
+  m_EditorClassIdentifier: 
+  question: Etsy uses cloud based analytics capabilities for its targeted marketing
+    approach by renting hundreds of computers every night to analyze data from a
+    billion views of its website. It has shifted from a fixed cost model to a variable
+    cost model. Which of the following business enabler best depicts this approach?
+  answers:
+  - Cost scalability
+  - Business scalability
+  - Masked complexity
+  - Ecosystem connectivity
